@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-04T05:54:30+08:00",
+  "observedAt": "2026-09-04T07:48:06+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -192,7 +192,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BBT\",\"sessionid\":[\"409369\",\"409377\",\"409395\",\"409403\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409377\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409369\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409403\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409395\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409395\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409369\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409403\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409377\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0}]}}"
     }
   ],
   "buyNow": {
@@ -392,9 +392,9 @@
     "e4de6842-06b1-4ab8-9c96-4aadf42a9f50",
     "e272889f-c14a-4752-9935-7a6c6a36e87f",
     "ae81a069-8b4c-45cf-a905-ece0d116cd97",
-    "8a6cd228-aad0-40da-a089-591ae2a4e632",
-    "0833d519-c885-46eb-a23f-1438bf87e797",
-    "f7988c07-8e0b-4412-8edd-50cbc0e2a05b"
+    "150bf379-a21a-40af-9b58-3d3e18ec181d",
+    "9006a487-d983-46c0-bad7-a8e398fcfa9e",
+    "6072fbbe-b091-4ade-9a9b-ddf4ca9ec460"
   ],
   "cinemaClicks": [
     {

@@ -1,10 +1,10 @@
 {
   "collectorVersion": "11.1",
-  "observedAt": "2026-09-04T05:54:07+08:00",
+  "observedAt": "2026-09-04T07:47:33+08:00",
   "policy": "read-only official GSC discovery; no booking creation",
   "publicMoviePage": {
     "status": "ok",
-    "length": 293863,
+    "length": 304358,
     "candidateIds": [],
     "tikusSnippets": [
       "<!doctype html>\n<html data-n-head-ssr lang=\"en\" data-n-head=\"%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D\">\n  <head>\n    <title>Tikus Movie Showtimes & Tickets</title><meta data-n-head=\"ssr\" charset=\"utf-8\"><meta data-n-head=\"ssr\" name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta data-n-head=\"ssr\" data-hid=\"description\" name=\"description\" content=\"Check showtimes and book tickets for the Tikus movie at GSC cinemas near you. Secure your seats online now!\"><meta data-n-head=\"ssr\" data-hid=\"og:title\" property=\"og:title\" content=\"Tikus Movie Showtimes & Tickets\"><meta data-n-head=\"ssr\" data-hid=\"og:description\" property=\"og:description\" content=\"Check showtimes and book tickets for the Tikus movie at GSC cinemas near you. Secure your seats online now!\"><meta data-n-head=\"ssr\" data-hid=\"og:image\" property=\"og:image\" content=\"https://poster.gsc.com.my/2026/260827_Tikus_big.jpg\"><meta data-n-head=\"ssr\" data-hi",
