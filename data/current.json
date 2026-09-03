@@ -1,7 +1,11 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
+<<<<<<< HEAD
   "updatedAt": "2026-09-03T12:48:59+08:00",
+=======
+  "updatedAt": "2026-09-03T21:47:22+08:00",
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -47,16 +51,37 @@
           "bookingUrl": null
         },
         {
-          "id": "gsc-paradigm-jb-2000",
+          "id": "gsc-paradigm-jb-289309",
           "time": "20:00",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "2",
+          "capacity": 246,
+          "booked": 0,
+          "available": 246,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "bookingUrl": null,
+          "sessionId": "289309",
+          "hallId": "2",
+          "officialLocationId": "355",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "statusCounts": {
+            "A": 246
+          },
+          "seatTypeCounts": {
+            "N": 226,
+            "H": 4,
+            "T": 14,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 0
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
@@ -69,6 +94,7 @@
       "state": "Kedah",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-aman-central-1300",
           "time": "13:00",
           "hall": "\u2014",
@@ -127,6 +153,73 @@
           "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
+=======
+          "id": "gsc-aman-central-213312",
+          "time": "20:00",
+          "hall": "4",
+          "capacity": 202,
+          "booked": 1,
+          "available": 201,
+          "occupancy": 0.0049504950495049506,
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "bookingUrl": null,
+          "sessionId": "213312",
+          "hallId": "4",
+          "officialLocationId": "133",
+          "otherUnavailable": 0,
+          "unavailable": 1,
+          "unavailableRate": 0.0049504950495049506,
+          "statusCounts": {
+            "A": 201,
+            "B": 1
+          },
+          "seatTypeCounts": {
+            "N": 186,
+            "H": 4,
+            "T": 10,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 1
+        },
+        {
+          "id": "gsc-aman-central-213313",
+          "time": "22:20",
+          "hall": "4",
+          "capacity": 202,
+          "booked": 0,
+          "available": 202,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "213313",
+          "officialLocationId": "133",
+          "hallId": "4",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-03T21:46:42+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 202
+          },
+          "seatTypeCounts": {
+            "N": 186,
+            "H": 4,
+            "T": 10,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
@@ -175,16 +268,38 @@
           "bookingUrl": null
         },
         {
-          "id": "gsc-midvalley-2000",
+          "id": "gsc-midvalley-924428",
           "time": "20:00",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "2",
+          "capacity": 164,
+          "booked": 2,
+          "available": 162,
+          "occupancy": 0.012195121951219513,
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "bookingUrl": null,
+          "sessionId": "924428",
+          "hallId": "2",
+          "officialLocationId": "210",
+          "otherUnavailable": 0,
+          "unavailable": 2,
+          "unavailableRate": 0.012195121951219513,
+          "statusCounts": {
+            "A": 162,
+            "B": 2
+          },
+          "seatTypeCounts": {
+            "N": 154,
+            "H": 2,
+            "T": 6,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 2
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
@@ -197,6 +312,7 @@
       "state": "Melaka",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-dataran-pahlawan-1300",
           "time": "13:00",
           "hall": "\u2014",
@@ -255,6 +371,72 @@
           "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
+=======
+          "id": "gsc-dataran-pahlawan-406740",
+          "time": "20:00",
+          "hall": "7",
+          "capacity": 266,
+          "booked": 0,
+          "available": 265,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "bookingUrl": null,
+          "sessionId": "406740",
+          "hallId": "7",
+          "officialLocationId": "331",
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "unavailableRate": 0.0037593984962406013,
+          "statusCounts": {
+            "A": 265,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 248,
+            "H": 4,
+            "T": 14
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 1
+        },
+        {
+          "id": "gsc-dataran-pahlawan-406741",
+          "time": "22:20",
+          "hall": "7",
+          "capacity": 266,
+          "booked": 0,
+          "available": 265,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "406741",
+          "officialLocationId": "331",
+          "hallId": "7",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-03T21:46:42+08:00",
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "unavailableRate": 0.0037593984962406013,
+          "rawUnavailable": 1,
+          "statusCounts": {
+            "A": 265,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 248,
+            "H": 4,
+            "T": 14
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
@@ -267,6 +449,7 @@
       "state": "Pahang",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-kuantan-city-mall-1300",
           "time": "13:00",
           "hall": "\u2014",
@@ -325,6 +508,75 @@
           "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
+=======
+          "id": "gsc-kuantan-city-mall-79951",
+          "time": "20:00",
+          "hall": "HALL 4",
+          "capacity": 157,
+          "booked": 0,
+          "available": 155,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "bookingUrl": null,
+          "sessionId": "79951",
+          "hallId": "4",
+          "officialLocationId": "431",
+          "otherUnavailable": 2,
+          "unavailable": 2,
+          "unavailableRate": 0.012738853503184714,
+          "statusCounts": {
+            "A": 155,
+            "D": 2
+          },
+          "seatTypeCounts": {
+            "N": 142,
+            "H": 2,
+            "T": 12,
+            "W": 1
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 2
+        },
+        {
+          "id": "gsc-kuantan-city-mall-79952",
+          "time": "22:20",
+          "hall": "HALL 4",
+          "capacity": 157,
+          "booked": 0,
+          "available": 154,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "79952",
+          "officialLocationId": "431",
+          "hallId": "4",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-03T21:46:42+08:00",
+          "otherUnavailable": 3,
+          "unavailable": 3,
+          "unavailableRate": 0.01910828025477707,
+          "rawUnavailable": 3,
+          "statusCounts": {
+            "A": 154,
+            "T": 1,
+            "D": 2
+          },
+          "seatTypeCounts": {
+            "N": 142,
+            "H": 2,
+            "T": 12,
+            "W": 1
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
@@ -337,6 +589,7 @@
       "state": "Putrajaya",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-ioi-city-mall-1040",
           "time": "10:40",
           "hall": "\u2014",
@@ -407,6 +660,76 @@
           "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
+=======
+          "id": "gsc-ioi-city-mall-339696",
+          "time": "20:00",
+          "bookingUrl": null,
+          "sessionId": "339696",
+          "hall": "2",
+          "hallId": "2",
+          "officialLocationId": "257",
+          "capacity": 220,
+          "available": 218,
+          "booked": 1,
+          "otherUnavailable": 1,
+          "unavailable": 2,
+          "occupancy": 0.004545454545454545,
+          "unavailableRate": 0.00909090909090909,
+          "statusCounts": {
+            "A": 218,
+            "D": 1,
+            "B": 1
+          },
+          "seatTypeCounts": {
+            "N": 196,
+            "H": 4,
+            "T": 18,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "sourceStatus": "gsc-last-observed",
+          "seatStatus": "last-observed",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00",
+          "lastObservedAt": "2026-09-03T20:02:07+08:00",
+          "isExpired": true,
+          "observedAt": "2026-09-03T20:02:07+08:00",
+          "rawUnavailable": 2
+        },
+        {
+          "id": "gsc-ioi-city-mall-339697",
+          "time": "22:20",
+          "hall": "2",
+          "capacity": 220,
+          "booked": 1,
+          "available": 218,
+          "occupancy": 0.004545454545454545,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "339697",
+          "officialLocationId": "257",
+          "hallId": "2",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-03T21:46:42+08:00",
+          "otherUnavailable": 1,
+          "unavailable": 2,
+          "unavailableRate": 0.00909090909090909,
+          "rawUnavailable": 2,
+          "statusCounts": {
+            "A": 218,
+            "D": 1,
+            "B": 1
+          },
+          "seatTypeCounts": {
+            "N": 196,
+            "H": 4,
+            "T": 18,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-03T21:46:42+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "refresh-error:HTTPError",
@@ -457,6 +780,7 @@
         {
           "id": "gsc-imago-2130",
           "time": "21:30",
+<<<<<<< HEAD
           "hall": "\u2014",
           "capacity": null,
           "booked": null,
@@ -464,11 +788,26 @@
           "occupancy": null,
           "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
+=======
+          "hall": "1",
+          "capacity": 261,
+          "booked": 0,
+          "available": 261,
+          "occupancy": 0.0,
+          "sourceStatus": "live-showtime-confirmed",
+          "seatStatus": "gsc-public-seat-status",
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
           "bookingUrl": null
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
+<<<<<<< HEAD
       "sourceUrl": "https://xinemas.com/cinema/in-kota-kinabalu/gsc-imago-mall.html"
+=======
+      "sourceUrl": "https://xinemas.com/cinema/in-kota-kinabalu/gsc-imago-mall.html",
+      "officialLocationId": "531",
+      "officialCinemaName": "GSC IMAGO Shopping Mall"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
     },
     {
       "id": "gsc-the-spring",
@@ -477,6 +816,7 @@
       "state": "Sarawak",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-the-spring-1210",
           "time": "12:10",
           "hall": "\u2014",
@@ -489,6 +829,8 @@
           "bookingUrl": null
         },
         {
+=======
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
           "id": "gsc-the-spring-1430",
           "time": "14:30",
           "hall": "\u2014",
@@ -527,6 +869,7 @@
         {
           "id": "gsc-the-spring-2130",
           "time": "21:30",
+<<<<<<< HEAD
           "hall": "\u2014",
           "capacity": null,
           "booked": null,
@@ -534,11 +877,26 @@
           "occupancy": null,
           "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
+=======
+          "hall": "3",
+          "capacity": 244,
+          "booked": 0,
+          "available": 238,
+          "occupancy": 0.0,
+          "sourceStatus": "live-showtime-confirmed",
+          "seatStatus": "gsc-public-seat-status",
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
           "bookingUrl": null
         }
       ],
       "sourceStatus": "live-showtime-confirmed",
+<<<<<<< HEAD
       "sourceUrl": "https://xinemas.com/cinema/in-kuching/gsc-the-spring-shopping-mall.html"
+=======
+      "sourceUrl": "https://xinemas.com/cinema/in-kuching/gsc-the-spring-shopping-mall.html",
+      "officialLocationId": "552",
+      "officialCinemaName": "GSC The Spring (Kuching)"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
     },
     {
       "id": "tgv-tebrau",
@@ -612,7 +970,11 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE",
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:48:59+08:00"
+=======
+          "observedAt": "2026-09-03T21:47:22+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -625,6 +987,7 @@
       "chain": "TGV",
       "name": "TGV Wangsa Walk",
       "state": "Kuala Lumpur",
+<<<<<<< HEAD
       "sessions": [
         {
           "id": "tgv-wangsa-walk-310888",
@@ -678,6 +1041,9 @@
           "observedAt": "2026-09-03T12:48:59+08:00"
         }
       ],
+=======
+      "sessions": [],
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
       "sourceStatus": "tgv-official-api",
       "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/tgv-wangsa-walk.html",
       "officialCinemaId": "WWM",
@@ -856,7 +1222,11 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         },
         {
           "id": "paragon-batu-pahat-1645",
@@ -871,7 +1241,11 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         },
         {
           "id": "paragon-batu-pahat-1900",
@@ -886,7 +1260,11 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         },
         {
           "id": "paragon-batu-pahat-2115",
@@ -901,7 +1279,11 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -926,7 +1308,11 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
           "bookingStatus": "booking-page-unavailable",
           "ticketPrices": {},
+<<<<<<< HEAD
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         },
         {
           "id": "paragon-ktcc-1345",
@@ -939,6 +1325,7 @@
           "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-publicly-exposed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1",
+<<<<<<< HEAD
           "bookingStatus": "booking-open",
           "ticketPrices": {
             "Adult Male": 15.0,
@@ -947,6 +1334,11 @@
             "Children Female": 11.0
           },
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "bookingStatus": "booking-page-unavailable",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         },
         {
           "id": "paragon-ktcc-1600",
@@ -959,6 +1351,7 @@
           "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-publicly-exposed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1",
+<<<<<<< HEAD
           "bookingStatus": "booking-open",
           "ticketPrices": {
             "Adult Male": 15.0,
@@ -967,6 +1360,11 @@
             "Children Female": 11.0
           },
           "observedAt": "2026-09-03T12:47:58+08:00"
+=======
+          "bookingStatus": "booking-page-unavailable",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T21:46:04+08:00"
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -983,5 +1381,27 @@
     }
   ],
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
+<<<<<<< HEAD
   "totalShowsVerified": 59
+=======
+  "totalShowsVerified": 30,
+  "gscSeatCoverage": {
+    "sessionsMeasured": 10,
+    "sessionsLastObserved": 0,
+    "sessionsQueried": 10,
+    "capacity": 2100,
+    "available": 2086,
+    "booked": 5,
+    "otherUnavailable": 9,
+    "unavailable": 14,
+    "countSemantics": "gsc-A-available-B-booked-other-separate",
+    "observedAt": "2026-09-03T21:46:42+08:00"
+  },
+  "gscHistoricalRecovery": {
+    "applied": true,
+    "recoveredSessions": 6,
+    "source": "previously observed official same-day GSC snapshots",
+    "appliedAt": "2026-09-03T21:46:41+08:00"
+  }
+>>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
 }
