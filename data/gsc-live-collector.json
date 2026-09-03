@@ -1,6 +1,6 @@
 {
-  "collectorVersion": "19.3",
-  "observedAt": "2026-09-04T00:56:29+08:00",
+  "collectorVersion": "19.4",
+  "observedAt": "2026-09-04T01:14:30+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
@@ -11,8 +11,22 @@
     },
     "gsc-ioi-city-mall": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "257",
       "officialName": "GSC IOI City Mall (West) (Putrajaya)",
+      "locationAttributes": {
+        "id": "257",
+        "name": "GSC IOI City Mall (West) (Putrajaya)",
+        "barcode_enabled": "1",
+        "address": "Lot No. AT5, \nIOI City Mall,\nLebuh IRC, IOI Resort City, \n,PJY,62502",
+        "region": "2",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/257(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Putrajaya - IOI City Mall (West)",
+        "sort": "24",
+        "info": ""
+      },
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
@@ -62,8 +76,22 @@
     },
     "gsc-aman-central": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "133",
       "officialName": "GSC Aman Central",
+      "locationAttributes": {
+        "id": "133",
+        "name": "GSC Aman Central",
+        "barcode_enabled": "1",
+        "address": "Lot 4-22,  Aman Central\nNo 1,  Lebuhraya Darulaman\nAlor Setar,  Kedah Darul Aman,KDH,05100",
+        "region": "3",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/133(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Alor Setar - Aman Central",
+        "sort": "31",
+        "info": ""
+      },
       "epaymentName": "Alor Setar - Aman Central",
       "isEpayment": "1",
       "sessions": [
@@ -113,8 +141,22 @@
     },
     "gsc-dataran-pahlawan": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "331",
       "officialName": "GSC Dataran Pahlawan",
+      "locationAttributes": {
+        "id": "331",
+        "name": "GSC Dataran Pahlawan",
+        "barcode_enabled": "1",
+        "address": "Lot F5-01, Dataran Pahlawan Melaka Megamall\nJalan Merdeka,\nBandar Hilir,MLK,75000",
+        "region": "4",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/331(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Melaka - Dataran Pahlawan",
+        "sort": "37",
+        "info": ""
+      },
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
@@ -164,8 +206,22 @@
     },
     "gsc-paradigm-jb": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "355",
       "officialName": "GSC Paradigm Mall (Johor Bahru)",
+      "locationAttributes": {
+        "id": "355",
+        "name": "GSC Paradigm Mall (Johor Bahru)",
+        "barcode_enabled": "1",
+        "address": "7F-01 & 7F-02, Paradigma Kompleks,\nJalan Mewah Ria 2,\nTaman Bukit Mewah,\nJohor Bahru,JHR,81200",
+        "region": "4",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/355(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Johor Bahru - Paradigm Mall",
+        "sort": "40",
+        "info": ""
+      },
       "epaymentName": "Johor Bahru - Paradigm Mall",
       "isEpayment": "1",
       "sessions": [
@@ -208,8 +264,22 @@
     },
     "gsc-kuantan-city-mall": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "431",
       "officialName": "GSC Kuantan City Mall",
+      "locationAttributes": {
+        "id": "431",
+        "name": "GSC Kuantan City Mall",
+        "barcode_enabled": "0",
+        "address": "L4-AT-01, Level 4, Kuantan City Mall,  Jalan Putra Square 6/1, Putra Square , Kuantan\n,PHG,25300",
+        "region": "5",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/431(120x120).jpg",
+        "is_epayment": "0",
+        "epayment_name": "Kuantan - Kuantan City Mall",
+        "sort": "49",
+        "info": ""
+      },
       "epaymentName": "Kuantan - Kuantan City Mall",
       "isEpayment": "0",
       "sessions": [
@@ -245,8 +315,22 @@
     },
     "gsc-imago": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "531",
       "officialName": "GSC IMAGO Shopping Mall",
+      "locationAttributes": {
+        "id": "531",
+        "name": "GSC IMAGO Shopping Mall",
+        "barcode_enabled": "0",
+        "address": "Lot No. 2-52, Second Floor, IMAGO Shopping Mall, KK Times Square Phase 2, Off Coastal Highway,  Kota Kinabalu\n,SBH,88100",
+        "region": "6",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/531(120x120).jpg",
+        "is_epayment": "0",
+        "epayment_name": "Kota Kinabalu - IMAGO Mall",
+        "sort": "53",
+        "info": ""
+      },
       "epaymentName": "Kota Kinabalu - IMAGO Mall",
       "isEpayment": "0",
       "sessions": [
@@ -289,8 +373,22 @@
     },
     "gsc-the-spring": {
       "status": "ok",
+      "matchMethod": "location-id",
       "officialLocationId": "552",
       "officialName": "GSC The Spring (Kuching)",
+      "locationAttributes": {
+        "id": "552",
+        "name": "GSC The Spring (Kuching)",
+        "barcode_enabled": "0",
+        "address": "Lot 214, Second Floor, \nThe Spring Shopping Mall, \nPersiaran Spring, Kuching\n,SWK,93300",
+        "region": "6",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/552(120x120).jpg",
+        "is_epayment": "0",
+        "epayment_name": "Kuching - The Spring",
+        "sort": "55",
+        "info": ""
+      },
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
