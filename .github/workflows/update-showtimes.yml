@@ -20,6 +20,9 @@ jobs:
       - name: Run GSC booking diagnostics
         run: python scripts/gsc_booking_diagnostics.py
 
+      - name: Read official GSC movie/showtime API
+        run: python scripts/gsc_official_api.py
+
       - name: Run TGV booking diagnostics
         run: python scripts/tgv_booking_diagnostics.py
 
@@ -39,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gsc-seat-diagnostics
-          path: data/gsc-seat-diagnostics.json data/tgv-seat-diagnostics.json data/tgv-live-collector.json
+          path: data/gsc-seat-diagnostics.json data/gsc-official-api.json data/tgv-seat-diagnostics.json data/tgv-live-collector.json
           if-no-files-found: warn
       - run: python scripts/merge_seat_observations.py
       - run: python scripts/save_snapshot.py
@@ -47,6 +50,6 @@ jobs:
         run: |
           git config user.name "tikus-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/current.json data/history-index.json data/history data/paragon-seat-diagnostics.json data/gsc-seat-diagnostics.json data/tgv-seat-diagnostics.json data/tgv-live-collector.json
+          git add data/current.json data/history-index.json data/history data/paragon-seat-diagnostics.json data/gsc-seat-diagnostics.json data/gsc-official-api.json data/tgv-seat-diagnostics.json data/tgv-live-collector.json
           git diff --cached --quiet || git commit -m "Refresh TIKUS performance tracker"
           git push

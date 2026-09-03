@@ -266,3 +266,24 @@ pipeline already working for TGV.
 
 If the saved session expires, rerun `scripts/gsc_auth_setup.py` locally and
 replace the GitHub secret.
+
+
+## v11 — official GSC XML API discovery
+
+The authenticated GSC diagnostic revealed two official read-only endpoints used
+by the GSC web application:
+
+- `getEpaymentMovie_ParentChild`
+- `getShowTimesByMovie_ParentChild_V2`
+
+v11 reads those endpoints directly to find TIKUS! and its official GSC
+showtimes. It does not use the user's account, click a showtime, select a seat
+or create a reservation.
+
+Run the normal update workflow and upload:
+
+`data/gsc-official-api.json`
+
+If that file exposes GSC's TIKUS! parent movie id and session identifiers, the
+next stage can target the official seat-status request without relying on the
+incorrect generic booking link discovered in v10.
