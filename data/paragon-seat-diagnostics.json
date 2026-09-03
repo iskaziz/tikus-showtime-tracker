@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-03T16:13:31+08:00",
+  "observedAt": "2026-09-03T20:01:27+08:00",
   "finding": "Public Paragon ticket selection exposes no countable seat map in the observed stage.",
   "sessions": [
     {
@@ -15,20 +15,20 @@
     {
       "cinema": "Paragon Cinemas Batu Pahat",
       "time": "16:45",
-      "status": "booking-open",
-      "bestAvailable": true,
-      "venue": "Batu Pahat",
-      "hall": "Hall 3",
+      "status": "booking-page-unavailable",
+      "bestAvailable": false,
+      "venue": null,
+      "hall": null,
       "prices": {},
       "seatCountStatus": "not-exposed-by-public-ticket-page"
     },
     {
       "cinema": "Paragon Cinemas Batu Pahat",
       "time": "19:00",
-      "status": "booking-open",
-      "bestAvailable": true,
-      "venue": "Batu Pahat",
-      "hall": "Hall 3",
+      "status": "booking-page-unavailable",
+      "bestAvailable": false,
+      "venue": null,
+      "hall": null,
       "prices": {},
       "seatCountStatus": "not-exposed-by-public-ticket-page"
     },
@@ -65,16 +65,11 @@
     {
       "cinema": "Paragon Cinema KTCC",
       "time": "16:00",
-      "status": "booking-open",
-      "bestAvailable": true,
-      "venue": "KTCC Mall",
-      "hall": "Hall 3",
-      "prices": {
-        "Adult Male": 15.0,
-        "Adult Female": 15.0,
-        "Children Male": 11.0,
-        "Children Female": 11.0
-      },
+      "status": "booking-page-unavailable",
+      "bestAvailable": false,
+      "venue": null,
+      "hall": null,
+      "prices": {},
       "seatCountStatus": "not-exposed-by-public-ticket-page"
     }
   ]
