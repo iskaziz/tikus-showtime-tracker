@@ -1,5 +1,8 @@
 {
-  "status": "diagnostic-not-yet-run",
-  "goal": "discover read-only GSC session metadata and any pre-seat-selection layout endpoint",
-  "safety": "no seat selection; no booking; no transaction"
+  "observedAt": "2026-09-03T12:00:23+08:00",
+  "status": "login-required",
+  "resolvedBuyUrl": "https://epaymentwebapp.gsc.com.my/profile",
+  "finalUrl": "https://epaymentwebapp.gsc.com.my/login",
+  "finding": "Official GSC booking flow redirects to login before cinema/session data is exposed.",
+  "seatTracking": "not-available-read-only-without-authentication"
 }

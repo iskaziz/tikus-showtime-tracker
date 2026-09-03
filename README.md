@@ -136,3 +136,22 @@ without creating seat holds.
 
 If it does not, the dashboard will keep GSC showtimes live and exact sold-seat
 data should come from an authorised cinema/distributor source.
+
+
+## v6 — GSC result + TGV discovery
+
+### GSC result
+The live GSC diagnostic resolved the official TIKUS! booking button to
+`https://epaymentwebapp.gsc.com.my/profile`, which then redirected to
+`https://epaymentwebapp.gsc.com.my/login`.
+
+No allocated cinema names, showtime/session IDs or seat-layout metadata were
+exposed before authentication. The tracker therefore does not attempt to bypass
+the login or create a booking session.
+
+### Next target: TGV
+v6 adds `scripts/tgv_booking_diagnostics.py`, which performs the same
+non-invasive discovery against the public TGV TIKUS! page.
+
+After running the workflow, upload:
+`data/tgv-seat-diagnostics.json`
