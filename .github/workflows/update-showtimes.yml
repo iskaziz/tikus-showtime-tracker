@@ -37,6 +37,9 @@ jobs:
       - name: Read official GSC movie/showtime API
         run: python scripts/gsc_official_api.py
 
+      - name: Recover previously observed GSC launch-day sessions
+        run: python scripts/gsc_historical_recovery.py
+
       - name: Update live GSC showtimes from official API
         run: python scripts/gsc_live_collector.py
 

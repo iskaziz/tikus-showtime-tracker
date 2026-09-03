@@ -542,3 +542,20 @@ It now:
 
 This means a session that was measured earlier in the day remains part of the
 daily performance record even after GSC stops returning it as a current show.
+
+
+## v17.1 — one-time GSC launch-day historical recovery
+
+Before v17 was deployed, several official GSC session IDs/hall IDs had already
+fallen out of `current.json` as sessions expired.
+
+v17.1 restores only identifiers and seat states that had already been observed
+earlier on 2026-09-03. It does not invent data and does not call booking APIs.
+
+Recovered launch-day sessions include the previously observed 20:00 official
+sessions for Paradigm JB, Midvalley, Aman Central, Dataran Pahlawan, Kuantan
+City Mall and IOI City Mall. Their last-known seat snapshots are marked
+`isExpired: true` and `seatStatus: "last-observed"`.
+
+Once recovered, the v17 preservation logic keeps them in the daily history on
+subsequent refreshes.
