@@ -302,3 +302,29 @@ catalogue is ordinary nested XML. It:
 
 Run the normal workflow and upload the new:
 `data/gsc-official-api.json`
+
+
+## v12 — GSC official live showtimes + seat endpoint discovery
+
+GSC identifiers confirmed by its official XML API:
+
+- TIKUS! parent code: `6363`
+- TIKUS! child film code: `1000005309`
+
+The official showtime feed provides:
+- GSC location ID
+- session/show ID
+- hall ID and hall name
+- exact session time
+- `hallfull` status
+
+`gsc_live_collector.py` now replaces third-party GSC showtime data in
+`data/current.json` with this official source on every update.
+
+`gsc_seat_endpoint_discovery.py` performs read-only static inspection of GSC's
+public booking-app JavaScript to find the name/signature of the next seat or
+seat-map endpoint without selecting a showtime or creating a reservation.
+
+After running the workflow, upload:
+- `data/gsc-live-collector.json`
+- `data/gsc-seat-endpoint-discovery.json`
