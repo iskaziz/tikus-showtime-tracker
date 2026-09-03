@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T11:18:33+08:00",
+  "updatedAt": "2026-09-03T11:25:48+08:00",
   "seatDataMode": "awaiting-seatmap-adapters",
   "cinemas": [
     {
@@ -10,18 +10,6 @@
       "name": "GSC Paradigm JB",
       "state": "Johor",
       "sessions": [
-        {
-          "id": "gsc-paradigm-jb-1040",
-          "time": "10:40",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
         {
           "id": "gsc-paradigm-jb-1300",
           "time": "13:00",
@@ -81,18 +69,6 @@
       "state": "Kedah",
       "sessions": [
         {
-          "id": "gsc-aman-central-1040",
-          "time": "10:40",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
-        {
           "id": "gsc-aman-central-1300",
           "time": "13:00",
           "hall": "\u2014",
@@ -100,7 +76,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
+          "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -112,7 +88,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
+          "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -124,7 +100,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
+          "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -136,7 +112,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
+          "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -148,12 +124,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
+          "sourceStatus": "live-showtime-confirmed",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "refresh-error:HTTPError",
+      "sourceStatus": "live-showtime-confirmed",
       "sourceUrl": "https://xinemas.com/cinema/in-alor-setar/gsc-aman-central-alor-setar.html"
     },
     {
@@ -162,18 +138,6 @@
       "name": "GSC Midvalley Megamall",
       "state": "Kuala Lumpur",
       "sessions": [
-        {
-          "id": "gsc-midvalley-1040",
-          "time": "10:40",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
         {
           "id": "gsc-midvalley-1300",
           "time": "13:00",
@@ -232,18 +196,6 @@
       "name": "GSC Dataran Pahlawan",
       "state": "Melaka",
       "sessions": [
-        {
-          "id": "gsc-dataran-pahlawan-1040",
-          "time": "10:40",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
         {
           "id": "gsc-dataran-pahlawan-1300",
           "time": "13:00",
@@ -314,18 +266,6 @@
       "name": "GSC Kuantan City Mall",
       "state": "Pahang",
       "sessions": [
-        {
-          "id": "gsc-kuantan-city-mall-1040",
-          "time": "10:40",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
         {
           "id": "gsc-kuantan-city-mall-1300",
           "time": "13:00",
@@ -469,7 +409,7 @@
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "refresh-error:HTTPError",
       "sourceUrl": "https://xinemas.com/cinema/in-putrajaya/gsc-ioi-city-mall-kuala-lumpur.html"
     },
     {
@@ -971,5 +911,5 @@
     }
   ],
   "showtimeCoverage": "15/15 locations checked; 14 locations listing TIKUS!, Mega Riverfront listing no TIKUS! session at check time",
-  "totalShowsVerified": 68
+  "totalShowsVerified": 63
 }

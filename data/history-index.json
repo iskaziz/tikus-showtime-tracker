@@ -5,6 +5,12 @@
       "booked": null,
       "capacity": null,
       "file": "history/20260903T111935+0800.json"
+    },
+    {
+      "observedAt": "2026-09-03T11:26:38+08:00",
+      "booked": null,
+      "capacity": null,
+      "file": "history/20260903T112638+0800.json"
     }
   ]
 }
