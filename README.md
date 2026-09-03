@@ -675,3 +675,17 @@ extra Kuala Lumpur text.
 
 The GSC collector diagnostic now records `matchMethod` and the matched
 location's attributes, making any future mapping issue directly diagnosable.
+
+
+## v19.5 — Midvalley source-truth handling
+
+The v19.4 diagnostic proves that `gsc-midvalley` is absent from GSC's official
+TIKUS! showtime response for business date 2026-09-04. This is not a name or
+location-ID matching failure.
+
+v19.5 preserves secondary-source Midvalley showtimes but labels them explicitly
+as fallback-only. It does not infer session IDs, hall IDs or seat counts where
+GSC's official feed does not provide them.
+
+This keeps the tracker source-safe and prevents a missing official listing from
+being mistaken for a collector bug.

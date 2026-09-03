@@ -65,7 +65,7 @@ def main():
     cinema_lookup={c["id"]:c for c in data.get("cinemas",[])}
 
     report={
-        "collectorVersion":"19.4",
+        "collectorVersion":"19.5",
         "observedAt":now.isoformat(timespec="seconds"),
         "parentId":PARENT_ID,
         "childCode":CHILD_CODE,
@@ -119,7 +119,12 @@ def main():
                     loc=candidate
                     match_method="token-name"
                     break
-        row={"status":"not-found","sessions":[]}
+        row={
+            "status":"not-listed-by-official-api",
+            "expectedLocationId":config.get("locationId"),
+            "aliases":config.get("names",[]),
+            "sessions":[]
+        }
         if loc is not None:
             resolved_location_id=(
                 loc.attrib.get("id")
@@ -240,6 +245,20 @@ def main():
                 cinema["sourceStatus"]="gsc-official-api"
                 cinema["officialLocationId"]=resolved_location_id
                 cinema["officialCinemaName"]=loc.attrib.get("name")
+        else:
+            # Preserve secondary-source showtimes, but do not pretend they came
+            # from GSC's official showtime feed or invent hall/session/seat data.
+            cinema=cinema_lookup.get(tracker_id)
+            if cinema:
+                cinema["officialLocationId"]=config.get("locationId")
+                if cinema.get("sessions"):
+                    cinema["sourceStatus"]="fallback-showtimes-official-gsc-not-listed"
+                    for sess in cinema["sessions"]:
+                        if not sess.get("sessionId"):
+                            sess["sourceStatus"]="fallback-showtime-only"
+                            sess["seatStatus"]="official-gsc-showtime-not-listed"
+                else:
+                    cinema["sourceStatus"]="official-gsc-not-listed"
         report["cinemas"][tracker_id]=row
 
     data["updatedAt"]=now.isoformat(timespec="seconds")

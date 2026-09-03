@@ -122,7 +122,18 @@ function renderCinemaList(cin){
       const known=isKnown(s),pct=known?s.booked/s.capacity*100:null,label=c.chain==='TGV'?'used':'booked';
       const extra=c.chain==='GSC'&&Number.isFinite(s.otherUnavailable)&&s.otherUnavailable>0?` · ${s.otherUnavailable} other unavailable`:'';
       const state=s.isExpired?' · last observed':'';
-      return `<div class="session"><div class="time">${s.time}</div><div><b>${s.hall==='—'||!s.hall?'Hall pending':s.hall}</b><div class="hall">${known?`${s.booked} ${label} · ${s.available ?? s.capacity-s.booked} available${extra}${state}`:'Seat data not observed'}</div></div><div><div class="seat-note">${known?`${s.booked} / ${s.capacity} ${label}`:'Observed count unavailable'}</div><div class="seatbar"><i style="width:${pct??0}%"></i></div></div><div class="occ">${pct==null?'—':pct.toFixed(1)+'%'}</div></div>`;
+      const fallbackOnly=s.sourceStatus==='fallback-showtime-only' || s.seatStatus==='official-gsc-showtime-not-listed';
+      const seatMessage=known
+        ? `${s.booked} ${label} · ${s.available ?? s.capacity-s.booked} available${extra}${state}`
+        : fallbackOnly
+          ? 'Fallback showtime · not listed in GSC official feed'
+          : 'Seat data not observed';
+      const countMessage=known
+        ? `${s.booked} / ${s.capacity} ${label}`
+        : fallbackOnly
+          ? 'Official seat count unavailable'
+          : 'Observed count unavailable';
+      return `<div class="session"><div class="time">${s.time}</div><div><b>${s.hall==='—'||!s.hall?'Hall unverified':s.hall}</b><div class="hall">${seatMessage}</div></div><div><div class="seat-note">${countMessage}</div><div class="seatbar"><i style="width:${pct??0}%"></i></div></div><div class="occ">${pct==null?'—':pct.toFixed(1)+'%'}</div></div>`;
     }).join(''):'<div class="empty">Awaiting showtime data for this date.</div>';
     btn.addEventListener('click',()=>{article.classList.toggle('open');btn.setAttribute('aria-expanded',article.classList.contains('open'))});
     host.append(node);
