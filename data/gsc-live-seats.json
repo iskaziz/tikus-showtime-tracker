@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-03T21:46:42+08:00",
+  "observedAt": "2026-09-03T22:22:06+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -9,20 +9,38 @@
       "officialLocationId": null,
       "sessions": [
         {
-          "sessionId": "gsc-paradigm-jb-1520",
-          "time": "15:20",
-          "hall": "\u2014",
+          "sessionId": "gsc-paradigm-jb-1040",
+          "time": "10:40",
+          "hall": null,
           "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-paradigm-jb-1740",
-          "time": "17:40",
-          "hall": "\u2014",
+          "sessionId": "gsc-paradigm-jb-1300",
+          "time": "13:00",
+          "hall": null,
           "locationId": null,
           "hallId": null,
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "289307",
+          "time": "15:20",
+          "hall": "2",
+          "locationId": null,
+          "hallId": "2",
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "289308",
+          "time": "17:40",
+          "hall": "2",
+          "locationId": null,
+          "hallId": "2",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
@@ -63,6 +81,69 @@
       "name": "GSC Aman Central",
       "officialLocationId": "133",
       "sessions": [
+        {
+          "sessionId": "213310",
+          "time": "15:20",
+          "hall": "4",
+          "locationId": "133",
+          "hallId": "4",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "4",
+          "seatNodes": 202,
+          "capacity": 202,
+          "available": 202,
+          "booked": 0,
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "statusCounts": {
+            "A": 202
+          },
+          "seatTypeCounts": {
+            "N": 186,
+            "H": 4,
+            "T": 10,
+            "W": 2
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=133&hallid=4&showdate=2026-09-03&showtime=1520"
+        },
+        {
+          "sessionId": "213311",
+          "time": "17:40",
+          "hall": "4",
+          "locationId": "133",
+          "hallId": "4",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "4",
+          "seatNodes": 202,
+          "capacity": 202,
+          "available": 199,
+          "booked": 3,
+          "otherUnavailable": 0,
+          "unavailable": 3,
+          "statusCounts": {
+            "A": 199,
+            "B": 3
+          },
+          "seatTypeCounts": {
+            "N": 186,
+            "H": 4,
+            "T": 10,
+            "W": 2
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=133&hallid=4&showdate=2026-09-03&showtime=1740"
+        },
         {
           "sessionId": "213312",
           "time": "20:00",
@@ -133,20 +214,38 @@
       "officialLocationId": null,
       "sessions": [
         {
-          "sessionId": "gsc-midvalley-1520",
-          "time": "15:20",
-          "hall": "\u2014",
+          "sessionId": "gsc-midvalley-1040",
+          "time": "10:40",
+          "hall": null,
           "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-midvalley-1740",
-          "time": "17:40",
-          "hall": "\u2014",
+          "sessionId": "gsc-midvalley-1300",
+          "time": "13:00",
+          "hall": null,
           "locationId": null,
           "hallId": null,
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "924426",
+          "time": "15:20",
+          "hall": "2",
+          "locationId": null,
+          "hallId": "2",
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "924427",
+          "time": "17:40",
+          "hall": "2",
+          "locationId": null,
+          "hallId": "2",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
@@ -188,6 +287,68 @@
       "name": "GSC Dataran Pahlawan",
       "officialLocationId": "331",
       "sessions": [
+        {
+          "sessionId": "406743",
+          "time": "15:20",
+          "hall": "7",
+          "locationId": "331",
+          "hallId": "7",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "7",
+          "seatNodes": 266,
+          "capacity": 266,
+          "available": 265,
+          "booked": 0,
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "statusCounts": {
+            "A": 265,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 248,
+            "H": 4,
+            "T": 14
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=331&hallid=7&showdate=2026-09-03&showtime=1520"
+        },
+        {
+          "sessionId": "406742",
+          "time": "17:40",
+          "hall": "7",
+          "locationId": "331",
+          "hallId": "7",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "7",
+          "seatNodes": 266,
+          "capacity": 266,
+          "available": 265,
+          "booked": 0,
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "statusCounts": {
+            "A": 265,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 248,
+            "H": 4,
+            "T": 14
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=331&hallid=7&showdate=2026-09-03&showtime=1740"
+        },
         {
           "sessionId": "406740",
           "time": "20:00",
@@ -257,6 +418,72 @@
       "officialLocationId": "431",
       "sessions": [
         {
+          "sessionId": "79949",
+          "time": "15:20",
+          "hall": "4",
+          "locationId": "431",
+          "hallId": "4",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "4",
+          "seatNodes": 157,
+          "capacity": 157,
+          "available": 146,
+          "booked": 9,
+          "otherUnavailable": 2,
+          "unavailable": 11,
+          "statusCounts": {
+            "A": 146,
+            "B": 9,
+            "D": 2
+          },
+          "seatTypeCounts": {
+            "N": 142,
+            "H": 2,
+            "T": 12,
+            "W": 1
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=431&hallid=4&showdate=2026-09-03&showtime=1520"
+        },
+        {
+          "sessionId": "79950",
+          "time": "17:40",
+          "hall": "4",
+          "locationId": "431",
+          "hallId": "4",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "4",
+          "seatNodes": 157,
+          "capacity": 157,
+          "available": 153,
+          "booked": 2,
+          "otherUnavailable": 2,
+          "unavailable": 4,
+          "statusCounts": {
+            "A": 153,
+            "B": 2,
+            "D": 2
+          },
+          "seatTypeCounts": {
+            "N": 142,
+            "H": 2,
+            "T": 12,
+            "W": 1
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=431&hallid=4&showdate=2026-09-03&showtime=1740"
+        },
+        {
           "sessionId": "79951",
           "time": "20:00",
           "hall": "HALL 4",
@@ -300,12 +527,12 @@
           "seatNodes": 157,
           "capacity": 157,
           "available": 154,
-          "booked": 0,
-          "otherUnavailable": 3,
+          "booked": 1,
+          "otherUnavailable": 2,
           "unavailable": 3,
           "statusCounts": {
             "A": 154,
-            "T": 1,
+            "B": 1,
             "D": 2
           },
           "seatTypeCounts": {
@@ -327,6 +554,70 @@
       "name": "GSC IOI City Mall",
       "officialLocationId": "257",
       "sessions": [
+        {
+          "sessionId": "339694",
+          "time": "15:20",
+          "hall": "2",
+          "locationId": "257",
+          "hallId": "2",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "2",
+          "seatNodes": 220,
+          "capacity": 220,
+          "available": 219,
+          "booked": 0,
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "statusCounts": {
+            "A": 219,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 196,
+            "H": 4,
+            "T": 18,
+            "W": 2
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=257&hallid=2&showdate=2026-09-03&showtime=1520"
+        },
+        {
+          "sessionId": "339695",
+          "time": "17:40",
+          "hall": "2",
+          "locationId": "257",
+          "hallId": "2",
+          "showDate": "2026-09-03",
+          "status": "ok",
+          "hallNo": "2",
+          "seatNodes": 220,
+          "capacity": 220,
+          "available": 219,
+          "booked": 0,
+          "otherUnavailable": 1,
+          "unavailable": 1,
+          "statusCounts": {
+            "A": 219,
+            "D": 1
+          },
+          "seatTypeCounts": {
+            "N": 196,
+            "H": 4,
+            "T": 18,
+            "W": 2
+          },
+          "maximumSelectableSeats": 12,
+          "rawHallBooked": 0,
+          "rawHallBlocked": 0,
+          "houseSeatsReleased": "0",
+          "reservedReleased": "N",
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=257&hallid=2&showdate=2026-09-03&showtime=1740"
+        },
         {
           "sessionId": "339696",
           "time": "20:00",
@@ -397,41 +688,50 @@
     },
     "gsc-imago": {
       "name": "GSC Imago Shopping Mall",
-      "officialLocationId": "531",
+      "officialLocationId": null,
       "sessions": [
         {
-          "sessionId": "gsc-imago-1430",
+          "sessionId": "gsc-imago-1210",
+          "time": "12:10",
+          "hall": null,
+          "locationId": null,
+          "hallId": null,
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "77183",
           "time": "14:30",
-          "hall": "\u2014",
-          "locationId": "531",
-          "hallId": null,
+          "hall": "1",
+          "locationId": null,
+          "hallId": "1",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-imago-1650",
+          "sessionId": "77184",
           "time": "16:50",
-          "hall": "\u2014",
-          "locationId": "531",
-          "hallId": null,
+          "hall": "1",
+          "locationId": null,
+          "hallId": "1",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-imago-1910",
+          "sessionId": "77185",
           "time": "19:10",
-          "hall": "\u2014",
-          "locationId": "531",
-          "hallId": null,
+          "hall": "1",
+          "locationId": null,
+          "hallId": "1",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-imago-2130",
+          "sessionId": "77186",
           "time": "21:30",
           "hall": "1",
-          "locationId": "531",
-          "hallId": null,
+          "locationId": null,
+          "hallId": "1",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         }
@@ -439,41 +739,50 @@
     },
     "gsc-the-spring": {
       "name": "GSC The Spring, Kuching",
-      "officialLocationId": "552",
+      "officialLocationId": null,
       "sessions": [
         {
-          "sessionId": "gsc-the-spring-1430",
+          "sessionId": "gsc-the-spring-1210",
+          "time": "12:10",
+          "hall": null,
+          "locationId": null,
+          "hallId": null,
+          "showDate": "2026-09-03",
+          "status": "missing-identifiers"
+        },
+        {
+          "sessionId": "77710",
           "time": "14:30",
-          "hall": "\u2014",
-          "locationId": "552",
-          "hallId": null,
+          "hall": "3",
+          "locationId": null,
+          "hallId": "3",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-the-spring-1650",
+          "sessionId": "77711",
           "time": "16:50",
-          "hall": "\u2014",
-          "locationId": "552",
-          "hallId": null,
+          "hall": "3",
+          "locationId": null,
+          "hallId": "3",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-the-spring-1910",
+          "sessionId": "77712",
           "time": "19:10",
-          "hall": "\u2014",
-          "locationId": "552",
-          "hallId": null,
+          "hall": "3",
+          "locationId": null,
+          "hallId": "3",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "gsc-the-spring-2130",
+          "sessionId": "77713",
           "time": "21:30",
           "hall": "3",
-          "locationId": "552",
-          "hallId": null,
+          "locationId": null,
+          "hallId": "3",
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
         }
@@ -481,13 +790,13 @@
     }
   },
   "totals": {
-    "sessionsQueried": 10,
-    "sessionsMeasured": 10,
+    "sessionsQueried": 18,
+    "sessionsMeasured": 18,
     "sessionsLastObserved": 0,
-    "capacity": 2100,
-    "available": 2086,
-    "booked": 5,
-    "otherUnavailable": 9,
-    "unavailable": 14
+    "capacity": 3790,
+    "available": 3754,
+    "booked": 20,
+    "otherUnavailable": 16,
+    "unavailable": 36
   }
 }

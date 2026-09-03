@@ -1,0 +1,178 @@
+{
+  "observedAt": "2026-09-03T22:22:47+08:00",
+  "sessions": [
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "20:00",
+      "booked": 0,
+      "available": 246,
+      "capacity": 246,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "15:20",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "17:40",
+      "booked": 3,
+      "available": 199,
+      "capacity": 202,
+      "occupancy": 0.01485148514851485
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "20:00",
+      "booked": 1,
+      "available": 201,
+      "capacity": 202,
+      "occupancy": 0.0049504950495049506
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "22:20",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-midvalley",
+      "cinema": "GSC Midvalley Megamall",
+      "time": "20:00",
+      "booked": 2,
+      "available": 162,
+      "capacity": 164,
+      "occupancy": 0.012195121951219513
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "15:20",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "17:40",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "20:00",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "22:20",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "15:20",
+      "booked": 9,
+      "available": 146,
+      "capacity": 157,
+      "occupancy": 0.05732484076433121
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "17:40",
+      "booked": 2,
+      "available": 153,
+      "capacity": 157,
+      "occupancy": 0.012738853503184714
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "20:00",
+      "booked": 0,
+      "available": 155,
+      "capacity": 157,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "22:20",
+      "booked": 1,
+      "available": 154,
+      "capacity": 157,
+      "occupancy": 0.006369426751592357
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "15:20",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "17:40",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "20:00",
+      "booked": 1,
+      "available": 218,
+      "capacity": 220,
+      "occupancy": 0.004545454545454545
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "22:20",
+      "booked": 1,
+      "available": 218,
+      "capacity": 220,
+      "occupancy": 0.004545454545454545
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "00:45",
+      "booked": 0,
+      "available": 122,
+      "capacity": 122,
+      "occupancy": 0.0
+    }
+  ],
+  "booked": 20,
+  "capacity": 3912
+}
