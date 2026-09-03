@@ -83,3 +83,56 @@ If `status` is `verified`, booked/available/capacity will immediately appear in 
 If it says `needs-selector-confirmation`, the diagnostic file lists the live page's seat-like DOM elements. That is the point where the exact Paragon selectors can be tightened without guessing.
 
 This collector does not proceed to payment and does not create or confirm a purchase.
+
+
+## v4 — Result of the first Paragon live run
+
+The diagnostic run checked all seven Paragon TIKUS! sessions at Batu Pahat and
+KTCC. Every one returned `needs-selector-confirmation`, with **0 classifiable
+seat elements**.
+
+The public Paragon ticket page says seats are allocated on a **best available**
+basis. The tracker therefore no longer attempts to manufacture an occupancy
+count from this consumer booking page.
+
+It also deliberately avoids repeatedly selecting tickets and advancing the
+transaction, as doing so could create temporary seat holds and contaminate the
+data being measured.
+
+### Exact Paragon counts
+
+v4 adds `scripts/merge_seat_observations.py`. Exact counts can now be ingested
+from an authorised cinema/booking report or a manually verified observation.
+See `data/seat-observations.example.json`.
+
+The next automated seat-map target should be GSC or TGV.
+
+
+## v5 — GSC read-only seat-map discovery
+
+GSC is the next target.
+
+GSC's official FAQ confirms that customers can choose their own seats online,
+but it also states that seats selected and then abandoned can remain **locked
+for 15 minutes**. Because repeated automated seat selections could distort
+inventory, v5 does not click or reserve any seat.
+
+Instead `scripts/gsc_booking_diagnostics.py`:
+- resolves the official TIKUS! Buy Tickets route;
+- inspects the current GSC showtime application;
+- finds the eight allocated GSC cinemas;
+- records session/showtime buttons, hrefs, DOM metadata and exposed IDs;
+- watches network traffic for read-only session/hall/seat/layout endpoints.
+
+### Next live run
+
+Push v5 and run `Update TIKUS tracker` once. Then upload:
+
+`data/gsc-seat-diagnostics.json`
+
+If GSC exposes a read-only seat-layout/API before seat selection, the next
+version can turn that into real capacity / unavailable / available counts
+without creating seat holds.
+
+If it does not, the dashboard will keep GSC showtimes live and exact sold-seat
+data should come from an authorised cinema/distributor source.

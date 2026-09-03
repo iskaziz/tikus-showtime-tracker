@@ -1,0 +1,5 @@
+{
+  "status": "diagnostic-not-yet-run",
+  "goal": "discover read-only GSC session metadata and any pre-seat-selection layout endpoint",
+  "safety": "no seat selection; no booking; no transaction"
+}

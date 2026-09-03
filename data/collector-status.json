@@ -1,0 +1,9 @@
+{
+  "observedAt": "2026-09-03T11:26:25+08:00",
+  "paragon": {
+    "sessionsChecked": 7,
+    "seatElementsClassified": 0,
+    "result": "ticket-selection-page-only",
+    "reason": "No classifiable seat elements were exposed on the public ticket-selection pages checked."
+  }
+}

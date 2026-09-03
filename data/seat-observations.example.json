@@ -1,0 +1,12 @@
+{
+  "observations": [
+    {
+      "cinemaId": "paragon-ktcc",
+      "time": "13:45",
+      "capacity": 180,
+      "booked": 72,
+      "source": "cinema-operator-report",
+      "observedAt": "2026-09-03T11:30:00+08:00"
+    }
+  ]
+}

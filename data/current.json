@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T11:18:33+08:00",
+  "updatedAt": "2026-09-03T10:29:00+08:00",
   "seatDataMode": "awaiting-seatmap-adapters",
   "cinemas": [
     {
@@ -18,7 +18,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -30,7 +30,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -42,7 +42,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -54,7 +54,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -66,12 +66,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/gsc-paradigm-mall-johor.html"
     },
     {
@@ -153,7 +153,7 @@
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "refresh-error:HTTPError",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-alor-setar/gsc-aman-central-alor-setar.html"
     },
     {
@@ -170,7 +170,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -182,7 +182,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -194,7 +194,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -206,7 +206,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -218,12 +218,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/gsc-mid-valley-megamall-kuala-lumpur.html"
     },
     {
@@ -240,7 +240,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -252,7 +252,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -264,7 +264,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -276,7 +276,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -288,7 +288,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -300,12 +300,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-melaka/gsc-dataran-pahlawan-melaka.html"
     },
     {
@@ -322,7 +322,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -334,7 +334,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -346,7 +346,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -358,7 +358,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -370,7 +370,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -382,12 +382,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-kuantan/gsc-kuantan-city-mall.html"
     },
     {
@@ -404,7 +404,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -416,7 +416,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -428,7 +428,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -440,7 +440,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -452,7 +452,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -464,12 +464,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-putrajaya/gsc-ioi-city-mall-kuala-lumpur.html"
     },
     {
@@ -486,7 +486,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -498,7 +498,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -510,7 +510,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -522,7 +522,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -534,12 +534,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-kota-kinabalu/gsc-imago-mall.html"
     },
     {
@@ -556,7 +556,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -568,7 +568,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -580,7 +580,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -592,7 +592,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -604,12 +604,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-kuching/gsc-the-spring-shopping-mall.html"
     },
     {
@@ -679,7 +679,7 @@
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "refresh-error:HTTPError",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/tgv-tebrau-city.html"
     },
     {
@@ -737,7 +737,7 @@
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "refresh-error:HTTPError",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/tgv-wangsa-walk.html"
     },
     {
@@ -754,7 +754,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -766,7 +766,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -778,7 +778,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -790,12 +790,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-penang/tgv-gurney-paragon.html"
     },
     {
@@ -812,7 +812,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -824,7 +824,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -836,7 +836,7 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         },
@@ -848,12 +848,12 @@
           "booked": null,
           "available": null,
           "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
+          "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-yet-observed",
           "bookingUrl": null
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
+      "sourceStatus": "verified-showtimes",
       "sourceUrl": "https://xinemas.com/cinema/in-klang/tgv-bukit-tinggi.html"
     },
     {
@@ -871,7 +871,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1"
         },
         {
@@ -883,7 +883,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1"
         },
         {
@@ -895,7 +895,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1"
         },
         {
@@ -907,7 +907,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1"
         }
       ],
@@ -929,7 +929,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1"
         },
         {
@@ -941,7 +941,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1"
         },
         {
@@ -953,7 +953,7 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "needs-selector-confirmation",
+          "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1"
         }
       ],
