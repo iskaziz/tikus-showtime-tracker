@@ -660,3 +660,18 @@ v19.3 matches all eight tracked GSC cinemas by their official numeric location
 IDs first, with names retained only as fallback. This should restore official
 session IDs, hall IDs and live seat measurements for GSC Midvalley while making
 the mapping more resilient to future GSC display-name changes.
+
+
+## v19.4 — robust GSC Midvalley matching
+
+v19.3 confirmed that the 4 September daily rollover is stable, but GSC
+Midvalley still did not match the official XML location element.
+
+v19.4 no longer assumes GSC's location identifier is always stored in an
+attribute named `id`. It checks common ID attribute variants, normalized names,
+and finally a conservative token-name match. This covers naming variants such
+as `GSC Mid Valley`, `GSC Mid Valley Megamall`, and location labels containing
+extra Kuala Lumpur text.
+
+The GSC collector diagnostic now records `matchMethod` and the matched
+location's attributes, making any future mapping issue directly diagnosable.

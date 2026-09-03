@@ -14,7 +14,7 @@ No account session, showtime click, seat selection, reservation, or payment.
 from pathlib import Path
 from datetime import datetime
 from zoneinfo import ZoneInfo
-import json, urllib.request, urllib.parse, xml.etree.ElementTree as ET
+import json, urllib.request, urllib.parse, xml.etree.ElementTree as ET, re
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data/current.json"
@@ -45,6 +45,12 @@ def hhmm(v):
     v=str(v).zfill(4)
     return f"{v[:2]}:{v[2:]}"
 
+def norm_name(value):
+    value=(value or "").lower()
+    value=value.replace("&"," and ")
+    value=re.sub(r"[^a-z0-9]+"," ",value)
+    return " ".join(value.split())
+
 def main():
     now=datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
     data=json.loads(DATA.read_text(encoding="utf-8"))
@@ -59,7 +65,7 @@ def main():
     cinema_lookup={c["id"]:c for c in data.get("cinemas",[])}
 
     report={
-        "collectorVersion":"19.3",
+        "collectorVersion":"19.4",
         "observedAt":now.isoformat(timespec="seconds"),
         "parentId":PARENT_ID,
         "childCode":CHILD_CODE,
@@ -67,33 +73,68 @@ def main():
         "cinemas":{}
     }
 
+    locations=list(root.findall(".//location"))
     by_name={}
     by_id={}
-    for loc in root.findall(".//location"):
-        by_name[loc.attrib.get("name","")]=loc
-        if loc.attrib.get("id"):
-            by_id[loc.attrib.get("id")]=loc
+    for loc in locations:
+        raw_name=loc.attrib.get("name","")
+        by_name[norm_name(raw_name)]=loc
+
+        # GSC has used slightly different attribute names across responses.
+        # Index every plausible location-id field rather than assuming only "id".
+        for key in ("id","locationid","location_id","locid","cinemaid","code"):
+            value=loc.attrib.get(key)
+            if value:
+                by_id[str(value)]=loc
 
     for tracker_id,config in TRACKED.items():
         loc=None
+        match_method=None
 
-        # GSC location IDs are more stable than display names and prevent
-        # harmless naming changes from breaking a cinema mapping.
-        expected_id=config.get("locationId")
+        expected_id=str(config.get("locationId") or "")
         if expected_id and expected_id in by_id:
             loc=by_id[expected_id]
+            match_method="location-id"
 
+        # Exact normalized aliases.
         if loc is None:
             for n in config.get("names",[]):
-                if n in by_name:
-                    loc=by_name[n]
+                candidate=by_name.get(norm_name(n))
+                if candidate is not None:
+                    loc=candidate
+                    match_method="normalized-name"
+                    break
+
+        # Resilient token match for harmless GSC naming variations.
+        # This is particularly useful for "Mid Valley" vs "Mid Valley Megamall".
+        if loc is None:
+            alias_tokens=[]
+            for n in config.get("names",[]):
+                tokens=[t for t in norm_name(n).split() if t not in {"gsc","mall","megamall","shopping","cinema"}]
+                if tokens:
+                    alias_tokens.append(set(tokens))
+            for candidate in locations:
+                candidate_tokens=set(norm_name(candidate.attrib.get("name","")).split())
+                if any(tokens.issubset(candidate_tokens) for tokens in alias_tokens):
+                    loc=candidate
+                    match_method="token-name"
                     break
         row={"status":"not-found","sessions":[]}
         if loc is not None:
+            resolved_location_id=(
+                loc.attrib.get("id")
+                or loc.attrib.get("locationid")
+                or loc.attrib.get("location_id")
+                or loc.attrib.get("locid")
+                or loc.attrib.get("cinemaid")
+                or expected_id
+            )
             row={
                 "status":"ok",
-                "officialLocationId":loc.attrib.get("id"),
+                "matchMethod":match_method,
+                "officialLocationId":resolved_location_id,
                 "officialName":loc.attrib.get("name"),
+                "locationAttributes":dict(loc.attrib),
                 "epaymentName":loc.attrib.get("epayment_name"),
                 "isEpayment":loc.attrib.get("is_epayment"),
                 "sessions":[]
@@ -119,7 +160,7 @@ def main():
                         "seatStatus":"seat-endpoint-not-yet-discovered",
                         "bookingUrl":None,
                         "sessionId":s.attrib.get("id"),
-                        "officialLocationId":loc.attrib.get("id"),
+                        "officialLocationId":resolved_location_id,
                         "hallId":s.attrib.get("hid"),
                         "hallFull":s.attrib.get("hallfull"),
                         "type":s.attrib.get("type"),
@@ -197,7 +238,7 @@ def main():
 
                 cinema["sessions"] = sorted(merged, key=sort_key)
                 cinema["sourceStatus"]="gsc-official-api"
-                cinema["officialLocationId"]=loc.attrib.get("id")
+                cinema["officialLocationId"]=resolved_location_id
                 cinema["officialCinemaName"]=loc.attrib.get("name")
         report["cinemas"][tracker_id]=row
 
