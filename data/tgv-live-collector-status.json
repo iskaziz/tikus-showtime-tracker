@@ -1,0 +1,16 @@
+{
+  "status": "ready",
+  "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
+  "trackedCinemaIds": {
+    "TBR": "Tebrau City",
+    "WWM": "Sunway Wangsa Mall",
+    "GUR": "Gurney Paragon",
+    "BBT": "Bukit Tinggi"
+  },
+  "source": "TGV public box-office API",
+  "seatFields": [
+    "seatstotal",
+    "seatsused",
+    "usedpercentage"
+  ]
+}

@@ -173,3 +173,32 @@ a showtime seat, reserve inventory or submit a booking.
 
 After the workflow runs, upload the new:
 `data/tgv-seat-diagnostics.json`
+
+
+## v8 — TGV live seat status works
+
+The latest TGV diagnostic exposed the official public box-office endpoints:
+
+- `moviesession_getmoviecinemas`
+- `moviesession_get`
+- `moviesession_getseatstatus`
+
+The seat-status response contains `seatstotal`, `seatsused` and
+`usedpercentage`, so the tracker can now populate TGV capacity, booked seats,
+available seats and occupancy without selecting or reserving a seat.
+
+Tracked TGV cinema IDs:
+- TBR — Tebrau City
+- WWM — Sunway Wangsa Mall (the current TGV name corresponding to the tracked Wangsa location)
+- GUR — Gurney Paragon
+- BBT — Bukit Tinggi
+
+The discovery response also showed TIKUS! at BU0 — TGV 1 Utama. v8 records it
+as an additional TGV cinema rather than silently adding it to the user's
+15-location tracker.
+
+Run the workflow, then inspect:
+`data/tgv-live-collector.json`
+
+The dashboard will read the updated `data/current.json` and automatically show
+TGV booked seats, remaining seats, occupancy and ranking.
