@@ -1,0 +1,79 @@
+{
+  "observedAt": "2026-09-03T21:41:20+08:00",
+  "sessions": [
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "22:20",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "22:20",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "22:20",
+      "booked": 0,
+      "available": 155,
+      "capacity": 157,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "22:20",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "21:30",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "21:30",
+      "booked": 0,
+      "available": 238,
+      "capacity": 244,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "00:45",
+      "booked": 0,
+      "available": 122,
+      "capacity": 122,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-wangsa-walk",
+      "cinema": "TGV Wangsa Walk",
+      "time": "21:45",
+      "booked": 4,
+      "available": 137,
+      "capacity": 141,
+      "occupancy": 2.84
+    }
+  ],
+  "booked": 4,
+  "capacity": 1613
+}
