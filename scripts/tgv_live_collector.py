@@ -33,10 +33,11 @@ MOVIE_ID="7b2216d1-27d8-479e-b420-8ab157847aa6"
 
 # User's tracked TGV locations mapped to TGV's current official cinema IDs/names.
 TRACKED={
-    "tgv-tebrau": {"cinemaid":"TBR","officialName":"TEBRAU CITY"},
-    "tgv-wangsa-walk": {"cinemaid":"WWM","officialName":"SUNWAY WANGSA MALL"},
-    "tgv-gurney": {"cinemaid":"GUR","officialName":"GURNEY PARAGON"},
-    "tgv-bukit-tinggi": {"cinemaid":"BBT","officialName":"BUKIT TINGGI"},
+    "tgv-tebrau": {"cinemaid":"TBR","officialName":"TEBRAU CITY","displayName":"TGV Tebrau City"},
+    "tgv-wangsa-walk": {"cinemaid":"WWM","officialName":"SUNWAY WANGSA MALL","displayName":"TGV Wangsa Walk"},
+    "tgv-gurney": {"cinemaid":"GUR","officialName":"GURNEY PARAGON","displayName":"TGV Gurney"},
+    "tgv-bukit-tinggi": {"cinemaid":"BBT","officialName":"BUKIT TINGGI","displayName":"TGV Bukit Tinggi"},
+    "tgv-1utama": {"cinemaid":"BU0","officialName":"1 UTAMA","displayName":"TGV 1Utama"},
 }
 
 UA="Mozilla/5.0 (compatible; TIKUSPerformanceTracker/1.0)"
@@ -172,6 +173,7 @@ def main():
 
             if tracker_id in cinema_lookup:
                 cinema_lookup[tracker_id]["sessions"]=new_sessions
+                cinema_lookup[tracker_id]["name"]=meta.get("displayName", cinema_lookup[tracker_id]["name"])
                 cinema_lookup[tracker_id]["sourceStatus"]="tgv-official-api"
                 cinema_lookup[tracker_id]["officialCinemaId"]=meta["cinemaid"]
                 cinema_lookup[tracker_id]["officialCinemaName"]=meta["officialName"]

@@ -202,3 +202,18 @@ Run the workflow, then inspect:
 
 The dashboard will read the updated `data/current.json` and automatically show
 TGV booked seats, remaining seats, occupancy and ranking.
+
+
+## v9 — confirmed five-location TGV tracker
+
+The TGV tracker now uses the user's confirmed public-facing names:
+
+- TGV Tebrau City (`TBR`)
+- TGV Wangsa Walk (`WWM`; TGV API currently labels this `SUNWAY WANGSA MALL`)
+- TGV Gurney (`GUR`; TGV API currently labels this `GURNEY PARAGON`)
+- TGV Bukit Tinggi (`BBT`)
+- TGV 1Utama (`BU0`)
+
+API labels are retained only as technical metadata. The dashboard uses the confirmed names above.
+
+TGV 1Utama is now a first-class tracked cinema rather than an "additional cinema".
