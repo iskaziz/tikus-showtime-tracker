@@ -118,9 +118,8 @@ def parse_seat_xml(raw):
 
 def main():
     now = datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
-    today = data.get("date") or now.date().isoformat()
-
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    today = data.get("date") or now.date().isoformat()
 
     report = {
         "collectorVersion": "17.0",

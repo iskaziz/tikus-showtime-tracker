@@ -639,3 +639,12 @@ v19 changed `gsc_official_api.py` to read the tracker date from
 `data/current.json`, but the script did not define the `DATA` path constant.
 v19.1 adds `DATA = ROOT / "data/current.json"` so the official GSC API step can
 run normally.
+
+
+## v19.2 — GSC seat collector initialization fix
+
+v19 made the GSC seat collector dataset-date aware, but the date was read from
+`data` before `data/current.json` had been loaded.
+
+v19.2 loads `current.json` first, then derives the dataset date. The affected
+collector scripts were also syntax-checked.
