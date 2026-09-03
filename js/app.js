@@ -3,28 +3,116 @@ const fmt = n => n == null ? '—' : new Intl.NumberFormat().format(n);
 let DATA, HISTORY=[], DAYS=[];
 let MAP_SELECTED_ID=null;
 
-const MAP_POSITIONS={
-  "gsc-aman-central":[25.1,21.5],
-  "mega-riverfront":[24.0,25.2],
-  "tgv-gurney":[22.6,32.5],
+const MAP_COORDS={
+  "gsc-aman-central":[6.1248,100.3678],
+  "mega-riverfront":[5.6447,100.4897],
+  "tgv-gurney":[5.4380,100.3107],
 
-  "gsc-midvalley":[27.8,58.7],
-  "tgv-wangsa-walk":[31.7,56.8],
-  "tgv-bukit-tinggi":[26.3,62.6],
-  "tgv-1utama":[28.5,55.4],
-  "gsc-ioi-city-mall":[31.3,64.7],
+  "gsc-midvalley":[3.1180,101.6774],
+  "tgv-wangsa-walk":[3.2056,101.7311],
+  "tgv-bukit-tinggi":[3.0098,101.4408],
+  "tgv-1utama":[3.1508,101.6155],
+  "gsc-ioi-city-mall":[2.9690,101.7138],
 
-  "gsc-kuantan-city-mall":[40.1,51.9],
-  "paragon-ktcc":[40.8,35.4],
-  "gsc-dataran-pahlawan":[31.4,71.1],
+  "gsc-kuantan-city-mall":[3.8169,103.3260],
+  "paragon-ktcc":[5.3308,103.1370],
+  "gsc-dataran-pahlawan":[2.1903,102.2496],
 
-  "paragon-batu-pahat":[33.2,75.7],
-  "gsc-paradigm-jb":[36.0,84.0],
-  "tgv-tebrau":[38.0,81.3],
+  "paragon-batu-pahat":[1.8548,102.9325],
+  "gsc-paradigm-jb":[1.5150,103.6854],
+  "tgv-tebrau":[1.5495,103.7957],
 
-  "gsc-the-spring":[69.9,68.0],
-  "gsc-imago":[90.3,48.3]
+  "gsc-the-spring":[1.5272,110.3681],
+  "gsc-imago":[5.9704,116.0660]
 };
+
+
+const MALAYSIA_GEOJSON_URL='assets/data/malaysia.state.min.geojson';
+const GEO_BOUNDS={minLon:99.6409,maxLon:119.26899,minLat:0.85539,maxLat:7.36098};
+const GEO_VIEW={x:120,y:32,w:1010,h:440};
+let GEO_READY=false;
+
+function projectMalaysia(lat,lon){
+  const x=GEO_VIEW.x + ((lon-GEO_BOUNDS.minLon)/(GEO_BOUNDS.maxLon-GEO_BOUNDS.minLon))*GEO_VIEW.w;
+  const y=GEO_VIEW.y + (1-((lat-GEO_BOUNDS.minLat)/(GEO_BOUNDS.maxLat-GEO_BOUNDS.minLat)))*GEO_VIEW.h;
+  return [x,y];
+}
+function pointToPercent(lat,lon){
+  const [x,y]=projectMalaysia(lat,lon);
+  return [x/12,y/5.2];
+}
+function ringToPath(ring){
+  if(!Array.isArray(ring)||ring.length<2)return '';
+  return ring.map((pt,i)=>{
+    const [x,y]=projectMalaysia(pt[1],pt[0]);
+    return `${i?'L':'M'}${x.toFixed(2)},${y.toFixed(2)}`;
+  }).join(' ')+' Z';
+}
+function geometryToPath(geometry){
+  if(!geometry)return '';
+  if(geometry.type==='Polygon'){
+    return geometry.coordinates.map(ringToPath).join(' ');
+  }
+  if(geometry.type==='MultiPolygon'){
+    return geometry.coordinates.flatMap(poly=>poly.map(ringToPath)).join(' ');
+  }
+  return '';
+}
+function geometryCentroid(geometry){
+  const points=[];
+  const collect=ring=>{for(const p of ring){if(Array.isArray(p)&&typeof p[0]==='number')points.push(p)}};
+  if(!geometry)return null;
+  if(geometry.type==='Polygon')geometry.coordinates.forEach(collect);
+  if(geometry.type==='MultiPolygon')geometry.coordinates.forEach(poly=>poly.forEach(collect));
+  if(!points.length)return null;
+  const lon=points.reduce((a,p)=>a+p[0],0)/points.length;
+  const lat=points.reduce((a,p)=>a+p[1],0)/points.length;
+  return projectMalaysia(lat,lon);
+}
+async function initGeoMap(){
+  const svg=$('#geo-map-svg');
+  if(!svg||GEO_READY)return;
+  try{
+    const r=await fetch(MALAYSIA_GEOJSON_URL,{cache:'force-cache'});
+    if(!r.ok)throw new Error(`GeoJSON ${r.status}`);
+    const geo=await r.json();
+    const layer=$('#geo-state-layer'),labels=$('#geo-state-label-layer');
+    if(!layer||!labels)throw new Error('Geo map layers missing');
+
+    layer.innerHTML='';labels.innerHTML='';
+    const NS='http://www.w3.org/2000/svg';
+
+    for(const feature of geo.features||[]){
+      const d=geometryToPath(feature.geometry);
+      if(!d)continue;
+      const path=document.createElementNS(NS,'path');
+      const stateName=feature.properties?.state_name||feature.properties?.name||feature.id||'State';
+      path.setAttribute('d',d);
+      path.setAttribute('fill-rule','evenodd');
+      path.dataset.stateCode=feature.properties?.state_code||feature.id||'';
+      path.dataset.state=stateName;
+      layer.append(path);
+
+      const centroid=geometryCentroid(feature.geometry);
+      if(centroid){
+        const text=document.createElementNS(NS,'text');
+        text.setAttribute('x',centroid[0].toFixed(1));
+        text.setAttribute('y',centroid[1].toFixed(1));
+        text.textContent=stateName.toUpperCase();
+        labels.append(text);
+      }
+    }
+    if(!layer.children.length)throw new Error('No state geometry rendered');
+    svg.classList.add('geo-ready');
+    svg.classList.remove('geo-failed');
+    GEO_READY=true;
+    renderMap();
+  }catch(err){
+    console.warn('Local Malaysia GeoJSON unavailable; using bundled schematic fallback.',err);
+    svg.classList.add('geo-failed');
+    svg.classList.remove('geo-ready');
+  }
+}
 
 function mapCinemaStats(c){
   const ss=c.sessions||[],known=ss.filter(isKnown);
@@ -53,11 +141,12 @@ function renderMap(){
   $('#map-seat-count').textContent=s.known.length?fmt(s.used):'—';
   host.innerHTML='';
   DATA.cinemas.forEach(c=>{
-    const pos=MAP_POSITIONS[c.id];if(!pos)return;
+    const coord=MAP_COORDS[c.id];if(!coord)return;
+    const [left,top]=pointToPercent(coord[0],coord[1]);
     const st=mapCinemaStats(c),btn=document.createElement('button');
-    btn.type='button';btn.className='map-marker';btn.dataset.chain=c.chain;btn.dataset.cinemaId=c.id;
+    btn.type='button';btn.className='map-marker map-marker-coord';btn.dataset.chain=c.chain;btn.dataset.cinemaId=c.id;
     if(['gsc-midvalley','tgv-wangsa-walk','tgv-bukit-tinggi','tgv-1utama','gsc-ioi-city-mall'].includes(c.id)) btn.dataset.cluster='dense';
-    btn.style.left=`${pos[0]}%`;btn.style.top=`${pos[1]}%`;
+    btn.style.left=`${left}%`;btn.style.top=`${top}%`;
     btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${st.shows} listed shows.`);
     btn.title=c.name;
     btn.addEventListener('click',()=>openMapTooltip(c.id));
@@ -247,4 +336,5 @@ $('#refresh').addEventListener('click',()=>load(DATA.date));
 $('#map-tooltip-close')?.addEventListener('click',closeMapTooltip);
 $('#map-tooltip-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#map-tooltip')?.hidden)closeMapTooltip()});
+initGeoMap();
 load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});

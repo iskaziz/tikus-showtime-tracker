@@ -37,10 +37,9 @@
 
       <div class="malaysia-map-shell">
         <div class="malaysia-map" id="malaysia-map" role="group" aria-label="Schematic map of Malaysia showing TIKUS! cinema locations">
-          <svg class="map-art" viewBox="0 0 1200 520" role="img" aria-labelledby="map-svg-title map-svg-desc">
+          <svg class="map-art" id="geo-map-svg" viewBox="0 0 1200 520" role="img" aria-labelledby="map-svg-title map-svg-desc">
             <title id="map-svg-title">TIKUS! cinema locations across Malaysia</title>
-            <desc id="map-svg-desc">A stylised Malaysia map with simplified state boundaries and interactive cinema markers.</desc>
-
+            <desc id="map-svg-desc">Malaysia state boundaries rendered from the MIT-licensed malaysia-geojson dataset, with interactive TIKUS! cinema markers.</desc>
             <defs>
               <pattern id="mapGrain" width="12" height="12" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="3" r=".65" fill="currentColor" opacity=".09"></circle>
@@ -51,80 +50,24 @@
               </filter>
             </defs>
 
-            <!-- Simplified state-separated map. Shapes are schematic, not survey boundaries. -->
-            <g class="state-map peninsula" filter="url(#softShadow)" aria-hidden="true">
-              <path class="state perlis" data-state="Perlis" d="M284 50 L314 49 L323 64 L305 75 L282 68 Z"></path>
-              <path class="state kedah" data-state="Kedah" d="M282 68 L305 75 L330 67 L344 91 L335 123 L303 133 L284 113 L275 86 Z"></path>
-              <path class="state penang" data-state="Pulau Pinang" d="M268 113 L280 116 L278 136 L267 139 L259 128 Z"></path>
-              <path class="state perak" data-state="Perak" d="M303 133 L335 123 L351 149 L348 198 L330 229 L302 222 L291 187 Z"></path>
-              <path class="state kelantan" data-state="Kelantan" d="M344 91 L375 104 L391 136 L381 171 L348 198 L351 149 L335 123 Z"></path>
-              <path class="state terengganu" data-state="Terengganu" d="M391 136 L407 174 L409 215 L392 246 L367 230 L381 171 Z"></path>
-              <path class="state pahang" data-state="Pahang" d="M348 198 L381 171 L367 230 L392 246 L397 286 L372 315 L335 300 L330 229 Z"></path>
-              <path class="state selangor" data-state="Selangor" d="M302 222 L330 229 L335 300 L318 325 L289 312 L284 266 Z"></path>
-              <path class="state kl" data-state="Kuala Lumpur" d="M303 258 L318 258 L322 274 L306 280 L297 269 Z"></path>
-              <path class="state putrajaya" data-state="Putrajaya" d="M313 300 L324 304 L322 315 L311 317 L306 308 Z"></path>
-              <path class="state n9" data-state="Negeri Sembilan" d="M318 325 L335 300 L372 315 L370 347 L343 363 L320 350 Z"></path>
-              <path class="state melaka" data-state="Melaka" d="M320 350 L343 363 L338 381 L315 374 L305 360 Z"></path>
-              <path class="state johor" data-state="Johor" d="M338 381 L343 363 L370 347 L404 358 L426 389 L431 429 L413 466 L390 487 L365 459 L345 430 L327 408 Z"></path>
-            </g>
+            <g id="geo-state-layer" class="geo-state-layer" filter="url(#softShadow)" aria-hidden="true"></g>
+            <g id="geo-state-label-layer" class="geo-state-label-layer" aria-hidden="true"></g>
 
-            <g class="state-map borneo" filter="url(#softShadow)" aria-hidden="true">
-              <path class="state sarawak" data-state="Sarawak" d="M718 338
-                C746 304 785 285 825 281
-                C866 277 897 285 930 278
-                C961 271 980 253 1000 240
-                L1022 253
-                C1009 267 998 286 992 304
-                C981 337 958 355 924 361
-                C884 369 846 397 806 402
-                C769 407 738 392 709 370 Z"></path>
-
-              <path class="state sabah" data-state="Sabah" d="M999 240
-                C1021 223 1047 213 1076 211
-                C1105 210 1135 219 1154 236
-                L1140 257
-                C1121 268 1108 285 1101 304
-                C1079 311 1058 309 1037 301
-                C1026 280 1016 264 999 240 Z"></path>
-
-              <path class="state labuan" data-state="Labuan" d="M1005 309 L1015 306 L1020 314 L1013 322 L1003 318 Z"></path>
-            </g>
-
-            <g class="map-texture-layer" aria-hidden="true">
-              <path d="M284 50 L314 49 L323 64 L305 75 L330 67 L344 91 L375 104 L391 136 L407 174 L409 215 L392 246 L397 286 L372 315 L404 358 L426 389 L431 429 L413 466 L390 487 L365 459 L345 430 L327 408 L305 360 L289 312 L284 266 L291 187 L275 86 Z"></path>
-              <path d="M718 338 C746 304 785 285 825 281 C866 277 897 285 930 278 C961 271 980 253 1000 240 C1021 223 1047 213 1076 211 C1105 210 1135 219 1154 236 L1140 257 C1121 268 1108 285 1101 304 C1079 311 1058 309 1037 301 C1026 280 1016 264 999 240 C1009 267 998 286 992 304 C981 337 958 355 924 361 C884 369 846 397 806 402 C769 407 738 392 709 370 Z"></path>
-            </g>
-
-            <g class="map-labels state-labels" aria-hidden="true">
-              <text x="300" y="40">PENINSULAR MALAYSIA</text>
-              <text x="244" y="82">PERLIS</text>
-              <text x="246" y="104">KEDAH</text>
-              <text x="220" y="137">P. PINANG</text>
-              <text x="306" y="178">PERAK</text>
-              <text x="360" y="139">KELANTAN</text>
-              <text x="393" y="202">TERENGGANU</text>
-              <text x="355" y="270">PAHANG</text>
-              <text x="253" y="282">SELANGOR</text>
-              <text x="294" y="255">KL</text>
-              <text x="282" y="322">PUTRAJAYA</text>
-              <text x="329" y="340">N. SEMBILAN</text>
-              <text x="291" y="382">MELAKA</text>
-              <text x="372" y="428">JOHOR</text>
-
-              <text x="823" y="424">SARAWAK</text>
-              <text x="1068" y="191">SABAH</text>
-              <text x="997" y="337">LABUAN</text>
-
-              <text class="map-watermark" x="600" y="500">SIMPLIFIED STATE MAP · NOT TO SCALE</text>
+            <g id="map-fallback-layer" class="map-fallback-layer" aria-hidden="true">
+              <path d="M296 43 C328 52 350 72 363 102 C376 132 372 163 390 196 C406 224 429 244 431 279 C433 313 414 337 420 366 C426 394 451 414 451 449 C450 473 432 493 409 500 C387 486 377 463 363 443 C349 423 328 407 324 383 C319 354 335 330 330 301 C325 273 304 251 297 225 C288 193 299 161 289 132 C281 105 265 86 268 65 C271 53 281 46 296 43 Z"></path>
+              <path d="M735 267 C769 245 813 237 852 242 C892 247 923 262 957 254 C990 246 1025 224 1065 227 C1102 229 1128 246 1143 268 C1122 277 1106 291 1094 312 C1076 342 1049 358 1016 360 C979 362 951 346 917 350 C875 355 849 385 810 390 C774 394 741 382 715 364 C728 348 738 332 742 314 C746 297 744 283 735 267 Z"></path>
+              <path d="M885 210 C913 194 941 186 975 184 C1007 182 1039 187 1063 199 C1051 211 1042 221 1037 235 C1001 233 974 244 946 252 C919 260 895 260 873 252 C873 237 878 222 885 210 Z"></path>
             </g>
 
             <g class="map-city-labels" aria-hidden="true">
-              <circle cx="293" cy="306" r="2.2"></circle><text x="276" y="296">KLANG VALLEY</text>
-              <circle cx="367" cy="404" r="2.2"></circle><text x="379" y="402">JOHOR BAHRU</text>
-              <circle cx="274" cy="127" r="2.2"></circle><text x="211" y="154">GEORGE TOWN</text>
-              <circle cx="842" cy="353" r="2.2"></circle><text x="824" y="374">KUCHING</text>
-              <circle cx="1084" cy="253" r="2.2"></circle><text x="1051" y="235">KOTA KINABALU</text>
+              <text x="312" y="319">KLANG VALLEY</text>
+              <text x="383" y="445">JOHOR BAHRU</text>
+              <text x="238" y="175">GEORGE TOWN</text>
+              <text x="823" y="393">KUCHING</text>
+              <text x="1047" y="236">KOTA KINABALU</text>
             </g>
+
+            <text class="map-watermark geo-credit-note" x="600" y="503">STATE BOUNDARIES: MALAYSIA-GEOJSON · MIT LICENSE</text>
           </svg>
 
           <div id="map-markers" class="map-markers"></div>
@@ -151,6 +94,10 @@
           <span><i class="legend-dot paragon"></i>Paragon</span>
           <span><i class="legend-dot mega"></i>Mega</span>
         </div>
+        <p class="map-attribution">
+          Geographic state boundaries: <a href="https://github.com/atifmustaffa/malaysia-geojson" target="_blank" rel="noopener">malaysia-geojson</a> by atifmustaffa, MIT License.
+          Cinema markers represent the tracked cinema locations and are positioned from geographic coordinates in the tracker map configuration.
+        </p>
       </div>
     </section>
 

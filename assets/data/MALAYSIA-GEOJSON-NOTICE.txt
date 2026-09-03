@@ -1,0 +1,24 @@
+Malaysia state boundary data
+
+Source repository:
+https://github.com/atifmustaffa/malaysia-geojson
+
+Upstream file:
+malaysia.state.min.geojson
+
+Repository author/maintainer:
+atifmustaffa
+
+License:
+MIT
+
+TIKUS! tracker distribution:
+The GeoJSON is vendored into assets/data/malaysia.state.min.geojson and served
+locally with the static website. The browser does not make a runtime request to
+GitHub for state geometry.
+
+The upstream repository remains the source of the geographic dataset. See the
+upstream LICENSE file for the complete MIT license text.
+
+Cinema marker coordinates are maintained separately by the TIKUS! tracker and
+are not part of the malaysia-geojson dataset.

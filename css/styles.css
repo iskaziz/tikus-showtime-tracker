@@ -208,3 +208,61 @@ select,input,button{font:inherit}select,input{display:block;width:100%;margin-to
   .state-labels .map-watermark{display:block}
   .map-city-labels{display:none}
 }
+
+
+/* v20.2 — real Malaysia state boundaries via MIT GeoJSON */
+.geo-state-layer path{
+  stroke:#f0dfc0;
+  stroke-width:1.25;
+  vector-effect:non-scaling-stroke;
+  fill:#bca579;
+  transition:fill .18s ease, opacity .18s ease;
+}
+.geo-state-layer path:nth-child(4n+2){fill:#c8b384}
+.geo-state-layer path:nth-child(4n+3){fill:#ad966f}
+.geo-state-layer path:nth-child(4n+4){fill:#d1ba8b}
+.geo-state-layer path[data-state-code="KUL"],
+.geo-state-layer path[data-state-code="PJY"],
+.geo-state-layer path[data-state-code="LBN"]{fill:#7f2622}
+.geo-state-label-layer text{
+  fill:#241613;
+  font-size:9.5px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  text-anchor:middle;
+  paint-order:stroke;
+  stroke:rgba(240,223,192,.72);
+  stroke-width:2px;
+}
+.map-fallback-layer path{
+  fill:#bca579;
+  stroke:#f0dfc0;
+  stroke-width:1.5;
+  vector-effect:non-scaling-stroke;
+}
+.geo-ready .map-fallback-layer{display:none}
+.geo-failed .geo-state-layer,
+.geo-failed .geo-state-label-layer{display:none}
+.geo-credit-note{
+  fill:#ead9bd;
+  font-size:10px;
+  opacity:.48;
+  text-anchor:middle;
+  letter-spacing:2.2px;
+}
+.map-attribution{
+  margin:7px 2px 0;
+  color:var(--muted);
+  font-size:.67rem;
+  line-height:1.4;
+  text-align:right;
+}
+.map-attribution a{color:var(--text)}
+.map-marker.map-marker-coord{
+  left:0;
+  top:0;
+}
+@media (max-width:700px){
+  .geo-state-label-layer{display:none}
+  .map-attribution{text-align:left}
+}

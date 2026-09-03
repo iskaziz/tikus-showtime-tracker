@@ -716,3 +716,45 @@ The map hero now uses a more detailed, state-separated schematic:
 
 The geometry is still intentionally labelled as simplified/not-to-scale rather
 than being presented as authoritative administrative GIS boundaries.
+
+
+## v20.2 — authoritative Malaysia state geometry
+
+The hero map now renders real Malaysia state geometry from the MIT-licensed
+`atifmustaffa/malaysia-geojson` dataset rather than using the hand-drawn state
+silhouettes.
+
+Implementation:
+- state data: `malaysia.state.min.geojson`
+- source: https://github.com/atifmustaffa/malaysia-geojson
+- license: MIT
+- state paths are projected directly into the existing cinematic SVG
+- cinema markers now use latitude/longitude coordinates rather than hand-set
+  map percentages
+- if the external GeoJSON cannot load, the bundled schematic outline remains
+  as a graceful fallback
+- attribution is displayed beneath the map and included in
+  `assets/data/MALAYSIA-GEOJSON-NOTICE.txt`
+
+No mapping framework or external animation library is introduced.
+
+
+## v20.3 — locally vendored Malaysia GeoJSON
+
+The deployed website no longer requests Malaysia state geometry from GitHub on
+every page load.
+
+Runtime path:
+`assets/data/malaysia.state.min.geojson`
+
+The maintenance script:
+`python scripts/vendor_malaysia_geojson.py`
+
+downloads and validates the MIT-licensed upstream file only when the local copy
+is absent (or when manually run with `--force`). The scheduled GitHub Actions
+workflow runs this before the collectors and commits the asset into the repo.
+
+After the first successful workflow run, the map is fully self-contained on
+GitHub Pages/static hosting and also works locally when the project is served
+from a local static server. The existing schematic SVG remains a graceful
+fallback if the GeoJSON asset is missing or invalid.
