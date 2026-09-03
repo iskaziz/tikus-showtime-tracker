@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-03T12:48:26+08:00",
+  "observedAt": "2026-09-03T13:51:46+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -160,7 +160,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BU0\",\"sessionid\":[\"324678\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BU0\",\"seatstatuslist\":[{\"sessionid\":\"324678\",\"seatstotal\":117,\"seatsused\":1,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BU0\",\"seatstatuslist\":[{\"sessionid\":\"324678\",\"seatstotal\":117,\"seatsused\":4,\"usedpercentage\":3}]}}"
     },
     {
       "url": "https://api.tgv.com.my/api/cinemas/v1/getcinemabyitemkey",
@@ -192,7 +192,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BBT\",\"sessionid\":[\"409356\",\"409359\",\"409357\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409357\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409359\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409356\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409356\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409357\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409359\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0}]}}"
     }
   ],
   "buyNow": {
@@ -391,10 +391,7 @@
     "2bbb1ebe-14a1-423b-b9e2-a734ce7b78c0",
     "e4de6842-06b1-4ab8-9c96-4aadf42a9f50",
     "e272889f-c14a-4752-9935-7a6c6a36e87f",
-    "ae81a069-8b4c-45cf-a905-ece0d116cd97",
-    "c8354105-f341-4f10-8e33-387bdc1d3d23",
-    "f781ccc4-522c-4b8f-ad40-8669088d6d67",
-    "6654bb8a-b692-4432-92ed-e1526d73dc07"
+    "ae81a069-8b4c-45cf-a905-ece0d116cd97"
   ],
   "cinemaClicks": [
     {
