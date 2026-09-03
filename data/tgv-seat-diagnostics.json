@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-03T20:02:19+08:00",
+  "observedAt": "2026-09-03T20:12:47+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -355,7 +355,10 @@
     "014c4624-47b6-43c0-86f8-f617b4c4feef",
     "ed333f86-df65-4d1c-b52d-b35d6655101d",
     "3b58ac58-f31a-409d-8317-6e2e08d93ef8",
-    "54978909-c1c0-4257-97f3-8353b442def8"
+    "54978909-c1c0-4257-97f3-8353b442def8",
+    "7e85759a-c85d-4df2-8701-be2273d43d6e",
+    "16362047-4e7c-4816-a29a-728c687bd35c",
+    "c7208625-36eb-4c86-acdb-f896e08d22e1"
   ],
   "cinemaClicks": [
     {

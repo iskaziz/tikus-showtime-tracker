@@ -1,8 +1,8 @@
 {
   "collectorVersion": "15.0",
-  "observedAt": "2026-09-03T20:02:07+08:00",
+  "observedAt": "2026-09-03T20:12:37+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
-  "countSemantics": "capacity = returned seat nodes; available = status A; unavailable = all non-A states",
+  "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
     "gsc-paradigm-jb": {
       "name": "GSC Paradigm JB",
@@ -20,6 +20,8 @@
           "seatNodes": 246,
           "capacity": 246,
           "available": 246,
+          "booked": 0,
+          "otherUnavailable": 0,
           "unavailable": 0,
           "statusCounts": {
             "A": 246
@@ -55,6 +57,8 @@
           "seatNodes": 202,
           "capacity": 202,
           "available": 201,
+          "booked": 1,
+          "otherUnavailable": 0,
           "unavailable": 1,
           "statusCounts": {
             "A": 201,
@@ -85,6 +89,8 @@
           "seatNodes": 202,
           "capacity": 202,
           "available": 202,
+          "booked": 0,
+          "otherUnavailable": 0,
           "unavailable": 0,
           "statusCounts": {
             "A": 202
@@ -120,6 +126,8 @@
           "seatNodes": 164,
           "capacity": 164,
           "available": 162,
+          "booked": 2,
+          "otherUnavailable": 0,
           "unavailable": 2,
           "statusCounts": {
             "A": 162,
@@ -156,6 +164,8 @@
           "seatNodes": 266,
           "capacity": 266,
           "available": 265,
+          "booked": 0,
+          "otherUnavailable": 1,
           "unavailable": 1,
           "statusCounts": {
             "A": 265,
@@ -185,6 +195,8 @@
           "seatNodes": 266,
           "capacity": 266,
           "available": 265,
+          "booked": 0,
+          "otherUnavailable": 1,
           "unavailable": 1,
           "statusCounts": {
             "A": 265,
@@ -220,6 +232,8 @@
           "seatNodes": 157,
           "capacity": 157,
           "available": 155,
+          "booked": 0,
+          "otherUnavailable": 2,
           "unavailable": 2,
           "statusCounts": {
             "A": 155,
@@ -250,6 +264,8 @@
           "seatNodes": 157,
           "capacity": 157,
           "available": 155,
+          "booked": 0,
+          "otherUnavailable": 2,
           "unavailable": 2,
           "statusCounts": {
             "A": 155,
@@ -286,6 +302,8 @@
           "seatNodes": 220,
           "capacity": 220,
           "available": 218,
+          "booked": 1,
+          "otherUnavailable": 1,
           "unavailable": 2,
           "statusCounts": {
             "A": 218,
@@ -317,6 +335,8 @@
           "seatNodes": 220,
           "capacity": 220,
           "available": 219,
+          "booked": 0,
+          "otherUnavailable": 1,
           "unavailable": 1,
           "statusCounts": {
             "A": 219,
@@ -353,6 +373,8 @@
           "seatNodes": 261,
           "capacity": 261,
           "available": 261,
+          "booked": 0,
+          "otherUnavailable": 0,
           "unavailable": 0,
           "statusCounts": {
             "A": 261
@@ -387,6 +409,8 @@
           "seatNodes": 244,
           "capacity": 244,
           "available": 238,
+          "booked": 0,
+          "otherUnavailable": 6,
           "unavailable": 6,
           "statusCounts": {
             "D": 6,
@@ -412,6 +436,8 @@
     "sessionsMeasured": 12,
     "capacity": 2605,
     "available": 2587,
+    "booked": 4,
+    "otherUnavailable": 14,
     "unavailable": 18
   }
 }
