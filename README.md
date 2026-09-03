@@ -287,3 +287,18 @@ Run the normal update workflow and upload:
 If that file exposes GSC's TIKUS! parent movie id and session identifiers, the
 next stage can target the official seat-status request without relying on the
 incorrect generic booking link discovered in v10.
+
+
+## v11.1 — GSC empty-result fix
+
+v11 returned no TIKUS! movie records. v11.1 no longer assumes the ASMX
+catalogue is ordinary nested XML. It:
+
+- inspects the public GSC TIKUS! page for a numeric booking/movie ID;
+- saves the official catalogue response prefix for structural diagnosis;
+- unwraps ASMX `<string>` payloads and HTML-escaped XML;
+- searches around every `Tikus` occurrence for candidate IDs;
+- probes discovered IDs against the official showtime endpoint.
+
+Run the normal workflow and upload the new:
+`data/gsc-official-api.json`
