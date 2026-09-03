@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-03T21:40:34+08:00",
+  "observedAt": "2026-09-03T21:46:42+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-03",
@@ -78,36 +78,12 @@
       ]
     },
     "gsc-imago": {
-      "status": "ok",
-      "officialLocationId": "531",
-      "officialName": "GSC IMAGO Shopping Mall",
-      "epaymentName": "Kota Kinabalu - IMAGO Mall",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "77186",
-          "time": "21:30",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-found",
+      "sessions": []
     },
     "gsc-the-spring": {
-      "status": "ok",
-      "officialLocationId": "552",
-      "officialName": "GSC The Spring (Kuching)",
-      "epaymentName": "Kuching - The Spring",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "77713",
-          "time": "21:30",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-found",
+      "sessions": []
     }
   }
 }
