@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#9e1017">
+  <title>TIKUS! — Cinema Performance Tracker</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">FEISK PRODUCTIONS · LIVE CINEMA INTELLIGENCE</p>
+      <h1>TIKUS! <span>Performance Tracker</span></h1>
+    </div>
+    <div class="live-block">
+      <span class="live-dot" aria-hidden="true"></span>
+      <div><strong>TRACKER ONLINE</strong><small id="updated">Loading…</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-grid hero-grid-5" aria-label="Headline statistics">
+      <article class="metric"><span>SHOWS TODAY</span><strong id="stat-shows">—</strong><small id="stat-cinemas">— cinemas reporting</small></article>
+      <article class="metric"><span>SEATS BOOKED</span><strong id="stat-booked">—</strong><small id="stat-booked-sub">Awaiting seat-map feed</small></article>
+      <article class="metric"><span>OCCUPANCY</span><strong id="stat-occupancy">—</strong><small id="stat-capacity">Capacity pending</small></article>
+      <article class="metric"><span>AVAILABLE SEATS</span><strong id="stat-available">—</strong><small>Across tracked sessions</small></article>
+      <article class="metric"><span>SALES VELOCITY</span><strong id="stat-velocity">—</strong><small id="stat-velocity-sub">Needs 2+ seat snapshots</small></article>
+    </section>
+
+    <section class="controls">
+      <label>State
+        <select id="state-filter"><option value="">All states</option></select>
+      </label>
+      <label>Chain
+        <select id="chain-filter"><option value="">All chains</option></select>
+      </label>
+      <label>Search
+        <input id="search" type="search" placeholder="Cinema name">
+      </label>
+      <button id="refresh" type="button">Refresh data</button>
+    </section>
+
+    <section class="layout">
+      <div>
+        <section class="panel">
+          <div class="panel-head"><div><p class="eyebrow">NATIONAL SNAPSHOT</p><h2>Occupancy by cinema</h2></div><span id="reporting-note"></span></div>
+          <div id="bars" class="bars"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><div><p class="eyebrow">RANKING</p><h2>Best current occupancy</h2></div></div>
+          <div id="ranking"></div>
+        </section>
+
+        <section class="panel cinema-panel">
+          <div class="panel-head"><div><p class="eyebrow">15 ALLOCATED LOCATIONS</p><h2>Show-by-show detail</h2></div></div>
+          <div id="cinema-list"></div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="panel sticky">
+          <p class="eyebrow">DETAILED STATS</p>
+          <h2>Performance readout</h2>
+          <dl class="stats-list">
+            <div><dt>Locations allocated</dt><dd id="s-locations">15</dd></div>
+            <div><dt>Locations with shows found</dt><dd id="s-reporting">—</dd></div>
+            <div><dt>Total shows found</dt><dd id="s-shows">—</dd></div>
+            <div><dt>Matinee shows</dt><dd id="s-matinee">—</dd></div>
+            <div><dt>Prime-time shows</dt><dd id="s-prime">—</dd></div>
+            <div><dt>Late shows</dt><dd id="s-late">—</dd></div>
+            <div><dt>Total tracked capacity</dt><dd id="s-capacity">—</dd></div>
+            <div><dt>Booked seats</dt><dd id="s-booked">—</dd></div>
+            <div><dt>Remaining seats</dt><dd id="s-remaining">—</dd></div>
+            <div><dt>Tickets / hour</dt><dd id="s-velocity">—</dd></div>
+          </dl>
+          <div class="legend">
+            <span><i class="key booked"></i>Booked</span>
+            <span><i class="key open"></i>Available</span>
+            <span><i class="key unknown"></i>Seat feed pending</span>
+          </div>
+          <p class="fineprint">Showtimes can be refreshed automatically. Seat counts are only displayed when a public seat map has been successfully read; the dashboard never invents booked-seat totals.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <template id="cinema-template">
+    <article class="cinema">
+      <button class="cinema-head" type="button" aria-expanded="false">
+        <span><b class="cinema-name"></b><small class="cinema-meta"></small></span>
+        <span class="cinema-summary"></span>
+      </button>
+      <div class="sessions"></div>
+    </article>
+  </template>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

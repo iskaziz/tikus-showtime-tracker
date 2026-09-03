@@ -1,0 +1,27 @@
+name: Update TIKUS tracker
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/update_showtimes.py
+      - run: pip install playwright
+      - run: playwright install chromium --with-deps
+      - run: python scripts/paragon_seat_collector.py
+      - run: python scripts/save_snapshot.py
+      - name: Commit changed tracker data
+        run: |
+          git config user.name "tikus-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/current.json data/history-index.json data/history data/paragon-seat-diagnostics.json
+          git diff --cached --quiet || git commit -m "Refresh TIKUS performance tracker"
+          git push

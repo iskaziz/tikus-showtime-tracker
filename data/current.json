@@ -1,0 +1,975 @@
+{
+  "movie": "TIKUS!",
+  "date": "2026-09-03",
+  "updatedAt": "2026-09-03T10:29:00+08:00",
+  "seatDataMode": "awaiting-seatmap-adapters",
+  "cinemas": [
+    {
+      "id": "gsc-paradigm-jb",
+      "chain": "GSC",
+      "name": "GSC Paradigm JB",
+      "state": "Johor",
+      "sessions": [
+        {
+          "id": "gsc-paradigm-jb-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-paradigm-jb-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-paradigm-jb-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-paradigm-jb-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-paradigm-jb-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/gsc-paradigm-mall-johor.html"
+    },
+    {
+      "id": "gsc-aman-central",
+      "chain": "GSC",
+      "name": "GSC Aman Central",
+      "state": "Kedah",
+      "sessions": [
+        {
+          "id": "gsc-aman-central-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-2220",
+          "time": "22:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-alor-setar/gsc-aman-central-alor-setar.html"
+    },
+    {
+      "id": "gsc-midvalley",
+      "chain": "GSC",
+      "name": "GSC Midvalley Megamall",
+      "state": "Kuala Lumpur",
+      "sessions": [
+        {
+          "id": "gsc-midvalley-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-midvalley-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-midvalley-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-midvalley-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-midvalley-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/gsc-mid-valley-megamall-kuala-lumpur.html"
+    },
+    {
+      "id": "gsc-dataran-pahlawan",
+      "chain": "GSC",
+      "name": "GSC Dataran Pahlawan",
+      "state": "Melaka",
+      "sessions": [
+        {
+          "id": "gsc-dataran-pahlawan-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-2220",
+          "time": "22:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-melaka/gsc-dataran-pahlawan-melaka.html"
+    },
+    {
+      "id": "gsc-kuantan-city-mall",
+      "chain": "GSC",
+      "name": "GSC Kuantan City Mall",
+      "state": "Pahang",
+      "sessions": [
+        {
+          "id": "gsc-kuantan-city-mall-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-2220",
+          "time": "22:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-kuantan/gsc-kuantan-city-mall.html"
+    },
+    {
+      "id": "gsc-ioi-city-mall",
+      "chain": "GSC",
+      "name": "GSC IOI City Mall",
+      "state": "Putrajaya",
+      "sessions": [
+        {
+          "id": "gsc-ioi-city-mall-1040",
+          "time": "10:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-1520",
+          "time": "15:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-1740",
+          "time": "17:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-2220",
+          "time": "22:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-putrajaya/gsc-ioi-city-mall-kuala-lumpur.html"
+    },
+    {
+      "id": "gsc-imago",
+      "chain": "GSC",
+      "name": "GSC Imago Shopping Mall",
+      "state": "Sabah",
+      "sessions": [
+        {
+          "id": "gsc-imago-1210",
+          "time": "12:10",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-imago-1430",
+          "time": "14:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-imago-1650",
+          "time": "16:50",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-imago-1910",
+          "time": "19:10",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-imago-2130",
+          "time": "21:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-kota-kinabalu/gsc-imago-mall.html"
+    },
+    {
+      "id": "gsc-the-spring",
+      "chain": "GSC",
+      "name": "GSC The Spring, Kuching",
+      "state": "Sarawak",
+      "sessions": [
+        {
+          "id": "gsc-the-spring-1210",
+          "time": "12:10",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-the-spring-1430",
+          "time": "14:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-the-spring-1650",
+          "time": "16:50",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-the-spring-1910",
+          "time": "19:10",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-the-spring-2130",
+          "time": "21:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-kuching/gsc-the-spring-shopping-mall.html"
+    },
+    {
+      "id": "tgv-tebrau",
+      "chain": "TGV",
+      "name": "TGV Tebrau",
+      "state": "Johor",
+      "sessions": [
+        {
+          "id": "tgv-tebrau-1130",
+          "time": "11:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-tebrau-1300",
+          "time": "13:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-tebrau-1530",
+          "time": "15:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-tebrau-2000",
+          "time": "20:00",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-tebrau-0045",
+          "time": "00:45",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/tgv-tebrau-city.html"
+    },
+    {
+      "id": "tgv-wangsa-walk",
+      "chain": "TGV",
+      "name": "TGV Wangsa Walk",
+      "state": "Kuala Lumpur",
+      "sessions": [
+        {
+          "id": "tgv-wangsa-walk-1120",
+          "time": "11:20",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-wangsa-walk-1615",
+          "time": "16:15",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-wangsa-walk-1815",
+          "time": "18:15",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-wangsa-walk-2145",
+          "time": "21:45",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/tgv-wangsa-walk.html"
+    },
+    {
+      "id": "tgv-gurney",
+      "chain": "TGV",
+      "name": "TGV Gurney",
+      "state": "Pulau Pinang",
+      "sessions": [
+        {
+          "id": "tgv-gurney-1315",
+          "time": "13:15",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-gurney-1545",
+          "time": "15:45",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-gurney-1815",
+          "time": "18:15",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-gurney-2045",
+          "time": "20:45",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-penang/tgv-gurney-paragon.html"
+    },
+    {
+      "id": "tgv-bukit-tinggi",
+      "chain": "TGV",
+      "name": "TGV Bukit Tinggi",
+      "state": "Selangor",
+      "sessions": [
+        {
+          "id": "tgv-bukit-tinggi-1145",
+          "time": "11:45",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-bukit-tinggi-1410",
+          "time": "14:10",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-bukit-tinggi-1805",
+          "time": "18:05",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        },
+        {
+          "id": "tgv-bukit-tinggi-2030",
+          "time": "20:30",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": null
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://xinemas.com/cinema/in-klang/tgv-bukit-tinggi.html"
+    },
+    {
+      "id": "paragon-batu-pahat",
+      "chain": "Paragon",
+      "name": "Paragon Cinemas Batu Pahat",
+      "state": "Johor",
+      "sessions": [
+        {
+          "id": "paragon-batu-pahat-1215",
+          "time": "12:15",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1"
+        },
+        {
+          "id": "paragon-batu-pahat-1645",
+          "time": "16:45",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1"
+        },
+        {
+          "id": "paragon-batu-pahat-1900",
+          "time": "19:00",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1"
+        },
+        {
+          "id": "paragon-batu-pahat-2115",
+          "time": "21:15",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1"
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://www.paragoncinemas.com.my/Browsing/EventsAndExperiences/ExperienceDetails/2D"
+    },
+    {
+      "id": "paragon-ktcc",
+      "chain": "Paragon",
+      "name": "Paragon Cinema KTCC",
+      "state": "Terengganu",
+      "sessions": [
+        {
+          "id": "paragon-ktcc-1130",
+          "time": "11:30",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1"
+        },
+        {
+          "id": "paragon-ktcc-1345",
+          "time": "13:45",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1"
+        },
+        {
+          "id": "paragon-ktcc-1600",
+          "time": "16:00",
+          "hall": "Hall 3",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "verified-2026-09-03",
+          "seatStatus": "not-yet-observed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1"
+        }
+      ],
+      "sourceStatus": "verified-showtimes",
+      "sourceUrl": "https://www.paragoncinemas.com.my/Browsing/EventsAndExperiences/ExperienceDetails/2D"
+    },
+    {
+      "id": "mega-riverfront",
+      "chain": "Mega",
+      "name": "Mega Cineplex Riverfront Mall",
+      "state": "Kedah",
+      "sessions": [],
+      "sourceStatus": "no-tikus-showtimes-found",
+      "sourceUrl": "https://www.cinema.com.my/showtimes/cinema.aspx?id=793"
+    }
+  ],
+  "showtimeCoverage": "15/15 locations checked; 14 locations listing TIKUS!, Mega Riverfront listing no TIKUS! session at check time",
+  "totalShowsVerified": 68
+}
