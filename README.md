@@ -217,3 +217,52 @@ The TGV tracker now uses the user's confirmed public-facing names:
 API labels are retained only as technical metadata. The dashboard uses the confirmed names above.
 
 TGV 1Utama is now a first-class tracked cinema rather than an "additional cinema".
+
+
+## v10 — authenticated GSC diagnostics
+
+GSC's public booking route requires login. v10 supports a normal authenticated
+session owned by the account holder without storing the GSC password.
+
+### Local one-time setup
+
+On your own computer:
+
+1. `pip install playwright`
+2. `playwright install chromium`
+3. `python scripts/gsc_auth_setup.py`
+4. Log into GSC manually in the browser window.
+5. Return to the terminal and press Enter.
+
+This creates `gsc-auth.json`.
+
+### Put the session into GitHub Actions
+
+Do **not** commit `gsc-auth.json`.
+
+Open it locally, copy the entire JSON, then in GitHub:
+
+`Settings → Secrets and variables → Actions → New repository secret`
+
+Name:
+`GSC_AUTH_JSON`
+
+Value:
+the full contents of `gsc-auth.json`
+
+### Run
+
+Use the manual workflow:
+
+`Actions → GSC authenticated diagnostics → Run workflow`
+
+Then download or inspect:
+
+`data/gsc-auth-diagnostics.json`
+
+If GSC exposes session/seat-status data after normal authentication, the next
+version can turn that into the same live capacity/booked/available/occupancy
+pipeline already working for TGV.
+
+If the saved session expires, rerun `scripts/gsc_auth_setup.py` locally and
+replace the GitHub secret.

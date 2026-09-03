@@ -1,0 +1,46 @@
+name: GSC authenticated diagnostics
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gsc-auth:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: pip install playwright
+
+      - name: Install Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Run authenticated GSC diagnostics
+        env:
+          GSC_AUTH_JSON: ${{ secrets.GSC_AUTH_JSON }}
+        run: python scripts/gsc_auth_diagnostics.py
+
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gsc-auth-diagnostics
+          path: data/gsc-auth-diagnostics.json
+          if-no-files-found: warn
+
+      - name: Commit diagnostics
+        if: success()
+        run: |
+          git config user.name "tikus-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/gsc-auth-diagnostics.json
+          git diff --cached --quiet || git commit -m "Update authenticated GSC diagnostics"
+          git push
