@@ -1,0 +1,16 @@
+{
+  "days": [
+    {
+      "date": "2026-09-03",
+      "file": "days/2026-09-03.json",
+      "label": "3 Sep 2026",
+      "status": "archived"
+    },
+    {
+      "date": "2026-09-04",
+      "file": "current.json",
+      "label": "4 Sep 2026",
+      "status": "current"
+    }
+  ]
+}

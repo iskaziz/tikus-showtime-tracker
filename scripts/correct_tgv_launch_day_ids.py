@@ -15,6 +15,9 @@ CORRECT = {
 
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    if data.get("date") != "2026-09-03":
+        print("TGV launch-day ID correction skipped:", data.get("date"))
+        return
     for cinema in data.get("cinemas", []):
         mapping = CORRECT.get(cinema.get("id"))
         if not mapping:

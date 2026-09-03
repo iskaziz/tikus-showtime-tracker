@@ -22,13 +22,16 @@
   <main>
     <section class="hero-grid hero-grid-5" aria-label="Headline statistics">
       <article class="metric"><span>SHOWS TODAY</span><strong id="stat-shows">—</strong><small id="stat-cinemas">— cinemas reporting</small></article>
-      <article class="metric"><span>SEATS BOOKED</span><strong id="stat-booked">—</strong><small id="stat-booked-sub">Awaiting seat-map feed</small></article>
+      <article class="metric"><span>OBSERVED USED / BOOKED</span><strong id="stat-booked">—</strong><small id="stat-booked-sub">Awaiting seat-map feed</small></article>
       <article class="metric"><span>OCCUPANCY</span><strong id="stat-occupancy">—</strong><small id="stat-capacity">Capacity pending</small></article>
       <article class="metric"><span>AVAILABLE SEATS</span><strong id="stat-available">—</strong><small>Across tracked sessions</small></article>
       <article class="metric"><span>SALES VELOCITY</span><strong id="stat-velocity">—</strong><small id="stat-velocity-sub">Needs 2+ seat snapshots</small></article>
     </section>
 
     <section class="controls">
+      <label>Date
+        <select id="date-filter" aria-label="Tracker date"></select>
+      </label>
       <label>State
         <select id="state-filter"><option value="">All states</option></select>
       </label>
@@ -54,7 +57,7 @@
         </section>
 
         <section class="panel cinema-panel">
-          <div class="panel-head"><div><p class="eyebrow">15 ALLOCATED LOCATIONS</p><h2>Show-by-show detail</h2></div></div>
+          <div class="panel-head"><div><p class="eyebrow">16 ALLOCATED LOCATIONS</p><h2>Show-by-show detail</h2></div></div>
           <div id="cinema-list"></div>
         </section>
       </div>
@@ -64,23 +67,23 @@
           <p class="eyebrow">DETAILED STATS</p>
           <h2>Performance readout</h2>
           <dl class="stats-list">
-            <div><dt>Locations allocated</dt><dd id="s-locations">15</dd></div>
+            <div><dt>Locations allocated</dt><dd id="s-locations">16</dd></div>
             <div><dt>Locations with shows found</dt><dd id="s-reporting">—</dd></div>
             <div><dt>Total shows found</dt><dd id="s-shows">—</dd></div>
             <div><dt>Matinee shows</dt><dd id="s-matinee">—</dd></div>
             <div><dt>Prime-time shows</dt><dd id="s-prime">—</dd></div>
             <div><dt>Late shows</dt><dd id="s-late">—</dd></div>
             <div><dt>Total tracked capacity</dt><dd id="s-capacity">—</dd></div>
-            <div><dt>Booked seats</dt><dd id="s-booked">—</dd></div>
+            <div><dt>Observed used / booked</dt><dd id="s-booked">—</dd></div>
             <div><dt>Remaining seats</dt><dd id="s-remaining">—</dd></div>
             <div><dt>Tickets / hour</dt><dd id="s-velocity">—</dd></div>
           </dl>
           <div class="legend">
-            <span><i class="key booked"></i>Booked</span>
+            <span><i class="key booked"></i>Used / booked</span>
             <span><i class="key open"></i>Available</span>
             <span><i class="key unknown"></i>Seat feed pending</span>
           </div>
-          <p class="fineprint">Showtimes can be refreshed automatically. Seat counts are only displayed when a public seat map has been successfully read; the dashboard never invents booked-seat totals.</p>
+          <p class="fineprint">Showtimes can be refreshed automatically. Seat counts are only displayed from observed public cinema inventory. GSC status B is shown as booked; TGV reports seats used, which may include held or otherwise unavailable inventory.</p>
         </section>
       </aside>
     </section>

@@ -47,7 +47,8 @@ def hhmm(v):
 
 def main():
     now=datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
-    businessdate=now.date().isoformat()
+    data=json.loads(DATA.read_text(encoding="utf-8"))
+    businessdate=data.get("date") or now.date().isoformat()
     url=API+"getShowTimesByMovie_ParentChild_V2?"+urllib.parse.urlencode({
         "parentid":PARENT_ID,
         "oprndate":businessdate
@@ -55,7 +56,6 @@ def main():
     raw=fetch(url)
     root=ET.fromstring(raw)
 
-    data=json.loads(DATA.read_text(encoding="utf-8"))
     cinema_lookup={c["id"]:c for c in data.get("cinemas",[])}
 
     report={

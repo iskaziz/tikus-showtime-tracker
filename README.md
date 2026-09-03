@@ -611,3 +611,23 @@ observed 117 total seats and 1 seat used.
 All eight GSC cinemas now receive their known official location IDs during
 history recovery, allowing the read-only seat collector to query recovered
 sessions with known hall IDs.
+
+
+## v19 — date-safe daily rollover
+
+v19 separates each Malaysia calendar day so a post-midnight collector run can
+never write 4 September sessions into a 3 September dataset.
+
+Key changes:
+- `scripts/rollover_tracker_day.py` runs before collectors.
+- Previous days are stored under `data/days/YYYY-MM-DD.json`.
+- `data/current.json` is reset to a clean current-day dataset on rollover.
+- GSC and TGV official collectors query the date stored in `current.json`.
+- Snapshot history is grouped by dataset date.
+- The dashboard includes a date selector backed by `data/days/index.json`.
+- The last clean 3 September snapshot is archived as `data/days/2026-09-03.json`.
+- TGV UI wording reflects `seatsused`; GSC keeps B booked vs other unavailable.
+- Location count is corrected to 16.
+
+The launch-day-only recovery scripts now skip automatically when the dataset is
+not 2026-09-03.

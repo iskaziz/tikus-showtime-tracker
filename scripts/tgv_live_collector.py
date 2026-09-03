@@ -72,7 +72,7 @@ def walk_sessions(payload):
 def main():
     data=json.loads(DATA.read_text(encoding="utf-8"))
     now=datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
-    businessdate=now.date().isoformat()
+    businessdate=data.get("date") or now.date().isoformat()
 
     report={
         "collectorVersion":"8.0",
@@ -149,8 +149,10 @@ def main():
                     "hall":s.get("screenname") or "—",
                     "capacity":total,
                     "booked":used,
+                    "rawSeatsUsed":used,
                     "available":available,
                     "occupancy":round(occupancy,2) if occupancy is not None else None,
+                    "countSemantics":"tgv-seatsused",
                     "sourceStatus":"tgv-official-api",
                     "seatStatus":"tgv-official-seatstatus" if total is not None and used is not None else "seatstatus-unavailable",
                     "bookingUrl":"https://www.tgv.com.my/movies/details/tikus-2026",

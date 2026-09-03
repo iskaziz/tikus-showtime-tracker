@@ -52,18 +52,21 @@ def load_tracker_data():
     try:
         return json.loads(raw)
     except json.JSONDecodeError as exc:
-        # current.json can occasionally be damaged by a manual merge/upload.
-        # Recover from the packaged seed so the automation can continue, then
-        # the launch-day recovery + official collectors rebuild known history.
-        seed = ROOT / "data/seed-current.json"
-        if not seed.exists():
+        template = ROOT / "data/day-template.json"
+        if not template.exists():
             raise
+        now = datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
+        recovered = json.loads(template.read_text(encoding="utf-8"))
+        recovered["date"] = now.date().isoformat()
+        recovered["updatedAt"] = now.isoformat(timespec="seconds")
+        for cinema in recovered.get("cinemas", []):
+            cinema["sessions"] = []
+            cinema["sourceStatus"] = "awaiting-refresh"
         print(
-            f"WARNING: data/current.json is invalid JSON "
-            f"(line {exc.lineno}, column {exc.colno}). "
-            "Recovering from data/seed-current.json."
+            f"WARNING: data/current.json invalid "
+            f"(line {exc.lineno}, column {exc.colno}); "
+            "created a clean current-day tracker."
         )
-        recovered = json.loads(seed.read_text(encoding="utf-8"))
         DATA.write_text(json.dumps(recovered, indent=2), encoding="utf-8")
         return recovered
 

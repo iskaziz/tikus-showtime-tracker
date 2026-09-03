@@ -152,7 +152,8 @@ def main():
     candidates=list(dict.fromkeys(candidates))
     report["candidateParentIds"]=candidates
 
-    date=now.date().isoformat()
+    tracker=json.loads(DATA.read_text(encoding="utf-8"))
+    date=tracker.get("date") or now.date().isoformat()
     for pid in candidates[:30]:
         url=API+"getShowTimesByMovie_ParentChild_V2?"+urllib.parse.urlencode({
             "parentid":pid,

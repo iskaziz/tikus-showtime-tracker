@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
-  "date": "2026-09-04",
-  "updatedAt": "2026-09-04T00:00:00+08:00",
+  "date": null,
+  "updatedAt": null,
   "seatDataMode": "official-public-seat-status-plus-confirmed-showtimes",
   "cinemas": [
     {
