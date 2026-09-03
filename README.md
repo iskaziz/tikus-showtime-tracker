@@ -631,3 +631,11 @@ Key changes:
 
 The launch-day-only recovery scripts now skip automatically when the dataset is
 not 2026-09-03.
+
+
+## v19.1 — GSC official API date-source fix
+
+v19 changed `gsc_official_api.py` to read the tracker date from
+`data/current.json`, but the script did not define the `DATA` path constant.
+v19.1 adds `DATA = ROOT / "data/current.json"` so the official GSC API step can
+run normally.

@@ -18,6 +18,7 @@ import urllib.request, urllib.parse, re, json, html
 import xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[1]
+DATA=ROOT/"data/current.json"
 OUT=ROOT/"data/gsc-official-api.json"
 
 PUBLIC_MOVIE="https://www.gsc.com.my/movie/tikus/"
