@@ -43,6 +43,9 @@ jobs:
       - name: Update live GSC seat status
         run: python scripts/gsc_seat_collector.py
 
+      - name: Preserve GSC session history
+        run: python scripts/gsc_history_normalizer.py
+
       - name: Discover GSC seat endpoint names
         run: python scripts/gsc_seat_endpoint_discovery.py
 

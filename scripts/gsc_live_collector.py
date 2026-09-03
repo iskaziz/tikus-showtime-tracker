@@ -59,7 +59,7 @@ def main():
     cinema_lookup={c["id"]:c for c in data.get("cinemas",[])}
 
     report={
-        "collectorVersion":"12.0",
+        "collectorVersion":"17.0",
         "observedAt":now.isoformat(timespec="seconds"),
         "parentId":PARENT_ID,
         "childCode":CHILD_CODE,
@@ -122,10 +122,71 @@ def main():
                         "hallFull":s.attrib.get("hallfull"),
                     })
             if tracker_id in cinema_lookup:
-                cinema_lookup[tracker_id]["sessions"]=sessions
-                cinema_lookup[tracker_id]["sourceStatus"]="gsc-official-api"
-                cinema_lookup[tracker_id]["officialLocationId"]=loc.attrib.get("id")
-                cinema_lookup[tracker_id]["officialCinemaName"]=loc.attrib.get("name")
+                cinema = cinema_lookup[tracker_id]
+                previous = cinema.get("sessions", [])
+
+                current_ids = {
+                    str(sess.get("sessionId"))
+                    for sess in sessions
+                    if sess.get("sessionId")
+                }
+                current_times = {
+                    str(sess.get("time"))
+                    for sess in sessions
+                    if sess.get("time")
+                }
+
+                merged = list(sessions)
+
+                for old_session in previous:
+                    old_id = str(old_session.get("sessionId") or "")
+                    old_time = str(old_session.get("time") or "")
+
+                    # Current official row wins over any previous copy or seed row
+                    # for the same official id / clock time.
+                    if old_id in current_ids or old_time in current_times:
+                        continue
+
+                    kept = dict(old_session)
+
+                    # Official sessions observed earlier today are preserved after
+                    # GSC removes them from the current-showtime feed.
+                    if old_id and not old_id.startswith("gsc-"):
+                        kept["isExpired"] = True
+                        kept["sourceStatus"] = "gsc-last-observed"
+                        kept["lastObservedAt"] = (
+                            kept.get("seatObservedAt")
+                            or kept.get("observedAt")
+                            or now.isoformat(timespec="seconds")
+                        )
+                        if kept.get("capacity") is not None:
+                            kept["seatStatus"] = "last-observed"
+                        else:
+                            kept["seatStatus"] = kept.get("seatStatus") or "last-observed"
+                        merged.append(kept)
+                        continue
+
+                    # Legacy seed rows may pre-date our first official observation.
+                    # Keep them only as clearly labelled historical schedule rows;
+                    # never fabricate official GSC identifiers for them.
+                    if old_id.startswith("gsc-"):
+                        kept["isExpired"] = True
+                        kept["sourceStatus"] = "historical-seed"
+                        kept["seatStatus"] = kept.get("seatStatus") or "historical-schedule"
+                        merged.append(kept)
+
+                def sort_key(sess):
+                    value = str(sess.get("time") or "99:99")
+                    try:
+                        hh, mm = [int(x) for x in value.split(":")[:2]]
+                        return hh * 60 + mm
+                    except Exception:
+                        return 9999
+
+                cinema["sessions"] = sorted(merged, key=sort_key)
+                cinema["sourceStatus"]="gsc-official-api"
+                cinema["officialLocationId"]=loc.attrib.get("id")
+                cinema["officialCinemaName"]=loc.attrib.get("name")
         report["cinemas"][tracker_id]=row
 
     data["updatedAt"]=now.isoformat(timespec="seconds")

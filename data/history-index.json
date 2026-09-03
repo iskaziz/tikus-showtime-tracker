@@ -1,22 +1,3 @@
 {
-  "snapshots": [
-    {
-      "observedAt": "2026-09-03T20:03:02+08:00",
-      "booked": 23,
-      "capacity": 3075,
-      "file": "history/20260903T200302+0800.json"
-    },
-    {
-      "observedAt": "2026-09-03T20:13:29+08:00",
-      "booked": 9,
-      "capacity": 3075,
-      "file": "history/20260903T201329+0800.json"
-    },
-    {
-      "observedAt": "2026-09-03T20:52:43+08:00",
-      "booked": 6,
-      "capacity": 2023,
-      "file": "history/20260903T205243+0800.json"
-    }
-  ]
+  "snapshots": []
 }

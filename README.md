@@ -522,3 +522,23 @@ The collector also preserves:
 For the 2026-09-03 20:02 snapshot supplied during development, this distinction
 would produce 4 booked seats and 14 other-unavailable seats across the measured
 GSC sessions, rather than treating all 18 non-A positions as bookings.
+
+
+## v17 — preserve GSC sessions after expiry
+
+GSC removes earlier showtimes from its live movie feed as the day progresses.
+v17 no longer replaces the whole cinema session list on every refresh.
+
+It now:
+
+- merges current official GSC sessions into the existing day;
+- preserves official session ID, hall ID and hall number after a session expires;
+- marks disappeared official sessions `isExpired: true`;
+- retains the last measured seat snapshot as `seatStatus: "last-observed"`;
+- prevents current official sessions from being duplicated by older seed rows
+  with the same showtime;
+- retains unavoidable pre-observation seed rows only as `historical-seed`;
+- keeps `totalShowsVerified` based on the preserved daily session list.
+
+This means a session that was measured earlier in the day remains part of the
+daily performance record even after GSC stops returning it as a current show.

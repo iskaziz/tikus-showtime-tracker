@@ -123,7 +123,7 @@ def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
 
     report = {
-        "collectorVersion": "15.0",
+        "collectorVersion": "17.0",
         "observedAt": now.isoformat(timespec="seconds"),
         "policy": (
             "official public GSC seat-status XML; read-only; "
@@ -137,6 +137,7 @@ def main():
         "totals": {
             "sessionsQueried": 0,
             "sessionsMeasured": 0,
+            "sessionsLastObserved": 0,
             "capacity": 0,
             "available": 0,
             "booked": 0,
@@ -175,7 +176,23 @@ def main():
             }
 
             if not location_id or not hall_id or len(show_time) != 4:
-                item["status"] = "missing-identifiers"
+                if session.get("isExpired") and session.get("capacity") is not None:
+                    item.update({
+                        "status": "last-observed",
+                        "capacity": session.get("capacity"),
+                        "available": session.get("available"),
+                        "booked": session.get("booked"),
+                        "otherUnavailable": session.get("otherUnavailable"),
+                        "unavailable": session.get("unavailable"),
+                        "occupancy": session.get("occupancy"),
+                        "unavailableRate": session.get("unavailableRate"),
+                        "statusCounts": session.get("statusCounts"),
+                        "seatTypeCounts": session.get("seatTypeCounts"),
+                        "seatObservedAt": session.get("seatObservedAt"),
+                    })
+                    report["totals"]["sessionsLastObserved"] += 1
+                else:
+                    item["status"] = "missing-identifiers"
                 cinema_report["sessions"].append(item)
                 continue
 
@@ -242,6 +259,7 @@ def main():
     data["updatedAt"] = now.isoformat(timespec="seconds")
     data["gscSeatCoverage"] = {
         "sessionsMeasured": report["totals"]["sessionsMeasured"],
+        "sessionsLastObserved": report["totals"]["sessionsLastObserved"],
         "sessionsQueried": report["totals"]["sessionsQueried"],
         "capacity": report["totals"]["capacity"],
         "available": report["totals"]["available"],
