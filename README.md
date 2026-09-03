@@ -155,3 +155,21 @@ non-invasive discovery against the public TGV TIKUS! page.
 
 After running the workflow, upload:
 `data/tgv-seat-diagnostics.json`
+
+
+## v7 — TGV API discovery pass 2
+
+The first TGV diagnostic was promising. It exposed the public API host
+`api.tgv.com.my` and the TIKUS! movie UUID
+`7b2216d1-27d8-479e-b420-8ab157847aa6`.
+
+It also exposed a public box-office endpoint returning business dates from
+3–9 September 2026.
+
+v7 now clicks only the public **BUY NOW** control and records the exact API
+request methods, POST payloads and JSON responses used for cinema/showtime
+discovery. It may click a cinema selector, but it deliberately does not select
+a showtime seat, reserve inventory or submit a booking.
+
+After the workflow runs, upload the new:
+`data/tgv-seat-diagnostics.json`

@@ -1,10 +1,3 @@
 {
-  "snapshots": [
-    {
-      "observedAt": "2026-09-03T12:00:42+08:00",
-      "booked": null,
-      "capacity": null,
-      "file": "history/20260903T120042+0800.json"
-    }
-  ]
+  "snapshots": []
 }
