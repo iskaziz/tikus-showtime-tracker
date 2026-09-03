@@ -1,0 +1,145 @@
+{
+  "observedAt": "2026-09-03T11:19:22+08:00",
+  "sessions": [
+    {
+      "cinema": "Paragon Cinemas Batu Pahat",
+      "time": "12:15",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinemas Batu Pahat",
+      "time": "16:45",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinemas Batu Pahat",
+      "time": "19:00",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinemas Batu Pahat",
+      "time": "21:15",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinema KTCC",
+      "time": "11:30",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinema KTCC",
+      "time": "13:45",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    },
+    {
+      "cinema": "Paragon Cinema KTCC",
+      "time": "16:00",
+      "status": "needs-selector-confirmation",
+      "diagnostics": {
+        "url": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1",
+        "title": "PARAGON CINEMAS",
+        "selectors": {
+          "[class*='seat']": 0,
+          "[id*='seat']": 3,
+          "img[alt*='seat' i]": 0,
+          "[data-seat]": 0,
+          "[data-seat-number]": 0,
+          "button[aria-label*='seat' i]": 0
+        },
+        "classified": 0,
+        "booked": 0,
+        "available": 0
+      }
+    }
+  ]
+}
