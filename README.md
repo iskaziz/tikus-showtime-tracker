@@ -359,3 +359,27 @@ artifact paths to use YAML multiline lists.
 After running the workflow, this file should be created and committed:
 
 `data/gsc-seat-api-static-analysis.json`
+
+
+## v14 — manual authenticated GSC seat-network capture
+
+The v13 static analysis confirms GSC has a distinct seat-selection workflow,
+`seatSelectionData`, `lockSeatBody`, `initSalesResponse`, a production
+`apiServer`, an application proxy at `/api`, and Init Sales Transaction version
+`4.0.0`. It does not reveal the exact seat-layout operation string by itself.
+
+v14 therefore adds a **local manual capture**:
+
+`python scripts/gsc_manual_seat_network.py`
+
+The script opens GSC using your existing `gsc-auth.json`. You manually navigate
+to TIKUS!, open ONE future showtime, and stop when the seat map appears. Do not
+click any seat. The script records relevant request/response metadata while
+redacting authentication and common personal fields.
+
+Output:
+
+`data/gsc-manual-seat-network.json`
+
+This diagnostic is intentionally local and is not added to the recurring
+GitHub Actions workflow.
