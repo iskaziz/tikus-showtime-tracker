@@ -1,0 +1,244 @@
+{
+  "collectorVersion": "10.0",
+  "observedAt": "2026-09-03T13:41:01+08:00",
+  "policy": "normal authenticated session reuse; no password storage; no auth bypass",
+  "moviePage": "https://www.gsc.com.my/movie/tikus/",
+  "networkCandidates": [
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&auid=771995447.1788413553&dt=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&tid=AW-16543093298&en=page_view&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2F&scrsrc=www.googletagmanager.com&rnd=1339261200.1788414067&navt=n&npa=0&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&tft=1788414066790&tfd=3056&tids=AW-16543093298&fmt=8",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-9CN66XRBN6&gtm=45je6911v9165201048za200zd9165201048&_p=1788414066420&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAEAGQC&ae=a&are=1&cid=332949365.1788413553&frm=0&pscdl=noapi&rcb=18&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423&dp=%2Fshowtime-by-movies%2Fid%2Ftitle&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&sid=1788413552&sct=1&seg=1&dt=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&en=scroll&epn.percent_scrolled=90&tfd=4637",
+      "method": "POST",
+      "status": 204,
+      "contentType": "text/plain",
+      "postData": null
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=4367533472328562&correlator=2461543641149705&eid=95400919%2C122880771%2C122880805%2C31084129&output=ldjh&gdfp_req=1&vrg=202608270101&ptt=17&impl=fifs&iu_parts=28335045%2CHome_Superbanner&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90%7C320x50&ifi=1&dids=div-gpt-ad-1671701746735-0&adfs=3191934126&sfv=1-0-45&fsfs=1&sc=1&cookie_enabled=1&abxe=1&dt=1788414068508&lmt=1784512438&adxs=356&adys=0&biw=1440&bih=1100&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=2&u_h=1100&u_w=1440&u_ah=1100&u_aw=1440&u_cd=24&u_sd=1&dmc=16&bc=31&nvt=1&uach=WyJXaW5kb3dzIiwiIiwieDg2IiwiIiwiMTUxLjAuNzkyMi4zNCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3Q9QT9CcmFuZCIsIjk5LjAuMC4wIl0sWyJIZWFkbGVzc0Nocm9tZSIsIjE1MS4wLjc5MjIuMzQiXSxbIkNocm9taXVtIiwiMTUxLjAuNzkyMi4zNCJdXSwwXQ..&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&vis=1&psz=1440x50&msz=728x50&fws=0&ohw=0&dlt=1788414064351&idt=120&adks=132929096&frm=20&eoidce=1&pgls=CAo.",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/Movie_showtime_error_icon@2x.7c0917781a464784.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-9CN66XRBN6&gtm=45je6911v9165201048za200zd9165201048&_p=1788414066420&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=332949365.1788413553&frm=0&pscdl=noapi&rcb=18&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=2&tag_exp=115616985~115938465~115938469~118897920~118897930~120213116~120385423&dp=%2Fshowtime-by-movies%2Fid%2Ftitle&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&sid=1788413552&sct=1&seg=1&dt=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&en=page_view&_ee=1&_et=3&tfd=5614",
+      "method": "POST",
+      "status": 204,
+      "contentType": "text/plain",
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=0&auid=771995447.1788413553&dt=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&tid=AW-16543093298&en=page_view&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&scrsrc=www.googletagmanager.com&rnd=1339261200.1788414067&navt=n&npa=0&ae=a&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&tft=1788414069373&tfd=5639&tids=AW-16543093298&fmt=8",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/16543093298/?random=1788414069352&cv=11&fst=1788414069352&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2F&rcb=18&frm=0&tiba=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/16543093298/?random=1788414069352&cv=11&fst=1788414069352&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2F&rcb=18&frm=0&tiba=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=4",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getEpaymentMovie_ParentChild?includeChild=true&parent=",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/xml",
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/pagead/1p-user-list/16543093298/?random=1788414069352&cv=11&fst=1788411600000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2F&rcb=18&frm=0&tiba=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAQM4h3FV-IYRRYHWc06N_dlTnz8NwG0wkzmuqsqF3QA6H5qjd1Wp0gM58V9W_e9YSOOK-fY1tmRcfhgFSqY-z9umjxr2SU98iXpO1el-Z75Tl6Ie77rIuQAEoCg2D5JGFHzJqIxajmolq7DyWg_IGZdak2_JuQpB_UbTd4q2FXq9rczbfwLk05J5_PDe_JujY6xiJ7yJzN-Q-kzazS8bxvRLKtuFSgxzDmQitXhARUPU5H7QAFYeW3EIGcogGfxaJBctJ3SOaZKOdAoP9IidETZpyWwcJhe0FCh5w_tv5yt8&random=952488578&rmt_tld=0&ipr=y",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/gif",
+      "postData": null
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=4367533472328562&correlator=567304627952698&eid=95400919%2C122880771%2C122880805%2C31084129&output=ldjh&gdfp_req=1&vrg=202608270101&ptt=17&impl=fifs&iu_parts=28335045%2CHome_Superbanner&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90%7C320x50&ifi=2&dids=div-gpt-ad-1671701746735-0&adfs=3191934126&sfv=1-0-45&fsfs=1&rcs=1&eri=1&sc=1&cookie=ID%3D4978870d9ec336ad%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZQnrBadLhjlgpyqWddUcFb4GQJtQ&gpic=UID%3D0000151cca7886f9%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZBe6GIdafhWdZaSw273g6dZHgufg&abxe=1&dt=1788414069688&lmt=1784512438&adxs=356&adys=0&biw=1440&bih=1100&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=4&u_h=1100&u_w=1440&u_ah=1100&u_aw=1440&u_cd=24&u_sd=1&dmc=16&bc=31&nvt=1&uach=WyJXaW5kb3dzIiwiIiwieDg2IiwiIiwiMTUxLjAuNzkyMi4zNCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3Q9QT9CcmFuZCIsIjk5LjAuMC4wIl0sWyJIZWFkbGVzc0Nocm9tZSIsIjE1MS4wLjc5MjIuMzQiXSxbIkNocm9taXVtIiwiMTUxLjAuNzkyMi4zNCJdXSwwXQ..&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2F6276%2Fchelot&vis=1&psz=1440x97&msz=728x97&fws=0&ohw=0&dlt=1788414064351&idt=120&adks=132929096&frm=20&eo_id_str=ID%3D3a7dfe4bab5fd45a%3AT%3D1788414068%3ART%3D1788414068%3AS%3DAA-AfjZBOgLD2rHm8sw5UWBHHLMM&pgls=CAo.",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getShowTimesByMovie_ParentChild_V2?parentid=6276&oprndate=2026-09-03",
+      "method": "GET",
+      "status": 200,
+      "contentType": "application/xml",
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=0&auid=771995447.1788413553&dt=Chelot%20Showtimes%20%26%20Tickets%20Online%20%7C%20GSC&tid=AW-16543093298&en=page_view&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2F6276%2Fchelot&scrsrc=www.googletagmanager.com&rnd=1339261200.1788414067&navt=n&npa=0&ae=a&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&tft=1788414070676&tfd=6943&tids=AW-16543093298&fmt=8",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/rmkt/collect/16543093298/?random=1788414070663&cv=11&fst=1788414070663&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2F6276%2Fchelot&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&rcb=18&frm=0&tiba=Chelot%20Showtimes%20%26%20Tickets%20Online%20%7C%20GSC&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    },
+    {
+      "url": "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/16543093298/?random=1788414070663&cv=11&fst=1788414070663&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2F6276%2Fchelot&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&rcb=18&frm=0&tiba=Chelot%20Showtimes%20%26%20Tickets%20Online%20%7C%20GSC&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=4",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/pagead/1p-user-list/16543093298/?random=1788414070663&cv=11&fst=1788411600000&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423&u_w=1440&u_h=1100&url=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2F6276%2Fchelot&ref=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Fshowtime-by-movies%2Fid%2Ftitle&rcb=18&frm=0&tiba=Chelot%20Showtimes%20%26%20Tickets%20Online%20%7C%20GSC&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=771995447.1788413553&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uamb=0&uam=&uap=Windows&uapv=&uaw=0&data=event%3Dpage_view&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAQM4h3CDqpQnTchm5rqM_tZOu6TnoWPNLqYqKds4b8hoMxefvz07u-YZRs_cstJKyNoEI7X6wZQpz_7EAQURaFJcD51LUUPe6vq7AAemQv76hXCc7QuquCXFQuSX5B9pZifN7XZe_GpfycdXbb4MtWlYMMhAF3UUzrYBhDfQSxPIsSy7_1A08jkj6VrbbAxnMlRJwge-TIxLO5NB85rKbg9bW8mYypNkgGhq4vfovst6gYSn_cGKRnkfPwd5p0lTj1uxknJhTyU9ay-xk2TA_rnzwcA0QWhxqKRFJ6_1Y13w&random=790329251&rmt_tld=0&ipr=y",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/gif",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/w_escape@4x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/w_pr@4x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/w_2d@4x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/nw_wt_border_maxx@2x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/w_lux@4x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/new_PLS_default@2x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://epaymentwebapp.gsc.com.my/assets/img/cinema-experiences/w_big@4x.png",
+      "method": "GET",
+      "status": 200,
+      "contentType": "image/png",
+      "postData": null
+    },
+    {
+      "url": "https://www.gsc.com.my/movie/tikus/",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "postData": null
+    },
+    {
+      "url": "https://www.gsc.com.my/_nuxt/static/1788413526/movie/tikus/payload.js",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "postData": null
+    },
+    {
+      "url": "https://www.gsc.com.my/_nuxt/static/1788413526/movie/tikus/state.js",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "postData": null
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=563203930040972&correlator=3322969645217008&eid=31084129%2C95401386&output=ldjh&gdfp_req=1&vrg=202608270101&ptt=17&impl=fifs&iu_parts=28335045%2CHome_Rectangular&enc_prev_ius=%2F0%2F1&prev_iu_szs=300x250&ifi=2&dids=div-gpt-ad-1671701671661-0&adfs=3661191852&sfv=1-0-45&sc=1&cookie=ID%3D4978870d9ec336ad%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZQnrBadLhjlgpyqWddUcFb4GQJtQ&gpic=UID%3D0000151cca7886f9%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZBe6GIdafhWdZaSw273g6dZHgufg&abxe=1&dt=1788414075129&lmt=1788414016&adxs=395&adys=3867&biw=1440&bih=1100&scr_x=0&scr_y=0&btvi=1&ucis=2&oid=2&u_his=5&u_h=1100&u_w=1440&u_ah=1100&u_aw=1440&u_cd=24&u_sd=1&dmc=16&bc=31&nvt=1&uach=WyJXaW5kb3dzIiwiIiwieDg2IiwiIiwiMTUxLjAuNzkyMi4zNCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3Q9QT9CcmFuZCIsIjk5LjAuMC4wIl0sWyJIZWFkbGVzc0Nocm9tZSIsIjE1MS4wLjc5MjIuMzQiXSxbIkNocm9taXVtIiwiMTUxLjAuNzkyMi4zNCJdXSwwXQ..&url=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&vis=1&psz=325x309&msz=325x250&fws=0&ohw=0&dlt=1788414072055&idt=1081&adks=2287556411&frm=20&eo_id_str=ID%3D3a7dfe4bab5fd45a%3AT%3D1788414068%3ART%3D1788414068%3AS%3DAA-AfjZBOgLD2rHm8sw5UWBHHLMM&pgls=CAs.",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://securepubads.g.doubleclick.net/gampad/ads?pvsid=563203930040972&correlator=3322969645217008&eid=31084129%2C95401386&output=ldjh&gdfp_req=1&vrg=202608270101&ptt=17&impl=fifs&iu_parts=28335045%2CHome_Superbanner&enc_prev_ius=%2F0%2F1&prev_iu_szs=728x90%7C320x50&ifi=1&dids=div-gpt-ad-1671701746735-0&adfs=2494405355&sfv=1-0-45&sc=1&cookie=ID%3D4978870d9ec336ad%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZQnrBadLhjlgpyqWddUcFb4GQJtQ&gpic=UID%3D0000151cca7886f9%3AT%3D1788414068%3ART%3D1788414068%3AS%3DALNI_MZBe6GIdafhWdZaSw273g6dZHgufg&abxe=1&dt=1788414075114&lmt=1788414016&adxs=356&adys=9&biw=1440&bih=1100&scr_x=0&scr_y=0&btvi=0&ucis=1&oid=2&u_his=5&u_h=1100&u_w=1440&u_ah=1100&u_aw=1440&u_cd=24&u_sd=1&dmc=16&bc=31&nvt=1&uach=WyJXaW5kb3dzIiwiIiwieDg2IiwiIiwiMTUxLjAuNzkyMi4zNCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3Q9QT9CcmFuZCIsIjk5LjAuMC4wIl0sWyJIZWFkbGVzc0Nocm9tZSIsIjE1MS4wLjc5MjIuMzQiXSxbIkNocm9taXVtIiwiMTUxLjAuNzkyMi4zNCJdXSwwXQ..&url=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&vis=1&psz=1440x68&msz=1440x50&fws=0&ohw=0&dlt=1788414072055&idt=1081&adks=132929096&frm=20&eo_id_str=ID%3D3a7dfe4bab5fd45a%3AT%3D1788414068%3ART%3D1788414068%3AS%3DAA-AfjZBOgLD2rHm8sw5UWBHHLMM&pgls=CAs.",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/plain; charset=UTF-8",
+      "postData": null
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-85Q2DWPKJ3&gtm=45je6911v898977266z89184140321za20gzb9184140321zd9184140321&_p=1788414075029&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&are=1&cid=332949365.1788413553&frm=0&pscdl=noapi&rcb=5&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120385423&sid=1788414075&sct=1&seg=0&dl=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&dt=Tikus%20Movie%20Showtimes%20%26%20Tickets&en=page_view&_fv=1&_ss=1&tfd=3981",
+      "method": "POST",
+      "status": 204,
+      "contentType": "text/plain",
+      "postData": null
+    },
+    {
+      "url": "https://www.gsc.com.my/_nuxt/static/1788413526/movies/payload.js",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "postData": null
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=771995447.1788413553&dt=Golden%20Screen%20Cinemas%20%7C%20Malaysia%27s%20Leading%20Cinema%20Online&tid=AW-16543093298&en=page_view&dl=https%3A%2F%2Fepaymentwebapp.gsc.com.my%2Flogin&scrsrc=www.googletagmanager.com&rnd=1421433758.1788414080&navt=n&npa=0&gtm=45be6911v9183966055za200zb9165201048zd9165201048xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938465~115938468~118897920~118897930~119404698~120213116~120385422&tft=1788414080239&tfd=1084&tids=AW-16543093298&fmt=8",
+      "method": "POST",
+      "status": 200,
+      "contentType": null,
+      "postData": null
+    }
+  ],
+  "sessionLikeElements": [],
+  "notes": [
+    "Uses a normal GSC login session supplied by the account owner.",
+    "No password is stored by this collector.",
+    "No payment is submitted.",
+    "No attempt is made to defeat authentication."
+  ],
+  "initialUrl": "https://epaymentwebapp.gsc.com.my/showtime-by-movies/6276/chelot",
+  "initialBodySample": "Showtime by Movies\n\nShowtime by Cinemas\n\nHall Booking\n\nF&B\n\nFasTicket\n\nLogin / Sign In\nCHELOT\n\n2 h 5 m \u2022 BM\n\nSelect Date\n\nTHU\n\n03\n\nSep\n\nFRI\n\n04\n\nSep\n\nSAT\n\n05\n\nSep\n\nSUN\n\n06\n\nSep\n\nMON\n\n07\n\nSep\n\nTUE\n\n08\n\nSep\n\nWED\n\n09\n\nSep\n\nSelect Experiences\nSelect Cinemas & Time\nRegions:\nAll\nKuala Lumpur - Aurum, The Exchange TRX\n\n3:00PM\n\nSTUDIO\n\n5:30PM\n\nGETHA\n\n8:45PM\n\nSTUDIO\n\n9:40PM\n\n2D\n\n11:30PM\n\nGETHA\n\n11:45PM\n\nSTUDIO\n\nKuala Lumpur - Aurum, The Gardens Mall\n\n5:50PM\n\nSTUDIO\n\nKuala Lumpur - Mid Valley Megamall\n\n3:20PM\n\n2D\n\n3:30PM\n\n2D\n\n3:50PM\n\n2D\n\n5:55PM\n\n2D\n\n6:05PM\n\n2D\n\n6:25PM\n\n2D\n\n8:30PM\n\n2D\n\n8:40PM\n\n2D\n\n9:00PM\n\n2D\n\nKuala Lumpur - NU Sentral\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:40PM\n\n2D\n\n6:25PM\n\n2D\n\n7:15PM\n\n2D\n\n8:35PM\n\n2D\n\n9:00PM\n\n2D\n\n9:50PM\n\n2D\n\n11:10PM\n\n2D\n\n11:35PM\n\n2D\n\n12:25AM\n\n2D\n\nKuala Lumpur - LaLaport BBCC\n\n1:25PM\n\n2D\n\n2:55PM\n\n2D\n\n4:00PM\n\n2D\n\n4:30PM\n\nBIG\n\n6:35PM\n\n2D\n\n7:50PM\n\n2D\n\n9:10PM\n\n2D\n\n9:40PM\n\nBIG\n\n10:25PM\n\n2D\n\n11:15PM\n\n2D\n\n11:45PM\n\n2D\n\nKuala Lumpur - Quill City Mall\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:40PM\n\n2D\n\n6:15PM\n\n2D\n\n7:15PM\n\n2D\n\n8:05PM\n\n2D\n\n8:50PM\n\n2D\n\n9:50PM\n\n2D\n\n10:40PM\n\n2D\n\n12:25AM\n\n2D\n\nKuala Lumpur - EkoCheras Mall\n\n3:05PM\n\n2D\n\n10:05PM\n\n2D\n\n12:40AM\n\n2D\n\nKuala Lumpur - MyTown\n\n1:35PM\n\n2D\n\n1:55PM\n\nPREMIERE\n\n3:30PM\n\n2D\n\n3:50PM\n\nBIG\n\n3:50PM\n\nBIG\n\n4:10PM\n\n2D\n\n4:30PM\n\nPREMIERE\n\n6:05PM\n\n2D\n\n6:25PM\n\nBIG\n\n6:25PM\n\nBIG\n\n6:45PM\n\n2D\n\n7:05PM\n\nPREMIERE\n\n8:40PM\n\n2D\n\n9:00PM\n\nBIG\n\n9:00PM\n\nBIG\n\n9:20PM\n\n2D\n\n9:40PM\n\nPREMIERE\n\n11:15PM\n\n2D\n\n11:35PM\n\nBIG\n\n11:35PM\n\nBIG\n\n11:55PM\n\n2D\n\n12:15AM\n\nPREMIERE\n\nKuala Lumpur - KL East Mall\n\n1:45PM\n\n2D\n\n3:45PM\n\n2D\n\n4:20PM\n\n2D\n\n4:55PM\n\n2D\n\n6:25PM\n\n2D\n\n6:55PM\n\n2D\n\n9:00PM\n\n2D\n\n9:15PM\n\n2D\n\n9:30PM\n\n2D\n\n9:45PM\n\n2D\n\n10:15PM\n\n2D\n\n11:35PM\n\n2D\n\n11:50PM\n\n2D\n\n12:05AM\n\n2D\n\n12:20AM\n\n2D\n\nKuala Lumpur - Melawati\n\n1:35PM\n\n2D\n\n1:35PM\n\nPLS\n\n2:05PM\n\n2D\n\n2:35PM\n\n2D\n\n3:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:10PM\n\n2D\n\n4:10PM\n\nPLS\n\n4:40PM\n\n2D\n\n5:10PM\n\n2D\n\n5:40PM\n\n2D\n\n6:15PM\n\n2D\n\n6:45PM\n\n2D\n\n6:45PM\n\nPLS\n\n7:15PM\n\n2D\n\n7:45PM\n\n2D\n\n8:15PM\n\n2D\n\n8:50PM\n\n2D\n\n9:05PM\n\n2D\n\n9:20PM\n\n2D\n\n9:20PM\n\nPLS\n\n9:50PM\n\n2D\n\n10:05PM\n\n2D\n\n10:20PM\n\n2D\n\n10:50PM\n\n2D\n\n11:25PM\n\n2D\n\n11:40PM\n\n2D\n\n11:55PM\n\n2D\n\n11:55PM\n\nPLS\n\n12:25AM\n\n2D\n\nKuala Lumpur - Setapak Central\n\n1:45PM\n\n2D\n\n3:25PM\n\n2D\n\n4:00PM\n\n2D\n\n4:20PM\n\n2D\n\n6:00PM\n\n2D\n\n8:35PM\n\n2D\n\n9:15PM\n\n2D\n\n9:30PM\n\n2D\n\n11:10PM\n\n2D\n\n11:50PM\n\n2D\n\n12:05AM\n\n2D\n\nPetaling Jaya - 1 Utama (New Wing)\n\n4:10PM\n\n2D\n\n9:00PM\n\n2D\n\n11:35PM\n\n2D\n\nPetaling Jaya-IOI Mall Damansara(TropicanaGardens)\n\n1:45PM\n\n2D\n\n3:30PM\n\nPREMIERE\n\n3:50PM\n\n2D\n\n4:20PM\n\n2D\n\n6:55PM\n\n2D\n\n8:40PM\n\n2D\n\n9:00PM\n\nPREMIERE\n\n9:30PM\n\n2D\n\n11:15PM\n\n2D\n\n12:05AM\n\n2D\n\nPetaling Jaya - The Starling Mall\n\n10:20PM\n\n2D\n\nPetaling Jaya - Paradigm Mall\n\n1:30PM\n\n2D\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:40PM\n\n2D\n\n6:15PM\n\n2D\n\n7:15PM\n\n2D\n\n8:50PM\n\n2D\n\n9:50PM\n\n2D\n\n11:25PM\n\n2D\n\n12:25AM\n\n2D\n\nKepong - Lotus`s (Kepong Village Mall)\n\n4:25PM\n\n2D\n\n8:55PM\n\n2D\n\n11:30PM\n\n2D\n\nPuchong - IOI Mall\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:40PM\n\n2D\n\n6:15PM\n\n2D\n\n7:15PM\n\n2D\n\n8:50PM\n\n2D\n\n9:50PM\n\n2D\n\n11:25PM\n\n2D\n\n12:25AM\n\n2D\n\nSubang Jaya - Summit USJ\n\n1:50PM\n\n2D\n\n3:40PM\n\n2D\n\n4:25PM\n\n2D\n\n6:15PM\n\n2D\n\n7:35PM\n\n2D\n\n8:50PM\n\n2D\n\n9:30PM\n\n2D\n\n10:10PM\n\n2D\n\nSubang Jaya - Subang Parade\n\n2:05PM\n\n2D\n\n3:55PM\n\n2D\n\n4:25PM\n\n2D\n\n4:40PM\n\n2D\n\n6:30PM\n\n2D\n\n7:00PM\n\n2D\n\n7:15PM\n\n2D\n\n9:05PM\n\n2D\n\n9:35PM\n\n2D\n\n9:50PM\n\n2D\n\n10:30PM\n\n2D\n\n11:40PM\n\n2D\n\n12:10AM\n\n2D\n\n12:25AM\n\n2D\n\nSetia Alam - Setia City Mall\n\n1:35PM\n\n2D\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:10PM\n\n2D\n\n4:40PM\n\n2D\n\n6:15PM\n\n2D\n\n6:45PM\n\n2D\n\n7:15PM\n\n2D\n\n8:50PM\n\n2D\n\n9:20PM\n\n2D\n\n9:50PM\n\n2D\n\n11:25PM\n\n2D\n\n11:55PM\n\n2D\n\n12:25AM\n\n2D\n\nPutrajaya - IOI City Mall (West)\n\n1:35PM\n\nMAXX\n\n1:35PM\n\nPLS\n\n2:05PM\n\nMAXX\n\n3:40PM\n\n2D\n\n4:10PM\n\nMAXX\n\n4:10PM\n\nPLS\n\n4:40PM\n\nMAXX\n\n6:15PM\n\n2D\n\n6:45PM\n\nMAXX\n\n6:45PM\n\nPLS\n\n7:15PM\n\nMAXX\n\n8:50PM\n\n2D\n\n9:20PM\n\nMAXX\n\n9:20PM\n\nPLS\n\n9:50PM\n\nMAXX\n\n11:25PM\n\n2D\n\n11:55PM\n\nMAXX\n\n11:55PM\n\nPLS\n\n12:25AM\n\nMAXX\n\nPutrajaya - IOI City Mall 2 (East)\n\n2:05PM\n\n2D\n\n3:40PM\n\n2D\n\n4:40PM\n\n2D\n\n5:10PM\n\n2D\n\n6:15PM\n\n2D\n\n7:15PM\n\n2D\n\n7:45PM\n\n2D\n\n8:50PM\n\n2D\n\n9:50PM\n\n2D\n\n10:20PM\n\n2D\n\n11:25PM\n\n2D\n\n12:25AM\n\n2D\n\n12:55AM\n\n2D\n\nGSC Premiere - IOI City Mall 2 (East)\n\n4:10PM\n\nPREMIERE\n\n7:05PM\n\nPREMIERE\n\n10:00PM\n\nPREMIERE\n\n12:55AM\n\nPREMIERE\n\nPenang - Gurney Plaza\n\n7:55PM\n\n2D\n\n8:30PM\n\n2D\n\n11:05PM\n\n2D\n\nPenang - Queensbay Mall\n\n1:45PM\n\n2D\n\n3:35PM\n\n2D\n\n4:20PM\n\n2D\n\n6:10PM\n\n2D\n\n6:55PM\n\n2D\n\n8:30PM\n\n2D\n\n8:45PM\n\n2D\n\n9:00PM\n\n2D\n\n9:30PM\n\n2D\n\n11:05PM\n\n2D\n\n11:20PM\n\n2D\n\n11:35PM\n\n2D\n\n12:05AM\n\n2D\n\nPenang - Sunway Carnival\n\n1:45PM\n\n2D\n\n3:20PM\n\n2D\n\n3:50PM\n\n2D\n\n4:20PM\n\n2D\n\n4:35PM\n\n2D\n\n5:55PM\n\n2D\n\n6:25PM\n\n2D\n\n6:55PM\n\n2D\n\n7:45PM\n\n2D\n\n8:30PM\n\n2D\n\n9:00PM\n\n2D\n\n9:30PM\n\n2D\n\n10:05PM\n\n2D\n\n11:05PM\n\n2D\n\n11:35PM\n\n2D\n\n12:05AM\n\n2D\n\nKangar - Kangar Jaya Mall\n\n3:10PM\n\n2D\n\n3:25PM\n\n2D\n\n3:40PM\n\n2D\n\nAlor Setar - Aman Central\n\n1:35PM\n\n2D\n\n1:50PM\n\n2D\n\n3:40PM\n\n2D\n\n3:55PM\n\n2D\n\n4:10PM\n\n2D\n\n4:25PM\n\n2D\n\n6:15PM\n\n2D\n\n6:30PM\n\n2D\n\n6:45PM\n\n2D\n\n7:00PM\n\n2D\n\n8:50PM\n\n2D\n\n9:05PM\n\n2D\n\n9:20PM\n\n2D\n\n9:35PM\n\n2D\n\n11:25PM\n\n2D\n\n11:40PM\n\n2D\n\n11:55PM\n\n2D\n\n12:10AM\n\n2D\n\nSg Petani - Amanjaya Mall\n\n1:35PM\n\n2D\n\n1:50PM\n\n2D\n\n3:40PM\n\n2D\n\n3:55PM\n\n2D\n\n4:10PM\n\n2D\n\n4:25PM\n\n2D\n\n6:15PM\n\n2D\n\n6:30PM\n\n2D\n\n6:45PM\n\n2D\n\n7:00PM\n\n2D\n\n8:50PM\n\n2D\n\n9:05P",
+  "authenticated": true,
+  "resolvedBuyUrl": "https://epaymentwebapp.gsc.com.my/fnb",
+  "finalUrl": "https://epaymentwebapp.gsc.com.my/login",
+  "bodySample": "Log In\n\nMobile Number\n\n+60\n\nPassword\n\nForgot Password?\nLogin\n\nNot a member yet?\n\nSign Up now",
+  "sourceIds": [
+    "Online",
+    "tic",
+    "theater",
+    "online"
+  ]
+}
