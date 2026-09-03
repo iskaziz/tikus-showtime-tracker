@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-03T14:32:09+08:00",
+  "observedAt": "2026-09-03T16:14:50+08:00",
   "businessDate": "2026-09-03",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430673",
-          "time": "15:30",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430680",
           "time": "20:00",
@@ -56,9 +47,9 @@
           "time": "18:15",
           "hall": "Cinema 5",
           "seatstotal": 174,
-          "seatsused": 0,
-          "available": 174,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 173,
+          "occupancy": 0.57
         },
         {
           "sessionId": "310890",
@@ -76,15 +67,6 @@
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
       "sessions": [
-        {
-          "sessionId": "220144",
-          "time": "15:45",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "220129",
           "time": "18:15",
@@ -134,17 +116,7 @@
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [
-        {
-          "sessionId": "324678",
-          "time": "15:00",
-          "hall": "Cinema 1",
-          "seatstotal": 117,
-          "seatsused": 4,
-          "available": 113,
-          "occupancy": 3.42
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     }
   },

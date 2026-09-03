@@ -1,6 +1,6 @@
 {
   "collectorVersion": "12.0",
-  "observedAt": "2026-09-03T14:31:32+08:00",
+  "observedAt": "2026-09-03T16:14:09+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-03",
@@ -12,13 +12,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "924426",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "924427",
           "time": "17:40",
@@ -42,13 +35,6 @@
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "339694",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "339695",
           "time": "17:40",
@@ -80,13 +66,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213310",
-          "time": "15:20",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213311",
           "time": "17:40",
           "hall": "4",
@@ -116,13 +95,6 @@
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "406743",
-          "time": "15:20",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
         {
           "sessionId": "406742",
           "time": "17:40",
@@ -154,13 +126,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "289307",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "289308",
           "time": "17:40",
           "hall": "2",
@@ -183,13 +148,6 @@
       "epaymentName": "Kuantan - Kuantan City Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "79949",
-          "time": "15:20",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
         {
           "sessionId": "79950",
           "time": "17:40",
@@ -221,13 +179,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "77183",
-          "time": "14:30",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "77184",
           "time": "16:50",
           "hall": "1",
@@ -257,13 +208,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77710",
-          "time": "14:30",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77711",
           "time": "16:50",
