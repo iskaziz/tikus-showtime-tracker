@@ -405,3 +405,24 @@ and do not click any seat.
 Upload:
 
 `data/gsc-manual-seat-network-v2.json`
+
+
+## v14.2 — direct TIKUS! + context-wide capture
+
+The v14.1 diagnostic still showed only the initial page request and translation
+file. It did not record a TIKUS! showtime or seat-map request.
+
+v14.2:
+- opens TIKUS! directly at `/showtime-by-movies/6363/tikus`;
+- captures network traffic at BrowserContext level rather than one page;
+- therefore also captures redirects, popups and new tabs.
+
+Run locally:
+
+`python scripts/gsc_manual_seat_network_v3.py`
+
+Use only the Chromium window opened by the script. Stop as soon as a seat map
+is visible and do not click any seat.
+
+Upload:
+`data/gsc-manual-seat-network-v3.json`
