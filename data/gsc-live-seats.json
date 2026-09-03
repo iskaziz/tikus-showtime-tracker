@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-04T00:00:51+08:00",
+  "observedAt": "2026-09-04T00:50:53+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -362,13 +362,13 @@
     },
     "gsc-midvalley": {
       "name": "GSC Midvalley Megamall",
-      "officialLocationId": "210",
+      "officialLocationId": null,
       "sessions": [
         {
           "sessionId": "gsc-midvalley-1040",
           "time": "10:40",
-          "hall": null,
-          "locationId": "210",
+          "hall": "\u2014",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-04",
           "status": "missing-identifiers"
@@ -376,41 +376,38 @@
         {
           "sessionId": "gsc-midvalley-1300",
           "time": "13:00",
-          "hall": null,
-          "locationId": "210",
+          "hall": "\u2014",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-04",
           "status": "missing-identifiers"
         },
         {
-          "sessionId": "924426",
+          "sessionId": "gsc-midvalley-1520",
           "time": "15:20",
-          "hall": "2",
-          "locationId": "210",
-          "hallId": "2",
+          "hall": "\u2014",
+          "locationId": null,
+          "hallId": null,
           "showDate": "2026-09-04",
-          "status": "error",
-          "error": "TimeoutError"
+          "status": "missing-identifiers"
         },
         {
-          "sessionId": "924427",
+          "sessionId": "gsc-midvalley-1740",
           "time": "17:40",
-          "hall": "2",
-          "locationId": "210",
-          "hallId": "2",
+          "hall": "\u2014",
+          "locationId": null,
+          "hallId": null,
           "showDate": "2026-09-04",
-          "status": "error",
-          "error": "TimeoutError"
+          "status": "missing-identifiers"
         },
         {
-          "sessionId": "924428",
+          "sessionId": "gsc-midvalley-2000",
           "time": "20:00",
-          "hall": "2",
-          "locationId": "210",
-          "hallId": "2",
+          "hall": "\u2014",
+          "locationId": null,
+          "hallId": null,
           "showDate": "2026-09-04",
-          "status": "error",
-          "error": "TimeoutError"
+          "status": "missing-identifiers"
         }
       ]
     },
@@ -1260,7 +1257,7 @@
     }
   },
   "totals": {
-    "sessionsQueried": 40,
+    "sessionsQueried": 37,
     "sessionsMeasured": 37,
     "sessionsLastObserved": 0,
     "capacity": 8511,
