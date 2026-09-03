@@ -595,3 +595,19 @@ v18.1 adds:
 
 After recovery, the existing v18 launch-day history and official GSC/TGV
 collectors rebuild the known tracker state.
+
+
+## v18.2 — TGV data-integrity correction
+
+The v18 launch-day recovery had inferred several expired TGV session IDs.
+v18.2 replaces them only with official IDs actually captured from TGV.
+
+It also restores the earlier official TGV seat-status snapshots using
+`countSemantics: "tgv-seatsused"` and `rawSeatsUsed`.
+
+TGV 1Utama is restored for 2026-09-03 at 15:00, session 324678, with the
+observed 117 total seats and 1 seat used.
+
+All eight GSC cinemas now receive their known official location IDs during
+history recovery, allowing the read-only seat collector to query recovered
+sessions with known hall IDs.

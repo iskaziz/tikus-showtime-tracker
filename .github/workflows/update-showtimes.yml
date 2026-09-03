@@ -37,6 +37,9 @@ jobs:
       - name: Read official GSC movie/showtime API
         run: python scripts/gsc_official_api.py
 
+      - name: Correct TGV launch-day session IDs
+        run: python scripts/correct_tgv_launch_day_ids.py
+
       - name: Restore full launch-day showtime history
         run: python scripts/launch_day_history_recovery.py
 

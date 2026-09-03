@@ -37,7 +37,7 @@ TGV_SCHEDULES = {
     "tgv-wangsa-walk": ["11:20","16:15","18:15","21:45"],
     "tgv-gurney": ["13:15","15:45","18:15","20:45"],
     "tgv-bukit-tinggi": ["11:45","14:10","18:05","20:30"],
-    "tgv-1utama": [],
+    "tgv-1utama": ["15:00"],
 }
 
 # Previously observed official GSC IDs/halls from earlier launch-day snapshots.
@@ -79,17 +79,69 @@ GSC_IDS = {
 # captured in the earlier snapshot, so we do not invent showtimes for it.
 TGV_IDS = {
     "tgv-tebrau": {
-        "13:00": "430819", "15:30": "430820", "20:00": "430821", "00:45": "430822"
+        "13:00": "430663",
+        "15:30": "430673",
+        "20:00": "430680",
+        "00:45": "430822",
     },
     "tgv-wangsa-walk": {
-        "16:15": "310888", "18:15": "310889", "21:45": "310890"
+        "16:15": "310888",
+        "18:15": "310892",
+        "21:45": "310890",
     },
     "tgv-gurney": {
-        "13:15": "334693", "15:45": "334694", "18:15": "334695", "20:45": "334696"
+        "13:15": "220134",
+        "15:45": "220144",
+        "18:15": "220129",
+        "20:45": "220138",
     },
     "tgv-bukit-tinggi": {
-        "14:10": "329906", "18:05": "329907", "20:30": "329908"
+        "14:10": "409356",
+        "18:05": "409359",
+        "20:30": "409357",
     },
+    "tgv-1utama": {
+        "15:00": "324678",
+    },
+}
+
+TGV_SNAPSHOTS = {
+    "tgv-tebrau": {
+        "13:00": {"hall":"Junior","capacity":76,"used":0,"available":76},
+        "15:30": {"hall":"Junior","capacity":76,"used":0,"available":76},
+        "20:00": {"hall":"Cinema 7","capacity":111,"used":0,"available":111},
+        "00:45": {"hall":"Cinema 3","capacity":122,"used":0,"available":122},
+    },
+    "tgv-wangsa-walk": {
+        "16:15": {"hall":"Cinema 4","capacity":141,"used":0,"available":141},
+        "18:15": {"hall":"Cinema 5","capacity":174,"used":0,"available":174},
+        "21:45": {"hall":"Cinema 4","capacity":141,"used":3,"available":138},
+    },
+    "tgv-gurney": {
+        "13:15": {"hall":"Cinema 5","capacity":92,"used":0,"available":92},
+        "15:45": {"hall":"Cinema 5","capacity":92,"used":0,"available":92},
+        "18:15": {"hall":"Cinema 5","capacity":92,"used":0,"available":92},
+        "20:45": {"hall":"Cinema 5","capacity":92,"used":1,"available":91},
+    },
+    "tgv-bukit-tinggi": {
+        "14:10": {"hall":"Cinema 3","capacity":115,"used":1,"available":114},
+        "18:05": {"hall":"Cinema 2","capacity":115,"used":0,"available":115},
+        "20:30": {"hall":"Cinema 2","capacity":115,"used":0,"available":115},
+    },
+    "tgv-1utama": {
+        "15:00": {"hall":"Cinema 1","capacity":117,"used":1,"available":116},
+    },
+}
+
+GSC_LOCATION_IDS = {
+    "gsc-paradigm-jb": "355",
+    "gsc-aman-central": "133",
+    "gsc-midvalley": "210",
+    "gsc-dataran-pahlawan": "331",
+    "gsc-kuantan-city-mall": "431",
+    "gsc-ioi-city-mall": "257",
+    "gsc-imago": "531",
+    "gsc-the-spring": "552",
 }
 
 def time_sort_key(s):
@@ -104,7 +156,8 @@ def time_sort_key(s):
         h += 24
     return h * 60 + m
 
-def recover_schedule(cinema, schedule, id_map, chain):
+def recover_schedule(cinema, schedule, id_map, chain, snapshot_map=None):
+    snapshot_map = snapshot_map or {}
     sessions = cinema.setdefault("sessions", [])
     by_time = {str(s.get("time")): s for s in sessions}
 
@@ -121,6 +174,23 @@ def recover_schedule(cinema, schedule, id_map, chain):
                     row["hall"] = hall
             elif chain == "TGV" and ident:
                 row.setdefault("sessionId", ident)
+
+            if chain == "TGV" and t in snapshot_map:
+                snap = snapshot_map[t]
+                if row.get("capacity") is None:
+                    row["hall"] = snap["hall"]
+                    row["capacity"] = snap["capacity"]
+                    row["rawSeatsUsed"] = snap["used"]
+                    row["booked"] = snap["used"]
+                    row["available"] = snap["available"]
+                    row["occupancy"] = (
+                        snap["used"] / snap["capacity"] if snap["capacity"] else None
+                    )
+                    row["countSemantics"] = "tgv-seatsused"
+                    row["seatStatus"] = "last-observed"
+                    row["sourceStatus"] = "tgv-last-observed"
+                    row["seatObservedAt"] = "2026-09-03T12:48:59+08:00"
+                    row["isExpired"] = True
             continue
 
         row = {
@@ -149,6 +219,23 @@ def recover_schedule(cinema, schedule, id_map, chain):
             row["id"] = f"{cinema['id']}-{ident}"
             row["sessionId"] = ident
             row["seatStatus"] = "last-observed-identifiers"
+
+            if t in snapshot_map:
+                snap = snapshot_map[t]
+                row.update({
+                    "hall": snap["hall"],
+                    "capacity": snap["capacity"],
+                    "rawSeatsUsed": snap["used"],
+                    "booked": snap["used"],
+                    "available": snap["available"],
+                    "occupancy": (
+                        snap["used"] / snap["capacity"] if snap["capacity"] else None
+                    ),
+                    "countSemantics": "tgv-seatsused",
+                    "seatStatus": "last-observed",
+                    "sourceStatus": "tgv-last-observed",
+                    "seatObservedAt": "2026-09-03T12:48:59+08:00",
+                })
 
         sessions.append(row)
         by_time[t] = row
@@ -189,12 +276,21 @@ def main():
     for cid, schedule in GSC_SCHEDULES.items():
         cinema = cinemas.get(cid)
         if cinema:
+            location_id = GSC_LOCATION_IDS.get(cid)
+            if location_id:
+                cinema["officialLocationId"] = location_id
             recover_schedule(cinema, schedule, GSC_IDS.get(cid, {}), "GSC")
 
     for cid, schedule in TGV_SCHEDULES.items():
         cinema = cinemas.get(cid)
         if cinema:
-            recover_schedule(cinema, schedule, TGV_IDS.get(cid, {}), "TGV")
+            recover_schedule(
+                cinema,
+                schedule,
+                TGV_IDS.get(cid, {}),
+                "TGV",
+                TGV_SNAPSHOTS.get(cid, {}),
+            )
 
     # Stable order, with TGV 00:xx at end of business day.
     for cinema in data.get("cinemas", []):
