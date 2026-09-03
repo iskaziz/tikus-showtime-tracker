@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-03T20:51:19+08:00",
+  "observedAt": "2026-09-03T21:40:02+08:00",
   "finding": "Public Paragon ticket selection exposes no countable seat map in the observed stage.",
   "sessions": [
     {
@@ -35,10 +35,10 @@
     {
       "cinema": "Paragon Cinemas Batu Pahat",
       "time": "21:15",
-      "status": "booking-page-unavailable",
-      "bestAvailable": false,
-      "venue": null,
-      "hall": null,
+      "status": "booking-open",
+      "bestAvailable": true,
+      "venue": "Batu Pahat",
+      "hall": "Hall 3",
       "prices": {},
       "seatCountStatus": "not-exposed-by-public-ticket-page"
     },

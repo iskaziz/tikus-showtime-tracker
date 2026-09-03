@@ -1,18 +1,18 @@
 {
-  "collectorVersion": "15.0",
-  "observedAt": "2026-09-03T20:51:57+08:00",
+  "collectorVersion": "17.0",
+  "observedAt": "2026-09-03T21:40:34+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
     "gsc-paradigm-jb": {
       "name": "GSC Paradigm JB",
-      "officialLocationId": "355",
+      "officialLocationId": null,
       "sessions": [
         {
           "sessionId": "gsc-paradigm-jb-1520",
           "time": "15:20",
           "hall": "\u2014",
-          "locationId": "355",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -21,7 +21,7 @@
           "sessionId": "gsc-paradigm-jb-1740",
           "time": "17:40",
           "hall": "\u2014",
-          "locationId": "355",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -29,8 +29,8 @@
         {
           "sessionId": "gsc-paradigm-jb-2000",
           "time": "20:00",
-          "hall": "2",
-          "locationId": "355",
+          "hall": "\u2014",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -76,13 +76,13 @@
     },
     "gsc-midvalley": {
       "name": "GSC Midvalley Megamall",
-      "officialLocationId": "210",
+      "officialLocationId": null,
       "sessions": [
         {
           "sessionId": "gsc-midvalley-1520",
           "time": "15:20",
           "hall": "\u2014",
-          "locationId": "210",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -91,7 +91,7 @@
           "sessionId": "gsc-midvalley-1740",
           "time": "17:40",
           "hall": "\u2014",
-          "locationId": "210",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -99,8 +99,8 @@
         {
           "sessionId": "gsc-midvalley-2000",
           "time": "20:00",
-          "hall": "2",
-          "locationId": "210",
+          "hall": "\u2014",
+          "locationId": null,
           "hallId": null,
           "showDate": "2026-09-03",
           "status": "missing-identifiers"
@@ -297,6 +297,7 @@
   "totals": {
     "sessionsQueried": 6,
     "sessionsMeasured": 6,
+    "sessionsLastObserved": 0,
     "capacity": 1350,
     "available": 1340,
     "booked": 0,
