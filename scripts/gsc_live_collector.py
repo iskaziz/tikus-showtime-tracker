@@ -26,14 +26,14 @@ CHILD_CODE="1000005309"
 UA="Mozilla/5.0 (compatible; TIKUSPerformanceTracker/1.0)"
 
 TRACKED = {
-    "gsc-midvalley": ["GSC Mid Valley"],
-    "gsc-ioi-city-mall": ["GSC IOI City Mall (West) (Putrajaya)"],
-    "gsc-aman-central": ["GSC Aman Central"],
-    "gsc-dataran-pahlawan": ["GSC Dataran Pahlawan"],
-    "gsc-paradigm-jb": ["GSC Paradigm Mall (Johor Bahru)"],
-    "gsc-kuantan-city-mall": ["GSC Kuantan City Mall"],
-    "gsc-imago": ["GSC IMAGO Shopping Mall"],
-    "gsc-the-spring": ["GSC The Spring (Kuching)"],
+    "gsc-midvalley": {"locationId":"210","names":["GSC Mid Valley","GSC Mid Valley Megamall"]},
+    "gsc-ioi-city-mall": {"locationId":"257","names":["GSC IOI City Mall (West) (Putrajaya)"]},
+    "gsc-aman-central": {"locationId":"133","names":["GSC Aman Central"]},
+    "gsc-dataran-pahlawan": {"locationId":"331","names":["GSC Dataran Pahlawan"]},
+    "gsc-paradigm-jb": {"locationId":"355","names":["GSC Paradigm Mall (Johor Bahru)"]},
+    "gsc-kuantan-city-mall": {"locationId":"431","names":["GSC Kuantan City Mall"]},
+    "gsc-imago": {"locationId":"531","names":["GSC IMAGO Shopping Mall"]},
+    "gsc-the-spring": {"locationId":"552","names":["GSC The Spring (Kuching)"]},
 }
 
 def fetch(url):
@@ -59,7 +59,7 @@ def main():
     cinema_lookup={c["id"]:c for c in data.get("cinemas",[])}
 
     report={
-        "collectorVersion":"17.0",
+        "collectorVersion":"19.3",
         "observedAt":now.isoformat(timespec="seconds"),
         "parentId":PARENT_ID,
         "childCode":CHILD_CODE,
@@ -68,14 +68,26 @@ def main():
     }
 
     by_name={}
+    by_id={}
     for loc in root.findall(".//location"):
         by_name[loc.attrib.get("name","")]=loc
+        if loc.attrib.get("id"):
+            by_id[loc.attrib.get("id")]=loc
 
-    for tracker_id,names in TRACKED.items():
+    for tracker_id,config in TRACKED.items():
         loc=None
-        for n in names:
-            if n in by_name:
-                loc=by_name[n]; break
+
+        # GSC location IDs are more stable than display names and prevent
+        # harmless naming changes from breaking a cinema mapping.
+        expected_id=config.get("locationId")
+        if expected_id and expected_id in by_id:
+            loc=by_id[expected_id]
+
+        if loc is None:
+            for n in config.get("names",[]):
+                if n in by_name:
+                    loc=by_name[n]
+                    break
         row={"status":"not-found","sessions":[]}
         if loc is not None:
             row={

@@ -648,3 +648,15 @@ v19 made the GSC seat collector dataset-date aware, but the date was read from
 
 v19.2 loads `current.json` first, then derives the dataset date. The affected
 collector scripts were also syntax-checked.
+
+
+## v19.3 — stable GSC cinema matching
+
+The 4 September rollover is working correctly, but Midvalley was still falling
+back to the secondary showtime source because its official GSC display name did
+not exactly match the older string in the collector.
+
+v19.3 matches all eight tracked GSC cinemas by their official numeric location
+IDs first, with names retained only as fallback. This should restore official
+session IDs, hall IDs and live seat measurements for GSC Midvalley while making
+the mapping more resilient to future GSC display-name changes.
