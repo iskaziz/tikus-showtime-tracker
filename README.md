@@ -580,3 +580,18 @@ business day.
 
 The recovery script runs before and after live collectors to keep the day's
 history stable while allowing fresher live rows to win.
+
+
+## v18.1 — corrupted current.json recovery
+
+The failed GitHub Actions run was caused by malformed JSON in
+`data/current.json`, not by the Node.js deprecation warning.
+
+v18.1 adds:
+- a guaranteed-valid `data/seed-current.json`;
+- defensive loading in `scripts/update_showtimes.py`;
+- automatic recovery from the seed if `current.json` cannot be parsed;
+- a JSON validation helper.
+
+After recovery, the existing v18 launch-day history and official GSC/TGV
+collectors rebuild the known tracker state.

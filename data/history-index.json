@@ -1,20 +1,3 @@
 {
-<<<<<<< HEAD
   "snapshots": []
-=======
-  "snapshots": [
-    {
-      "observedAt": "2026-09-03T21:41:20+08:00",
-      "booked": 4,
-      "capacity": 1613,
-      "file": "history/20260903T214120+0800.json"
-    },
-    {
-      "observedAt": "2026-09-03T21:47:29+08:00",
-      "booked": 5,
-      "capacity": 2727,
-      "file": "history/20260903T214729+0800.json"
-    }
-  ]
->>>>>>> dbce0866d38b1afe147ae709611579086a41dd81
 }

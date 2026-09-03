@@ -102,6 +102,7 @@ jobs:
           git config user.name "tikus-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/current.json
+          git add data/seed-current.json
           git add data/history-index.json
           git add data/history
           git add data/paragon-seat-diagnostics.json

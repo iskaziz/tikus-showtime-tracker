@@ -47,8 +47,28 @@ def xinemas_tikus_times(html):
     raw=re.findall(r"\b(?:0?[1-9]|1[0-2]):[0-5]\d\s*(?:AM|PM)\b",block,re.I)
     return list(dict.fromkeys(normalize_time(x) for x in raw))
 
+def load_tracker_data():
+    raw = DATA.read_text(encoding="utf-8")
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as exc:
+        # current.json can occasionally be damaged by a manual merge/upload.
+        # Recover from the packaged seed so the automation can continue, then
+        # the launch-day recovery + official collectors rebuild known history.
+        seed = ROOT / "data/seed-current.json"
+        if not seed.exists():
+            raise
+        print(
+            f"WARNING: data/current.json is invalid JSON "
+            f"(line {exc.lineno}, column {exc.colno}). "
+            "Recovering from data/seed-current.json."
+        )
+        recovered = json.loads(seed.read_text(encoding="utf-8"))
+        DATA.write_text(json.dumps(recovered, indent=2), encoding="utf-8")
+        return recovered
+
 def main():
-    data=json.loads(DATA.read_text(encoding="utf-8"))
+    data=load_tracker_data()
     now=datetime.now(ZoneInfo("Asia/Kuala_Lumpur"))
     for cinema in data["cinemas"]:
         cid=cinema["id"]
