@@ -90,7 +90,11 @@ async def main():
         page.on("response", capture_response)
 
         # First resolve the official Buy Tickets link, because the movie ID can change.
-        await page.goto(GSC_TIKUS_PAGE,wait_until="networkidle",timeout=45000)
+        try:
+            await page.goto(GSC_TIKUS_PAGE, wait_until="domcontentloaded", timeout=90000)
+        except Exception as exc:
+            diag["moviePageNavigationWarning"] = type(exc).__name__
+        await page.wait_for_timeout(5000)
         buy=None
         for a in await page.locator("a").all():
             try:
@@ -107,9 +111,17 @@ async def main():
         if buy:
             if buy.startswith("/"):
                 buy="https://www.gsc.com.my"+buy
-            await page.goto(buy,wait_until="networkidle",timeout=45000)
+            try:
+                await page.goto(buy, wait_until="domcontentloaded", timeout=90000)
+            except Exception as exc:
+                diag["buyPageNavigationWarning"] = type(exc).__name__
+            await page.wait_for_timeout(5000)
         else:
-            await page.goto(GSC_SHOWTIMES,wait_until="networkidle",timeout=45000)
+            try:
+                await page.goto(GSC_SHOWTIMES, wait_until="domcontentloaded", timeout=90000)
+            except Exception as exc:
+                diag["showtimePageNavigationWarning"] = type(exc).__name__
+            await page.wait_for_timeout(5000)
 
         body=await page.locator("body").inner_text()
         html=await page.content()

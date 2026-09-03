@@ -17,7 +17,16 @@ jobs:
       - run: pip install playwright
       - run: playwright install chromium --with-deps
       - run: python scripts/paragon_seat_collector.py
-      - run: python scripts/gsc_booking_diagnostics.py
+      - name: Run GSC booking diagnostics
+        run: python scripts/gsc_booking_diagnostics.py
+
+      - name: Upload GSC diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gsc-seat-diagnostics
+          path: data/gsc-seat-diagnostics.json
+          if-no-files-found: warn
       - run: python scripts/merge_seat_observations.py
       - run: python scripts/save_snapshot.py
       - name: Commit changed tracker data
