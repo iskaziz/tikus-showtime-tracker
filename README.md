@@ -701,3 +701,18 @@ The card can jump directly to that cinema's detailed dashboard section.
 
 The map is intentionally labelled `SCHEMATIC MAP · NOT TO SCALE`; marker
 positions are visual placement aids, not survey-grade coordinates.
+
+
+## v20.1 — refined Malaysia map
+
+The map hero now uses a more detailed, state-separated schematic:
+- individual simplified state areas in Peninsular Malaysia
+- separate Sarawak, Sabah and Labuan shapes
+- state and major-city labels
+- better marker spacing in Klang Valley and Johor
+- chain colour coding retained
+- tooltip now shows the source status for each cinema
+- dense Klang Valley markers use a slightly smaller treatment
+
+The geometry is still intentionally labelled as simplified/not-to-scale rather
+than being presented as authoritative administrative GIS boundaries.

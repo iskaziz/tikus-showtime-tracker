@@ -4,22 +4,26 @@ let DATA, HISTORY=[], DAYS=[];
 let MAP_SELECTED_ID=null;
 
 const MAP_POSITIONS={
-  "gsc-paradigm-jb":[36.2,78.5],
-  "tgv-tebrau":[37.6,80.4],
-  "paragon-batu-pahat":[32.9,72.8],
-  "gsc-aman-central":[25.1,24.5],
-  "mega-riverfront":[24.3,27.1],
-  "gsc-midvalley":[29.3,62.8],
-  "tgv-wangsa-walk":[31.2,59.8],
-  "gsc-dataran-pahlawan":[31.4,70.2],
-  "gsc-kuantan-city-mall":[40.2,53.0],
-  "gsc-ioi-city-mall":[30.3,65.0],
-  "gsc-imago":[88.6,47.0],
-  "gsc-the-spring":[66.1,65.0],
-  "tgv-gurney":[23.2,35.0],
-  "tgv-bukit-tinggi":[27.8,61.8],
-  "tgv-1utama":[28.4,60.1],
-  "paragon-ktcc":[40.7,37.7]
+  "gsc-aman-central":[25.1,21.5],
+  "mega-riverfront":[24.0,25.2],
+  "tgv-gurney":[22.6,32.5],
+
+  "gsc-midvalley":[27.8,58.7],
+  "tgv-wangsa-walk":[31.7,56.8],
+  "tgv-bukit-tinggi":[26.3,62.6],
+  "tgv-1utama":[28.5,55.4],
+  "gsc-ioi-city-mall":[31.3,64.7],
+
+  "gsc-kuantan-city-mall":[40.1,51.9],
+  "paragon-ktcc":[40.8,35.4],
+  "gsc-dataran-pahlawan":[31.4,71.1],
+
+  "paragon-batu-pahat":[33.2,75.7],
+  "gsc-paradigm-jb":[36.0,84.0],
+  "tgv-tebrau":[38.0,81.3],
+
+  "gsc-the-spring":[69.9,68.0],
+  "gsc-imago":[90.3,48.3]
 };
 
 function mapCinemaStats(c){
@@ -52,6 +56,7 @@ function renderMap(){
     const pos=MAP_POSITIONS[c.id];if(!pos)return;
     const st=mapCinemaStats(c),btn=document.createElement('button');
     btn.type='button';btn.className='map-marker';btn.dataset.chain=c.chain;btn.dataset.cinemaId=c.id;
+    if(['gsc-midvalley','tgv-wangsa-walk','tgv-bukit-tinggi','tgv-1utama','gsc-ioi-city-mall'].includes(c.id)) btn.dataset.cluster='dense';
     btn.style.left=`${pos[0]}%`;btn.style.top=`${pos[1]}%`;
     btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${st.shows} listed shows.`);
     btn.title=c.name;
@@ -67,7 +72,18 @@ function openMapTooltip(id){
   $('#map-tooltip-chain').textContent=c.chain;$('#map-tooltip-title').textContent=c.name;$('#map-tooltip-state').textContent=c.state;
   $('#map-tooltip-shows').textContent=st.shows;$('#map-tooltip-used').textContent=st.used==null?'—':fmt(st.used);
   $('#map-tooltip-capacity').textContent=st.capacity==null?'—':fmt(st.capacity);
-  $('#map-tooltip-next').innerHTML=nextShowLabel(c);$('#map-tooltip-jump').dataset.cinemaId=id;$('#map-tooltip').hidden=false;
+  $('#map-tooltip-next').innerHTML=nextShowLabel(c);
+  const sourceText=c.sourceStatus==='gsc-official-api'
+    ? 'Source: GSC official showtime / seat-status feed'
+    : c.sourceStatus==='tgv-official-api'
+      ? 'Source: TGV official public API'
+      : c.sourceStatus==='fallback-showtimes-official-gsc-not-listed'
+        ? 'Source: fallback showtime listing; not present in GSC official feed'
+        : c.sourceStatus==='awaiting-refresh'
+          ? 'Source: awaiting verified current-date refresh'
+          : `Source: ${c.sourceStatus||'tracker feed'}`;
+  $('#map-tooltip-source').textContent=sourceText;
+  $('#map-tooltip-jump').dataset.cinemaId=id;$('#map-tooltip').hidden=false;
 }
 function closeMapTooltip(){
   MAP_SELECTED_ID=null;document.querySelectorAll('.map-marker').forEach(b=>b.classList.remove('is-selected'));
