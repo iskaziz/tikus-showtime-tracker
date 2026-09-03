@@ -1,25 +1,13 @@
 {
   "collectorVersion": "12.0",
-  "observedAt": "2026-09-03T20:12:37+08:00",
+  "observedAt": "2026-09-03T20:51:56+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-03",
   "cinemas": {
     "gsc-midvalley": {
-      "status": "ok",
-      "officialLocationId": "210",
-      "officialName": "GSC Mid Valley",
-      "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "924428",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-found",
+      "sessions": []
     },
     "gsc-ioi-city-mall": {
       "status": "ok",
@@ -28,13 +16,6 @@
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "339696",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "339697",
           "time": "22:20",
@@ -52,13 +33,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213312",
-          "time": "20:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213313",
           "time": "22:20",
           "hall": "4",
@@ -75,13 +49,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "406740",
-          "time": "20:00",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "406741",
           "time": "22:20",
           "hall": "7",
@@ -91,20 +58,8 @@
       ]
     },
     "gsc-paradigm-jb": {
-      "status": "ok",
-      "officialLocationId": "355",
-      "officialName": "GSC Paradigm Mall (Johor Bahru)",
-      "epaymentName": "Johor Bahru - Paradigm Mall",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "289309",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-found",
+      "sessions": []
     },
     "gsc-kuantan-city-mall": {
       "status": "ok",
@@ -113,13 +68,6 @@
       "epaymentName": "Kuantan - Kuantan City Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "79951",
-          "time": "20:00",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
         {
           "sessionId": "79952",
           "time": "22:20",

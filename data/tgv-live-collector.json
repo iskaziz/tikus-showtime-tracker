@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-03T20:13:21+08:00",
+  "observedAt": "2026-09-03T20:52:35+08:00",
   "businessDate": "2026-09-03",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -39,33 +39,13 @@
     "tgv-gurney": {
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
-      "sessions": [
-        {
-          "sessionId": "220138",
-          "time": "20:45",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 1,
-          "available": 91,
-          "occupancy": 1.09
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-bukit-tinggi": {
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
-      "sessions": [
-        {
-          "sessionId": "409357",
-          "time": "20:30",
-          "hall": "Cinema 2",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-1utama": {
