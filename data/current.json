@@ -1,7 +1,11 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
+<<<<<<< HEAD
   "updatedAt": "2026-09-03T10:29:00+08:00",
+=======
+  "updatedAt": "2026-09-03T12:22:31+08:00",
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
   "seatDataMode": "awaiting-seatmap-adapters",
   "cinemas": [
     {
@@ -71,7 +75,11 @@
           "bookingUrl": null
         }
       ],
+<<<<<<< HEAD
       "sourceStatus": "verified-showtimes",
+=======
+      "sourceStatus": "refresh-error:HTTPError",
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/gsc-paradigm-mall-johor.html"
     },
     {
@@ -479,6 +487,7 @@
       "state": "Sabah",
       "sessions": [
         {
+<<<<<<< HEAD
           "id": "gsc-imago-1210",
           "time": "12:10",
           "hall": "\u2014",
@@ -491,6 +500,8 @@
           "bookingUrl": null
         },
         {
+=======
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
           "id": "gsc-imago-1430",
           "time": "14:30",
           "hall": "\u2014",
@@ -871,8 +882,16 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         },
         {
           "id": "paragon-batu-pahat-1645",
@@ -883,8 +902,16 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         },
         {
           "id": "paragon-batu-pahat-1900",
@@ -895,8 +922,16 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         },
         {
           "id": "paragon-batu-pahat-2115",
@@ -907,8 +942,16 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -929,8 +972,16 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
+          "bookingStatus": "booking-page-unavailable",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         },
         {
           "id": "paragon-ktcc-1345",
@@ -941,8 +992,21 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {
+            "Adult Male": 15.0,
+            "Adult Female": 15.0,
+            "Children Male": 11.0,
+            "Children Female": 11.0
+          },
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         },
         {
           "id": "paragon-ktcc-1600",
@@ -953,8 +1017,21 @@
           "available": null,
           "occupancy": null,
           "sourceStatus": "verified-2026-09-03",
+<<<<<<< HEAD
           "seatStatus": "not-yet-observed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1"
+=======
+          "seatStatus": "not-publicly-exposed",
+          "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83057&visLang=1",
+          "bookingStatus": "booking-open",
+          "ticketPrices": {
+            "Adult Male": 15.0,
+            "Adult Female": 15.0,
+            "Children Male": 11.0,
+            "Children Female": 11.0
+          },
+          "observedAt": "2026-09-03T12:23:04+08:00"
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -971,5 +1048,9 @@
     }
   ],
   "showtimeCoverage": "15/15 locations checked; 14 locations listing TIKUS!, Mega Riverfront listing no TIKUS! session at check time",
+<<<<<<< HEAD
   "totalShowsVerified": 68
+=======
+  "totalShowsVerified": 61
+>>>>>>> ef093e649fde1640daee5784585af55fcdb0ceb0
 }
