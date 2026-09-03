@@ -499,3 +499,26 @@ the JSON file as a program and returned exit code 126 / Permission denied.
 
 v15.1 replaces the fragile multiline command with one explicit `git add`
 command per tracker file.
+
+
+## v16 — GSC seat-status semantics correction
+
+The live GSC seat feed is now split conservatively:
+
+- `A` → `available`
+- `B` → `booked`
+- any other status (currently including `D`) → `otherUnavailable`
+
+`occupancy` for GSC is now calculated as `booked / capacity`, while
+`unavailableRate` separately tracks all non-available inventory.
+
+This prevents `D` seats from being incorrectly counted as paid/booked seats.
+
+The collector also preserves:
+- `unavailable = booked + otherUnavailable`
+- raw `statusCounts`
+- per-session `countSemantics`
+
+For the 2026-09-03 20:02 snapshot supplied during development, this distinction
+would produce 4 booked seats and 14 other-unavailable seats across the measured
+GSC sessions, rather than treating all 18 non-A positions as bookings.

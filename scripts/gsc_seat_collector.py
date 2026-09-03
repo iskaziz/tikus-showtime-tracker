@@ -71,12 +71,20 @@ def parse_seat_xml(raw):
     status_counts = Counter((seat.attrib.get("status") or "?") for seat in seats)
     type_counts = Counter((seat.attrib.get("type") or "?") for seat in seats)
 
+    # Observed GSC seat-map semantics:
+    #   A = available
+    #   B = booked / unavailable
+    #   D = a distinct unavailable state, not proven to be a paid booking
+    # Any future state that is neither A nor B is kept in otherUnavailable.
     available = status_counts.get("A", 0)
-    unavailable = len(seats) - available
+    booked = status_counts.get("B", 0)
+    other_unavailable = sum(
+        count for status, count in status_counts.items()
+        if status not in ("A", "B")
+    )
+    unavailable = booked + other_unavailable
 
-    # `maximumseats` observed in GSC responses is the maximum selectable seats
-    # per transaction, NOT the auditorium's physical capacity. Capacity is
-    # therefore derived from returned seat nodes.
+    # `maximumseats` is a per-transaction selection limit, not auditorium capacity.
     capacity = len(seats)
 
     return {
@@ -84,6 +92,8 @@ def parse_seat_xml(raw):
         "seatNodes": capacity,
         "capacity": capacity,
         "available": available,
+        "booked": booked,
+        "otherUnavailable": other_unavailable,
         "unavailable": unavailable,
         "statusCounts": dict(status_counts),
         "seatTypeCounts": dict(type_counts),
@@ -121,7 +131,7 @@ def main():
         ),
         "countSemantics": (
             "capacity = returned seat nodes; available = status A; "
-            "unavailable = all non-A states"
+            "booked = status B; otherUnavailable = all non-A/non-B states"
         ),
         "cinemas": {},
         "totals": {
@@ -129,6 +139,8 @@ def main():
             "sessionsMeasured": 0,
             "capacity": 0,
             "available": 0,
+            "booked": 0,
+            "otherUnavailable": 0,
             "unavailable": 0,
         },
     }
@@ -187,31 +199,35 @@ def main():
 
                 capacity = measured["capacity"]
                 available = measured["available"]
+                booked = measured["booked"]
+                other_unavailable = measured["otherUnavailable"]
                 unavailable = measured["unavailable"]
-                occupancy = (
-                    unavailable / capacity
-                    if capacity
-                    else None
-                )
 
-                # Compatibility fields used by the existing tracker UI.
-                # `booked` should be displayed as unavailable/used for GSC,
-                # not guaranteed completed ticket sales.
+                # Two ratios are retained:
+                # - occupancy = observed booked(B) / capacity
+                # - unavailableRate = all non-A / capacity
+                occupancy = booked / capacity if capacity else None
+                unavailable_rate = unavailable / capacity if capacity else None
+
                 session["capacity"] = capacity
                 session["available"] = available
+                session["booked"] = booked
+                session["otherUnavailable"] = other_unavailable
                 session["unavailable"] = unavailable
-                session["booked"] = unavailable
                 session["occupancy"] = occupancy
+                session["unavailableRate"] = unavailable_rate
                 session["rawUnavailable"] = unavailable
                 session["statusCounts"] = measured["statusCounts"]
                 session["seatTypeCounts"] = measured["seatTypeCounts"]
-                session["countSemantics"] = "gsc-status-A-vs-non-A"
+                session["countSemantics"] = "gsc-A-available-B-booked-other-separate"
                 session["seatStatus"] = "gsc-public-seat-status"
                 session["seatObservedAt"] = now.isoformat(timespec="seconds")
 
                 report["totals"]["sessionsMeasured"] += 1
                 report["totals"]["capacity"] += capacity
                 report["totals"]["available"] += available
+                report["totals"]["booked"] += booked
+                report["totals"]["otherUnavailable"] += other_unavailable
                 report["totals"]["unavailable"] += unavailable
 
             except Exception as exc:
@@ -229,8 +245,10 @@ def main():
         "sessionsQueried": report["totals"]["sessionsQueried"],
         "capacity": report["totals"]["capacity"],
         "available": report["totals"]["available"],
+        "booked": report["totals"]["booked"],
+        "otherUnavailable": report["totals"]["otherUnavailable"],
         "unavailable": report["totals"]["unavailable"],
-        "countSemantics": "gsc-status-A-vs-non-A",
+        "countSemantics": "gsc-A-available-B-booked-other-separate",
         "observedAt": now.isoformat(timespec="seconds"),
     }
 
