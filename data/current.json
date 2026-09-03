@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T14:06:20+08:00",
+  "updatedAt": "2026-09-03T14:28:44+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -26,7 +26,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-paradigm-jb-289308",
@@ -44,7 +44,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-paradigm-jb-289309",
@@ -62,7 +62,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -92,7 +92,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-aman-central-213311",
@@ -110,7 +110,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-aman-central-213312",
@@ -128,7 +128,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-aman-central-213313",
@@ -146,7 +146,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -176,7 +176,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-midvalley-924427",
@@ -194,7 +194,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-midvalley-924428",
@@ -212,7 +212,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -242,7 +242,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-dataran-pahlawan-406742",
@@ -260,7 +260,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-dataran-pahlawan-406740",
@@ -278,7 +278,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-dataran-pahlawan-406741",
@@ -296,7 +296,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -326,7 +326,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-kuantan-city-mall-79950",
@@ -344,7 +344,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-kuantan-city-mall-79951",
@@ -362,7 +362,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-kuantan-city-mall-79952",
@@ -380,7 +380,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -410,7 +410,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-ioi-city-mall-339695",
@@ -428,7 +428,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-ioi-city-mall-339696",
@@ -446,7 +446,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-ioi-city-mall-339697",
@@ -464,7 +464,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -494,7 +494,7 @@
           "hallId": "1",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-imago-77184",
@@ -512,7 +512,7 @@
           "hallId": "1",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-imago-77185",
@@ -530,7 +530,7 @@
           "hallId": "1",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-imago-77186",
@@ -548,7 +548,7 @@
           "hallId": "1",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -578,7 +578,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-the-spring-77711",
@@ -596,7 +596,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-the-spring-77712",
@@ -614,7 +614,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         },
         {
           "id": "gsc-the-spring-77713",
@@ -632,7 +632,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-03T14:05:40+08:00"
+          "observedAt": "2026-09-03T14:28:07+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -661,7 +661,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|DUO",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-tebrau-430680",
@@ -678,7 +678,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-tebrau-430822",
@@ -695,7 +695,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -724,7 +724,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-wangsa-walk-310892",
@@ -741,7 +741,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-wangsa-walk-310890",
@@ -758,7 +758,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -787,7 +787,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-gurney-220129",
@@ -804,7 +804,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-gurney-220138",
@@ -821,7 +821,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -835,23 +835,6 @@
       "name": "TGV Bukit Tinggi",
       "state": "Selangor",
       "sessions": [
-        {
-          "id": "tgv-bukit-tinggi-409356",
-          "time": "14:10",
-          "hall": "Cinema 3",
-          "capacity": 115,
-          "booked": 1,
-          "available": 114,
-          "occupancy": 0.87,
-          "sourceStatus": "tgv-official-api",
-          "seatStatus": "tgv-official-seatstatus",
-          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
-          "sessionId": "409356",
-          "scheduledFilmId": "HO00025533",
-          "experience": "deluxe",
-          "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-03T14:06:20+08:00"
-        },
         {
           "id": "tgv-bukit-tinggi-409359",
           "time": "18:05",
@@ -867,7 +850,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         },
         {
           "id": "tgv-bukit-tinggi-409357",
@@ -884,7 +867,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -913,7 +896,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-03T14:06:20+08:00"
+          "observedAt": "2026-09-03T14:28:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -940,7 +923,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
           "bookingStatus": "booking-page-unavailable",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         },
         {
           "id": "paragon-batu-pahat-1645",
@@ -955,7 +938,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         },
         {
           "id": "paragon-batu-pahat-1900",
@@ -970,7 +953,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         },
         {
           "id": "paragon-batu-pahat-2115",
@@ -985,7 +968,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -1010,7 +993,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
           "bookingStatus": "booking-page-unavailable",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         },
         {
           "id": "paragon-ktcc-1345",
@@ -1023,14 +1006,9 @@
           "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-publicly-exposed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83056&visLang=1",
-          "bookingStatus": "booking-open",
-          "ticketPrices": {
-            "Adult Male": 15.0,
-            "Adult Female": 15.0,
-            "Children Male": 11.0,
-            "Children Female": 11.0
-          },
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "bookingStatus": "booking-page-unavailable",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T14:27:34+08:00"
         },
         {
           "id": "paragon-ktcc-1600",
@@ -1050,7 +1028,7 @@
             "Children Male": 11.0,
             "Children Female": 11.0
           },
-          "observedAt": "2026-09-03T14:05:04+08:00"
+          "observedAt": "2026-09-03T14:27:34+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -1067,5 +1045,5 @@
     }
   ],
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
-  "totalShowsVerified": 50
+  "totalShowsVerified": 49
 }
