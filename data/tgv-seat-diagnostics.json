@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-04T01:55:01+08:00",
+  "observedAt": "2026-09-04T03:40:44+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -160,7 +160,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BU0\",\"sessionid\":[\"324726\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BU0\",\"seatstatuslist\":[{\"sessionid\":\"324726\",\"seatstotal\":117,\"seatsused\":0,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BU0\",\"seatstatuslist\":[{\"sessionid\":\"324726\",\"seatstotal\":117,\"seatsused\":1,\"usedpercentage\":0}]}}"
     },
     {
       "url": "https://api.tgv.com.my/api/cinemas/v1/getcinemabyitemkey",
@@ -192,7 +192,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BBT\",\"sessionid\":[\"409369\",\"409377\",\"409395\",\"409403\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409395\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409377\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409403\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409369\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409369\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409395\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409403\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0},{\"sessionid\":\"409377\",\"seatstotal\":115,\"seatsused\":1,\"usedpercentage\":0}]}}"
     }
   ],
   "buyNow": {
@@ -391,7 +391,10 @@
     "2bbb1ebe-14a1-423b-b9e2-a734ce7b78c0",
     "e4de6842-06b1-4ab8-9c96-4aadf42a9f50",
     "e272889f-c14a-4752-9935-7a6c6a36e87f",
-    "ae81a069-8b4c-45cf-a905-ece0d116cd97"
+    "ae81a069-8b4c-45cf-a905-ece0d116cd97",
+    "ac5b28f6-8ed4-48b4-9e7e-ec3ec70934ff",
+    "a40e2f12-fd88-4453-8dea-2f9b7a8a092a",
+    "f7672c54-a5de-4af7-bb15-576ed6822d6e"
   ],
   "cinemaClicks": [
     {
