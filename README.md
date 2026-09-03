@@ -328,3 +328,23 @@ seat-map endpoint without selecting a showtime or creating a reservation.
 After running the workflow, upload:
 - `data/gsc-live-collector.json`
 - `data/gsc-seat-endpoint-discovery.json`
+
+
+## v13 — GSC deep static seat-API extraction
+
+The v12 static scan confirmed that GSC's booking app contains:
+- `seat-selection`
+- `seatSelectionData`
+- `lockSeatBody`
+- `initSalesResponse`
+- showtime parameters `parentID`, `oprndate`, `locationID`, `childCode`, `showID`, `hallGroup`
+
+v13 performs a deeper static-only inspection of GSC's public JavaScript to
+extract exact operation/path strings around sales initialization, seat maps,
+seat selection, and seat locking.
+
+It deliberately does not invoke any candidate booking or seat endpoint.
+
+After the workflow finishes, upload:
+
+`data/gsc-seat-api-static-analysis.json`
