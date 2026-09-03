@@ -1,0 +1,13 @@
+{
+  "collectorVersion": "11.0",
+  "observedAt": "2026-09-03T13:51:44+08:00",
+  "policy": "read-only official GSC XML API; no booking creation",
+  "movieRecords": [],
+  "candidateParentIds": [],
+  "showtimeResponses": [],
+  "notes": [
+    "No GSC password/session is required by this collector.",
+    "No showtime is clicked.",
+    "No seat is selected or reserved."
+  ]
+}
