@@ -89,7 +89,17 @@ jobs:
         run: |
           git config user.name "tikus-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add             data/current.json             data/history-index.json             data/history             data/paragon-seat-diagnostics.json             data/gsc-seat-diagnostics.json             data/gsc-official-api.json             data/gsc-seat-endpoint-discovery.json             data/gsc-seat-api-static-analysis.json             data/gsc-live-collector.json
-            data/gsc-live-seats.json             data/tgv-seat-diagnostics.json             data/tgv-live-collector.json
+          git add data/current.json
+          git add data/history-index.json
+          git add data/history
+          git add data/paragon-seat-diagnostics.json
+          git add data/gsc-seat-diagnostics.json
+          git add data/gsc-official-api.json
+          git add data/gsc-seat-endpoint-discovery.json
+          git add data/gsc-seat-api-static-analysis.json
+          git add data/gsc-live-collector.json
+          git add data/gsc-live-seats.json
+          git add data/tgv-seat-diagnostics.json
+          git add data/tgv-live-collector.json
           git diff --cached --quiet || git commit -m "Refresh TIKUS performance tracker"
           git push

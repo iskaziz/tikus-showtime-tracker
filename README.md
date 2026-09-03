@@ -488,3 +488,14 @@ captures to a public repository.
 Live tracker output is written to:
 
 `data/gsc-live-seats.json`
+
+
+## v15.1 — GitHub Actions commit fix
+
+v15 successfully generated the GSC live-seat data, but its workflow had a
+malformed `git add` command. `data/gsc-live-seats.json` was placed on a new
+shell line without a preceding `git add`, so GitHub Actions tried to execute
+the JSON file as a program and returned exit code 126 / Permission denied.
+
+v15.1 replaces the fragile multiline command with one explicit `git add`
+command per tracker file.
