@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T11:59:31+08:00",
+  "updatedAt": "2026-09-03T12:09:02+08:00",
   "seatDataMode": "awaiting-seatmap-adapters",
   "cinemas": [
     {
@@ -803,7 +803,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         },
         {
           "id": "paragon-batu-pahat-1645",
@@ -818,7 +818,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         },
         {
           "id": "paragon-batu-pahat-1900",
@@ -833,7 +833,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         },
         {
           "id": "paragon-batu-pahat-2115",
@@ -848,7 +848,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -871,14 +871,9 @@
           "sourceStatus": "verified-2026-09-03",
           "seatStatus": "not-publicly-exposed",
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
-          "bookingStatus": "booking-open",
-          "ticketPrices": {
-            "Adult Male": 14.0,
-            "Adult Female": 14.0,
-            "Children Male": 11.0,
-            "Children Female": 11.0
-          },
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "bookingStatus": "booking-page-unavailable",
+          "ticketPrices": {},
+          "observedAt": "2026-09-03T12:09:39+08:00"
         },
         {
           "id": "paragon-ktcc-1345",
@@ -898,7 +893,7 @@
             "Children Male": 11.0,
             "Children Female": 11.0
           },
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         },
         {
           "id": "paragon-ktcc-1600",
@@ -918,7 +913,7 @@
             "Children Male": 11.0,
             "Children Female": 11.0
           },
-          "observedAt": "2026-09-03T12:00:11+08:00"
+          "observedAt": "2026-09-03T12:09:39+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",

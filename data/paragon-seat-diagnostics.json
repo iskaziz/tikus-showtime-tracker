@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-03T12:00:11+08:00",
+  "observedAt": "2026-09-03T12:09:39+08:00",
   "finding": "Public Paragon ticket selection exposes no countable seat map in the observed stage.",
   "sessions": [
     {
@@ -45,16 +45,11 @@
     {
       "cinema": "Paragon Cinema KTCC",
       "time": "11:30",
-      "status": "booking-open",
-      "bestAvailable": true,
-      "venue": "KTCC Mall",
-      "hall": "Hall 3",
-      "prices": {
-        "Adult Male": 14.0,
-        "Adult Female": 14.0,
-        "Children Male": 11.0,
-        "Children Female": 11.0
-      },
+      "status": "booking-page-unavailable",
+      "bestAvailable": false,
+      "venue": null,
+      "hall": null,
+      "prices": {},
       "seatCountStatus": "not-exposed-by-public-ticket-page"
     },
     {
