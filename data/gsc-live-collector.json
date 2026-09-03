@@ -1,12 +1,17 @@
 {
-  "collectorVersion": "19.4",
-  "observedAt": "2026-09-04T01:14:30+08:00",
+  "collectorVersion": "19.5",
+  "observedAt": "2026-09-04T01:54:39+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
   "cinemas": {
     "gsc-midvalley": {
-      "status": "not-found",
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "210",
+      "aliases": [
+        "GSC Mid Valley",
+        "GSC Mid Valley Megamall"
+      ],
       "sessions": []
     },
     "gsc-ioi-city-mall": {
