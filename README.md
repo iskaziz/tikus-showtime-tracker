@@ -559,3 +559,24 @@ City Mall and IOI City Mall. Their last-known seat snapshots are marked
 
 Once recovered, the v17 preservation logic keeps them in the daily history on
 subsequent refreshes.
+
+
+## v18 — complete 2026-09-03 launch-day history
+
+v18 restores the confirmed launch-day schedule across the tracked GSC and TGV
+cinemas so the dashboard's daily show count no longer shrinks as APIs remove
+expired sessions.
+
+The recovery uses only:
+- confirmed same-day showtimes already captured for the tracker; and
+- official GSC/TGV session IDs and hall IDs that were previously observed.
+
+Where no official identifier was captured, the row is retained as a confirmed
+historical showtime with unmeasured seat data rather than inventing IDs.
+
+TGV preservation is also strengthened so expired business-date sessions remain
+in the tracker, including the 00:45 Tebrau session as part of the same TGV
+business day.
+
+The recovery script runs before and after live collectors to keep the day's
+history stable while allowing fresher live rows to win.

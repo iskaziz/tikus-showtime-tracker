@@ -37,6 +37,9 @@ jobs:
       - name: Read official GSC movie/showtime API
         run: python scripts/gsc_official_api.py
 
+      - name: Restore full launch-day showtime history
+        run: python scripts/launch_day_history_recovery.py
+
       - name: Recover previously observed GSC launch-day sessions
         run: python scripts/gsc_historical_recovery.py
 
@@ -90,6 +93,9 @@ jobs:
 
       - name: Save snapshot
         run: python scripts/save_snapshot.py
+
+      - name: Re-apply launch-day history after live collectors
+        run: python scripts/launch_day_history_recovery.py
 
       - name: Commit changed tracker data
         run: |
