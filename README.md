@@ -383,3 +383,25 @@ Output:
 
 This diagnostic is intentionally local and is not added to the recurring
 GitHub Actions workflow.
+
+
+## v14.1 — broad GSC manual capture
+
+The first v14 capture only recorded the initial page load. Two issues were
+identified:
+
+1. the URL filter was too narrow and could miss GSC's generic `/api` requests;
+2. Playwright `storage_state` does not preserve ordinary `sessionStorage`,
+   while GSC stores important login/booking state there.
+
+Run locally:
+
+`python scripts/gsc_manual_seat_network_v2.py`
+
+If GSC asks you to log in, log in manually inside that opened browser. Then
+navigate to TIKUS!, open one future showtime, stop when the seat map appears,
+and do not click any seat.
+
+Upload:
+
+`data/gsc-manual-seat-network-v2.json`
