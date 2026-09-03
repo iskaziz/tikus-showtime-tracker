@@ -1,8 +1,8 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-03",
-  "updatedAt": "2026-09-03T12:39:44+08:00",
-  "seatDataMode": "awaiting-seatmap-adapters",
+  "updatedAt": "2026-09-03T12:48:59+08:00",
+  "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
       "id": "gsc-paradigm-jb",
@@ -547,68 +547,78 @@
       "state": "Johor",
       "sessions": [
         {
-          "id": "tgv-tebrau-1130",
-          "time": "11:30",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
-        {
-          "id": "tgv-tebrau-1300",
+          "id": "tgv-tebrau-430663",
           "time": "13:00",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Junior",
+          "capacity": 76,
+          "booked": 0,
+          "available": 76,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430663",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|DUO",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-tebrau-1530",
+          "id": "tgv-tebrau-430673",
           "time": "15:30",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Junior",
+          "capacity": 76,
+          "booked": 0,
+          "available": 76,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430673",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|DUO",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-tebrau-2000",
+          "id": "tgv-tebrau-430680",
           "time": "20:00",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 7",
+          "capacity": 111,
+          "booked": 0,
+          "available": 111,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430680",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-tebrau-0045",
+          "id": "tgv-tebrau-430822",
           "time": "00:45",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "verified-2026-09-03",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 3",
+          "capacity": 122,
+          "booked": 0,
+          "available": 122,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430822",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         }
       ],
-      "sourceStatus": "refresh-error:HTTPError",
-      "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/tgv-tebrau-city.html"
+      "sourceStatus": "tgv-official-api",
+      "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/tgv-tebrau-city.html",
+      "officialCinemaId": "TBR",
+      "officialCinemaName": "TEBRAU CITY"
     },
     {
       "id": "tgv-wangsa-walk",
@@ -617,44 +627,61 @@
       "state": "Kuala Lumpur",
       "sessions": [
         {
-          "id": "tgv-wangsa-walk-1615",
+          "id": "tgv-wangsa-walk-310888",
           "time": "16:15",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 4",
+          "capacity": 141,
+          "booked": 0,
+          "available": 141,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "310888",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-wangsa-walk-1815",
+          "id": "tgv-wangsa-walk-310892",
           "time": "18:15",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 5",
+          "capacity": 174,
+          "booked": 0,
+          "available": 174,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "310892",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-wangsa-walk-2145",
+          "id": "tgv-wangsa-walk-310890",
           "time": "21:45",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 4",
+          "capacity": 141,
+          "booked": 3,
+          "available": 138,
+          "occupancy": 2.13,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "310890",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
-      "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/tgv-wangsa-walk.html"
+      "sourceStatus": "tgv-official-api",
+      "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/tgv-wangsa-walk.html",
+      "officialCinemaId": "WWM",
+      "officialCinemaName": "SUNWAY WANGSA MALL"
     },
     {
       "id": "tgv-gurney",
@@ -663,56 +690,78 @@
       "state": "Pulau Pinang",
       "sessions": [
         {
-          "id": "tgv-gurney-1315",
+          "id": "tgv-gurney-220134",
           "time": "13:15",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220134",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-gurney-1545",
+          "id": "tgv-gurney-220144",
           "time": "15:45",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220144",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-gurney-1815",
+          "id": "tgv-gurney-220129",
           "time": "18:15",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220129",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-gurney-2045",
+          "id": "tgv-gurney-220138",
           "time": "20:45",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 1,
+          "available": 91,
+          "occupancy": 1.09,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220138",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
-      "sourceUrl": "https://xinemas.com/cinema/in-penang/tgv-gurney-paragon.html"
+      "sourceStatus": "tgv-official-api",
+      "sourceUrl": "https://xinemas.com/cinema/in-penang/tgv-gurney-paragon.html",
+      "officialCinemaId": "GUR",
+      "officialCinemaName": "GURNEY PARAGON"
     },
     {
       "id": "tgv-bukit-tinggi",
@@ -721,56 +770,61 @@
       "state": "Selangor",
       "sessions": [
         {
-          "id": "tgv-bukit-tinggi-1145",
-          "time": "11:45",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
-        },
-        {
-          "id": "tgv-bukit-tinggi-1410",
+          "id": "tgv-bukit-tinggi-409356",
           "time": "14:10",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 3",
+          "capacity": 115,
+          "booked": 1,
+          "available": 114,
+          "occupancy": 0.87,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409356",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-bukit-tinggi-1805",
+          "id": "tgv-bukit-tinggi-409359",
           "time": "18:05",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 2",
+          "capacity": 115,
+          "booked": 0,
+          "available": 115,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409359",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         },
         {
-          "id": "tgv-bukit-tinggi-2030",
+          "id": "tgv-bukit-tinggi-409357",
           "time": "20:30",
-          "hall": "\u2014",
-          "capacity": null,
-          "booked": null,
-          "available": null,
-          "occupancy": null,
-          "sourceStatus": "live-showtime-confirmed",
-          "seatStatus": "not-yet-observed",
-          "bookingUrl": null
+          "hall": "Cinema 2",
+          "capacity": 115,
+          "booked": 0,
+          "available": 115,
+          "occupancy": 0.0,
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409357",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-03T12:48:59+08:00"
         }
       ],
-      "sourceStatus": "live-showtime-confirmed",
-      "sourceUrl": "https://xinemas.com/cinema/in-klang/tgv-bukit-tinggi.html"
+      "sourceStatus": "tgv-official-api",
+      "sourceUrl": "https://xinemas.com/cinema/in-klang/tgv-bukit-tinggi.html",
+      "officialCinemaId": "BBT",
+      "officialCinemaName": "BUKIT TINGGI"
     },
     {
       "id": "paragon-batu-pahat",
@@ -791,7 +845,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122416&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         },
         {
           "id": "paragon-batu-pahat-1645",
@@ -806,7 +860,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122417&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         },
         {
           "id": "paragon-batu-pahat-1900",
@@ -821,7 +875,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122418&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         },
         {
           "id": "paragon-batu-pahat-2115",
@@ -836,7 +890,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000002&txtSessionId=122419&visLang=1",
           "bookingStatus": "booking-open",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -861,7 +915,7 @@
           "bookingUrl": "https://www.paragoncinemas.com.my/Ticketing/visSelectTickets.aspx?cinemacode=0000000004&txtSessionId=83055&visLang=1",
           "bookingStatus": "booking-page-unavailable",
           "ticketPrices": {},
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         },
         {
           "id": "paragon-ktcc-1345",
@@ -881,7 +935,7 @@
             "Children Male": 11.0,
             "Children Female": 11.0
           },
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         },
         {
           "id": "paragon-ktcc-1600",
@@ -901,7 +955,7 @@
             "Children Male": 11.0,
             "Children Female": 11.0
           },
-          "observedAt": "2026-09-03T12:40:59+08:00"
+          "observedAt": "2026-09-03T12:47:58+08:00"
         }
       ],
       "sourceStatus": "verified-showtimes",
@@ -918,5 +972,5 @@
     }
   ],
   "showtimeCoverage": "15/15 locations checked; 14 locations listing TIKUS!, Mega Riverfront listing no TIKUS! session at check time",
-  "totalShowsVerified": 61
+  "totalShowsVerified": 59
 }
