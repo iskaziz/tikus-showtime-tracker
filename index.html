@@ -19,7 +19,75 @@
     </div>
   </header>
 
+  
   <main>
+    <section class="map-hero" aria-labelledby="map-title">
+      <div class="map-hero-copy">
+        <div>
+          <p class="eyebrow">TIKUS! · MALAYSIA EXHIBITION MAP</p>
+          <h2 id="map-title">Where TIKUS! is screening</h2>
+          <p class="map-intro">A visual overview of the 16 tracked cinema locations. Select a marker to view showtimes and the latest observed seat information.</p>
+        </div>
+        <div class="map-summary" aria-live="polite">
+          <span><b id="map-location-count">16</b> tracked locations</span>
+          <span><b id="map-show-count">—</b> shows</span>
+          <span><b id="map-seat-count">—</b> observed used / booked</span>
+        </div>
+      </div>
+
+      <div class="malaysia-map-shell">
+        <div class="malaysia-map" id="malaysia-map" role="group" aria-label="Schematic map of Malaysia showing TIKUS! cinema locations">
+          <svg class="map-art" viewBox="0 0 1200 520" role="img" aria-labelledby="map-svg-title map-svg-desc">
+            <title id="map-svg-title">TIKUS! cinema locations across Malaysia</title>
+            <desc id="map-svg-desc">A stylised schematic map of Peninsular Malaysia, Sabah and Sarawak with interactive cinema markers.</desc>
+            <defs>
+              <pattern id="mapGrain" width="10" height="10" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r=".65" fill="currentColor" opacity=".08"></circle>
+                <circle cx="8" cy="7" r=".5" fill="currentColor" opacity=".05"></circle>
+              </pattern>
+            </defs>
+            <g class="map-land" aria-hidden="true">
+              <path d="M296 43 C328 52 350 72 363 102 C376 132 372 163 390 196 C406 224 429 244 431 279 C433 313 414 337 420 366 C426 394 451 414 451 449 C450 473 432 493 409 500 C387 486 377 463 363 443 C349 423 328 407 324 383 C319 354 335 330 330 301 C325 273 304 251 297 225 C288 193 299 161 289 132 C281 105 265 86 268 65 C271 53 281 46 296 43 Z"></path>
+              <path d="M735 267 C769 245 813 237 852 242 C892 247 923 262 957 254 C990 246 1025 224 1065 227 C1102 229 1128 246 1143 268 C1122 277 1106 291 1094 312 C1076 342 1049 358 1016 360 C979 362 951 346 917 350 C875 355 849 385 810 390 C774 394 741 382 715 364 C728 348 738 332 742 314 C746 297 744 283 735 267 Z"></path>
+              <path d="M885 210 C913 194 941 186 975 184 C1007 182 1039 187 1063 199 C1051 211 1042 221 1037 235 C1001 233 974 244 946 252 C919 260 895 260 873 252 C873 237 878 222 885 210 Z"></path>
+              <path class="map-texture" d="M296 43 C328 52 350 72 363 102 C376 132 372 163 390 196 C406 224 429 244 431 279 C433 313 414 337 420 366 C426 394 451 414 451 449 C450 473 432 493 409 500 C387 486 377 463 363 443 C349 423 328 407 324 383 C319 354 335 330 330 301 C325 273 304 251 297 225 C288 193 299 161 289 132 C281 105 265 86 268 65 C271 53 281 46 296 43 Z"></path>
+              <path class="map-texture" d="M735 267 C769 245 813 237 852 242 C892 247 923 262 957 254 C990 246 1025 224 1065 227 C1102 229 1128 246 1143 268 C1122 277 1106 291 1094 312 C1076 342 1049 358 1016 360 C979 362 951 346 917 350 C875 355 849 385 810 390 C774 394 741 382 715 364 C728 348 738 332 742 314 C746 297 744 283 735 267 Z"></path>
+              <path class="map-texture" d="M885 210 C913 194 941 186 975 184 C1007 182 1039 187 1063 199 C1051 211 1042 221 1037 235 C1001 233 974 244 946 252 C919 260 895 260 873 252 C873 237 878 222 885 210 Z"></path>
+            </g>
+            <g class="map-labels" aria-hidden="true">
+              <text x="330" y="28">PENINSULAR MALAYSIA</text>
+              <text x="840" y="415">SARAWAK</text>
+              <text x="1010" y="167">SABAH</text>
+              <text class="map-watermark" x="600" y="485">SCHEMATIC MAP · NOT TO SCALE</text>
+            </g>
+          </svg>
+
+          <div id="map-markers" class="map-markers"></div>
+
+          <aside class="map-tooltip" id="map-tooltip" hidden aria-live="polite">
+            <button type="button" class="map-tooltip-close" id="map-tooltip-close" aria-label="Close cinema information">×</button>
+            <p class="eyebrow" id="map-tooltip-chain"></p>
+            <h3 id="map-tooltip-title"></h3>
+            <p class="map-tooltip-state" id="map-tooltip-state"></p>
+            <div class="map-tooltip-metrics">
+              <span><b id="map-tooltip-shows">—</b> shows</span>
+              <span><b id="map-tooltip-used">—</b> used / booked</span>
+              <span><b id="map-tooltip-capacity">—</b> observed seats</span>
+            </div>
+            <div class="map-tooltip-next" id="map-tooltip-next"></div>
+            <button type="button" class="map-tooltip-jump" id="map-tooltip-jump">View cinema details</button>
+          </aside>
+        </div>
+
+        <div class="map-legend" aria-label="Cinema chain legend">
+          <span><i class="legend-dot gsc"></i>GSC</span>
+          <span><i class="legend-dot tgv"></i>TGV</span>
+          <span><i class="legend-dot paragon"></i>Paragon</span>
+          <span><i class="legend-dot mega"></i>Mega</span>
+        </div>
+      </div>
+    </section>
+
     <section class="hero-grid hero-grid-5" aria-label="Headline statistics">
       <article class="metric"><span>SHOWS TODAY</span><strong id="stat-shows">—</strong><small id="stat-cinemas">— cinemas reporting</small></article>
       <article class="metric"><span>OBSERVED USED / BOOKED</span><strong id="stat-booked">—</strong><small id="stat-booked-sub">Awaiting seat-map feed</small></article>

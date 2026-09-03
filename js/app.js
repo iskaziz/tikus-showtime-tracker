@@ -1,6 +1,89 @@
 const $ = s => document.querySelector(s);
 const fmt = n => n == null ? '—' : new Intl.NumberFormat().format(n);
 let DATA, HISTORY=[], DAYS=[];
+let MAP_SELECTED_ID=null;
+
+const MAP_POSITIONS={
+  "gsc-paradigm-jb":[36.2,78.5],
+  "tgv-tebrau":[37.6,80.4],
+  "paragon-batu-pahat":[32.9,72.8],
+  "gsc-aman-central":[25.1,24.5],
+  "mega-riverfront":[24.3,27.1],
+  "gsc-midvalley":[29.3,62.8],
+  "tgv-wangsa-walk":[31.2,59.8],
+  "gsc-dataran-pahlawan":[31.4,70.2],
+  "gsc-kuantan-city-mall":[40.2,53.0],
+  "gsc-ioi-city-mall":[30.3,65.0],
+  "gsc-imago":[88.6,47.0],
+  "gsc-the-spring":[66.1,65.0],
+  "tgv-gurney":[23.2,35.0],
+  "tgv-bukit-tinggi":[27.8,61.8],
+  "tgv-1utama":[28.4,60.1],
+  "paragon-ktcc":[40.7,37.7]
+};
+
+function mapCinemaStats(c){
+  const ss=c.sessions||[],known=ss.filter(isKnown);
+  return {
+    shows:ss.length,
+    used:known.length?known.reduce((a,s)=>a+s.booked,0):null,
+    capacity:known.length?known.reduce((a,s)=>a+s.capacity,0):null
+  };
+}
+function nextShowLabel(c){
+  const now=new Date(),currentMinutes=now.getHours()*60+now.getMinutes();
+  const future=(c.sessions||[]).map(s=>({s,mins:Number(s.time.slice(0,2))*60+Number(s.time.slice(3,5))}))
+    .filter(x=>Number.isFinite(x.mins)&&x.mins>=currentMinutes).sort((a,b)=>a.mins-b.mins);
+  if(future.length){
+    const s=future[0].s;
+    return `Next listed show: <b>${s.time}</b>${s.hall&&s.hall!=='—'?` · ${s.hall}`:''}`;
+  }
+  if((c.sessions||[]).length)return 'No later listed showtimes today.';
+  return 'No verified showtimes currently listed for this date.';
+}
+function renderMap(){
+  const host=$('#map-markers');if(!host||!DATA)return;
+  const s=stats(DATA.cinemas);
+  $('#map-location-count').textContent=DATA.cinemas.length;
+  $('#map-show-count').textContent=s.ss.length;
+  $('#map-seat-count').textContent=s.known.length?fmt(s.used):'—';
+  host.innerHTML='';
+  DATA.cinemas.forEach(c=>{
+    const pos=MAP_POSITIONS[c.id];if(!pos)return;
+    const st=mapCinemaStats(c),btn=document.createElement('button');
+    btn.type='button';btn.className='map-marker';btn.dataset.chain=c.chain;btn.dataset.cinemaId=c.id;
+    btn.style.left=`${pos[0]}%`;btn.style.top=`${pos[1]}%`;
+    btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${st.shows} listed shows.`);
+    btn.title=c.name;
+    btn.addEventListener('click',()=>openMapTooltip(c.id));
+    host.append(btn);
+  });
+}
+function openMapTooltip(id){
+  const c=DATA.cinemas.find(x=>x.id===id);if(!c)return;
+  MAP_SELECTED_ID=id;
+  document.querySelectorAll('.map-marker').forEach(b=>b.classList.toggle('is-selected',b.dataset.cinemaId===id));
+  const st=mapCinemaStats(c);
+  $('#map-tooltip-chain').textContent=c.chain;$('#map-tooltip-title').textContent=c.name;$('#map-tooltip-state').textContent=c.state;
+  $('#map-tooltip-shows').textContent=st.shows;$('#map-tooltip-used').textContent=st.used==null?'—':fmt(st.used);
+  $('#map-tooltip-capacity').textContent=st.capacity==null?'—':fmt(st.capacity);
+  $('#map-tooltip-next').innerHTML=nextShowLabel(c);$('#map-tooltip-jump').dataset.cinemaId=id;$('#map-tooltip').hidden=false;
+}
+function closeMapTooltip(){
+  MAP_SELECTED_ID=null;document.querySelectorAll('.map-marker').forEach(b=>b.classList.remove('is-selected'));
+  if($('#map-tooltip'))$('#map-tooltip').hidden=true;
+}
+function jumpToCinema(id){
+  const cinema=DATA.cinemas.find(c=>c.id===id);if(!cinema)return;
+  $('#search').value=cinema.name;render();
+  requestAnimationFrame(()=>{
+    const card=document.querySelector('.cinema');
+    if(!card)return;
+    card.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+    const head=card.querySelector('.cinema-head');if(head&&!card.classList.contains('open'))head.click();head?.focus();
+  });
+}
+
 
 async function fetchJson(path){
   const bust=`${path.includes('?')?'&':'?'}v=${Date.now()}`;
@@ -81,6 +164,7 @@ function velocity(){
 }
 function render(){
   const cin=filtered(),s=stats(cin),v=velocity();
+  renderMap();
   const dateLabel=new Date(`${DATA.date}T12:00:00+08:00`).toLocaleDateString('en-MY',{dateStyle:'medium'});
   $('#updated').textContent=`${dateLabel} · Updated ${new Date(DATA.updatedAt).toLocaleString('en-MY',{timeStyle:'short'})}`;
   $('#stat-shows').textContent=fmt(s.ss.length); $('#stat-cinemas').textContent=`${s.reporting} cinemas reporting`;
@@ -144,4 +228,7 @@ $('#date-filter').addEventListener('change',e=>{
   const u=new URL(location.href);u.searchParams.set('date',e.target.value);history.replaceState({},'',u);load(e.target.value);
 });
 $('#refresh').addEventListener('click',()=>load(DATA.date));
+$('#map-tooltip-close')?.addEventListener('click',closeMapTooltip);
+$('#map-tooltip-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#map-tooltip')?.hidden)closeMapTooltip()});
 load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});

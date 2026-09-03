@@ -689,3 +689,15 @@ GSC's official feed does not provide them.
 
 This keeps the tracker source-safe and prevents a missing official listing from
 being mistaken for a collector bug.
+
+
+## v20 — Malaysia cinema map hero
+
+Adds a cinematic map hero above the dashboard. All 16 tracked TIKUS! locations
+are rendered as percentage-positioned interactive markers. Selecting a marker
+opens an accessible information card with cinema/state, listed shows, latest
+observed used/booked count, observed capacity and the next listed showtime.
+The card can jump directly to that cinema's detailed dashboard section.
+
+The map is intentionally labelled `SCHEMATIC MAP · NOT TO SCALE`; marker
+positions are visual placement aids, not survey-grade coordinates.
