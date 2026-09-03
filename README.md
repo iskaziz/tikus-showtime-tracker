@@ -348,3 +348,14 @@ It deliberately does not invoke any candidate booking or seat endpoint.
 After the workflow finishes, upload:
 
 `data/gsc-seat-api-static-analysis.json`
+
+
+## v13.1 workflow correction
+
+v13 included `scripts/gsc_seat_api_static_analysis.py`, but the workflow did
+not actually execute it. v13.1 fixes that and also corrects GitHub Actions
+artifact paths to use YAML multiline lists.
+
+After running the workflow, this file should be created and committed:
+
+`data/gsc-seat-api-static-analysis.json`
