@@ -1,9 +1,9 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-03T22:22:05+08:00",
+  "observedAt": "2026-09-04T00:00:50+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
-  "businessDate": "2026-09-03",
+  "businessDate": "2026-09-04",
   "cinemas": {
     "gsc-midvalley": {
       "status": "not-found",
@@ -17,7 +17,42 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "339697",
+          "sessionId": "339874",
+          "time": "10:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "339958",
+          "time": "13:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "339959",
+          "time": "15:20",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "339960",
+          "time": "17:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "339961",
+          "time": "20:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "339962",
           "time": "22:20",
           "hall": "2",
           "hallId": "2",
@@ -33,7 +68,42 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213313",
+          "sessionId": "213377",
+          "time": "10:40",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213378",
+          "time": "13:00",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213379",
+          "time": "15:20",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213380",
+          "time": "17:40",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213381",
+          "time": "20:00",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213382",
           "time": "22:20",
           "hall": "4",
           "hallId": "4",
@@ -49,7 +119,42 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "406741",
+          "sessionId": "406733",
+          "time": "10:40",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "406734",
+          "time": "13:00",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "406735",
+          "time": "15:20",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "406736",
+          "time": "17:40",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "406737",
+          "time": "20:00",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "406738",
           "time": "22:20",
           "hall": "7",
           "hallId": "7",
@@ -58,8 +163,48 @@
       ]
     },
     "gsc-paradigm-jb": {
-      "status": "not-found",
-      "sessions": []
+      "status": "ok",
+      "officialLocationId": "355",
+      "officialName": "GSC Paradigm Mall (Johor Bahru)",
+      "epaymentName": "Johor Bahru - Paradigm Mall",
+      "isEpayment": "1",
+      "sessions": [
+        {
+          "sessionId": "289342",
+          "time": "10:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "289353",
+          "time": "13:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "289354",
+          "time": "15:20",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "289355",
+          "time": "17:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "289356",
+          "time": "20:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        }
+      ]
     },
     "gsc-kuantan-city-mall": {
       "status": "ok",
@@ -69,7 +214,28 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "79952",
+          "sessionId": "79982",
+          "time": "15:20",
+          "hall": "HALL 4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "79988",
+          "time": "17:40",
+          "hall": "HALL 4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "79994",
+          "time": "20:00",
+          "hall": "HALL 4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "80000",
           "time": "22:20",
           "hall": "HALL 4",
           "hallId": "4",
@@ -78,12 +244,92 @@
       ]
     },
     "gsc-imago": {
-      "status": "not-found",
-      "sessions": []
+      "status": "ok",
+      "officialLocationId": "531",
+      "officialName": "GSC IMAGO Shopping Mall",
+      "epaymentName": "Kota Kinabalu - IMAGO Mall",
+      "isEpayment": "0",
+      "sessions": [
+        {
+          "sessionId": "77230",
+          "time": "12:10",
+          "hall": "1",
+          "hallId": "1",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77231",
+          "time": "14:30",
+          "hall": "1",
+          "hallId": "1",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77232",
+          "time": "16:50",
+          "hall": "1",
+          "hallId": "1",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77233",
+          "time": "19:10",
+          "hall": "1",
+          "hallId": "1",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77234",
+          "time": "21:30",
+          "hall": "1",
+          "hallId": "1",
+          "hallFull": "0"
+        }
+      ]
     },
     "gsc-the-spring": {
-      "status": "not-found",
-      "sessions": []
+      "status": "ok",
+      "officialLocationId": "552",
+      "officialName": "GSC The Spring (Kuching)",
+      "epaymentName": "Kuching - The Spring",
+      "isEpayment": "0",
+      "sessions": [
+        {
+          "sessionId": "77728",
+          "time": "12:10",
+          "hall": "3",
+          "hallId": "3",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77729",
+          "time": "14:30",
+          "hall": "3",
+          "hallId": "3",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77730",
+          "time": "16:50",
+          "hall": "3",
+          "hallId": "3",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77731",
+          "time": "19:10",
+          "hall": "3",
+          "hallId": "3",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77732",
+          "time": "21:30",
+          "hall": "3",
+          "hallId": "3",
+          "hallFull": "0"
+        }
+      ]
     }
   }
 }

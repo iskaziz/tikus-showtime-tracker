@@ -1,0 +1,511 @@
+{
+  "observedAt": "2026-09-04T00:03:58+08:00",
+  "sessions": [
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "10:40",
+      "booked": 0,
+      "available": 246,
+      "capacity": 246,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "13:00",
+      "booked": 2,
+      "available": 244,
+      "capacity": 246,
+      "occupancy": 0.008130081300813009
+    },
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "15:20",
+      "booked": 0,
+      "available": 246,
+      "capacity": 246,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "17:40",
+      "booked": 3,
+      "available": 243,
+      "capacity": 246,
+      "occupancy": 0.012195121951219513
+    },
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "time": "20:00",
+      "booked": 0,
+      "available": 246,
+      "capacity": 246,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "10:40",
+      "booked": 2,
+      "available": 200,
+      "capacity": 202,
+      "occupancy": 0.009900990099009901
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "13:00",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "15:20",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "17:40",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "20:00",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "time": "22:20",
+      "booked": 0,
+      "available": 202,
+      "capacity": 202,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-midvalley",
+      "cinema": "GSC Midvalley Megamall",
+      "time": "20:00",
+      "booked": 2,
+      "available": 162,
+      "capacity": 164,
+      "occupancy": 0.012195121951219513
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "10:40",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "13:00",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "15:20",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "17:40",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "20:00",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "time": "22:20",
+      "booked": 0,
+      "available": 265,
+      "capacity": 266,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "15:20",
+      "booked": 0,
+      "available": 155,
+      "capacity": 157,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "17:40",
+      "booked": 2,
+      "available": 153,
+      "capacity": 157,
+      "occupancy": 0.012738853503184714
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "20:00",
+      "booked": 0,
+      "available": 155,
+      "capacity": 157,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "time": "22:20",
+      "booked": 0,
+      "available": 155,
+      "capacity": 157,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "10:40",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "13:00",
+      "booked": 1,
+      "available": 218,
+      "capacity": 220,
+      "occupancy": 0.004545454545454545
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "15:20",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "17:40",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "20:00",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "time": "22:20",
+      "booked": 0,
+      "available": 219,
+      "capacity": 220,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "12:10",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "14:30",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "16:50",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "19:10",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "time": "21:30",
+      "booked": 0,
+      "available": 261,
+      "capacity": 261,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "12:10",
+      "booked": 0,
+      "available": 238,
+      "capacity": 244,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "14:30",
+      "booked": 0,
+      "available": 238,
+      "capacity": 244,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "16:50",
+      "booked": 0,
+      "available": 238,
+      "capacity": 244,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "19:10",
+      "booked": 2,
+      "available": 236,
+      "capacity": 244,
+      "occupancy": 0.00819672131147541
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "time": "21:30",
+      "booked": 0,
+      "available": 238,
+      "capacity": 244,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "11:30",
+      "booked": 0,
+      "available": 111,
+      "capacity": 111,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "13:00",
+      "booked": 0,
+      "available": 76,
+      "capacity": 76,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "15:30",
+      "booked": 0,
+      "available": 76,
+      "capacity": 76,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "20:00",
+      "booked": 0,
+      "available": 111,
+      "capacity": 111,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-tebrau",
+      "cinema": "TGV Tebrau City",
+      "time": "23:15",
+      "booked": 0,
+      "available": 76,
+      "capacity": 76,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-wangsa-walk",
+      "cinema": "TGV Wangsa Walk",
+      "time": "11:20",
+      "booked": 1,
+      "available": 173,
+      "capacity": 174,
+      "occupancy": 0.57
+    },
+    {
+      "cinemaId": "tgv-wangsa-walk",
+      "cinema": "TGV Wangsa Walk",
+      "time": "16:15",
+      "booked": 0,
+      "available": 141,
+      "capacity": 141,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-wangsa-walk",
+      "cinema": "TGV Wangsa Walk",
+      "time": "18:15",
+      "booked": 0,
+      "available": 174,
+      "capacity": 174,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-wangsa-walk",
+      "cinema": "TGV Wangsa Walk",
+      "time": "21:45",
+      "booked": 0,
+      "available": 141,
+      "capacity": 141,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-gurney",
+      "cinema": "TGV Gurney",
+      "time": "13:15",
+      "booked": 0,
+      "available": 92,
+      "capacity": 92,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-gurney",
+      "cinema": "TGV Gurney",
+      "time": "15:45",
+      "booked": 0,
+      "available": 92,
+      "capacity": 92,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-gurney",
+      "cinema": "TGV Gurney",
+      "time": "18:15",
+      "booked": 0,
+      "available": 92,
+      "capacity": 92,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-gurney",
+      "cinema": "TGV Gurney",
+      "time": "20:45",
+      "booked": 0,
+      "available": 92,
+      "capacity": 92,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-bukit-tinggi",
+      "cinema": "TGV Bukit Tinggi",
+      "time": "11:45",
+      "booked": 0,
+      "available": 115,
+      "capacity": 115,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-bukit-tinggi",
+      "cinema": "TGV Bukit Tinggi",
+      "time": "14:10",
+      "booked": 0,
+      "available": 115,
+      "capacity": 115,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-bukit-tinggi",
+      "cinema": "TGV Bukit Tinggi",
+      "time": "20:30",
+      "booked": 0,
+      "available": 115,
+      "capacity": 115,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-bukit-tinggi",
+      "cinema": "TGV Bukit Tinggi",
+      "time": "23:00",
+      "booked": 0,
+      "available": 115,
+      "capacity": 115,
+      "occupancy": 0.0
+    },
+    {
+      "cinemaId": "tgv-1utama",
+      "cinema": "TGV 1Utama",
+      "time": "15:00",
+      "booked": 0,
+      "available": 117,
+      "capacity": 117,
+      "occupancy": 0.0
+    }
+  ],
+  "booked": 15,
+  "capacity": 10700
+}
