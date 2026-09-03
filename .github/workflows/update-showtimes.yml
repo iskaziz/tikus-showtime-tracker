@@ -40,6 +40,9 @@ jobs:
       - name: Update live GSC showtimes from official API
         run: python scripts/gsc_live_collector.py
 
+      - name: Update live GSC seat status
+        run: python scripts/gsc_seat_collector.py
+
       - name: Discover GSC seat endpoint names
         run: python scripts/gsc_seat_endpoint_discovery.py
 
@@ -73,6 +76,7 @@ jobs:
             data/gsc-seat-endpoint-discovery.json
             data/gsc-seat-api-static-analysis.json
             data/gsc-live-collector.json
+            data/gsc-live-seats.json
           if-no-files-found: warn
 
       - name: Merge seat observations
@@ -85,6 +89,7 @@ jobs:
         run: |
           git config user.name "tikus-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add             data/current.json             data/history-index.json             data/history             data/paragon-seat-diagnostics.json             data/gsc-seat-diagnostics.json             data/gsc-official-api.json             data/gsc-seat-endpoint-discovery.json             data/gsc-seat-api-static-analysis.json             data/gsc-live-collector.json             data/tgv-seat-diagnostics.json             data/tgv-live-collector.json
+          git add             data/current.json             data/history-index.json             data/history             data/paragon-seat-diagnostics.json             data/gsc-seat-diagnostics.json             data/gsc-official-api.json             data/gsc-seat-endpoint-discovery.json             data/gsc-seat-api-static-analysis.json             data/gsc-live-collector.json
+            data/gsc-live-seats.json             data/tgv-seat-diagnostics.json             data/tgv-live-collector.json
           git diff --cached --quiet || git commit -m "Refresh TIKUS performance tracker"
           git push

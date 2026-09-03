@@ -1,2 +1,4 @@
 gsc-auth.json
 *.auth.json
+data/gsc-browser-bootstrap-diagnostic.json
+data/gsc-manual-seat-network*.json

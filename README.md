@@ -426,3 +426,65 @@ is visible and do not click any seat.
 
 Upload:
 `data/gsc-manual-seat-network-v3.json`
+
+
+## v14.3 — GSC browser bootstrap diagnostic
+
+v14.2 confirmed the network observer is attached correctly, but the GSC app
+still made no showtime/API calls after loading the Angular shell. The problem is
+therefore now the browser/app bootstrap, not the network filter.
+
+Run locally:
+
+`python scripts/gsc_browser_bootstrap_diagnostic.py`
+
+This version prefers your installed Google Chrome, captures JS/CSS/API traffic,
+console errors, page errors and failed requests, and waits eight seconds before
+interaction.
+
+If the page is blank or stuck, simply press Enter. If it loads normally, open
+one future TIKUS! showtime and stop at the seat map without selecting a seat.
+
+Upload:
+`data/gsc-browser-bootstrap-diagnostic.json`
+
+
+## v15 — official public GSC live seat status
+
+The GSC browser capture identified the read-only endpoint used by GSC's own
+seat-selection screen:
+
+`getHallSeatStatus?locationid=<id>&hallid=<id>&showdate=YYYY-MM-DD&showtime=HHMM`
+
+The XML response exposes individual seat nodes and their current status. In the
+observed GSC UI traffic, `A` is available and `B` is unavailable/booked.
+
+v15 calls this official endpoint directly for every live GSC TIKUS! session
+already discovered by `gsc_live_collector.py`.
+
+### Conservative counting
+
+The tracker reports:
+
+- `capacity`: number of seat nodes returned by GSC
+- `available`: seats with status `A`
+- `unavailable`: seats with any non-`A` status
+- `occupancy`: unavailable / capacity
+
+`unavailable` is deliberately not treated as confirmed paid ticket sales,
+because a non-available seat can potentially include booked, held, blocked or
+other unavailable inventory.
+
+The XML field `maximumseats` is **not** used as auditorium capacity; observed
+responses show it is a per-transaction selection limit.
+
+### Privacy
+
+Manual browser diagnostic files can contain account identifiers even when
+password/authentication fields are redacted. Do not commit
+`data/gsc-browser-bootstrap-diagnostic.json` or other manual authenticated
+captures to a public repository.
+
+Live tracker output is written to:
+
+`data/gsc-live-seats.json`
