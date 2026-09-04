@@ -1,7 +1,7 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-04T20:18:22+08:00",
-  "businessDate": "2026-09-04",
+  "observedAt": "2026-09-05T00:33:35+08:00",
+  "businessDate": "2026-09-05",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
     "tgv-tebrau": {
@@ -9,7 +9,43 @@
       "officialName": "TEBRAU CITY",
       "sessions": [
         {
-          "sessionId": "430643",
+          "sessionId": "430578",
+          "time": "11:30",
+          "hall": "Cinema 7",
+          "seatstotal": 111,
+          "seatsused": 0,
+          "available": 111,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "430589",
+          "time": "13:00",
+          "hall": "Junior",
+          "seatstotal": 76,
+          "seatsused": 0,
+          "available": 76,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "430599",
+          "time": "15:30",
+          "hall": "Junior",
+          "seatstotal": 76,
+          "seatsused": 0,
+          "available": 76,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "430606",
+          "time": "20:00",
+          "hall": "Cinema 7",
+          "seatstotal": 111,
+          "seatsused": 0,
+          "available": 111,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "430611",
           "time": "23:15",
           "hall": "Junior",
           "seatstotal": 76,
@@ -25,13 +61,49 @@
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
         {
-          "sessionId": "310937",
+          "sessionId": "310948",
+          "time": "11:20",
+          "hall": "Cinema 5",
+          "seatstotal": 174,
+          "seatsused": 0,
+          "available": 174,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "310962",
+          "time": "16:15",
+          "hall": "Cinema 4",
+          "seatstotal": 141,
+          "seatsused": 2,
+          "available": 139,
+          "occupancy": 1.42
+        },
+        {
+          "sessionId": "310966",
+          "time": "18:15",
+          "hall": "Cinema 5",
+          "seatstotal": 174,
+          "seatsused": 0,
+          "available": 174,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "310977",
           "time": "21:45",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 1,
-          "available": 140,
-          "occupancy": 0.71
+          "seatsused": 3,
+          "available": 138,
+          "occupancy": 2.13
+        },
+        {
+          "sessionId": "311212",
+          "time": "23:00",
+          "hall": "Cinema 5",
+          "seatstotal": 2,
+          "seatsused": 0,
+          "available": 2,
+          "occupancy": 0.0
         }
       ],
       "status": "ok"
@@ -41,13 +113,49 @@
       "officialName": "GURNEY PARAGON",
       "sessions": [
         {
-          "sessionId": "220109",
+          "sessionId": "220042",
+          "time": "13:15",
+          "hall": "Cinema 5",
+          "seatstotal": 92,
+          "seatsused": 0,
+          "available": 92,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "220065",
+          "time": "15:45",
+          "hall": "Cinema 5",
+          "seatstotal": 92,
+          "seatsused": 0,
+          "available": 92,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "220066",
+          "time": "18:15",
+          "hall": "Cinema 5",
+          "seatstotal": 92,
+          "seatsused": 0,
+          "available": 92,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "220067",
           "time": "20:45",
           "hall": "Cinema 5",
           "seatstotal": 92,
-          "seatsused": 2,
-          "available": 90,
-          "occupancy": 2.17
+          "seatsused": 0,
+          "available": 92,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "220354",
+          "time": "00:35",
+          "hall": "Cinema 2",
+          "seatstotal": 202,
+          "seatsused": 0,
+          "available": 202,
+          "occupancy": 0.0
         }
       ],
       "status": "ok"
@@ -57,22 +165,49 @@
       "officialName": "BUKIT TINGGI",
       "sessions": [
         {
-          "sessionId": "409395",
-          "time": "20:30",
-          "hall": "Cinema 2",
-          "seatstotal": 115,
-          "seatsused": 2,
-          "available": 113,
-          "occupancy": 1.74
-        },
-        {
-          "sessionId": "409403",
-          "time": "23:00",
-          "hall": "Cinema 2",
+          "sessionId": "409414",
+          "time": "11:45",
+          "hall": "Cinema 3",
           "seatstotal": 115,
           "seatsused": 1,
           "available": 114,
           "occupancy": 0.87
+        },
+        {
+          "sessionId": "409422",
+          "time": "14:10",
+          "hall": "Cinema 3",
+          "seatstotal": 115,
+          "seatsused": 0,
+          "available": 115,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "409433",
+          "time": "18:05",
+          "hall": "Cinema 2",
+          "seatstotal": 115,
+          "seatsused": 0,
+          "available": 115,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "409440",
+          "time": "20:30",
+          "hall": "Cinema 2",
+          "seatstotal": 115,
+          "seatsused": 0,
+          "available": 115,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "409448",
+          "time": "23:00",
+          "hall": "Cinema 2",
+          "seatstotal": 115,
+          "seatsused": 0,
+          "available": 115,
+          "occupancy": 0.0
         }
       ],
       "status": "ok"
@@ -80,7 +215,17 @@
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [],
+      "sessions": [
+        {
+          "sessionId": "324621",
+          "time": "15:00",
+          "hall": "Cinema 1",
+          "seatstotal": 117,
+          "seatsused": 6,
+          "available": 111,
+          "occupancy": 5.13
+        }
+      ],
       "status": "ok"
     }
   },

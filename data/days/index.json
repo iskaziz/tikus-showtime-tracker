@@ -8,8 +8,14 @@
     },
     {
       "date": "2026-09-04",
-      "file": "current.json",
+      "file": "days/2026-09-04.json",
       "label": "4 Sep 2026",
+      "status": "archived"
+    },
+    {
+      "date": "2026-09-05",
+      "file": "current.json",
+      "label": "2026-09-05",
       "status": "current"
     }
   ]
