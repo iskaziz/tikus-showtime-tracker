@@ -1,0 +1,11 @@
+TIKUS! Tracker v22.5 MAP UX — SAFE OVERLAY
+
+Apply these files OVER the existing repository. Do not delete or replace the live data/ directory.
+
+Changes:
+- Large on-map info overlay replaced by a compact status bar below the map.
+- Pulsing dots and auto-cycle removed.
+- Visible markers made much smaller.
+- Responsive map now scales to the mobile viewport instead of forcing a wide horizontal-scrolling canvas.
+- Cinema dropdown below the map gives mobile users a precise alternative to tapping clustered markers.
+- Build cache key bumped to 22.5.

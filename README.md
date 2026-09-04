@@ -920,3 +920,14 @@ cleaned image is bundled as `assets/images/ui/tikus-cinema-map-clean.png`.
 
 The masthead now uses a compact TIKUS! treatment without the “Performance
 Tracker” subtitle. The map interaction and live cinema overlays remain active.
+
+
+## v22.5 — map usability cleanup
+
+- Removed the large on-map cinema information card.
+- Selected-cinema information now lives in a compact status bar beneath the map.
+- Removed all pulsing marker animation and automatic cinema cycling.
+- Reduced the visible location dots while preserving larger invisible button hit areas.
+- Added a cinema selector to the status bar, which provides a reliable navigation path on small screens and for keyboard users.
+- Removed the fixed 820/900 px mobile map widths. The complete Malaysia map now scales to the available viewport width instead of requiring horizontal panning.
+- Map selection still highlights and can jump directly to the matching cinema detail card.

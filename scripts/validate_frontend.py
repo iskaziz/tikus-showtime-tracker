@@ -30,16 +30,21 @@ else:
         errors.append("highlightCinemaCard() recursively calls itself.")
 
 # Basic frontend version/cache-bust guard.
-if 'js/app.js?v=22.4' not in HTML:
-    errors.append("index.html is not cache-busting app.js as v22.4.")
-if 'css/styles.css?v=22.4' not in HTML:
-    errors.append("index.html is not cache-busting styles.css as v22.4.")
+if 'js/app.js?v=22.5' not in HTML:
+    errors.append("index.html is not cache-busting app.js as v22.5.")
+if 'css/styles.css?v=22.5' not in HTML:
+    errors.append("index.html is not cache-busting styles.css as v22.5.")
 
 # Fail if unresolved Git merge markers exist in critical public files.
 for rel in ("index.html", "js/app.js", "css/styles.css"):
     text = (ROOT / rel).read_text(encoding="utf-8")
     if any(marker in text for marker in ("<<<<<<<", "=======", ">>>>>>>")):
         errors.append(f"Unresolved Git merge marker in {rel}.")
+
+if "map-tooltip" in JS:
+    errors.append("Legacy map tooltip JavaScript reintroduced.")
+if "startMapCycle" in JS or "MAP_CYCLE_TIMER" in JS:
+    errors.append("Auto-cycling map behavior reintroduced.")
 
 if errors:
     print("FRONTEND VALIDATION FAILED")

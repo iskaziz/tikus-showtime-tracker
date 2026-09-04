@@ -4,9 +4,6 @@ const setText = (selector,value) => { const el=$(selector); if(el) el.textConten
 const setHtml = (selector,value) => { const el=$(selector); if(el) el.innerHTML=value; };
 let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[];
 let MAP_SELECTED_ID=null;
-let MAP_CYCLE_INDEX=0;
-let MAP_CYCLE_TIMER=null;
-let MAP_CYCLE_PAUSED=false;
 
 const MAP_POSITIONS={
   "gsc-aman-central":[10.83,21.98],
@@ -66,26 +63,6 @@ function highlightCinemaCard(id){
     card.classList.toggle('is-highlighted',card.dataset.cinemaId===id);
   });
 }
-function startMapCycle(){
-  stopMapCycle();
-  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  if(!DATA||!DATA.cinemas?.length)return;
-  const liveFirst=[...DATA.cinemas].sort((a,b)=>{
-    const aa=cinemaSummary(a), bb=cinemaSummary(b);
-    return (bb.known-bb.shows/100)-(aa.known-aa.shows/100);
-  });
-  MAP_CYCLE_TIMER=setInterval(()=>{
-    if(MAP_CYCLE_PAUSED||!liveFirst.length) return;
-    MAP_CYCLE_INDEX=(MAP_CYCLE_INDEX+1)%liveFirst.length;
-    openMapTooltip(liveFirst[MAP_CYCLE_INDEX].id,{auto:true,scroll:false});
-  },4200);
-}
-function stopMapCycle(){
-  if(MAP_CYCLE_TIMER){ clearInterval(MAP_CYCLE_TIMER); MAP_CYCLE_TIMER=null; }
-}
-function pauseMapCycle(value=true){
-  MAP_CYCLE_PAUSED=value;
-}
 
 function mapCinemaStats(c){
   const ss=c.sessions||[],known=ss.filter(isKnown);
@@ -134,26 +111,7 @@ function renderMap(){
   setText('#map-live-count',globalStats.known.length?fmt(globalStats.known.length):'—');
   setText('#map-update-short',new Date(DATA.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'}));
 
-  const chainShows=chain=>DATA.cinemas.filter(c=>c.chain===chain).reduce((n,c)=>n+(c.sessions||[]).length,0);
-  setText('#map-gsc-shows',chainShows('GSC'));
-  setText('#map-tgv-shows',chainShows('TGV'));
-  setText('#map-paragon-shows',chainShows('Paragon'));
-  setText('#map-mega-shows',chainShows('Mega'));
-
-  const ranked=DATA.cinemas
-    .map(c=>({c,s:cinemaSummary(c)}))
-    .filter(x=>x.s.occ!=null)
-    .sort((a,b)=>b.s.occ-a.s.occ || b.s.used-a.s.used);
-  if(ranked.length){
-    setText('#map-best-cinema',ranked[0].c.name);
-    setText('#map-best-meta',`${ranked[0].s.occ.toFixed(1)}% · ${fmt(ranked[0].s.used)} used / booked`);
-  }else{
-    setText('#map-best-cinema','Awaiting seat data');
-    setText('#map-best-meta','—');
-  }
-
   host.innerHTML='';
-
   mapDisplaySet().forEach(c=>{
     const pos=MAP_POSITIONS[c.id]; if(!pos) return;
     const sum=cinemaSummary(c);
@@ -168,53 +126,46 @@ function renderMap(){
     btn.style.top=`${pos[1]}%`;
     btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${sum.shows} listed shows.`);
     btn.title=c.name;
-
-    const badge=document.createElement('span');
-    badge.className='marker-badge';
-    badge.textContent=sum.shows;
-    btn.append(badge);
-
-    btn.addEventListener('mouseenter',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:true,scroll:false}); });
-    btn.addEventListener('focus',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:true,scroll:false}); });
-    btn.addEventListener('mouseleave',()=>pauseMapCycle(false));
-    btn.addEventListener('click',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:false,scroll:false}); });
-
+    btn.addEventListener('click',()=>selectMapCinema(c.id));
+    btn.addEventListener('focus',()=>selectMapCinema(c.id));
     host.append(btn);
   });
 
-  const activeId=(MAP_SELECTED_ID && DATA.cinemas.some(c=>c.id===MAP_SELECTED_ID)) ? MAP_SELECTED_ID : DATA.cinemas[0]?.id;
-  if(activeId) openMapTooltip(activeId,{auto:true,scroll:false});
-  startMapCycle();
+  const picker=$('#map-cinema-select');
+  if(picker){
+    const current=MAP_SELECTED_ID;
+    picker.innerHTML=DATA.cinemas.map(c=>`<option value="${c.id}">${c.name}</option>`).join('');
+    const active=(current && DATA.cinemas.some(c=>c.id===current)) ? current : DATA.cinemas[0]?.id;
+    if(active){
+      picker.value=active;
+      selectMapCinema(active);
+    }
+  }
 }
-function openMapTooltip(id,{auto=false,scroll=false}={}){
-  const c=DATA.cinemas.find(x=>x.id===id); if(!c) return;
+function selectMapCinema(id,{scroll=false}={}){
+  const c=DATA?.cinemas?.find(x=>x.id===id); if(!c) return;
   MAP_SELECTED_ID=id;
   document.querySelectorAll('.map-marker').forEach(b=>b.classList.toggle('is-active',b.dataset.cinemaId===id));
   highlightCinemaCard(id);
 
   const st=cinemaSummary(c);
-  $('#map-tooltip-chain').textContent=c.chain;
-  $('#map-tooltip-title').textContent=c.name;
-  $('#map-tooltip-state').textContent=c.state;
-  $('#map-tooltip-shows').textContent=st.shows;
-  $('#map-tooltip-used').textContent=st.used || st.used===0 ? fmt(st.used) : '—';
-  $('#map-tooltip-capacity').textContent=st.capacity ? fmt(st.capacity) : '—';
-  $('#map-tooltip-next').innerHTML=nextShowLabel(c);
-  $('#map-tooltip-source').textContent=sourceText(c);
-  $('#map-tooltip-jump').dataset.cinemaId=id;
-  $('#map-tooltip').hidden=false;
-
-  const liveMeta = st.occ==null
-    ? `${st.shows} shows · seat feed pending`
-    : `${st.shows} shows · ${fmt(st.used)} used / booked · ${st.occ.toFixed(1)}% occupancy`;
-  $('#map-live-title').textContent=c.name;
-  $('#map-live-meta').textContent=liveMeta;
-
+  const chain=$('#map-status-chain');
+  if(chain){
+    chain.textContent=c.chain;
+    chain.className=`map-status-chain ${chainClass(c.chain)}`;
+  }
+  setText('#map-status-title',c.name);
+  setText('#map-status-state',c.state);
+  setText('#map-status-shows',st.shows);
+  setText('#map-status-used',st.known?fmt(st.used):'—');
+  setText('#map-status-occ',st.occ==null?'—':`${st.occ.toFixed(1)}%`);
+  const match=nextShowLabel(c).match(/\b\d{2}:\d{2}\b/);
+  setText('#map-status-next',match?match[0]:'—');
+  const picker=$('#map-cinema-select');
+  if(picker && picker.value!==id) picker.value=id;
+  const jump=$('#map-status-jump');
+  if(jump) jump.dataset.cinemaId=id;
   if(scroll) jumpToCinema(id);
-}
-function closeMapTooltip(){
-  document.querySelectorAll('.map-marker').forEach(b=>b.classList.remove('is-active'));
-  const tip=$('#map-tooltip'); if(tip) tip.hidden=true;
 }
 function jumpToCinema(id){
   highlightCinemaCard(id);
@@ -224,7 +175,6 @@ function jumpToCinema(id){
     card.focus?.();
   }
 }
-
 
 
 function showRuntimeError(error){
@@ -447,16 +397,8 @@ $('#date-filter').addEventListener('change',e=>{
   const u=new URL(location.href);u.searchParams.set('date',e.target.value);history.replaceState({},'',u);load(e.target.value);
 });
 $('#refresh').addEventListener('click',()=>load(DATA.date));
-$('#map-tooltip-close')?.addEventListener('click',()=>{closeMapTooltip(); pauseMapCycle(false);});
-$('#map-tooltip-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
-document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'&&!$('#map-tooltip')?.hidden){
-    closeMapTooltip();
-    pauseMapCycle(false);
-  }
-});
-$('#malaysia-map')?.addEventListener('mouseenter',()=>pauseMapCycle(true));
-$('#malaysia-map')?.addEventListener('mouseleave',()=>pauseMapCycle(false));
+$('#map-cinema-select')?.addEventListener('change',e=>selectMapCinema(e.target.value));
+$('#map-status-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
 window.addEventListener('error',event=>{
   console.error(event.error||event.message);
   showRuntimeError(event.error||event.message);

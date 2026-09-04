@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#9e1017">
   <title>TIKUS! — Cinema Performance Tracker</title>
-  <link rel="stylesheet" href="css/styles.css?v=22.4">
+  <link rel="stylesheet" href="css/styles.css?v=22.5">
 </head>
 <body>
   <header class="masthead">
@@ -15,7 +15,7 @@
     </div>
     <div class="live-block">
       <span class="live-dot" aria-hidden="true"></span>
-      <div><strong>TRACKER ONLINE</strong><small id="updated">Loading…</small><small class="build-tag">Build 22.4</small></div>
+      <div><strong>TRACKER ONLINE</strong><small id="updated">Loading…</small><small class="build-tag">Build 22.5</small></div>
     </div>
   </header>
   <div id="runtime-status" class="runtime-status" role="alert" hidden></div>
@@ -48,43 +48,30 @@
             alt="Illustrated TIKUS! cinema locations map across Malaysia"
           >
           <div id="map-markers" class="map-markers" aria-label="Interactive cinema map markers"></div>
+        </div>
+      </div>
 
-          <section class="map-live-panel" aria-label="Live exhibitor summary">
-            <p class="eyebrow">LIVE TRACKER</p>
-            <div class="live-panel-grid">
-              <span>GSC<b id="map-gsc-shows">—</b></span>
-              <span>TGV<b id="map-tgv-shows">—</b></span>
-              <span>Paragon<b id="map-paragon-shows">—</b></span>
-              <span>Mega<b id="map-mega-shows">—</b></span>
-            </div>
-            <div class="live-panel-best">
-              <small>Best observed occupancy</small>
-              <strong id="map-best-cinema">Awaiting data</strong>
-              <span id="map-best-meta">—</span>
-            </div>
-          </section>
+      <div class="map-status" id="map-status" aria-live="polite">
+        <label class="map-status-picker">Location
+          <select id="map-cinema-select" aria-label="Choose cinema on map"></select>
+        </label>
 
-          <aside class="map-tooltip" id="map-tooltip" hidden aria-live="polite">
-            <button type="button" class="map-tooltip-close" id="map-tooltip-close" aria-label="Close cinema information">×</button>
-            <p class="eyebrow" id="map-tooltip-chain"></p>
-            <h3 id="map-tooltip-title"></h3>
-            <p class="map-tooltip-state" id="map-tooltip-state"></p>
-            <div class="map-tooltip-metrics">
-              <span><b id="map-tooltip-shows">—</b> shows</span>
-              <span><b id="map-tooltip-used">—</b> used / booked</span>
-              <span><b id="map-tooltip-capacity">—</b> capacity</span>
-            </div>
-            <div class="map-tooltip-next" id="map-tooltip-next"></div>
-            <p class="map-tooltip-source" id="map-tooltip-source"></p>
-            <button type="button" class="map-tooltip-jump" id="map-tooltip-jump">View cinema card</button>
-          </aside>
-
-          <div class="map-live-strip" id="map-live-strip" aria-live="polite">
-            <span class="strip-label">Live spotlight</span>
-            <strong id="map-live-title">Loading…</strong>
-            <span id="map-live-meta">Awaiting tracker data</span>
+        <div class="map-status-identity">
+          <span id="map-status-chain" class="map-status-chain">—</span>
+          <div>
+            <strong id="map-status-title">Select a cinema</strong>
+            <small id="map-status-state">—</small>
           </div>
         </div>
+
+        <div class="map-status-metrics">
+          <span>Shows<b id="map-status-shows">—</b></span>
+          <span>Used / booked<b id="map-status-used">—</b></span>
+          <span>Occupancy<b id="map-status-occ">—</b></span>
+          <span>Next show<b id="map-status-next">—</b></span>
+        </div>
+
+        <button type="button" class="map-status-jump" id="map-status-jump">Cinema details</button>
       </div>
     </section>
 
@@ -180,6 +167,6 @@
     </article>
   </template>
 
-  <script type="module" src="js/app.js?v=22.4"></script>
+  <script type="module" src="js/app.js?v=22.5"></script>
 </body>
 </html>
