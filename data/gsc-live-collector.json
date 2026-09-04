@@ -1,18 +1,67 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-04T07:47:42+08:00",
+  "observedAt": "2026-09-04T10:56:15+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
   "cinemas": {
     "gsc-midvalley": {
-      "status": "not-listed-by-official-api",
-      "expectedLocationId": "210",
-      "aliases": [
-        "GSC Mid Valley",
-        "GSC Mid Valley Megamall"
-      ],
-      "sessions": []
+      "status": "ok",
+      "matchMethod": "location-id",
+      "officialLocationId": "210",
+      "officialName": "GSC Mid Valley",
+      "locationAttributes": {
+        "id": "210",
+        "name": "GSC Mid Valley",
+        "barcode_enabled": "0",
+        "address": "Lot T-001, 3rd Floor, \nMid Valley Megamall Mid Valley City,\nLingkaran Syed Putra, ,KUL,59200",
+        "region": "2",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/210(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Kuala Lumpur - Mid Valley Megamall",
+        "sort": "5",
+        "info": ""
+      },
+      "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
+      "isEpayment": "1",
+      "sessions": [
+        {
+          "sessionId": "924650",
+          "time": "10:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "924651",
+          "time": "13:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "924652",
+          "time": "15:20",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "924653",
+          "time": "17:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "924654",
+          "time": "20:00",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        }
+      ]
     },
     "gsc-ioi-city-mall": {
       "status": "ok",
