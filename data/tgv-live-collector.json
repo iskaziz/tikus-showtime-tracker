@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-04T15:44:58+08:00",
+  "observedAt": "2026-09-04T20:18:22+08:00",
   "businessDate": "2026-09-04",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430648",
-          "time": "20:00",
-          "hall": "Cinema 7",
-          "seatstotal": 111,
-          "seatsused": 0,
-          "available": 111,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430643",
           "time": "23:15",
@@ -34,24 +25,6 @@
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
         {
-          "sessionId": "310922",
-          "time": "16:15",
-          "hall": "Cinema 4",
-          "seatstotal": 141,
-          "seatsused": 1,
-          "available": 140,
-          "occupancy": 0.71
-        },
-        {
-          "sessionId": "310926",
-          "time": "18:15",
-          "hall": "Cinema 5",
-          "seatstotal": 174,
-          "seatsused": 1,
-          "available": 173,
-          "occupancy": 0.57
-        },
-        {
           "sessionId": "310937",
           "time": "21:45",
           "hall": "Cinema 4",
@@ -67,15 +40,6 @@
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
       "sessions": [
-        {
-          "sessionId": "220098",
-          "time": "18:15",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "220109",
           "time": "20:45",
