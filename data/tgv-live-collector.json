@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-05T03:14:59+08:00",
+  "observedAt": "2026-09-05T05:30:14+08:00",
   "businessDate": "2026-09-05",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -83,9 +83,9 @@
           "time": "18:15",
           "hall": "Cinema 5",
           "seatstotal": 174,
-          "seatsused": 0,
-          "available": 174,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 173,
+          "occupancy": 0.57
         },
         {
           "sessionId": "310977",
@@ -101,9 +101,9 @@
           "time": "23:00",
           "hall": "Cinema 5",
           "seatstotal": 174,
-          "seatsused": 0,
-          "available": 174,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 173,
+          "occupancy": 0.57
         }
       ],
       "status": "ok"
@@ -178,27 +178,27 @@
           "time": "14:10",
           "hall": "Cinema 3",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         },
         {
           "sessionId": "409433",
           "time": "18:05",
           "hall": "Cinema 2",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         },
         {
           "sessionId": "409440",
           "time": "20:30",
           "hall": "Cinema 2",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         },
         {
           "sessionId": "409448",

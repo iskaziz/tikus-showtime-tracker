@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-05T03:09:57+08:00",
+  "observedAt": "2026-09-05T05:29:15+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-05",
@@ -122,12 +122,69 @@
       ]
     },
     "gsc-aman-central": {
-      "status": "not-listed-by-official-api",
-      "expectedLocationId": "133",
-      "aliases": [
-        "GSC Aman Central"
-      ],
-      "sessions": []
+      "status": "ok",
+      "matchMethod": "location-id",
+      "officialLocationId": "133",
+      "officialName": "GSC Aman Central",
+      "locationAttributes": {
+        "id": "133",
+        "name": "GSC Aman Central",
+        "barcode_enabled": "1",
+        "address": "Lot 4-22,  Aman Central\nNo 1,  Lebuhraya Darulaman\nAlor Setar,  Kedah Darul Aman,KDH,05100",
+        "region": "3",
+        "hallgroup": "",
+        "thumb": "https://poster.gsc.com.my/cinema/133(120x120).jpg",
+        "is_epayment": "1",
+        "epayment_name": "Alor Setar - Aman Central",
+        "sort": "31",
+        "info": ""
+      },
+      "epaymentName": "Alor Setar - Aman Central",
+      "isEpayment": "1",
+      "sessions": [
+        {
+          "sessionId": "213410",
+          "time": "10:40",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213409",
+          "time": "13:00",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213408",
+          "time": "15:20",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213407",
+          "time": "17:40",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213406",
+          "time": "20:00",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213405",
+          "time": "22:20",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        }
+      ]
     },
     "gsc-dataran-pahlawan": {
       "status": "ok",

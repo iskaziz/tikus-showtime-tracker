@@ -1,6 +1,6 @@
 {
   "collectorVersion": "13.0",
-  "observedAt": "2026-09-05T03:14:22+08:00",
+  "observedAt": "2026-09-05T05:29:37+08:00",
   "policy": "static public JavaScript analysis only; no booking/seat endpoint invoked",
   "scriptUrls": [
     "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
