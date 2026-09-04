@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-04T01:15:20+08:00",
+  "observedAt": "2026-09-04T10:57:12+08:00",
   "businessDate": "2026-09-04",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -74,27 +74,27 @@
           "time": "16:15",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 0,
-          "available": 141,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 140,
+          "occupancy": 0.71
         },
         {
           "sessionId": "310926",
           "time": "18:15",
           "hall": "Cinema 5",
           "seatstotal": 174,
-          "seatsused": 0,
-          "available": 174,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 173,
+          "occupancy": 0.57
         },
         {
           "sessionId": "310937",
           "time": "21:45",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 0,
-          "available": 141,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 140,
+          "occupancy": 0.71
         }
       ],
       "status": "ok"
@@ -160,27 +160,27 @@
           "time": "14:10",
           "hall": "Cinema 3",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         },
         {
           "sessionId": "409395",
           "time": "20:30",
           "hall": "Cinema 2",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         },
         {
           "sessionId": "409403",
           "time": "23:00",
           "hall": "Cinema 2",
           "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 114,
+          "occupancy": 0.87
         }
       ],
       "status": "ok"
@@ -194,9 +194,9 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 0,
-          "available": 117,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 116,
+          "occupancy": 0.85
         }
       ],
       "status": "ok"
