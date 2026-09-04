@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-05T00:33:35+08:00",
+  "observedAt": "2026-09-05T03:14:59+08:00",
   "businessDate": "2026-09-05",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -100,9 +100,9 @@
           "sessionId": "311212",
           "time": "23:00",
           "hall": "Cinema 5",
-          "seatstotal": 2,
+          "seatstotal": 174,
           "seatsused": 0,
-          "available": 2,
+          "available": 174,
           "occupancy": 0.0
         }
       ],
@@ -221,9 +221,9 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 6,
-          "available": 111,
-          "occupancy": 5.13
+          "seatsused": 5,
+          "available": 112,
+          "occupancy": 4.27
         }
       ],
       "status": "ok"
