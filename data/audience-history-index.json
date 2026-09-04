@@ -1,3 +1,26 @@
 {
+<<<<<<< HEAD
   "snapshots": []
+=======
+  "snapshots": [
+    {
+      "observedAt": "2026-09-04T12:08:47+08:00",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "qualifiedMentions24h": null,
+      "publicEngagement24h": null,
+      "file": "audience-history/2026-09-04/20260904T120847+0800.json"
+    },
+    {
+      "observedAt": "2026-09-04T12:22:30+08:00",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "qualifiedMentions24h": null,
+      "publicEngagement24h": null,
+      "file": "audience-history/2026-09-04/20260904T122230+0800.json"
+    }
+  ]
+>>>>>>> 0027c36061eb189b5970372e442a306286f0ea63
 }

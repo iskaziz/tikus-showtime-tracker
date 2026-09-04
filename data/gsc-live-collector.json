@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-04T12:09:57+08:00",
+  "observedAt": "2026-09-04T12:23:31+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
@@ -354,13 +354,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "77230",
-          "time": "12:10",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "77231",
           "time": "14:30",
           "hall": "1",
@@ -411,13 +404,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77728",
-          "time": "12:10",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77729",
           "time": "14:30",
