@@ -1,0 +1,55 @@
+{
+  "updatedAt": null,
+  "trailer": {
+    "videoId": "zP-A0q7aVko",
+    "url": "https://youtu.be/zP-A0q7aVko",
+    "label": "Official Trailer",
+    "title": null,
+    "channelTitle": null,
+    "views": null,
+    "likes": null,
+    "comments": null,
+    "engagementCount": null,
+    "engagementRate": null,
+    "delta24hViews": null,
+    "sourceStatus": "youtube-api-key-not-configured",
+    "observedAt": null
+  },
+  "social": {
+    "hashtags": [
+      {
+        "tag": "#Tikus",
+        "mentions24h": null,
+        "engagement24h": null
+      },
+      {
+        "tag": "#SiapaBunuhDatinSaliha",
+        "mentions24h": null,
+        "engagement24h": null
+      },
+      {
+        "tag": "#feiskproductions",
+        "mentions24h": null,
+        "engagement24h": null
+      }
+    ],
+    "qualifiedMentions24h": null,
+    "publicEngagement24h": null,
+    "topTag": null,
+    "platforms": {
+      "x": {
+        "status": "x-bearer-token-not-configured",
+        "observedAt": null
+      },
+      "instagram": {
+        "status": "not-configured"
+      },
+      "tiktok": {
+        "status": "not-configured"
+      }
+    },
+    "notes": [
+      "#Tikus is a broad tag and may contain unrelated posts; the dashboard keeps it separate from qualified TIKUS! mentions."
+    ]
+  }
+}

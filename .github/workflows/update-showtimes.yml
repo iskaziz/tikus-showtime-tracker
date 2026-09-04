@@ -19,8 +19,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Vendor Malaysia state GeoJSON
-        run: python scripts/vendor_malaysia_geojson.py
+
+      - name: Update trailer and social audience pulse
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python scripts/update_audience.py
 
       - name: Roll tracker to current Malaysia date
         run: python scripts/rollover_tracker_day.py
@@ -110,8 +114,10 @@ jobs:
         run: |
           git config user.name "tikus-tracker-bot"
           git config user.email "actions@users.noreply.github.com"
+          git add data/audience-current.json
+          git add data/audience-history-index.json
+          git add data/audience-history
           git add data/current.json
-          git add assets/data/malaysia.state.min.geojson
           git add data/day-template.json
           git add data/days
           git add data/seed-current.json

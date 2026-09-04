@@ -758,3 +758,94 @@ After the first successful workflow run, the map is fully self-contained on
 GitHub Pages/static hosting and also works locally when the project is served
 from a local static server. The existing schematic SVG remains a graceful
 fallback if the GeoJSON asset is missing or invalid.
+
+
+## v21 — static illustrated map overlay + tighter dashboard
+
+This version replaces the undersized dynamic vector Malaysia map with a static,
+detailed illustrated hero map based on the approved poster-style reference and
+the generated TIKUS! location artwork.
+
+What changed:
+- the hero map is now a bundled static image:
+  `assets/images/ui/tikus-cinema-map-hero.png`
+- cinema markers are overlaid as dynamic hotspots aligned to the illustrated map
+- markers pulse, show live show-count badges, and auto-cycle through locations
+- the tooltip updates live and can jump to the matching cinema card
+- the lower dashboard is tightened for more information at a glance
+- headline metrics are more compact
+- filters are condensed into a tighter control bar
+- cinema detail is now a dense card grid instead of expand/collapse rows
+- each cinema card shows key stats plus compact session chips immediately
+
+The MIT GeoJSON asset is still retained in the repository, but the dashboard
+hero now prioritises the illustrated static map for stronger visual control and
+better hotspot alignment.
+
+
+## v21.1
+Minor UI patch: highlighted cinema cards now sync immediately with the map spotlight after first render.
+
+
+## v21.2 — map alignment + dense dashboard polish
+
+- Static poster hero is cropped at 700 px source height so the duplicated bottom
+  location-list artwork is no longer part of the visible hero.
+- Dynamic markers were re-aligned to the actual numbered poster markers.
+- A live exhibitor panel covers the poster's static top-right legend/summary and
+  replaces it with current show counts and best observed occupancy.
+- Klang Valley uses the poster inset; Bukit Tinggi uses the main-map Klang
+  Valley anchor to avoid marker collisions.
+- Cinema card sorting is available by occupancy, used/booked seats, velocity,
+  show count or cinema name.
+- Per-cinema velocity uses the two latest detailed same-day snapshots when
+  available.
+- National occupancy and ranking panels sit side-by-side on desktop.
+- Cinema cards use a 3-column large-desktop grid and tighter session chips.
+- On mobile, the detailed hero map becomes a local horizontal scroller instead
+  of shrinking until labels and markers are unreadable.
+- The unused GeoJSON vendoring workflow was removed because the illustrated
+  static poster is now the dashboard's map source.
+
+
+## v22 — Audience Pulse
+
+Configured trailer:
+- https://youtu.be/zP-A0q7aVko
+- YouTube video ID: `zP-A0q7aVko`
+
+Tracked social tags:
+- `#Tikus`
+- `#SiapaBunuhDatinSaliha`
+- `#feiskproductions`
+
+The dashboard now contains a compact Audience Pulse panel below the headline
+cinema metrics.
+
+### YouTube
+`scripts/update_audience.py` calls the official YouTube Data API `videos.list`
+endpoint when repository secret `YOUTUBE_API_KEY` is configured. It records
+views, likes and comments and calculates `(likes + comments) / views` as a
+dashboard engagement rate. The calculation is clearly treated as a tracker
+metric rather than an official YouTube metric.
+
+### X hashtag listening
+When repository secret `X_BEARER_TOKEN` is configured, the same collector uses
+X's official recent-search endpoint. X collection is throttled to once per hour
+even though the cinema workflow runs every 15 minutes.
+
+The three exact tags are counted separately. Because `#Tikus` is broad and can
+contain unrelated mouse/rat posts, the tracker also stores a stricter
+`qualifiedMentions24h` query based on the distinctive campaign tags plus TIKUS!
+context.
+
+### Files
+- `data/audience-config.json`
+- `data/audience-current.json`
+- `data/audience-history-index.json`
+- `data/audience-history/YYYY-MM-DD/*.json`
+- `scripts/update_audience.py`
+
+The collector fails soft: missing API credentials do not break the cinema
+tracker. The widget displays `—` and a credential-status message until the
+relevant GitHub secret is configured.

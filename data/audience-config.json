@@ -1,0 +1,21 @@
+{
+  "youtube": {
+    "videoId": "zP-A0q7aVko",
+    "url": "https://youtu.be/zP-A0q7aVko",
+    "label": "Official Trailer"
+  },
+  "social": {
+    "hashtags": [
+      "#Tikus",
+      "#SiapaBunuhDatinSaliha",
+      "#feiskproductions"
+    ],
+    "x": {
+      "lookbackHours": 24,
+      "refreshMinutes": 60,
+      "maxPages": 5,
+      "excludeRetweets": true,
+      "qualifiedQuery": "(#SiapaBunuhDatinSaliha OR #feiskproductions OR (#Tikus (\"Feisk\" OR \"Datin Saliha\" OR \"Siapa Bunuh\"))) -is:retweet"
+    }
+  }
+}

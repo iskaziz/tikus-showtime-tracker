@@ -1,117 +1,96 @@
 const $ = s => document.querySelector(s);
 const fmt = n => n == null ? '—' : new Intl.NumberFormat().format(n);
-let DATA, HISTORY=[], DAYS=[];
+let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[], AUDIENCE=null, AUDIENCE_HISTORY=[];
 let MAP_SELECTED_ID=null;
+let MAP_CYCLE_INDEX=0;
+let MAP_CYCLE_TIMER=null;
+let MAP_CYCLE_PAUSED=false;
 
-const MAP_COORDS={
-  "gsc-aman-central":[6.1248,100.3678],
-  "mega-riverfront":[5.6447,100.4897],
-  "tgv-gurney":[5.4380,100.3107],
+const MAP_POSITIONS={
+  // Percent positions are aligned to the visible top 700px crop of the 1672×941 poster.
+  "gsc-aman-central":[10.83,38.14],
+  "mega-riverfront":[14.47,33.57],
+  "tgv-gurney":[8.79,47.71],
 
-  "gsc-midvalley":[3.1180,101.6774],
-  "tgv-wangsa-walk":[3.2056,101.7311],
-  "tgv-bukit-tinggi":[3.0098,101.4408],
-  "tgv-1utama":[3.1508,101.6155],
-  "gsc-ioi-city-mall":[2.9690,101.7138],
+  // Klang Valley inset on the illustrated poster.
+  "gsc-midvalley":[6.04,75.57],
+  "tgv-wangsa-walk":[8.19,74.86],
+  "gsc-ioi-city-mall":[7.00,80.86],
+  "tgv-1utama":[8.91,79.00],
+  // Bukit Tinggi uses the main-map Klang Valley anchor to avoid inset overlap.
+  "tgv-bukit-tinggi":[18.54,74.71],
 
-  "gsc-kuantan-city-mall":[3.8169,103.3260],
-  "paragon-ktcc":[5.3308,103.1370],
-  "gsc-dataran-pahlawan":[2.1903,102.2496],
+  "paragon-ktcc":[31.52,53.29],
+  "gsc-kuantan-city-mall":[31.76,68.14],
+  "gsc-dataran-pahlawan":[23.98,87.29],
 
-  "paragon-batu-pahat":[1.8548,102.9325],
-  "gsc-paradigm-jb":[1.5150,103.6854],
-  "tgv-tebrau":[1.5495,103.7957],
+  "paragon-batu-pahat":[34.57,92.86],
+  "gsc-paradigm-jb":[33.13,88.57],
+  "tgv-tebrau":[35.47,88.86],
 
-  "gsc-the-spring":[1.5272,110.3681],
-  "gsc-imago":[5.9704,116.0660]
+  "gsc-imago":[64.53,54.14],
+  "gsc-the-spring":[73.39,87.86]
 };
 
 
-const MALAYSIA_GEOJSON_URL='assets/data/malaysia.state.min.geojson';
-const GEO_BOUNDS={minLon:99.6409,maxLon:119.26899,minLat:0.85539,maxLat:7.36098};
-const GEO_VIEW={x:120,y:32,w:1010,h:440};
-let GEO_READY=false;
 
-function projectMalaysia(lat,lon){
-  const x=GEO_VIEW.x + ((lon-GEO_BOUNDS.minLon)/(GEO_BOUNDS.maxLon-GEO_BOUNDS.minLon))*GEO_VIEW.w;
-  const y=GEO_VIEW.y + (1-((lat-GEO_BOUNDS.minLat)/(GEO_BOUNDS.maxLat-GEO_BOUNDS.minLat)))*GEO_VIEW.h;
-  return [x,y];
+function cinemaSummary(c){
+  const known=(c.sessions||[]).filter(isKnown);
+  const capacity=known.reduce((a,s)=>a+s.capacity,0);
+  const used=known.reduce((a,s)=>a+s.booked,0);
+  const occ=capacity?used/capacity*100:null;
+  return {
+    shows:(c.sessions||[]).length,
+    known:known.length,
+    capacity,
+    used,
+    available:capacity-used,
+    occ
+  };
 }
-function pointToPercent(lat,lon){
-  const [x,y]=projectMalaysia(lat,lon);
-  return [x/12,y/5.2];
+function chainClass(chain){
+  return String(chain||'').toLowerCase();
 }
-function ringToPath(ring){
-  if(!Array.isArray(ring)||ring.length<2)return '';
-  return ring.map((pt,i)=>{
-    const [x,y]=projectMalaysia(pt[1],pt[0]);
-    return `${i?'L':'M'}${x.toFixed(2)},${y.toFixed(2)}`;
-  }).join(' ')+' Z';
+function sourceText(c){
+  return c.sourceStatus==='gsc-official-api'
+    ? 'Source: GSC official showtime / seat-status feed'
+    : c.sourceStatus==='tgv-official-api'
+      ? 'Source: TGV official public API'
+      : c.sourceStatus==='fallback-showtimes-official-gsc-not-listed'
+        ? 'Source: fallback showtime listing; not present in GSC official feed'
+        : c.sourceStatus==='awaiting-refresh'
+          ? 'Source: awaiting verified current-date refresh'
+          : `Source: ${c.sourceStatus||'tracker feed'}`;
 }
-function geometryToPath(geometry){
-  if(!geometry)return '';
-  if(geometry.type==='Polygon'){
-    return geometry.coordinates.map(ringToPath).join(' ');
-  }
-  if(geometry.type==='MultiPolygon'){
-    return geometry.coordinates.flatMap(poly=>poly.map(ringToPath)).join(' ');
-  }
-  return '';
+function mapDisplaySet(){
+  const visibleIds=new Set(filtered().map(c=>c.id));
+  return DATA.cinemas.map(c=>({...c, __visible:visibleIds.has(c.id)}));
 }
-function geometryCentroid(geometry){
-  const points=[];
-  const collect=ring=>{for(const p of ring){if(Array.isArray(p)&&typeof p[0]==='number')points.push(p)}};
-  if(!geometry)return null;
-  if(geometry.type==='Polygon')geometry.coordinates.forEach(collect);
-  if(geometry.type==='MultiPolygon')geometry.coordinates.forEach(poly=>poly.forEach(collect));
-  if(!points.length)return null;
-  const lon=points.reduce((a,p)=>a+p[0],0)/points.length;
-  const lat=points.reduce((a,p)=>a+p[1],0)/points.length;
-  return projectMalaysia(lat,lon);
+function highlightCinemaCard(id){
+  document.querySelectorAll('.cinema-card').forEach(card=>{
+    card.classList.toggle('is-highlighted',card.dataset.cinemaId===id);
+  });
+  if(MAP_SELECTED_ID) highlightCinemaCard(MAP_SELECTED_ID);
 }
-async function initGeoMap(){
-  const svg=$('#geo-map-svg');
-  if(!svg||GEO_READY)return;
-  try{
-    const r=await fetch(MALAYSIA_GEOJSON_URL,{cache:'force-cache'});
-    if(!r.ok)throw new Error(`GeoJSON ${r.status}`);
-    const geo=await r.json();
-    const layer=$('#geo-state-layer'),labels=$('#geo-state-label-layer');
-    if(!layer||!labels)throw new Error('Geo map layers missing');
-
-    layer.innerHTML='';labels.innerHTML='';
-    const NS='http://www.w3.org/2000/svg';
-
-    for(const feature of geo.features||[]){
-      const d=geometryToPath(feature.geometry);
-      if(!d)continue;
-      const path=document.createElementNS(NS,'path');
-      const stateName=feature.properties?.state_name||feature.properties?.name||feature.id||'State';
-      path.setAttribute('d',d);
-      path.setAttribute('fill-rule','evenodd');
-      path.dataset.stateCode=feature.properties?.state_code||feature.id||'';
-      path.dataset.state=stateName;
-      layer.append(path);
-
-      const centroid=geometryCentroid(feature.geometry);
-      if(centroid){
-        const text=document.createElementNS(NS,'text');
-        text.setAttribute('x',centroid[0].toFixed(1));
-        text.setAttribute('y',centroid[1].toFixed(1));
-        text.textContent=stateName.toUpperCase();
-        labels.append(text);
-      }
-    }
-    if(!layer.children.length)throw new Error('No state geometry rendered');
-    svg.classList.add('geo-ready');
-    svg.classList.remove('geo-failed');
-    GEO_READY=true;
-    renderMap();
-  }catch(err){
-    console.warn('Local Malaysia GeoJSON unavailable; using bundled schematic fallback.',err);
-    svg.classList.add('geo-failed');
-    svg.classList.remove('geo-ready');
-  }
+function startMapCycle(){
+  stopMapCycle();
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if(!DATA||!DATA.cinemas?.length)return;
+  const liveFirst=[...DATA.cinemas].sort((a,b)=>{
+    const aa=cinemaSummary(a), bb=cinemaSummary(b);
+    return (bb.known-bb.shows/100)-(aa.known-aa.shows/100);
+  });
+  MAP_CYCLE_TIMER=setInterval(()=>{
+    if(MAP_CYCLE_PAUSED||!liveFirst.length) return;
+    MAP_CYCLE_INDEX=(MAP_CYCLE_INDEX+1)%liveFirst.length;
+    openMapTooltip(liveFirst[MAP_CYCLE_INDEX].id,{auto:true,scroll:false});
+  },4200);
+}
+function stopMapCycle(){
+  if(MAP_CYCLE_TIMER){ clearInterval(MAP_CYCLE_TIMER); MAP_CYCLE_TIMER=null; }
+}
+function pauseMapCycle(value=true){
+  MAP_CYCLE_PAUSED=value;
 }
 
 function mapCinemaStats(c){
@@ -134,59 +113,103 @@ function nextShowLabel(c){
   return 'No verified showtimes currently listed for this date.';
 }
 function renderMap(){
-  const host=$('#map-markers');if(!host||!DATA)return;
-  const s=stats(DATA.cinemas);
+  const host=$('#map-markers'); if(!host||!DATA) return;
+  const globalStats=stats(DATA.cinemas);
   $('#map-location-count').textContent=DATA.cinemas.length;
-  $('#map-show-count').textContent=s.ss.length;
-  $('#map-seat-count').textContent=s.known.length?fmt(s.used):'—';
+  $('#map-show-count').textContent=globalStats.ss.length;
+  $('#map-seat-count').textContent=globalStats.known.length?fmt(globalStats.used):'—';
+  $('#map-live-count').textContent=globalStats.known.length?fmt(globalStats.known.length):'—';
+  $('#map-update-short').textContent=new Date(DATA.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'});
+
+  const chainShows=chain=>DATA.cinemas.filter(c=>c.chain===chain).reduce((n,c)=>n+(c.sessions||[]).length,0);
+  $('#map-gsc-shows').textContent=chainShows('GSC');
+  $('#map-tgv-shows').textContent=chainShows('TGV');
+  $('#map-paragon-shows').textContent=chainShows('Paragon');
+  $('#map-mega-shows').textContent=chainShows('Mega');
+
+  const ranked=DATA.cinemas
+    .map(c=>({c,s:cinemaSummary(c)}))
+    .filter(x=>x.s.occ!=null)
+    .sort((a,b)=>b.s.occ-a.s.occ || b.s.used-a.s.used);
+  if(ranked.length){
+    $('#map-best-cinema').textContent=ranked[0].c.name;
+    $('#map-best-meta').textContent=`${ranked[0].s.occ.toFixed(1)}% · ${fmt(ranked[0].s.used)} used / booked`;
+  }else{
+    $('#map-best-cinema').textContent='Awaiting seat data';
+    $('#map-best-meta').textContent='—';
+  }
+
   host.innerHTML='';
-  DATA.cinemas.forEach(c=>{
-    const coord=MAP_COORDS[c.id];if(!coord)return;
-    const [left,top]=pointToPercent(coord[0],coord[1]);
-    const st=mapCinemaStats(c),btn=document.createElement('button');
-    btn.type='button';btn.className='map-marker map-marker-coord';btn.dataset.chain=c.chain;btn.dataset.cinemaId=c.id;
-    if(['gsc-midvalley','tgv-wangsa-walk','tgv-bukit-tinggi','tgv-1utama','gsc-ioi-city-mall'].includes(c.id)) btn.dataset.cluster='dense';
-    btn.style.left=`${left}%`;btn.style.top=`${top}%`;
-    btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${st.shows} listed shows.`);
+
+  mapDisplaySet().forEach(c=>{
+    const pos=MAP_POSITIONS[c.id]; if(!pos) return;
+    const sum=cinemaSummary(c);
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='map-marker';
+    btn.dataset.chain=c.chain;
+    btn.dataset.cinemaId=c.id;
+    btn.dataset.muted=String(!c.__visible);
+    btn.dataset.coverage=sum.known ? (sum.known===sum.shows ? 'full' : 'partial') : 'none';
+    btn.style.left=`${pos[0]}%`;
+    btn.style.top=`${pos[1]}%`;
+    btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${sum.shows} listed shows.`);
     btn.title=c.name;
-    btn.addEventListener('click',()=>openMapTooltip(c.id));
+
+    const badge=document.createElement('span');
+    badge.className='marker-badge';
+    badge.textContent=sum.shows;
+    btn.append(badge);
+
+    btn.addEventListener('mouseenter',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:true,scroll:false}); });
+    btn.addEventListener('focus',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:true,scroll:false}); });
+    btn.addEventListener('mouseleave',()=>pauseMapCycle(false));
+    btn.addEventListener('click',()=>{ pauseMapCycle(true); openMapTooltip(c.id,{auto:false,scroll:false}); });
+
     host.append(btn);
   });
+
+  const activeId=(MAP_SELECTED_ID && DATA.cinemas.some(c=>c.id===MAP_SELECTED_ID)) ? MAP_SELECTED_ID : DATA.cinemas[0]?.id;
+  if(activeId) openMapTooltip(activeId,{auto:true,scroll:false});
+  startMapCycle();
 }
-function openMapTooltip(id){
-  const c=DATA.cinemas.find(x=>x.id===id);if(!c)return;
+function openMapTooltip(id,{auto=false,scroll=false}={}){
+  const c=DATA.cinemas.find(x=>x.id===id); if(!c) return;
   MAP_SELECTED_ID=id;
-  document.querySelectorAll('.map-marker').forEach(b=>b.classList.toggle('is-selected',b.dataset.cinemaId===id));
-  const st=mapCinemaStats(c);
-  $('#map-tooltip-chain').textContent=c.chain;$('#map-tooltip-title').textContent=c.name;$('#map-tooltip-state').textContent=c.state;
-  $('#map-tooltip-shows').textContent=st.shows;$('#map-tooltip-used').textContent=st.used==null?'—':fmt(st.used);
-  $('#map-tooltip-capacity').textContent=st.capacity==null?'—':fmt(st.capacity);
+  document.querySelectorAll('.map-marker').forEach(b=>b.classList.toggle('is-active',b.dataset.cinemaId===id));
+  highlightCinemaCard(id);
+
+  const st=cinemaSummary(c);
+  $('#map-tooltip-chain').textContent=c.chain;
+  $('#map-tooltip-title').textContent=c.name;
+  $('#map-tooltip-state').textContent=c.state;
+  $('#map-tooltip-shows').textContent=st.shows;
+  $('#map-tooltip-used').textContent=st.used || st.used===0 ? fmt(st.used) : '—';
+  $('#map-tooltip-capacity').textContent=st.capacity ? fmt(st.capacity) : '—';
   $('#map-tooltip-next').innerHTML=nextShowLabel(c);
-  const sourceText=c.sourceStatus==='gsc-official-api'
-    ? 'Source: GSC official showtime / seat-status feed'
-    : c.sourceStatus==='tgv-official-api'
-      ? 'Source: TGV official public API'
-      : c.sourceStatus==='fallback-showtimes-official-gsc-not-listed'
-        ? 'Source: fallback showtime listing; not present in GSC official feed'
-        : c.sourceStatus==='awaiting-refresh'
-          ? 'Source: awaiting verified current-date refresh'
-          : `Source: ${c.sourceStatus||'tracker feed'}`;
-  $('#map-tooltip-source').textContent=sourceText;
-  $('#map-tooltip-jump').dataset.cinemaId=id;$('#map-tooltip').hidden=false;
+  $('#map-tooltip-source').textContent=sourceText(c);
+  $('#map-tooltip-jump').dataset.cinemaId=id;
+  $('#map-tooltip').hidden=false;
+
+  const liveMeta = st.occ==null
+    ? `${st.shows} shows · seat feed pending`
+    : `${st.shows} shows · ${fmt(st.used)} used / booked · ${st.occ.toFixed(1)}% occupancy`;
+  $('#map-live-title').textContent=c.name;
+  $('#map-live-meta').textContent=liveMeta;
+
+  if(scroll) jumpToCinema(id);
 }
 function closeMapTooltip(){
-  MAP_SELECTED_ID=null;document.querySelectorAll('.map-marker').forEach(b=>b.classList.remove('is-selected'));
-  if($('#map-tooltip'))$('#map-tooltip').hidden=true;
+  document.querySelectorAll('.map-marker').forEach(b=>b.classList.remove('is-active'));
+  const tip=$('#map-tooltip'); if(tip) tip.hidden=true;
 }
 function jumpToCinema(id){
-  const cinema=DATA.cinemas.find(c=>c.id===id);if(!cinema)return;
-  $('#search').value=cinema.name;render();
-  requestAnimationFrame(()=>{
-    const card=document.querySelector('.cinema');
-    if(!card)return;
-    card.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
-    const head=card.querySelector('.cinema-head');if(head&&!card.classList.contains('open'))head.click();head?.focus();
-  });
+  highlightCinemaCard(id);
+  const card=document.querySelector(`.cinema-card[data-cinema-id="${id}"]`);
+  if(card){
+    card.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+    card.focus?.();
+  }
 }
 
 
@@ -214,7 +237,21 @@ async function load(date=null){
   try{
     const idx=await fetchJson('data/history-index.json');
     HISTORY=(idx.snapshots||[]).filter(x=>!x.datasetDate || x.datasetDate===DATA.date);
-  }catch{HISTORY=[]}
+    const latest=[...HISTORY].filter(x=>x.file).sort((a,b)=>new Date(a.observedAt)-new Date(b.observedAt)).slice(-2);
+    HISTORY_DETAIL=(await Promise.all(latest.map(x=>fetchJson(`data/${x.file}`).catch(()=>null)))).filter(Boolean);
+  }catch{
+    HISTORY=[];
+    HISTORY_DETAIL=[];
+  }
+
+  try{
+    AUDIENCE=await fetchJson('data/audience-current.json');
+    const ai=await fetchJson('data/audience-history-index.json');
+    AUDIENCE_HISTORY=(ai.snapshots||[]).slice(-96);
+  }catch{
+    AUDIENCE=null;
+    AUDIENCE_HISTORY=[];
+  }
 
   initDateFilter();
   initFilters();
@@ -237,7 +274,17 @@ function initFilters(){
 }
 function filtered(){
   const st=$('#state-filter').value,ch=$('#chain-filter').value,q=$('#search').value.trim().toLowerCase();
-  return DATA.cinemas.filter(c=>(!st||c.state===st)&&(!ch||c.chain===ch)&&(!q||c.name.toLowerCase().includes(q)));
+  const sort=$('#sort-filter')?.value || 'occupancy';
+  const rows=DATA.cinemas.filter(c=>(!st||c.state===st)&&(!ch||c.chain===ch)&&(!q||c.name.toLowerCase().includes(q)));
+  rows.sort((a,b)=>{
+    const sa=cinemaSummary(a), sb=cinemaSummary(b);
+    if(sort==='used') return sb.used-sa.used || sb.shows-sa.shows || a.name.localeCompare(b.name);
+    if(sort==='velocity') return (cinemaVelocity(b.id)??-Infinity)-(cinemaVelocity(a.id)??-Infinity) || (sb.occ??-1)-(sa.occ??-1);
+    if(sort==='shows') return sb.shows-sa.shows || (sb.occ??-1)-(sa.occ??-1);
+    if(sort==='name') return a.name.localeCompare(b.name);
+    return (sb.occ??-1)-(sa.occ??-1) || sb.used-sa.used || a.name.localeCompare(b.name);
+  });
+  return rows;
 }
 function sessions(cinemas){return cinemas.flatMap(c=>(c.sessions||[]).map(s=>({...s,cinema:c})));}
 function isKnown(s){return Number.isFinite(s.capacity)&&Number.isFinite(s.booked);}
@@ -267,17 +314,96 @@ function velocity(){
   if(hours<=0)return null;
   return (b.booked-a.booked)/hours;
 }
+function cinemaVelocity(cinemaId){
+  if(HISTORY_DETAIL.length<2) return null;
+  const a=HISTORY_DETAIL[HISTORY_DETAIL.length-2], b=HISTORY_DETAIL[HISTORY_DETAIL.length-1];
+  const ta=new Date(a.observedAt), tb=new Date(b.observedAt);
+  const hours=(tb-ta)/36e5;
+  if(!(hours>0)) return null;
+  const total=snap=>(snap.sessions||[])
+    .filter(s=>s.cinemaId===cinemaId && Number.isFinite(s.booked))
+    .reduce((sum,s)=>sum+s.booked,0);
+  return (total(b)-total(a))/hours;
+}
+
+function formatPct(value){
+  return Number.isFinite(value) ? `${(value*100).toFixed(2)}%` : '—';
+}
+function audienceStatusLabel(status){
+  if(!status) return 'Not configured';
+  if(status==='x-official-recent-search') return 'X · official recent search';
+  if(status==='x-official-api-throttled-reuse') return 'X · hourly refresh';
+  if(status==='x-bearer-token-not-configured') return 'X API token needed';
+  if(status.startsWith('x-api-http-')) return `X API · ${status.replace('x-api-http-','HTTP ')}`;
+  return status.replaceAll('-',' ');
+}
+function renderAudienceSparkline(){
+  const host=$('#audience-sparkline'); if(!host) return;
+  const points=AUDIENCE_HISTORY
+    .filter(x=>Number.isFinite(x.views))
+    .slice(-48);
+  if(points.length<2){
+    host.innerHTML='';
+    return;
+  }
+  const vals=points.map(x=>x.views);
+  const min=Math.min(...vals), max=Math.max(...vals);
+  const range=Math.max(1,max-min);
+  const coords=vals.map((v,i)=>{
+    const x=(i/(vals.length-1))*100;
+    const y=30-((v-min)/range)*25;
+    return `${x.toFixed(2)},${y.toFixed(2)}`;
+  }).join(' ');
+  host.innerHTML=`<svg viewBox="0 0 100 34" preserveAspectRatio="none" aria-hidden="true">
+    <line class="spark-base" x1="0" y1="31" x2="100" y2="31"></line>
+    <polyline points="${coords}"></polyline>
+  </svg>`;
+}
+function renderAudience(){
+  if(!AUDIENCE){
+    $('#audience-updated').textContent='Audience collector not yet available';
+    return;
+  }
+  const trailer=AUDIENCE.trailer||{}, social=AUDIENCE.social||{};
+  $('#audience-updated').textContent=AUDIENCE.updatedAt
+    ? `Updated ${new Date(AUDIENCE.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'})}`
+    : 'Awaiting first snapshot';
+  $('#audience-trailer-title').textContent=trailer.title || trailer.label || 'Official Trailer';
+  $('#audience-views').textContent=fmt(trailer.views);
+  $('#audience-views-24h').textContent=trailer.delta24hViews==null?'—':`${trailer.delta24hViews>=0?'+':''}${fmt(trailer.delta24hViews)}`;
+  $('#audience-likes').textContent=fmt(trailer.likes);
+  $('#audience-comments').textContent=fmt(trailer.comments);
+  $('#audience-engagement-rate').textContent=formatPct(trailer.engagementRate);
+
+  $('#audience-qualified-mentions').textContent=fmt(social.qualifiedMentions24h);
+  $('#audience-public-engagement').textContent=fmt(social.publicEngagement24h);
+  $('#audience-top-tag').textContent=social.topTag || '—';
+
+  const x=((social.platforms||{}).x||{});
+  $('#audience-social-status').textContent=audienceStatusLabel(x.status);
+
+  const tags=Array.isArray(social.hashtags)?social.hashtags:[];
+  $('#audience-tags').innerHTML=tags.length
+    ? tags.map(t=>`<span>${t.tag} <b>${fmt(t.mentions24h)}</b></span>`).join('')
+    : '<span>#Tikus <b>—</b></span><span>#SiapaBunuhDatinSaliha <b>—</b></span><span>#feiskproductions <b>—</b></span>';
+
+  renderAudienceSparkline();
+}
+
 function render(){
   const cin=filtered(),s=stats(cin),v=velocity();
+  renderAudience();
   renderMap();
   const dateLabel=new Date(`${DATA.date}T12:00:00+08:00`).toLocaleDateString('en-MY',{dateStyle:'medium'});
   $('#updated').textContent=`${dateLabel} · Updated ${new Date(DATA.updatedAt).toLocaleString('en-MY',{timeStyle:'short'})}`;
   $('#stat-shows').textContent=fmt(s.ss.length); $('#stat-cinemas').textContent=`${s.reporting} cinemas reporting`;
-  $('#stat-booked').textContent=s.known.length?fmt(s.used):'—'; $('#stat-available').textContent=s.known.length?fmt(s.available):'—';
+  $('#stat-booked').textContent=s.known.length?fmt(s.used):'—'; $('#stat-booked-sub').textContent=s.known.length?'Across sessions with seat data':'Awaiting seat-map feed'; $('#stat-available').textContent=s.known.length?fmt(s.available):'—';
   $('#stat-occupancy').textContent=s.occ==null?'—':`${s.occ.toFixed(1)}%`;
   $('#stat-capacity').textContent=s.known.length?`${fmt(s.capacity)} observed seats`:'Capacity pending';
   $('#stat-velocity').textContent=v==null?'—':`${v.toFixed(1)}/hr`;
   $('#stat-velocity-sub').textContent=v==null?'Needs 2+ same-day snapshots':'Observed inventory change';
+  $('#stat-live-sessions').textContent=fmt(s.known.length);
+  $('#stat-live-sub').textContent=s.known.length?'Sessions with live seat data':'Seat feed pending';
   $('#s-locations').textContent=DATA.cinemas.length;
   $('#s-reporting').textContent=s.reporting; $('#s-shows').textContent=s.ss.length; $('#s-matinee').textContent=s.matinee; $('#s-prime').textContent=s.prime; $('#s-late').textContent=s.late;
   $('#s-capacity').textContent=s.known.length?fmt(s.capacity):'—'; $('#s-booked').textContent=s.known.length?fmt(s.used):'—'; $('#s-remaining').textContent=s.known.length?fmt(s.available):'—';
@@ -286,7 +412,11 @@ function render(){
   renderBars(cin); renderRanking(cin); renderCinemaList(cin);
 }
 function renderBars(cin){
-  $('#bars').innerHTML=cin.map(c=>{
+  const ordered=[...cin].sort((a,b)=>{
+    const sa=cinemaSummary(a), sb=cinemaSummary(b);
+    return (sb.occ ?? -1) - (sa.occ ?? -1) || sb.shows-sa.shows;
+  });
+  $('#bars').innerHTML=ordered.map(c=>{
     const known=(c.sessions||[]).filter(isKnown);
     const cap=known.reduce((a,s)=>a+s.capacity,0),used=known.reduce((a,s)=>a+s.booked,0),pct=cap?used/cap*100:null;
     return `<div class="bar-row"><div class="bar-label"><b>${c.name}</b><small>${c.state} · ${(c.sessions||[]).length} show${(c.sessions||[]).length===1?'':'s'}</small></div><div class="track"><div class="fill" style="width:${pct??0}%"></div></div><div class="bar-value">${pct==null?'—':pct.toFixed(1)+'%'}</div></div>`;
@@ -301,40 +431,70 @@ function renderRanking(cin){
   $('#ranking').innerHTML=ranked.length?ranked.map((c,i)=>`<div class="rank-row"><div class="rank-num">${i+1}</div><div class="rank-name"><b>${c.name}</b><small>${c.state}</small></div><div class="rank-pct">${c.pct.toFixed(1)}%</div></div>`).join(''):'<div class="empty">Ranking appears when seat data is available.</div>';
 }
 function renderCinemaList(cin){
-  const host=$('#cinema-list');host.innerHTML='';const tpl=$('#cinema-template');
+  const host=$('#cinema-list');
+  host.className='cinema-grid';
+  host.innerHTML='';
   cin.forEach(c=>{
-    const node=tpl.content.cloneNode(true),article=node.querySelector('.cinema'),btn=node.querySelector('.cinema-head');
-    node.querySelector('.cinema-name').textContent=c.name;node.querySelector('.cinema-meta').textContent=`${c.chain} · ${c.state}`;
-    node.querySelector('.cinema-summary').textContent=(c.sessions||[]).length?`${c.sessions.length} shows`:'No shows found';
-    const holder=node.querySelector('.sessions');
-    holder.innerHTML=(c.sessions||[]).length?c.sessions.map(s=>{
-      const known=isKnown(s),pct=known?s.booked/s.capacity*100:null,label=c.chain==='TGV'?'used':'booked';
-      const extra=c.chain==='GSC'&&Number.isFinite(s.otherUnavailable)&&s.otherUnavailable>0?` · ${s.otherUnavailable} other unavailable`:'';
-      const state=s.isExpired?' · last observed':'';
-      const fallbackOnly=s.sourceStatus==='fallback-showtime-only' || s.seatStatus==='official-gsc-showtime-not-listed';
-      const seatMessage=known
-        ? `${s.booked} ${label} · ${s.available ?? s.capacity-s.booked} available${extra}${state}`
-        : fallbackOnly
-          ? 'Fallback showtime · not listed in GSC official feed'
+    const sum=cinemaSummary(c);
+    const vel=cinemaVelocity(c.id);
+    const next=(c.sessions||[]).length ? ((c.sessions||[]).find(s=>!s.isExpired)?.time || c.sessions[0].time) : '—';
+    const coverageClass=sum.known===0 ? '' : (sum.known===sum.shows ? ' live' : ' partial');
+    const coverageText=sum.known===0 ? 'Seat feed pending' : (sum.known===sum.shows ? 'Full live seat coverage' : `${sum.known}/${sum.shows} sessions live`);
+    const sessions=(c.sessions||[]).length ? (c.sessions||[]).map(s=>{
+      const known=isKnown(s);
+      const pct=known ? `${(s.booked/s.capacity*100).toFixed(0)}%` : 'Pending';
+      const label=known
+        ? `${fmt(s.booked)} / ${fmt(s.capacity)} ${c.chain==='TGV'?'used':'booked'}`
+        : (s.sourceStatus==='fallback-showtime-only' || s.seatStatus==='official-gsc-showtime-not-listed')
+          ? 'Fallback only'
           : 'Seat data not observed';
-      const countMessage=known
-        ? `${s.booked} / ${s.capacity} ${label}`
-        : fallbackOnly
-          ? 'Official seat count unavailable'
-          : 'Observed count unavailable';
-      return `<div class="session"><div class="time">${s.time}</div><div><b>${s.hall==='—'||!s.hall?'Hall unverified':s.hall}</b><div class="hall">${seatMessage}</div></div><div><div class="seat-note">${countMessage}</div><div class="seatbar"><i style="width:${pct??0}%"></i></div></div><div class="occ">${pct==null?'—':pct.toFixed(1)+'%'}</div></div>`;
-    }).join(''):'<div class="empty">Awaiting showtime data for this date.</div>';
-    btn.addEventListener('click',()=>{article.classList.toggle('open');btn.setAttribute('aria-expanded',article.classList.contains('open'))});
-    host.append(node);
-  })
+      return `<div class="session-chip">
+        <div class="session-chip-top">
+          <span class="session-time">${s.time}</span>
+          <span class="session-hall">${s.hall && s.hall!=='—' ? s.hall : 'Hall?'}</span>
+        </div>
+        <strong>${pct}</strong>
+        <div class="session-mini">${label}</div>
+      </div>`;
+    }).join('') : '<div class="empty">Awaiting showtime data for this date.</div>';
+
+    host.insertAdjacentHTML('beforeend', `
+      <article class="cinema-card" data-cinema-id="${c.id}" tabindex="-1">
+        <div class="cinema-card-head">
+          <div>
+            <h3>${c.name}</h3>
+            <div class="cinema-card-meta">${c.state} · next ${next}${vel==null?'':` · ${vel>=0?'+':''}${vel.toFixed(1)}/hr`}</div>
+          </div>
+          <span class="chain-pill ${chainClass(c.chain)}">${c.chain}</span>
+        </div>
+
+        <div class="cinema-card-stats">
+          <span>Shows<b>${sum.shows}</b></span>
+          <span>Used / booked<b>${sum.known ? fmt(sum.used) : '—'}</b></span>
+          <span>Occ.<b>${sum.occ==null ? '—' : `${sum.occ.toFixed(1)}%`}</b></span>
+          <span>Available<b>${sum.known ? fmt(sum.available) : '—'}</b></span>
+          <span>Velocity<b>${vel==null?'—':`${vel>=0?'+':''}${vel.toFixed(1)}/hr`}</b></span>
+        </div>
+
+        <div class="session-chip-grid">${sessions}</div>
+        <span class="coverage-pill${coverageClass}">${coverageText}</span>
+      </article>
+    `);
+  });
 }
-document.addEventListener('input',e=>{if(['state-filter','chain-filter','search'].includes(e.target.id))render()});
+document.addEventListener('input',e=>{if(['state-filter','chain-filter','search','sort-filter'].includes(e.target.id))render()});
 $('#date-filter').addEventListener('change',e=>{
   const u=new URL(location.href);u.searchParams.set('date',e.target.value);history.replaceState({},'',u);load(e.target.value);
 });
 $('#refresh').addEventListener('click',()=>load(DATA.date));
-$('#map-tooltip-close')?.addEventListener('click',closeMapTooltip);
+$('#map-tooltip-close')?.addEventListener('click',()=>{closeMapTooltip(); pauseMapCycle(false);});
 $('#map-tooltip-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#map-tooltip')?.hidden)closeMapTooltip()});
-initGeoMap();
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&!$('#map-tooltip')?.hidden){
+    closeMapTooltip();
+    pauseMapCycle(false);
+  }
+});
+$('#malaysia-map')?.addEventListener('mouseenter',()=>pauseMapCycle(true));
+$('#malaysia-map')?.addEventListener('mouseleave',()=>pauseMapCycle(false));
 load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});

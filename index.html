@@ -21,56 +21,47 @@
 
   
   <main>
+    
     <section class="map-hero" aria-labelledby="map-title">
-      <div class="map-hero-copy">
+      <div class="map-hero-head">
         <div>
-          <p class="eyebrow">TIKUS! · MALAYSIA EXHIBITION MAP</p>
-          <h2 id="map-title">Where TIKUS! is screening</h2>
-          <p class="map-intro">A visual overview of the 16 tracked cinema locations. Select a marker to view showtimes and the latest observed seat information.</p>
+          <p class="eyebrow">TIKUS! · LIVE EXHIBITION MAP</p>
+          <h2 id="map-title">Cinema locations across Malaysia</h2>
+          <p class="map-intro">Static illustrated map, live interactive overlay. Markers pulse with the latest observed activity and auto-cycle through locations.</p>
         </div>
-        <div class="map-summary" aria-live="polite">
-          <span><b id="map-location-count">16</b> tracked locations</span>
-          <span><b id="map-show-count">—</b> shows</span>
-          <span><b id="map-seat-count">—</b> observed used / booked</span>
+        <div class="map-hero-mini">
+          <span><b id="map-show-count">—</b> shows today</span>
+          <span><b id="map-seat-count">—</b> used / booked</span>
+          <span><b id="map-live-count">—</b> live sessions</span>
+          <span><b id="map-update-short">—</b> last update</span>
         </div>
       </div>
 
-      <div class="malaysia-map-shell">
-        <div class="malaysia-map" id="malaysia-map" role="group" aria-label="Schematic map of Malaysia showing TIKUS! cinema locations">
-          <svg class="map-art" id="geo-map-svg" viewBox="0 0 1200 520" role="img" aria-labelledby="map-svg-title map-svg-desc">
-            <title id="map-svg-title">TIKUS! cinema locations across Malaysia</title>
-            <desc id="map-svg-desc">Malaysia state boundaries rendered from the MIT-licensed malaysia-geojson dataset, with interactive TIKUS! cinema markers.</desc>
-            <defs>
-              <pattern id="mapGrain" width="12" height="12" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="3" r=".65" fill="currentColor" opacity=".09"></circle>
-                <circle cx="9" cy="8" r=".5" fill="currentColor" opacity=".055"></circle>
-              </pattern>
-              <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity=".28"/>
-              </filter>
-            </defs>
+      <div class="map-stage" id="malaysia-map" aria-label="Interactive TIKUS! cinema map">
+        <div class="map-canvas">
+          <img
+            class="map-poster"
+            src="assets/images/ui/tikus-cinema-map-hero.png"
+            width="1672"
+            height="941"
+            alt="Illustrated TIKUS! cinema locations map across Malaysia"
+          >
+          <div id="map-markers" class="map-markers" aria-label="Interactive cinema map markers"></div>
 
-            <g id="geo-state-layer" class="geo-state-layer" filter="url(#softShadow)" aria-hidden="true"></g>
-            <g id="geo-state-label-layer" class="geo-state-label-layer" aria-hidden="true"></g>
-
-            <g id="map-fallback-layer" class="map-fallback-layer" aria-hidden="true">
-              <path d="M296 43 C328 52 350 72 363 102 C376 132 372 163 390 196 C406 224 429 244 431 279 C433 313 414 337 420 366 C426 394 451 414 451 449 C450 473 432 493 409 500 C387 486 377 463 363 443 C349 423 328 407 324 383 C319 354 335 330 330 301 C325 273 304 251 297 225 C288 193 299 161 289 132 C281 105 265 86 268 65 C271 53 281 46 296 43 Z"></path>
-              <path d="M735 267 C769 245 813 237 852 242 C892 247 923 262 957 254 C990 246 1025 224 1065 227 C1102 229 1128 246 1143 268 C1122 277 1106 291 1094 312 C1076 342 1049 358 1016 360 C979 362 951 346 917 350 C875 355 849 385 810 390 C774 394 741 382 715 364 C728 348 738 332 742 314 C746 297 744 283 735 267 Z"></path>
-              <path d="M885 210 C913 194 941 186 975 184 C1007 182 1039 187 1063 199 C1051 211 1042 221 1037 235 C1001 233 974 244 946 252 C919 260 895 260 873 252 C873 237 878 222 885 210 Z"></path>
-            </g>
-
-            <g class="map-city-labels" aria-hidden="true">
-              <text x="312" y="319">KLANG VALLEY</text>
-              <text x="383" y="445">JOHOR BAHRU</text>
-              <text x="238" y="175">GEORGE TOWN</text>
-              <text x="823" y="393">KUCHING</text>
-              <text x="1047" y="236">KOTA KINABALU</text>
-            </g>
-
-            <text class="map-watermark geo-credit-note" x="600" y="503">STATE BOUNDARIES: MALAYSIA-GEOJSON · MIT LICENSE</text>
-          </svg>
-
-          <div id="map-markers" class="map-markers"></div>
+          <section class="map-live-panel" aria-label="Live exhibitor summary">
+            <p class="eyebrow">LIVE TRACKER</p>
+            <div class="live-panel-grid">
+              <span>GSC<b id="map-gsc-shows">—</b></span>
+              <span>TGV<b id="map-tgv-shows">—</b></span>
+              <span>Paragon<b id="map-paragon-shows">—</b></span>
+              <span>Mega<b id="map-mega-shows">—</b></span>
+            </div>
+            <div class="live-panel-best">
+              <small>Best observed occupancy</small>
+              <strong id="map-best-cinema">Awaiting data</strong>
+              <span id="map-best-meta">—</span>
+            </div>
+          </section>
 
           <aside class="map-tooltip" id="map-tooltip" hidden aria-live="polite">
             <button type="button" class="map-tooltip-close" id="map-tooltip-close" aria-label="Close cinema information">×</button>
@@ -80,34 +71,83 @@
             <div class="map-tooltip-metrics">
               <span><b id="map-tooltip-shows">—</b> shows</span>
               <span><b id="map-tooltip-used">—</b> used / booked</span>
-              <span><b id="map-tooltip-capacity">—</b> observed seats</span>
+              <span><b id="map-tooltip-capacity">—</b> capacity</span>
             </div>
             <div class="map-tooltip-next" id="map-tooltip-next"></div>
             <p class="map-tooltip-source" id="map-tooltip-source"></p>
-            <button type="button" class="map-tooltip-jump" id="map-tooltip-jump">View cinema details</button>
+            <button type="button" class="map-tooltip-jump" id="map-tooltip-jump">View cinema card</button>
           </aside>
-        </div>
 
-        <div class="map-legend" aria-label="Cinema chain legend">
-          <span><i class="legend-dot gsc"></i>GSC</span>
-          <span><i class="legend-dot tgv"></i>TGV</span>
-          <span><i class="legend-dot paragon"></i>Paragon</span>
-          <span><i class="legend-dot mega"></i>Mega</span>
+          <div class="map-live-strip" id="map-live-strip" aria-live="polite">
+            <span class="strip-label">Live spotlight</span>
+            <strong id="map-live-title">Loading…</strong>
+            <span id="map-live-meta">Awaiting tracker data</span>
+          </div>
         </div>
-        <p class="map-attribution">
-          Geographic state boundaries: <a href="https://github.com/atifmustaffa/malaysia-geojson" target="_blank" rel="noopener">malaysia-geojson</a> by atifmustaffa, MIT License.
-          Cinema markers represent the tracked cinema locations and are positioned from geographic coordinates in the tracker map configuration.
-        </p>
       </div>
     </section>
 
-    <section class="hero-grid hero-grid-5" aria-label="Headline statistics">
+
+    <section class="hero-grid hero-grid-6" aria-label="Headline statistics">
       <article class="metric"><span>SHOWS TODAY</span><strong id="stat-shows">—</strong><small id="stat-cinemas">— cinemas reporting</small></article>
       <article class="metric"><span>OBSERVED USED / BOOKED</span><strong id="stat-booked">—</strong><small id="stat-booked-sub">Awaiting seat-map feed</small></article>
       <article class="metric"><span>OCCUPANCY</span><strong id="stat-occupancy">—</strong><small id="stat-capacity">Capacity pending</small></article>
       <article class="metric"><span>AVAILABLE SEATS</span><strong id="stat-available">—</strong><small>Across tracked sessions</small></article>
       <article class="metric"><span>SALES VELOCITY</span><strong id="stat-velocity">—</strong><small id="stat-velocity-sub">Needs 2+ seat snapshots</small></article>
+      <article class="metric"><span>LIVE SESSIONS</span><strong id="stat-live-sessions">—</strong><small id="stat-live-sub">Seat-data coverage</small></article>
     </section>
+
+    <section class="audience-pulse" aria-labelledby="audience-title">
+      <div class="audience-head">
+        <div>
+          <p class="eyebrow">AUDIENCE PULSE</p>
+          <h2 id="audience-title">Trailer & social engagement</h2>
+        </div>
+        <span id="audience-updated">Awaiting audience data</span>
+      </div>
+
+      <div class="audience-grid">
+        <article class="audience-trailer">
+          <div class="audience-source-head">
+            <div>
+              <span class="source-pill youtube">YouTube</span>
+              <strong id="audience-trailer-title">Official Trailer</strong>
+            </div>
+            <a class="audience-open" href="https://youtu.be/zP-A0q7aVko" target="_blank" rel="noopener">Watch ↗</a>
+          </div>
+          <div class="audience-metrics trailer-metrics">
+            <span>Views<b id="audience-views">—</b></span>
+            <span>+24h<b id="audience-views-24h">—</b></span>
+            <span>Likes<b id="audience-likes">—</b></span>
+            <span>Comments<b id="audience-comments">—</b></span>
+            <span>Calc. engagement<b id="audience-engagement-rate">—</b></span>
+          </div>
+          <div class="audience-sparkline" id="audience-sparkline" aria-label="Trailer views trend"></div>
+        </article>
+
+        <article class="audience-social">
+          <div class="audience-source-head">
+            <div>
+              <span class="source-pill social">Social tags</span>
+              <strong>Public conversation</strong>
+            </div>
+            <span class="audience-status" id="audience-social-status">Not configured</span>
+          </div>
+          <div class="audience-metrics social-metrics">
+            <span>Qualified mentions 24h<b id="audience-qualified-mentions">—</b></span>
+            <span>Public engagement 24h<b id="audience-public-engagement">—</b></span>
+            <span>Top tracked tag<b id="audience-top-tag">—</b></span>
+          </div>
+          <div class="tag-row" id="audience-tags">
+            <span>#Tikus <b>—</b></span>
+            <span>#SiapaBunuhDatinSaliha <b>—</b></span>
+            <span>#feiskproductions <b>—</b></span>
+          </div>
+          <p class="audience-note">#Tikus is tracked separately because it is a broad tag and can include unrelated posts.</p>
+        </article>
+      </div>
+    </section>
+
 
     <section class="controls">
       <label>Date
@@ -122,23 +162,34 @@
       <label>Search
         <input id="search" type="search" placeholder="Cinema name">
       </label>
+      <label>Sort
+        <select id="sort-filter" aria-label="Sort cinema cards">
+          <option value="occupancy">Occupancy</option>
+          <option value="used">Used / booked</option>
+          <option value="velocity">Velocity</option>
+          <option value="shows">Show count</option>
+          <option value="name">Cinema name</option>
+        </select>
+      </label>
       <button id="refresh" type="button">Refresh data</button>
     </section>
 
     <section class="layout">
-      <div>
-        <section class="panel">
-          <div class="panel-head"><div><p class="eyebrow">NATIONAL SNAPSHOT</p><h2>Occupancy by cinema</h2></div><span id="reporting-note"></span></div>
-          <div id="bars" class="bars"></div>
-        </section>
+      <div class="main-column">
+        <div class="overview-grid">
+          <section class="panel">
+            <div class="panel-head"><div><p class="eyebrow">NATIONAL SNAPSHOT</p><h2>Cinema occupancy</h2></div><span id="reporting-note"></span></div>
+            <div id="bars" class="bars"></div>
+          </section>
 
-        <section class="panel">
-          <div class="panel-head"><div><p class="eyebrow">RANKING</p><h2>Best current occupancy</h2></div></div>
-          <div id="ranking"></div>
-        </section>
+          <section class="panel">
+            <div class="panel-head"><div><p class="eyebrow">RANKING</p><h2>Best current occupancy</h2></div></div>
+            <div id="ranking"></div>
+          </section>
+        </div>
 
         <section class="panel cinema-panel">
-          <div class="panel-head"><div><p class="eyebrow">16 ALLOCATED LOCATIONS</p><h2>Show-by-show detail</h2></div></div>
+          <div class="panel-head"><div><p class="eyebrow">16 ALLOCATED LOCATIONS</p><h2>Cinema cards</h2></div></div>
           <div id="cinema-list"></div>
         </section>
       </div>
@@ -146,7 +197,7 @@
       <aside>
         <section class="panel sticky">
           <p class="eyebrow">DETAILED STATS</p>
-          <h2>Performance readout</h2>
+          <h2>Readout</h2>
           <dl class="stats-list">
             <div><dt>Locations allocated</dt><dd id="s-locations">16</dd></div>
             <div><dt>Locations with shows found</dt><dd id="s-reporting">—</dd></div>
