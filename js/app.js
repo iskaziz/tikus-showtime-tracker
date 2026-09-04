@@ -4,9 +4,102 @@ const setText = (selector,value) => { const el=$(selector); if(el) el.textConten
 const setHtml = (selector,value) => { const el=$(selector); if(el) el.innerHTML=value; };
 let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[];
 let MAP_SELECTED_ID=null;
+const MAP_FOCUS={
+  "gsc-aman-central":[10.83,21.98],
+  "mega-riverfront":[14.47,16.21],
+  "tgv-gurney":[8.79,34.05],
+
+  "gsc-midvalley":[6.04,69.19],
+  "tgv-wangsa-walk":[8.19,68.29],
+  "gsc-ioi-city-mall":[7.00,75.86],
+  "tgv-1utama":[8.91,73.51],
+  "tgv-bukit-tinggi":[18.54,68.10],
+
+  "paragon-ktcc":[31.52,41.09],
+  "gsc-kuantan-city-mall":[31.76,59.82],
+  "gsc-dataran-pahlawan":[23.98,83.97],
+
+  "paragon-batu-pahat":[34.57,90.99],
+  "gsc-paradigm-jb":[33.13,85.58],
+  "tgv-tebrau":[35.47,85.95],
+
+  "gsc-imago":[64.53,42.16],
+  "gsc-the-spring":[73.39,84.69]
+};
+
+let MAP_CAMERA_OVERVIEW=true;
+let MAP_RESIZE_TIMER=null;
 
 
 
+
+
+
+function preferredMapScale(){
+  const width=$('#malaysia-map')?.getBoundingClientRect().width || innerWidth;
+  if(width<=430) return 3.15;
+  if(width<=700) return 2.75;
+  if(width<=1050) return 2.25;
+  return 1.85;
+}
+function setMapCamera(id,{instant=false}={}){
+  const stage=$('#malaysia-map');
+  const canvas=stage?.querySelector('.map-canvas');
+  const focus=MAP_FOCUS[id];
+  if(!stage || !canvas || !focus) return;
+
+  const rect=stage.getBoundingClientRect();
+  if(!(rect.width>0 && rect.height>0)) return;
+
+  const scale=preferredMapScale();
+  const pointX=(focus[0]/100)*rect.width;
+  const pointY=(focus[1]/100)*rect.height;
+
+  let tx=rect.width/2 - pointX*scale;
+  let ty=rect.height/2 - pointY*scale;
+
+  // Never expose blank space around the scaled poster.
+  tx=Math.min(0,Math.max(rect.width-rect.width*scale,tx));
+  ty=Math.min(0,Math.max(rect.height-rect.height*scale,ty));
+
+  canvas.style.transition=instant || matchMedia('(prefers-reduced-motion: reduce)').matches
+    ? 'none'
+    : '';
+  canvas.style.transform=`translate3d(${tx.toFixed(1)}px,${ty.toFixed(1)}px,0) scale(${scale})`;
+  canvas.dataset.zoomed='true';
+  MAP_CAMERA_OVERVIEW=false;
+
+  const overview=$('#map-overview');
+  if(overview) overview.hidden=false;
+
+  if(instant){
+    requestAnimationFrame(()=>{canvas.style.transition='';});
+  }
+}
+function resetMapCamera({instant=false}={}){
+  const canvas=$('#malaysia-map')?.querySelector('.map-canvas');
+  if(!canvas) return;
+  canvas.style.transition=instant || matchMedia('(prefers-reduced-motion: reduce)').matches
+    ? 'none'
+    : '';
+  canvas.style.transform='translate3d(0,0,0) scale(1)';
+  delete canvas.dataset.zoomed;
+  MAP_CAMERA_OVERVIEW=true;
+
+  const overview=$('#map-overview');
+  if(overview) overview.hidden=true;
+
+  if(instant){
+    requestAnimationFrame(()=>{canvas.style.transition='';});
+  }
+}
+function refreshMapCamera(){
+  if(MAP_CAMERA_OVERVIEW || !MAP_SELECTED_ID){
+    resetMapCamera({instant:true});
+  }else{
+    setMapCamera(MAP_SELECTED_ID,{instant:true});
+  }
+}
 
 function cinemaSummary(c){
   const known=(c.sessions||[]).filter(isKnown);
@@ -100,7 +193,9 @@ function renderMap(){
   const active=(current && DATA.cinemas.some(c=>c.id===current)) ? current : DATA.cinemas[0]?.id;
   if(active){
     picker.value=active;
+    const changed=MAP_SELECTED_ID!==active;
     selectMapCinema(active);
+    if(!changed && MAP_CAMERA_OVERVIEW) resetMapCamera({instant:true});
   }
 }
 function selectMapCinema(id,{scroll=false}={}){
@@ -125,6 +220,7 @@ function selectMapCinema(id,{scroll=false}={}){
   if(picker && picker.value!==id) picker.value=id;
   const jump=$('#map-status-jump');
   if(jump) jump.dataset.cinemaId=id;
+  setMapCamera(id);
   if(scroll) jumpToCinema(id);
 }
 function jumpToCinema(id){
@@ -359,6 +455,11 @@ $('#date-filter').addEventListener('change',e=>{
 $('#refresh').addEventListener('click',()=>load(DATA.date));
 $('#map-cinema-select')?.addEventListener('change',e=>selectMapCinema(e.target.value));
 $('#map-status-jump')?.addEventListener('click',e=>jumpToCinema(e.currentTarget.dataset.cinemaId));
+$('#map-overview')?.addEventListener('click',()=>resetMapCamera());
+window.addEventListener('resize',()=>{
+  clearTimeout(MAP_RESIZE_TIMER);
+  MAP_RESIZE_TIMER=setTimeout(refreshMapCamera,120);
+});
 window.addEventListener('error',event=>{
   console.error(event.error||event.message);
   showRuntimeError(event.error||event.message);

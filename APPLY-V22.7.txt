@@ -1,0 +1,15 @@
+TIKUS! Tracker v22.7 — MAP CAMERA SAFE UPDATE
+
+Apply these files OVER the existing repository. Do not delete the existing
+data/ directory.
+
+Map behaviour:
+- Choosing a cinema in the Location selector smoothly zooms and pans the
+  illustrated map to that cinema.
+- The map uses the existing static numbered pins; no dynamic dots return.
+- A small Overview control resets the full Malaysia view.
+- Mobile uses a taller camera viewport so the selected area remains readable.
+- Camera framing recalculates after device rotation / resize.
+- Reduced-motion preferences disable the zoom animation.
+
+This package contains no live tracker data.

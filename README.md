@@ -935,3 +935,15 @@ Tracker” subtitle. The map interaction and live cinema overlays remain active.
 
 ## v22.6 — minimal map
 Dynamic map overlay dots are removed; the illustration’s existing numbered pins carry the location information. The location selector/status bar remains the interaction method. An inherited mobile `min-height` that caused a large black area below the 3:1 map has been explicitly reset.
+
+
+## v22.7 — location camera
+
+Selecting a cinema from the map Location control now smoothly reframes the
+static illustrated map around that location. No dynamic marker dots are
+reintroduced. A compact Overview button restores the full map.
+
+On small screens the map becomes a taller camera viewport, allowing selected
+locations to fill useful screen space instead of compressing the full
+ultrawide map into a very short strip. Resize/orientation changes recalculate
+the camera framing automatically.

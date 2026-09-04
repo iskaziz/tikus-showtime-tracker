@@ -1446,3 +1446,85 @@ select,input{
   }
   .map-status-picker select{font-size:12px}
 }
+
+
+/* v22.7 — location camera */
+.map-stage{
+  position:relative!important;
+  isolation:isolate;
+}
+.map-canvas{
+  transform-origin:0 0!important;
+  will-change:transform;
+  transition:transform 520ms cubic-bezier(.2,.72,.2,1);
+}
+.map-poster{
+  pointer-events:none;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+.map-status-actions{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:6px;
+}
+.map-overview{
+  min-height:34px;
+  padding:7px 9px;
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.map-overview:hover,
+.map-overview:focus-visible{
+  color:var(--paper);
+  border-color:rgba(240,230,211,.42);
+}
+.map-overview[hidden]{display:none!important}
+
+/* Mobile uses the map as a camera window instead of shrinking a 3:1 poster. */
+@media(max-width:700px){
+  .map-stage{
+    height:clamp(210px,58vw,300px)!important;
+    min-height:210px!important;
+    aspect-ratio:auto!important;
+    overflow:hidden!important;
+  }
+  .map-canvas{
+    position:absolute!important;
+    inset:0 auto auto 0!important;
+    width:100%!important;
+    height:100%!important;
+    aspect-ratio:auto!important;
+  }
+  .map-poster{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center!important;
+  }
+  .map-status-actions{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    width:100%;
+  }
+  .map-overview,.map-status-jump{
+    width:100%;
+    min-height:38px;
+  }
+}
+@media(max-width:390px){
+  .map-stage{
+    height:220px!important;
+    min-height:220px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .map-canvas{transition:none!important}
+}
