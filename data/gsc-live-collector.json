@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-04T13:02:16+08:00",
+  "observedAt": "2026-09-04T15:44:08+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
@@ -26,20 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "924651",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "924652",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "924653",
           "time": "17:40",
@@ -77,20 +63,6 @@
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "339958",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "339959",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "339960",
           "time": "17:40",
@@ -136,20 +108,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213378",
-          "time": "13:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "213379",
-          "time": "15:20",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213380",
           "time": "17:40",
           "hall": "4",
@@ -193,20 +151,6 @@
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "406734",
-          "time": "13:00",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "406735",
-          "time": "15:20",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
         {
           "sessionId": "406736",
           "time": "17:40",
@@ -252,20 +196,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "289353",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "289354",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "289355",
           "time": "17:40",
           "hall": "2",
@@ -302,13 +232,6 @@
       "epaymentName": "Kuantan - Kuantan City Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "79982",
-          "time": "15:20",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
         {
           "sessionId": "79988",
           "time": "17:40",
@@ -354,13 +277,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "77231",
-          "time": "14:30",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "77232",
           "time": "16:50",
           "hall": "1",
@@ -404,13 +320,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77729",
-          "time": "14:30",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77730",
           "time": "16:50",
