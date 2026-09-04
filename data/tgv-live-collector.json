@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-04T10:57:12+08:00",
+  "observedAt": "2026-09-04T12:10:53+08:00",
   "businessDate": "2026-09-04",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430619",
-          "time": "11:30",
-          "hall": "Cinema 7",
-          "seatstotal": 111,
-          "seatsused": 0,
-          "available": 111,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430625",
           "time": "13:00",
@@ -60,15 +51,6 @@
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
-        {
-          "sessionId": "310908",
-          "time": "11:20",
-          "hall": "Cinema 5",
-          "seatstotal": 174,
-          "seatsused": 1,
-          "available": 173,
-          "occupancy": 0.57
-        },
         {
           "sessionId": "310922",
           "time": "16:15",
@@ -135,9 +117,9 @@
           "time": "20:45",
           "hall": "Cinema 5",
           "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
+          "seatsused": 2,
+          "available": 90,
+          "occupancy": 2.17
         }
       ],
       "status": "ok"
@@ -146,15 +128,6 @@
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
       "sessions": [
-        {
-          "sessionId": "409369",
-          "time": "11:45",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "409377",
           "time": "14:10",
@@ -194,9 +167,9 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 1,
-          "available": 116,
-          "occupancy": 0.85
+          "seatsused": 2,
+          "available": 115,
+          "occupancy": 1.71
         }
       ],
       "status": "ok"

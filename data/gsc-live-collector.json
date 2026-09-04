@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-04T10:56:15+08:00",
+  "observedAt": "2026-09-04T12:09:57+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-04",
@@ -26,13 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "924650",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "924651",
           "time": "13:00",
@@ -84,13 +77,6 @@
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "339874",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "339958",
           "time": "13:00",
@@ -150,13 +136,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213377",
-          "time": "10:40",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213378",
           "time": "13:00",
           "hall": "4",
@@ -215,13 +194,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "406733",
-          "time": "10:40",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "406734",
           "time": "13:00",
           "hall": "7",
@@ -279,13 +251,6 @@
       "epaymentName": "Johor Bahru - Paradigm Mall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "289342",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "289353",
           "time": "13:00",
