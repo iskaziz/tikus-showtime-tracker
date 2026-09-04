@@ -1,0 +1,12 @@
+TIKUS! Tracker v22.6 — MINIMAL MAP FIX
+
+Apply these files OVER the existing repository. Do not delete data/.
+
+Changes:
+- Removes the dynamic overlay dots entirely. The static illustrated map already contains the numbered cinema pins.
+- Keeps cinema selection in the compact status bar below the map.
+- Fixes the large black area beneath the map by explicitly removing inherited min-height values, including the old mobile 420px minimum.
+- Map now sizes strictly from its 1672:555 artwork ratio at every viewport width.
+- Frontend cache key bumped to Build 22.6.
+
+This safe update contains no live tracker data.

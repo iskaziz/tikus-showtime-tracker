@@ -5,24 +5,6 @@ const setHtml = (selector,value) => { const el=$(selector); if(el) el.innerHTML=
 let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[];
 let MAP_SELECTED_ID=null;
 
-const MAP_POSITIONS={
-  "gsc-aman-central":[10.83,21.98],
-  "mega-riverfront":[14.47,16.21],
-  "tgv-gurney":[8.79,34.05],
-  "gsc-midvalley":[6.04,69.19],
-  "tgv-wangsa-walk":[8.19,68.29],
-  "gsc-ioi-city-mall":[7.00,75.86],
-  "tgv-1utama":[8.91,73.51],
-  "tgv-bukit-tinggi":[18.54,68.10],
-  "paragon-ktcc":[31.52,41.09],
-  "gsc-kuantan-city-mall":[31.76,59.82],
-  "gsc-dataran-pahlawan":[23.98,83.97],
-  "paragon-batu-pahat":[34.57,90.99],
-  "gsc-paradigm-jb":[33.13,85.58],
-  "tgv-tebrau":[35.47,85.95],
-  "gsc-imago":[64.53,42.16],
-  "gsc-the-spring":[73.39,84.69]
-};
 
 
 
@@ -104,48 +86,26 @@ function nextShowLabel(c){
   return 'No later listed showtimes today.';
 }
 function renderMap(){
-  const host=$('#map-markers'); if(!host||!DATA) return;
+  if(!DATA) return;
   const globalStats=stats(DATA.cinemas);
   setText('#map-show-count',globalStats.ss.length);
   setText('#map-seat-count',globalStats.known.length?fmt(globalStats.used):'—');
   setText('#map-live-count',globalStats.known.length?fmt(globalStats.known.length):'—');
   setText('#map-update-short',new Date(DATA.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'}));
 
-  host.innerHTML='';
-  mapDisplaySet().forEach(c=>{
-    const pos=MAP_POSITIONS[c.id]; if(!pos) return;
-    const sum=cinemaSummary(c);
-    const btn=document.createElement('button');
-    btn.type='button';
-    btn.className='map-marker';
-    btn.dataset.chain=c.chain;
-    btn.dataset.cinemaId=c.id;
-    btn.dataset.muted=String(!c.__visible);
-    btn.dataset.coverage=sum.known ? (sum.known===sum.shows ? 'full' : 'partial') : 'none';
-    btn.style.left=`${pos[0]}%`;
-    btn.style.top=`${pos[1]}%`;
-    btn.setAttribute('aria-label',`${c.name}, ${c.state}. ${sum.shows} listed shows.`);
-    btn.title=c.name;
-    btn.addEventListener('click',()=>selectMapCinema(c.id));
-    btn.addEventListener('focus',()=>selectMapCinema(c.id));
-    host.append(btn);
-  });
-
   const picker=$('#map-cinema-select');
-  if(picker){
-    const current=MAP_SELECTED_ID;
-    picker.innerHTML=DATA.cinemas.map(c=>`<option value="${c.id}">${c.name}</option>`).join('');
-    const active=(current && DATA.cinemas.some(c=>c.id===current)) ? current : DATA.cinemas[0]?.id;
-    if(active){
-      picker.value=active;
-      selectMapCinema(active);
-    }
+  if(!picker) return;
+  const current=MAP_SELECTED_ID;
+  picker.innerHTML=DATA.cinemas.map(c=>`<option value="${c.id}">${c.name}</option>`).join('');
+  const active=(current && DATA.cinemas.some(c=>c.id===current)) ? current : DATA.cinemas[0]?.id;
+  if(active){
+    picker.value=active;
+    selectMapCinema(active);
   }
 }
 function selectMapCinema(id,{scroll=false}={}){
   const c=DATA?.cinemas?.find(x=>x.id===id); if(!c) return;
   MAP_SELECTED_ID=id;
-  document.querySelectorAll('.map-marker').forEach(b=>b.classList.toggle('is-active',b.dataset.cinemaId===id));
   highlightCinemaCard(id);
 
   const st=cinemaSummary(c);

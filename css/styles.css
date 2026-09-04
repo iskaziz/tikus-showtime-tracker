@@ -1390,3 +1390,59 @@ select,input{
 @media(prefers-reduced-motion:reduce){
   .map-marker::after{display:none!important;animation:none!important}
 }
+
+
+/* v22.6 — minimal map: static pins only, no overlay dots, no phantom map height */
+.map-stage{
+  display:block!important;
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:none!important;
+  overflow:hidden!important;
+  background:transparent!important;
+}
+.map-canvas{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  height:auto!important;
+  aspect-ratio:1672/555!important;
+  overflow:hidden!important;
+}
+.map-poster{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
+/* The artwork already contains numbered cinema pins. Dynamic dots are deliberately removed. */
+.map-markers,.map-marker{display:none!important}
+.map-hero{margin-bottom:12px!important}
+.map-status{border-top:1px solid var(--line)}
+
+@media(max-width:700px){
+  .map-stage{
+    min-height:0!important;
+    height:auto!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+  .map-canvas{
+    width:100%!important;
+    min-width:0!important;
+    min-height:0!important;
+    height:auto!important;
+    aspect-ratio:1672/555!important;
+  }
+  .map-poster{object-fit:cover!important}
+  .map-status{
+    padding:7px 8px!important;
+    gap:6px!important;
+  }
+  .map-status-picker select{font-size:12px}
+}

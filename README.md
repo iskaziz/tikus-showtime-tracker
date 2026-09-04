@@ -931,3 +931,7 @@ Tracker” subtitle. The map interaction and live cinema overlays remain active.
 - Added a cinema selector to the status bar, which provides a reliable navigation path on small screens and for keyboard users.
 - Removed the fixed 820/900 px mobile map widths. The complete Malaysia map now scales to the available viewport width instead of requiring horizontal panning.
 - Map selection still highlights and can jump directly to the matching cinema detail card.
+
+
+## v22.6 — minimal map
+Dynamic map overlay dots are removed; the illustration’s existing numbered pins carry the location information. The location selector/status bar remains the interaction method. An inherited mobile `min-height` that caused a large black area below the 3:1 map has been explicitly reset.
