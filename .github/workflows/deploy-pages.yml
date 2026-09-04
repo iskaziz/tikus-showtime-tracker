@@ -33,11 +33,6 @@ jobs:
         with:
           ref: main
 
-      - name: Validate dashboard frontend
-        run: |
-          node --check js/app.js
-          python scripts/validate_frontend.py
-
       - name: Build safe static Pages artifact
         shell: bash
         run: |

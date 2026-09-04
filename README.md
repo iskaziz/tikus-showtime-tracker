@@ -871,20 +871,15 @@ GitHub repository setting required once:
 Core CSS and JavaScript also use `?v=22.1` cache-busting query strings.
 
 
-## v22.2 — frontend runtime loading fix
+## v22.2 — dashboard runtime fix
 
-The live page was loading the current HTML and JavaScript, but JavaScript failed
-during the first render.
+The deployed v22 dashboard loaded `data/current.json` successfully but crashed
+during `renderMap()` because JavaScript still referenced `#map-location-count`,
+an element removed during the v21.2 compact-map redesign.
 
-Root cause:
-- v21.2 removed `#map-location-count` from `index.html`
-- `renderMap()` still executed
-  `$('#map-location-count').textContent = ...`
-- that null dereference stopped all later dashboard rendering
+That single null-element write prevented all cinema data from rendering and
+left the page showing `Loading…` / em dashes even though the tracker workflow
+and Pages deployment were both succeeding.
 
-A second latent issue was fixed at the same time:
-`highlightCinemaCard()` contained an accidental recursive self-call.
-
-v22.2 removes both failures, makes nonessential map-summary fields safe, adds
-a visible runtime error message, cache-busts the repaired frontend files, and
-validates JavaScript/DOM references before every Pages deployment.
+v22.2 removes the stale reference, adds defensive setters around optional map
+summary elements, and bumps the frontend cache key to `22.2`.

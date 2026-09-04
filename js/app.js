@@ -1,5 +1,7 @@
 const $ = s => document.querySelector(s);
 const fmt = n => n == null ? '—' : new Intl.NumberFormat().format(n);
+const setText = (selector,value) => { const el=$(selector); if(el) el.textContent=value; };
+const setHtml = (selector,value) => { const el=$(selector); if(el) el.innerHTML=value; };
 let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[], AUDIENCE=null, AUDIENCE_HISTORY=[];
 let MAP_SELECTED_ID=null;
 let MAP_CYCLE_INDEX=0;
@@ -33,11 +35,6 @@ const MAP_POSITIONS={
 };
 
 
-
-function setText(selector,value){
-  const el=$(selector);
-  if(el) el.textContent=value;
-}
 
 function cinemaSummary(c){
   const known=(c.sessions||[]).filter(isKnown);
@@ -75,6 +72,7 @@ function highlightCinemaCard(id){
   document.querySelectorAll('.cinema-card').forEach(card=>{
     card.classList.toggle('is-highlighted',card.dataset.cinemaId===id);
   });
+  if(MAP_SELECTED_ID) highlightCinemaCard(MAP_SELECTED_ID);
 }
 function startMapCycle(){
   stopMapCycle();
@@ -500,8 +498,4 @@ document.addEventListener('keydown',e=>{
 });
 $('#malaysia-map')?.addEventListener('mouseenter',()=>pauseMapCycle(true));
 $('#malaysia-map')?.addEventListener('mouseleave',()=>pauseMapCycle(false));
-load().catch(err=>{
-  console.error('TIKUS tracker load failed:',err);
-  setText('#updated',`Data load failed · ${err.message||err}`);
-  document.documentElement.dataset.trackerError='true';
-});
+load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});
