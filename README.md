@@ -909,3 +909,14 @@ IMPORTANT: use the v22.3 SAFE UPDATE archive as an overlay on the existing
 repository. It intentionally excludes the `data/` directory so a frontend code
 update cannot erase live cinema snapshots or audience history. After applying
 the update, run `Update TIKUS tracker` once to refresh `data/current.json`.
+
+
+## v22.4 — visual cleanup
+
+Audience Pulse is hidden/removed from the frontend for now. The hero map has
+been cleaned to remove its embedded TIKUS! CINEMA LOCATIONS MAP title,
+TRACKED CINEMA LOCATIONS subtitle, ticket graphic and mouse silhouette. The
+cleaned image is bundled as `assets/images/ui/tikus-cinema-map-clean.png`.
+
+The masthead now uses a compact TIKUS! treatment without the “Performance
+Tracker” subtitle. The map interaction and live cinema overlays remain active.

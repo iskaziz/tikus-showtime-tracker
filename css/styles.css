@@ -1104,3 +1104,75 @@ select,input{
   text-transform:uppercase;
   opacity:.55;
 }
+
+
+/* v22.4 — compact header, no Audience Pulse, clean map artwork */
+.masthead{
+  padding:10px clamp(14px,2.4vw,28px);
+  align-items:center;
+  min-height:58px;
+}
+.masthead>div:first-child{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+}
+.masthead .eyebrow{
+  margin:0;
+  font-size:9px;
+  opacity:.72;
+  white-space:nowrap;
+}
+.masthead h1{
+  font-size:clamp(30px,3.8vw,54px);
+  line-height:.82;
+  letter-spacing:-.045em;
+  white-space:nowrap;
+}
+.masthead h1 span{display:none}
+.live-block{font-size:11px}
+.live-block small{font-size:9px}
+.map-hero-head{
+  padding:10px 12px 9px;
+}
+.map-hero h2{
+  font-size:clamp(20px,2.35vw,32px);
+}
+.map-intro{display:none!important}
+.map-canvas{
+  aspect-ratio:1672/555;
+}
+.map-poster{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.audience-pulse{display:none!important}
+
+@media(max-width:760px){
+  .masthead{
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .masthead>div:first-child{
+    display:block;
+  }
+  .masthead .eyebrow{
+    white-space:normal;
+    margin-bottom:3px;
+  }
+  .map-canvas{
+    width:900px;
+    min-width:900px;
+    aspect-ratio:1672/555;
+  }
+}
+@media(max-width:520px){
+  .masthead h1{font-size:31px}
+  .live-block strong{font-size:10px}
+  .map-canvas{width:820px;min-width:820px}
+}

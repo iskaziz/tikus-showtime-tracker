@@ -1,0 +1,15 @@
+TIKUS! Tracker v22.4 UI CLEANUP — SAFE OVERLAY
+
+Apply these files OVER the existing repository. Do not delete the repository
+and do not remove the existing data/ directory.
+
+Changes:
+- Audience Pulse removed from the dashboard for now.
+- Map explanatory sentence removed.
+- Visual map title/subtitle, ticket stub and mouse silhouette removed.
+- Map artwork cropped tighter while preserving the cinema map and live overlays.
+- TIKUS! masthead made substantially more compact.
+- “Performance Tracker” removed from the masthead.
+- Frontend cache key bumped to 22.4.
+
+This archive intentionally contains no live tracker data.

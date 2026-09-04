@@ -2,36 +2,29 @@ const $ = s => document.querySelector(s);
 const fmt = n => n == null ? '—' : new Intl.NumberFormat().format(n);
 const setText = (selector,value) => { const el=$(selector); if(el) el.textContent=value; };
 const setHtml = (selector,value) => { const el=$(selector); if(el) el.innerHTML=value; };
-let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[], AUDIENCE=null, AUDIENCE_HISTORY=[];
+let DATA, HISTORY=[], HISTORY_DETAIL=[], DAYS=[];
 let MAP_SELECTED_ID=null;
 let MAP_CYCLE_INDEX=0;
 let MAP_CYCLE_TIMER=null;
 let MAP_CYCLE_PAUSED=false;
 
 const MAP_POSITIONS={
-  // Percent positions are aligned to the visible top 700px crop of the 1672×941 poster.
-  "gsc-aman-central":[10.83,38.14],
-  "mega-riverfront":[14.47,33.57],
-  "tgv-gurney":[8.79,47.71],
-
-  // Klang Valley inset on the illustrated poster.
-  "gsc-midvalley":[6.04,75.57],
-  "tgv-wangsa-walk":[8.19,74.86],
-  "gsc-ioi-city-mall":[7.00,80.86],
-  "tgv-1utama":[8.91,79.00],
-  // Bukit Tinggi uses the main-map Klang Valley anchor to avoid inset overlap.
-  "tgv-bukit-tinggi":[18.54,74.71],
-
-  "paragon-ktcc":[31.52,53.29],
-  "gsc-kuantan-city-mall":[31.76,68.14],
-  "gsc-dataran-pahlawan":[23.98,87.29],
-
-  "paragon-batu-pahat":[34.57,92.86],
-  "gsc-paradigm-jb":[33.13,88.57],
-  "tgv-tebrau":[35.47,88.86],
-
-  "gsc-imago":[64.53,54.14],
-  "gsc-the-spring":[73.39,87.86]
+  "gsc-aman-central":[10.83,21.98],
+  "mega-riverfront":[14.47,16.21],
+  "tgv-gurney":[8.79,34.05],
+  "gsc-midvalley":[6.04,69.19],
+  "tgv-wangsa-walk":[8.19,68.29],
+  "gsc-ioi-city-mall":[7.00,75.86],
+  "tgv-1utama":[8.91,73.51],
+  "tgv-bukit-tinggi":[18.54,68.10],
+  "paragon-ktcc":[31.52,41.09],
+  "gsc-kuantan-city-mall":[31.76,59.82],
+  "gsc-dataran-pahlawan":[23.98,83.97],
+  "paragon-batu-pahat":[34.57,90.99],
+  "gsc-paradigm-jb":[33.13,85.58],
+  "tgv-tebrau":[35.47,85.95],
+  "gsc-imago":[64.53,42.16],
+  "gsc-the-spring":[73.39,84.69]
 };
 
 
@@ -282,14 +275,6 @@ async function load(date=null){
     HISTORY_DETAIL=[];
   }
 
-  try{
-    AUDIENCE=await fetchJson('data/audience-current.json');
-    const ai=await fetchJson('data/audience-history-index.json');
-    AUDIENCE_HISTORY=(ai.snapshots||[]).slice(-96);
-  }catch{
-    AUDIENCE=null;
-    AUDIENCE_HISTORY=[];
-  }
 
   initDateFilter();
   initFilters();
@@ -365,73 +350,8 @@ function cinemaVelocity(cinemaId){
   return (total(b)-total(a))/hours;
 }
 
-function formatPct(value){
-  return Number.isFinite(value) ? `${(value*100).toFixed(2)}%` : '—';
-}
-function audienceStatusLabel(status){
-  if(!status) return 'Not configured';
-  if(status==='x-official-recent-search') return 'X · official recent search';
-  if(status==='x-official-api-throttled-reuse') return 'X · hourly refresh';
-  if(status==='x-bearer-token-not-configured') return 'X API token needed';
-  if(status.startsWith('x-api-http-')) return `X API · ${status.replace('x-api-http-','HTTP ')}`;
-  return status.replaceAll('-',' ');
-}
-function renderAudienceSparkline(){
-  const host=$('#audience-sparkline'); if(!host) return;
-  const points=AUDIENCE_HISTORY
-    .filter(x=>Number.isFinite(x.views))
-    .slice(-48);
-  if(points.length<2){
-    host.innerHTML='';
-    return;
-  }
-  const vals=points.map(x=>x.views);
-  const min=Math.min(...vals), max=Math.max(...vals);
-  const range=Math.max(1,max-min);
-  const coords=vals.map((v,i)=>{
-    const x=(i/(vals.length-1))*100;
-    const y=30-((v-min)/range)*25;
-    return `${x.toFixed(2)},${y.toFixed(2)}`;
-  }).join(' ');
-  host.innerHTML=`<svg viewBox="0 0 100 34" preserveAspectRatio="none" aria-hidden="true">
-    <line class="spark-base" x1="0" y1="31" x2="100" y2="31"></line>
-    <polyline points="${coords}"></polyline>
-  </svg>`;
-}
-function renderAudience(){
-  if(!AUDIENCE){
-    $('#audience-updated').textContent='Audience collector not yet available';
-    return;
-  }
-  const trailer=AUDIENCE.trailer||{}, social=AUDIENCE.social||{};
-  $('#audience-updated').textContent=AUDIENCE.updatedAt
-    ? `Updated ${new Date(AUDIENCE.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'})}`
-    : 'Awaiting first snapshot';
-  $('#audience-trailer-title').textContent=trailer.title || trailer.label || 'Official Trailer';
-  $('#audience-views').textContent=fmt(trailer.views);
-  $('#audience-views-24h').textContent=trailer.delta24hViews==null?'—':`${trailer.delta24hViews>=0?'+':''}${fmt(trailer.delta24hViews)}`;
-  $('#audience-likes').textContent=fmt(trailer.likes);
-  $('#audience-comments').textContent=fmt(trailer.comments);
-  $('#audience-engagement-rate').textContent=formatPct(trailer.engagementRate);
-
-  $('#audience-qualified-mentions').textContent=fmt(social.qualifiedMentions24h);
-  $('#audience-public-engagement').textContent=fmt(social.publicEngagement24h);
-  $('#audience-top-tag').textContent=social.topTag || '—';
-
-  const x=((social.platforms||{}).x||{});
-  $('#audience-social-status').textContent=audienceStatusLabel(x.status);
-
-  const tags=Array.isArray(social.hashtags)?social.hashtags:[];
-  $('#audience-tags').innerHTML=tags.length
-    ? tags.map(t=>`<span>${t.tag} <b>${fmt(t.mentions24h)}</b></span>`).join('')
-    : '<span>#Tikus <b>—</b></span><span>#SiapaBunuhDatinSaliha <b>—</b></span><span>#feiskproductions <b>—</b></span>';
-
-  renderAudienceSparkline();
-}
-
 function render(){
   const cin=filtered(),s=stats(cin),v=velocity();
-  renderAudience();
   renderMap();
   const dateLabel=new Date(`${DATA.date}T12:00:00+08:00`).toLocaleDateString('en-MY',{dateStyle:'medium'});
   $('#updated').textContent=`${dateLabel} · Updated ${new Date(DATA.updatedAt).toLocaleString('en-MY',{timeStyle:'short'})}`;

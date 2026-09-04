@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#9e1017">
   <title>TIKUS! — Cinema Performance Tracker</title>
-  <link rel="stylesheet" href="css/styles.css?v=22.3">
+  <link rel="stylesheet" href="css/styles.css?v=22.4">
 </head>
 <body>
   <header class="masthead">
     <div>
       <p class="eyebrow">FEISK PRODUCTIONS · LIVE CINEMA INTELLIGENCE</p>
-      <h1>TIKUS! <span>Performance Tracker</span></h1>
+      <h1>TIKUS!</h1>
     </div>
     <div class="live-block">
       <span class="live-dot" aria-hidden="true"></span>
-      <div><strong>TRACKER ONLINE</strong><small id="updated">Loading…</small><small class="build-tag">Build 22.3</small></div>
+      <div><strong>TRACKER ONLINE</strong><small id="updated">Loading…</small><small class="build-tag">Build 22.4</small></div>
     </div>
   </header>
   <div id="runtime-status" class="runtime-status" role="alert" hidden></div>
@@ -29,7 +29,6 @@
         <div>
           <p class="eyebrow">TIKUS! · LIVE EXHIBITION MAP</p>
           <h2 id="map-title">Cinema locations across Malaysia</h2>
-          <p class="map-intro">Static illustrated map, live interactive overlay. Markers pulse with the latest observed activity and auto-cycle through locations.</p>
         </div>
         <div class="map-hero-mini">
           <span><b id="map-show-count">—</b> shows today</span>
@@ -43,9 +42,9 @@
         <div class="map-canvas">
           <img
             class="map-poster"
-            src="assets/images/ui/tikus-cinema-map-hero.png"
+            src="assets/images/ui/tikus-cinema-map-clean.png"
             width="1672"
-            height="941"
+            height="555"
             alt="Illustrated TIKUS! cinema locations map across Malaysia"
           >
           <div id="map-markers" class="map-markers" aria-label="Interactive cinema map markers"></div>
@@ -98,58 +97,6 @@
       <article class="metric"><span>SALES VELOCITY</span><strong id="stat-velocity">—</strong><small id="stat-velocity-sub">Needs 2+ seat snapshots</small></article>
       <article class="metric"><span>LIVE SESSIONS</span><strong id="stat-live-sessions">—</strong><small id="stat-live-sub">Seat-data coverage</small></article>
     </section>
-
-    <section class="audience-pulse" aria-labelledby="audience-title">
-      <div class="audience-head">
-        <div>
-          <p class="eyebrow">AUDIENCE PULSE</p>
-          <h2 id="audience-title">Trailer & social engagement</h2>
-        </div>
-        <span id="audience-updated">Awaiting audience data</span>
-      </div>
-
-      <div class="audience-grid">
-        <article class="audience-trailer">
-          <div class="audience-source-head">
-            <div>
-              <span class="source-pill youtube">YouTube</span>
-              <strong id="audience-trailer-title">Official Trailer</strong>
-            </div>
-            <a class="audience-open" href="https://youtu.be/zP-A0q7aVko" target="_blank" rel="noopener">Watch ↗</a>
-          </div>
-          <div class="audience-metrics trailer-metrics">
-            <span>Views<b id="audience-views">—</b></span>
-            <span>+24h<b id="audience-views-24h">—</b></span>
-            <span>Likes<b id="audience-likes">—</b></span>
-            <span>Comments<b id="audience-comments">—</b></span>
-            <span>Calc. engagement<b id="audience-engagement-rate">—</b></span>
-          </div>
-          <div class="audience-sparkline" id="audience-sparkline" aria-label="Trailer views trend"></div>
-        </article>
-
-        <article class="audience-social">
-          <div class="audience-source-head">
-            <div>
-              <span class="source-pill social">Social tags</span>
-              <strong>Public conversation</strong>
-            </div>
-            <span class="audience-status" id="audience-social-status">Not configured</span>
-          </div>
-          <div class="audience-metrics social-metrics">
-            <span>Qualified mentions 24h<b id="audience-qualified-mentions">—</b></span>
-            <span>Public engagement 24h<b id="audience-public-engagement">—</b></span>
-            <span>Top tracked tag<b id="audience-top-tag">—</b></span>
-          </div>
-          <div class="tag-row" id="audience-tags">
-            <span>#Tikus <b>—</b></span>
-            <span>#SiapaBunuhDatinSaliha <b>—</b></span>
-            <span>#feiskproductions <b>—</b></span>
-          </div>
-          <p class="audience-note">#Tikus is tracked separately because it is a broad tag and can include unrelated posts.</p>
-        </article>
-      </div>
-    </section>
-
 
     <section class="controls">
       <label>Date
@@ -233,6 +180,6 @@
     </article>
   </template>
 
-  <script type="module" src="js/app.js?v=22.3"></script>
+  <script type="module" src="js/app.js?v=22.4"></script>
 </body>
 </html>

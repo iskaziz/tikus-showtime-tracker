@@ -30,10 +30,10 @@ else:
         errors.append("highlightCinemaCard() recursively calls itself.")
 
 # Basic frontend version/cache-bust guard.
-if 'js/app.js?v=22.3' not in HTML:
-    errors.append("index.html is not cache-busting app.js as v22.3.")
-if 'css/styles.css?v=22.3' not in HTML:
-    errors.append("index.html is not cache-busting styles.css as v22.3.")
+if 'js/app.js?v=22.4' not in HTML:
+    errors.append("index.html is not cache-busting app.js as v22.4.")
+if 'css/styles.css?v=22.4' not in HTML:
+    errors.append("index.html is not cache-busting styles.css as v22.4.")
 
 # Fail if unresolved Git merge markers exist in critical public files.
 for rel in ("index.html", "js/app.js", "css/styles.css"):
