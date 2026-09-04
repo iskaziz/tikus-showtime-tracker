@@ -883,3 +883,29 @@ and Pages deployment were both succeeding.
 
 v22.2 removes the stale reference, adds defensive setters around optional map
 summary elements, and bumps the frontend cache key to `22.2`.
+
+
+## v22.3 — safe runtime repair
+
+This release fixes both browser-side failures found in the deployed v22 code:
+
+1. `renderMap()` must not reference the removed `#map-location-count` element.
+2. `highlightCinemaCard()` must not recursively call itself.
+
+The selected cinema highlight is now applied after cinema cards are created,
+which is where the earlier recursion was accidentally introduced.
+
+A visible runtime error banner now appears if a future initialization problem
+occurs instead of leaving the dashboard silently stuck on `Loading…`.
+
+`validate_frontend.py` and `frontend-check.yml` guard against:
+- missing HTML ids referenced by JavaScript
+- the stale map-location-count regression
+- recursive highlightCinemaCard calls
+- unresolved Git merge markers
+- missing v22.3 cache-bust parameters
+
+IMPORTANT: use the v22.3 SAFE UPDATE archive as an overlay on the existing
+repository. It intentionally excludes the `data/` directory so a frontend code
+update cannot erase live cinema snapshots or audience history. After applying
+the update, run `Update TIKUS tracker` once to refresh `data/current.json`.

@@ -72,7 +72,6 @@ function highlightCinemaCard(id){
   document.querySelectorAll('.cinema-card').forEach(card=>{
     card.classList.toggle('is-highlighted',card.dataset.cinemaId===id);
   });
-  if(MAP_SELECTED_ID) highlightCinemaCard(MAP_SELECTED_ID);
 }
 function startMapCycle(){
   stopMapCycle();
@@ -104,15 +103,35 @@ function mapCinemaStats(c){
   };
 }
 function nextShowLabel(c){
-  const now=new Date(),currentMinutes=now.getHours()*60+now.getMinutes();
-  const future=(c.sessions||[]).map(s=>({s,mins:Number(s.time.slice(0,2))*60+Number(s.time.slice(3,5))}))
-    .filter(x=>Number.isFinite(x.mins)&&x.mins>=currentMinutes).sort((a,b)=>a.mins-b.mins);
+  const listed=(c.sessions||[]).map(s=>({
+    s,
+    mins:Number(s.time?.slice(0,2))*60+Number(s.time?.slice(3,5))
+  })).filter(x=>Number.isFinite(x.mins)).sort((a,b)=>a.mins-b.mins);
+
+  if(!listed.length) return 'No verified showtimes currently listed for this date.';
+
+  const now=new Date();
+  const myDate=new Intl.DateTimeFormat('en-CA',{
+    timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'
+  }).format(now);
+  if(DATA?.date!==myDate){
+    const s=listed[0].s;
+    return `First listed show: <b>${s.time}</b>${s.hall&&s.hall!=='—'?` · ${s.hall}`:''}`;
+  }
+
+  const parts=new Intl.DateTimeFormat('en-GB',{
+    timeZone:'Asia/Kuala_Lumpur',hour:'2-digit',minute:'2-digit',hour12:false
+  }).formatToParts(now);
+  const hh=Number(parts.find(x=>x.type==='hour')?.value);
+  const mm=Number(parts.find(x=>x.type==='minute')?.value);
+  const currentMinutes=hh*60+mm;
+  const future=listed.filter(x=>x.mins>=currentMinutes);
+
   if(future.length){
     const s=future[0].s;
     return `Next listed show: <b>${s.time}</b>${s.hall&&s.hall!=='—'?` · ${s.hall}`:''}`;
   }
-  if((c.sessions||[]).length)return 'No later listed showtimes today.';
-  return 'No verified showtimes currently listed for this date.';
+  return 'No later listed showtimes today.';
 }
 function renderMap(){
   const host=$('#map-markers'); if(!host||!DATA) return;
@@ -214,6 +233,24 @@ function jumpToCinema(id){
 }
 
 
+
+function showRuntimeError(error){
+  const message=error?.message || String(error || 'Unknown dashboard error');
+  setText('#updated','Data load failed');
+  const panel=$('#runtime-status');
+  if(panel){
+    panel.hidden=false;
+    panel.textContent=`Dashboard error: ${message}`;
+  }
+}
+function clearRuntimeError(){
+  const panel=$('#runtime-status');
+  if(panel){
+    panel.hidden=true;
+    panel.textContent='';
+  }
+}
+
 async function fetchJson(path){
   const bust=`${path.includes('?')?'&':'?'}v=${Date.now()}`;
   const r=await fetch(`${path}${bust}`,{cache:'no-store'});
@@ -256,6 +293,7 @@ async function load(date=null){
 
   initDateFilter();
   initFilters();
+  clearRuntimeError();
   render();
 }
 
@@ -482,6 +520,7 @@ function renderCinemaList(cin){
       </article>
     `);
   });
+  if(MAP_SELECTED_ID) highlightCinemaCard(MAP_SELECTED_ID);
 }
 document.addEventListener('input',e=>{if(['state-filter','chain-filter','search','sort-filter'].includes(e.target.id))render()});
 $('#date-filter').addEventListener('change',e=>{
@@ -498,4 +537,15 @@ document.addEventListener('keydown',e=>{
 });
 $('#malaysia-map')?.addEventListener('mouseenter',()=>pauseMapCycle(true));
 $('#malaysia-map')?.addEventListener('mouseleave',()=>pauseMapCycle(false));
-load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});
+window.addEventListener('error',event=>{
+  console.error(event.error||event.message);
+  showRuntimeError(event.error||event.message);
+});
+window.addEventListener('unhandledrejection',event=>{
+  console.error(event.reason);
+  showRuntimeError(event.reason);
+});
+load().catch(err=>{
+  console.error(err);
+  showRuntimeError(err);
+});

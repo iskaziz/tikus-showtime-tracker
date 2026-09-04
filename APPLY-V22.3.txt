@@ -1,0 +1,17 @@
+TIKUS! Tracker v22.3 SAFE UPDATE
+
+This archive deliberately contains NO data/ directory.
+
+Apply it OVER the existing repository so these files are replaced while all
+live data/current.json, history, days, audience history, diagnostics and
+collector state remain untouched.
+
+Then:
+1. Commit/push the changed files.
+2. Confirm the Actions workflow "Check TIKUS dashboard frontend" passes.
+3. Run "Update TIKUS tracker" once.
+4. Wait for the Pages deployment.
+5. Open the live site and confirm "Build 22.3" appears under TRACKER ONLINE.
+
+If an initialization error ever happens again, a red runtime error banner will
+show the browser error instead of leaving the dashboard silently on Loading….

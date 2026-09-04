@@ -1085,3 +1085,22 @@ select,input{
   .social-metrics{grid-template-columns:1fr 1fr}
   .audience-head{align-items:start;flex-direction:column}
 }
+
+.runtime-status{
+  max-width:1760px;
+  margin:8px auto 0;
+  padding:9px 12px;
+  border:1px solid rgba(216,92,97,.65);
+  background:rgba(113,13,20,.26);
+  color:#f0e6d3;
+  font-size:12px;
+  line-height:1.4;
+}
+.runtime-status[hidden]{display:none}
+.build-tag{
+  margin-top:2px!important;
+  font-size:9px!important;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.55;
+}
