@@ -34,6 +34,11 @@ const MAP_POSITIONS={
 
 
 
+function setText(selector,value){
+  const el=$(selector);
+  if(el) el.textContent=value;
+}
+
 function cinemaSummary(c){
   const known=(c.sessions||[]).filter(isKnown);
   const capacity=known.reduce((a,s)=>a+s.capacity,0);
@@ -70,7 +75,6 @@ function highlightCinemaCard(id){
   document.querySelectorAll('.cinema-card').forEach(card=>{
     card.classList.toggle('is-highlighted',card.dataset.cinemaId===id);
   });
-  if(MAP_SELECTED_ID) highlightCinemaCard(MAP_SELECTED_ID);
 }
 function startMapCycle(){
   stopMapCycle();
@@ -115,28 +119,27 @@ function nextShowLabel(c){
 function renderMap(){
   const host=$('#map-markers'); if(!host||!DATA) return;
   const globalStats=stats(DATA.cinemas);
-  $('#map-location-count').textContent=DATA.cinemas.length;
-  $('#map-show-count').textContent=globalStats.ss.length;
-  $('#map-seat-count').textContent=globalStats.known.length?fmt(globalStats.used):'—';
-  $('#map-live-count').textContent=globalStats.known.length?fmt(globalStats.known.length):'—';
-  $('#map-update-short').textContent=new Date(DATA.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'});
+  setText('#map-show-count',globalStats.ss.length);
+  setText('#map-seat-count',globalStats.known.length?fmt(globalStats.used):'—');
+  setText('#map-live-count',globalStats.known.length?fmt(globalStats.known.length):'—');
+  setText('#map-update-short',new Date(DATA.updatedAt).toLocaleTimeString('en-MY',{hour:'2-digit',minute:'2-digit'}));
 
   const chainShows=chain=>DATA.cinemas.filter(c=>c.chain===chain).reduce((n,c)=>n+(c.sessions||[]).length,0);
-  $('#map-gsc-shows').textContent=chainShows('GSC');
-  $('#map-tgv-shows').textContent=chainShows('TGV');
-  $('#map-paragon-shows').textContent=chainShows('Paragon');
-  $('#map-mega-shows').textContent=chainShows('Mega');
+  setText('#map-gsc-shows',chainShows('GSC'));
+  setText('#map-tgv-shows',chainShows('TGV'));
+  setText('#map-paragon-shows',chainShows('Paragon'));
+  setText('#map-mega-shows',chainShows('Mega'));
 
   const ranked=DATA.cinemas
     .map(c=>({c,s:cinemaSummary(c)}))
     .filter(x=>x.s.occ!=null)
     .sort((a,b)=>b.s.occ-a.s.occ || b.s.used-a.s.used);
   if(ranked.length){
-    $('#map-best-cinema').textContent=ranked[0].c.name;
-    $('#map-best-meta').textContent=`${ranked[0].s.occ.toFixed(1)}% · ${fmt(ranked[0].s.used)} used / booked`;
+    setText('#map-best-cinema',ranked[0].c.name);
+    setText('#map-best-meta',`${ranked[0].s.occ.toFixed(1)}% · ${fmt(ranked[0].s.used)} used / booked`);
   }else{
-    $('#map-best-cinema').textContent='Awaiting seat data';
-    $('#map-best-meta').textContent='—';
+    setText('#map-best-cinema','Awaiting seat data');
+    setText('#map-best-meta','—');
   }
 
   host.innerHTML='';
@@ -497,4 +500,8 @@ document.addEventListener('keydown',e=>{
 });
 $('#malaysia-map')?.addEventListener('mouseenter',()=>pauseMapCycle(true));
 $('#malaysia-map')?.addEventListener('mouseleave',()=>pauseMapCycle(false));
-load().catch(err=>{console.error(err);$('#updated').textContent='Data load failed';});
+load().catch(err=>{
+  console.error('TIKUS tracker load failed:',err);
+  setText('#updated',`Data load failed · ${err.message||err}`);
+  document.documentElement.dataset.trackerError='true';
+});

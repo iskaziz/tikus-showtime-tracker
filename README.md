@@ -869,3 +869,22 @@ GitHub repository setting required once:
 `Settings → Pages → Build and deployment → Source → GitHub Actions`.
 
 Core CSS and JavaScript also use `?v=22.1` cache-busting query strings.
+
+
+## v22.2 — frontend runtime loading fix
+
+The live page was loading the current HTML and JavaScript, but JavaScript failed
+during the first render.
+
+Root cause:
+- v21.2 removed `#map-location-count` from `index.html`
+- `renderMap()` still executed
+  `$('#map-location-count').textContent = ...`
+- that null dereference stopped all later dashboard rendering
+
+A second latent issue was fixed at the same time:
+`highlightCinemaCard()` contained an accidental recursive self-call.
+
+v22.2 removes both failures, makes nonessential map-summary fields safe, adds
+a visible runtime error message, cache-busts the repaired frontend files, and
+validates JavaScript/DOM references before every Pages deployment.
