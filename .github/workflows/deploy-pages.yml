@@ -1,0 +1,75 @@
+name: Deploy TIKUS tracker to Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+  workflow_run:
+    workflows: ["Update TIKUS tracker"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Build safe static Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site/data
+
+          cp index.html _site/
+          cp -R css _site/
+          cp -R js _site/
+          cp -R assets _site/
+
+          cp data/current.json _site/data/
+          cp data/history-index.json _site/data/
+          cp -R data/history _site/data/
+          cp -R data/days _site/data/
+
+          if [ -f data/audience-current.json ]; then
+            cp data/audience-current.json _site/data/
+          fi
+          if [ -f data/audience-history-index.json ]; then
+            cp data/audience-history-index.json _site/data/
+          fi
+          if [ -d data/audience-history ]; then
+            cp -R data/audience-history _site/data/
+          fi
+
+          touch _site/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

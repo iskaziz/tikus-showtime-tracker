@@ -849,3 +849,23 @@ context.
 The collector fails soft: missing API credentials do not break the cinema
 tracker. The widget displays `—` and a credential-status message until the
 relevant GitHub secret is configured.
+
+
+## v22.1 — explicit GitHub Pages deployment
+
+The live Pages site can become stale because data commits made from the
+scheduled tracker workflow use GitHub's workflow token. Those commits update
+`main`, but should not be relied upon to trigger a second workflow implicitly.
+
+`deploy-pages.yml` fixes this by deploying in three cases:
+- a normal push to `main`
+- a manual Pages deployment
+- successful completion of `Update TIKUS tracker`
+
+The deployment stages a safe `_site` artifact containing only frontend assets
+and public dashboard JSON. Collector diagnostics are intentionally excluded.
+
+GitHub repository setting required once:
+`Settings → Pages → Build and deployment → Source → GitHub Actions`.
+
+Core CSS and JavaScript also use `?v=22.1` cache-busting query strings.
