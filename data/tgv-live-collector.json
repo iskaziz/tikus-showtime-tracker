@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-04T13:03:06+08:00",
+  "observedAt": "2026-09-04T15:44:58+08:00",
   "businessDate": "2026-09-04",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430635",
-          "time": "15:30",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430648",
           "time": "20:00",
@@ -77,24 +68,6 @@
       "officialName": "GURNEY PARAGON",
       "sessions": [
         {
-          "sessionId": "220093",
-          "time": "13:15",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "220103",
-          "time": "15:45",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
-        {
           "sessionId": "220098",
           "time": "18:15",
           "hall": "Cinema 5",
@@ -120,22 +93,13 @@
       "officialName": "BUKIT TINGGI",
       "sessions": [
         {
-          "sessionId": "409377",
-          "time": "14:10",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 1,
-          "available": 114,
-          "occupancy": 0.87
-        },
-        {
           "sessionId": "409395",
           "time": "20:30",
           "hall": "Cinema 2",
           "seatstotal": 115,
-          "seatsused": 1,
-          "available": 114,
-          "occupancy": 0.87
+          "seatsused": 2,
+          "available": 113,
+          "occupancy": 1.74
         },
         {
           "sessionId": "409403",
@@ -152,17 +116,7 @@
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [
-        {
-          "sessionId": "324726",
-          "time": "15:00",
-          "hall": "Cinema 1",
-          "seatstotal": 117,
-          "seatsused": 2,
-          "available": 115,
-          "occupancy": 1.71
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     }
   },
