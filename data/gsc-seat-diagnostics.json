@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-05T23:46:57+08:00",
+  "observedAt": "2026-09-06T01:54:46+08:00",
   "policy": "read-only pre-seat-selection inspection",
   "moviePage": "https://www.gsc.com.my/movie/tikus/",
   "showtimePage": "https://epaymentwebapp.gsc.com.my/showtime-by-movies",
@@ -39,7 +39,7 @@
   },
   "networkCandidates": [
     {
-      "url": "https://analytics.google.com/g/collect?v=2&tid=G-85Q2DWPKJ3&gtm=45je6921v898977266z89184140321za20gzb9184140321zd9184140321&_p=1788623222955&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&are=1&cid=1032748426.1788623223&frm=0&pscdl=noapi&rcb=4&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118897920~118897930~120385423~120469145~120469153&sid=1788623223&sct=1&seg=0&dl=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&dt=Tikus%20Movie%20Showtimes%20%26%20Tickets&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=5252",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-85Q2DWPKJ3&gtm=45je6921v898977266z89184140321za20gzb9184140321zd9184140321&_p=1788630890754&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&are=1&cid=1622172438.1788630891&frm=0&pscdl=noapi&rcb=19&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120385422~120469145~120469153~120474864&sid=1788630891&sct=1&seg=0&dl=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&dt=Tikus%20Movie%20Showtimes%20%26%20Tickets&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4640",
       "status": 204,
       "contentType": "text/plain"
     },

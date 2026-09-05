@@ -1,19 +1,66 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-05T23:47:58+08:00",
-  "businessDate": "2026-09-05",
+  "observedAt": "2026-09-06T01:56:02+08:00",
+  "businessDate": "2026-09-06",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
     "tgv-tebrau": {
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
-      "sessions": [],
+      "sessions": [
+        {
+          "sessionId": "430535",
+          "time": "13:00",
+          "hall": "Junior",
+          "seatstotal": 76,
+          "seatsused": 1,
+          "available": 75,
+          "occupancy": 1.32
+        },
+        {
+          "sessionId": "430542",
+          "time": "23:15",
+          "hall": "Junior",
+          "seatstotal": 76,
+          "seatsused": 0,
+          "available": 76,
+          "occupancy": 0.0
+        }
+      ],
       "status": "ok"
     },
     "tgv-wangsa-walk": {
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
-      "sessions": [],
+      "sessions": [
+        {
+          "sessionId": "311002",
+          "time": "16:15",
+          "hall": "Cinema 4",
+          "seatstotal": 141,
+          "seatsused": 2,
+          "available": 139,
+          "occupancy": 1.42
+        },
+        {
+          "sessionId": "311006",
+          "time": "18:15",
+          "hall": "Cinema 5",
+          "seatstotal": 174,
+          "seatsused": 2,
+          "available": 172,
+          "occupancy": 1.15
+        },
+        {
+          "sessionId": "311017",
+          "time": "21:45",
+          "hall": "Cinema 4",
+          "seatstotal": 141,
+          "seatsused": 0,
+          "available": 141,
+          "occupancy": 0.0
+        }
+      ],
       "status": "ok"
     },
     "tgv-gurney": {
@@ -21,12 +68,21 @@
       "officialName": "GURNEY PARAGON",
       "sessions": [
         {
-          "sessionId": "220354",
-          "time": "00:35",
-          "hall": "Cinema 2",
-          "seatstotal": 202,
+          "sessionId": "220172",
+          "time": "13:15",
+          "hall": "Cinema 5",
+          "seatstotal": 92,
+          "seatsused": 1,
+          "available": 91,
+          "occupancy": 1.09
+        },
+        {
+          "sessionId": "220184",
+          "time": "18:40",
+          "hall": "Cinema 5",
+          "seatstotal": 92,
           "seatsused": 0,
-          "available": 202,
+          "available": 92,
           "occupancy": 0.0
         }
       ],
@@ -35,13 +91,42 @@
     "tgv-bukit-tinggi": {
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
-      "sessions": [],
+      "sessions": [
+        {
+          "sessionId": "409460",
+          "time": "11:45",
+          "hall": "Cinema 3",
+          "seatstotal": 115,
+          "seatsused": 0,
+          "available": 115,
+          "occupancy": 0.0
+        },
+        {
+          "sessionId": "409468",
+          "time": "14:10",
+          "hall": "Cinema 3",
+          "seatstotal": 115,
+          "seatsused": 3,
+          "available": 112,
+          "occupancy": 2.61
+        }
+      ],
       "status": "ok"
     },
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [],
+      "sessions": [
+        {
+          "sessionId": "324774",
+          "time": "15:00",
+          "hall": "Cinema 1",
+          "seatstotal": 117,
+          "seatsused": 0,
+          "available": 117,
+          "occupancy": 0.0
+        }
+      ],
       "status": "ok"
     }
   },
