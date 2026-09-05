@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-06T03:56:21+08:00",
+  "observedAt": "2026-09-06T05:56:28+08:00",
   "policy": "read-only pre-seat-selection inspection",
   "moviePage": "https://www.gsc.com.my/movie/tikus/",
   "showtimePage": "https://epaymentwebapp.gsc.com.my/showtime-by-movies",
@@ -39,12 +39,7 @@
   },
   "networkCandidates": [
     {
-      "url": "https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjssshZo18PT_zYGI2gRFGojZK3w6uKtVxrGG3pzvLBCdcJk4FVqPSPh97k2TYFa3fD9OMLJb8qYqkfFKGUMHne3yGZrHSJRCHSOyiwZpSOHaTb0E10kC5bQe9ao2uDY8k26Xsvckqz6NL9LHRLw7YEXwnyGnHrzITe2wxHQvBZCKdnIYBDSLharpj_jQb6xbPL0V_54udNRUqUhn_OoR1TVohq2Gqy-IloDYHA7g1rKJ2HLTUrVf7SXSSIX25ayj0LT1VyV1WAOn6sZ2MoH1Tpi8x425ZSrJx63L-HEKcrFO6l2mbI8xRzMjaaYYk2DAzVV5A2wCr8rJapIWhnB0QNuRM52BquGyudNNrr4Z8-vwNTTfBsRb0vgrFO9EcFRaywkpwzgqeqInFgbWZ-os29ayvJlQ&sai=AMfl-YS09V1bN82FfbjpNlY57Yk6dDNWFO8GeIcPwB0KMMAGYD3NsedBBbPAf0zR7s8ORwvI0X7Z8M3ejWpIjx33rQowzKtqNpsEatTay056vxnLGAXlmGJXdE9hqAjzUZAFOOgDA31lt2Tk7fxjCFTirZWTmJZrbwWHR4cloHx-X-a3mfQmhnVN-csz1Q_15JsrPHJwIP0GrcDjWNhF5UGT-5DyYL0E1Esr-lPbYEF2mi94n6rpEB6SYikJ2cRJqS0BFXPAjOgDiWJYGtrZfE0f0Kucnpxkke08t9U5zHY7f9IrgWonfu83_P8cKhlDNsUSf_OCIlBzWLQvc20-ho0hlfi13gqaIquOllFpJ5_pc-_GSkLymfuS4kOrroMOTJ_E5aH-pS4aVFWq3A&sig=Cg0ArKJSzOc3MwjY7mQjEAE&uach_m=%5BUACH%5D&adurl=",
-      "status": 200,
-      "contentType": "image/gif"
-    },
-    {
-      "url": "https://analytics.google.com/g/collect?v=2&tid=G-85Q2DWPKJ3&gtm=45je6921v898977266z89184140321za20gzb9184140321zd9184140321&_p=1788638184256&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&are=1&cid=202485041.1788638185&frm=0&pscdl=noapi&rcb=7&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~119791749~120385423~120469145~120469153~120474862~120914213&sid=1788638184&sct=1&seg=0&dl=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&dt=Tikus%20Movie%20Showtimes%20%26%20Tickets&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2577",
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-85Q2DWPKJ3&gtm=45je6921v898977266z89184140321za20gzb9184140321zd9184140321&_p=1788645393264&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&are=1&cid=1419569473.1788645394&frm=0&pscdl=noapi&rcb=0&sr=1440x1100&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CHeadlessChrome%3B151.0.7922.34%7CChromium%3B151.0.7922.34&uam=&uamb=0&uap=Windows&uapv=&uaw=0&ul=en-my&gaf=2&_s=1&tag_exp=115938465~115938469~118897920~118897930~120385423~120469145~120469153&sid=1788645393&sct=1&seg=0&dl=https%3A%2F%2Fwww.gsc.com.my%2Fmovie%2Ftikus%2F&dt=Tikus%20Movie%20Showtimes%20%26%20Tickets&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4703",
       "status": 204,
       "contentType": "text/plain"
     },

@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-06T03:57:25+08:00",
+  "observedAt": "2026-09-06T05:57:39+08:00",
   "businessDate": "2026-09-06",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -38,9 +38,9 @@
           "time": "16:15",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 2,
-          "available": 139,
-          "occupancy": 1.42
+          "seatsused": 5,
+          "available": 136,
+          "occupancy": 3.55
         },
         {
           "sessionId": "311006",
@@ -56,9 +56,9 @@
           "time": "21:45",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 0,
-          "available": 141,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 140,
+          "occupancy": 0.71
         }
       ],
       "status": "ok"
@@ -122,9 +122,9 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 0,
-          "available": 117,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 116,
+          "occupancy": 0.85
         }
       ],
       "status": "ok"

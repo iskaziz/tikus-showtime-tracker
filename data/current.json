@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-06",
-  "updatedAt": "2026-09-06T03:57:25+08:00",
+  "updatedAt": "2026-09-06T05:57:39+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -26,7 +26,7 @@
           "hallId": "5",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -40,7 +40,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-paradigm-jb-289969",
@@ -58,7 +58,7 @@
           "hallId": "5",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -72,7 +72,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-paradigm-jb-289973",
@@ -90,7 +90,7 @@
           "hallId": "10",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 1,
           "unavailableRate": 0.010526315789473684,
@@ -105,7 +105,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -135,7 +135,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -149,7 +149,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-aman-central-213606",
@@ -167,7 +167,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 1,
           "unavailableRate": 0.009708737864077669,
@@ -182,7 +182,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -212,7 +212,7 @@
           "hallId": "2",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 3,
           "unavailableRate": 0.018292682926829267,
@@ -228,7 +228,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-midvalley-925177",
@@ -246,7 +246,7 @@
           "hallId": "14",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 1,
           "unavailableRate": 0.013513513513513514,
@@ -260,7 +260,7 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -290,7 +290,7 @@
           "hallId": "9",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -303,7 +303,7 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-dataran-pahlawan-407063",
@@ -321,7 +321,7 @@
           "hallId": "9",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -334,7 +334,7 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -364,7 +364,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 2,
           "unavailable": 5,
           "unavailableRate": 0.03184713375796178,
@@ -381,7 +381,7 @@
             "W": 1
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-kuantan-city-mall-80311",
@@ -399,7 +399,7 @@
           "hallId": "8",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -414,7 +414,7 @@
             "W": 1
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -444,7 +444,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -458,7 +458,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-ioi-city-mall-340497",
@@ -476,7 +476,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 1,
           "unavailableRate": 0.011235955056179775,
@@ -491,7 +491,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-ioi-city-mall-340464",
@@ -509,7 +509,7 @@
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -523,7 +523,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -553,7 +553,7 @@
           "hallId": "8",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -567,7 +567,7 @@
             "T": 10
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-imago-77498",
@@ -585,7 +585,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -599,7 +599,7 @@
             "T": 10
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -629,7 +629,7 @@
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 6,
           "unavailable": 8,
           "unavailableRate": 0.03278688524590164,
@@ -645,7 +645,7 @@
             "T": 12
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         },
         {
           "id": "gsc-the-spring-78033",
@@ -663,7 +663,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-06T03:56:41+08:00",
+          "observedAt": "2026-09-06T05:56:53+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -676,7 +676,7 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-06T03:56:41+08:00"
+          "seatObservedAt": "2026-09-06T05:56:53+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -707,7 +707,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|DUO",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         },
         {
           "id": "tgv-tebrau-430542",
@@ -726,7 +726,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|DUO",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -745,10 +745,10 @@
           "time": "16:15",
           "hall": "Cinema 4",
           "capacity": 141,
-          "booked": 2,
-          "rawSeatsUsed": 2,
-          "available": 139,
-          "occupancy": 1.42,
+          "booked": 5,
+          "rawSeatsUsed": 5,
+          "available": 136,
+          "occupancy": 3.55,
           "countSemantics": "tgv-seatsused",
           "sourceStatus": "tgv-official-api",
           "seatStatus": "tgv-official-seatstatus",
@@ -757,7 +757,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         },
         {
           "id": "tgv-wangsa-walk-311006",
@@ -776,17 +776,17 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         },
         {
           "id": "tgv-wangsa-walk-311017",
           "time": "21:45",
           "hall": "Cinema 4",
           "capacity": 141,
-          "booked": 0,
-          "rawSeatsUsed": 0,
-          "available": 141,
-          "occupancy": 0.0,
+          "booked": 1,
+          "rawSeatsUsed": 1,
+          "available": 140,
+          "occupancy": 0.71,
           "countSemantics": "tgv-seatsused",
           "sourceStatus": "tgv-official-api",
           "seatStatus": "tgv-official-seatstatus",
@@ -795,7 +795,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -826,7 +826,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         },
         {
           "id": "tgv-gurney-220184",
@@ -845,7 +845,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -876,7 +876,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         },
         {
           "id": "tgv-bukit-tinggi-409468",
@@ -895,7 +895,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -914,10 +914,10 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "capacity": 117,
-          "booked": 0,
-          "rawSeatsUsed": 0,
-          "available": 117,
-          "occupancy": 0.0,
+          "booked": 1,
+          "rawSeatsUsed": 1,
+          "available": 116,
+          "occupancy": 0.85,
           "countSemantics": "tgv-seatsused",
           "sourceStatus": "tgv-official-api",
           "seatStatus": "tgv-official-seatstatus",
@@ -926,7 +926,7 @@
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-06T03:57:25+08:00"
+          "observedAt": "2026-09-06T05:57:39+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -979,6 +979,6 @@
     "otherUnavailable": 8,
     "unavailable": 20,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-06T03:56:41+08:00"
+    "observedAt": "2026-09-06T05:56:53+08:00"
   }
 }
