@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-06T01:55:10+08:00",
+  "observedAt": "2026-09-06T03:56:41+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -79,12 +79,13 @@
           "hallNo": "10",
           "seatNodes": 95,
           "capacity": 95,
-          "available": 95,
-          "booked": 0,
+          "available": 94,
+          "booked": 1,
           "otherUnavailable": 0,
-          "unavailable": 0,
+          "unavailable": 1,
           "statusCounts": {
-            "A": 95
+            "A": 94,
+            "B": 1
           },
           "seatTypeCounts": {
             "N": 91,
@@ -145,12 +146,13 @@
           "hallNo": "3",
           "seatNodes": 103,
           "capacity": 103,
-          "available": 103,
-          "booked": 0,
+          "available": 102,
+          "booked": 1,
           "otherUnavailable": 0,
-          "unavailable": 0,
+          "unavailable": 1,
           "statusCounts": {
-            "A": 103
+            "A": 102,
+            "B": 1
           },
           "seatTypeCounts": {
             "N": 99,
@@ -213,12 +215,13 @@
           "hallNo": "14",
           "seatNodes": 74,
           "capacity": 74,
-          "available": 74,
-          "booked": 0,
+          "available": 73,
+          "booked": 1,
           "otherUnavailable": 0,
-          "unavailable": 0,
+          "unavailable": 1,
           "statusCounts": {
-            "A": 74
+            "A": 73,
+            "B": 1
           },
           "seatTypeCounts": {
             "N": 72,
@@ -412,12 +415,13 @@
           "hallNo": "7",
           "seatNodes": 89,
           "capacity": 89,
-          "available": 89,
-          "booked": 0,
+          "available": 88,
+          "booked": 1,
           "otherUnavailable": 0,
-          "unavailable": 0,
+          "unavailable": 1,
           "statusCounts": {
-            "A": 89
+            "A": 88,
+            "B": 1
           },
           "seatTypeCounts": {
             "N": 85,
@@ -534,68 +538,6 @@
       "officialLocationId": "552",
       "sessions": [
         {
-          "sessionId": "77766",
-          "time": "12:10",
-          "hall": "3",
-          "locationId": "552",
-          "hallId": "3",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "3",
-          "seatNodes": 244,
-          "capacity": 244,
-          "available": 238,
-          "booked": 0,
-          "otherUnavailable": 6,
-          "unavailable": 6,
-          "statusCounts": {
-            "D": 6,
-            "A": 238
-          },
-          "seatTypeCounts": {
-            "N": 228,
-            "H": 4,
-            "T": 12
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=1210"
-        },
-        {
-          "sessionId": "77767",
-          "time": "14:30",
-          "hall": "3",
-          "locationId": "552",
-          "hallId": "3",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "3",
-          "seatNodes": 244,
-          "capacity": 244,
-          "available": 238,
-          "booked": 0,
-          "otherUnavailable": 6,
-          "unavailable": 6,
-          "statusCounts": {
-            "D": 6,
-            "A": 238
-          },
-          "seatTypeCounts": {
-            "N": 228,
-            "H": 4,
-            "T": 12
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=1430"
-        },
-        {
           "sessionId": "77768",
           "time": "16:50",
           "hall": "3",
@@ -628,78 +570,45 @@
           "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=1650"
         },
         {
-          "sessionId": "77769",
-          "time": "19:10",
-          "hall": "3",
+          "sessionId": "78033",
+          "time": "20:30",
+          "hall": "4",
           "locationId": "552",
-          "hallId": "3",
+          "hallId": "4",
           "showDate": "2026-09-06",
           "status": "ok",
-          "hallNo": "3",
-          "seatNodes": 244,
-          "capacity": 244,
-          "available": 238,
+          "hallNo": "4",
+          "seatNodes": 92,
+          "capacity": 92,
+          "available": 92,
           "booked": 0,
-          "otherUnavailable": 6,
-          "unavailable": 6,
+          "otherUnavailable": 0,
+          "unavailable": 0,
           "statusCounts": {
-            "D": 6,
-            "A": 238
+            "A": 92
           },
           "seatTypeCounts": {
-            "N": 228,
-            "H": 4,
-            "T": 12
+            "T": 90,
+            "H": 2
           },
           "maximumSelectableSeats": 12,
           "rawHallBooked": 0,
           "rawHallBlocked": 0,
           "houseSeatsReleased": "0",
           "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=1910"
-        },
-        {
-          "sessionId": "77770",
-          "time": "21:30",
-          "hall": "3",
-          "locationId": "552",
-          "hallId": "3",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "3",
-          "seatNodes": 244,
-          "capacity": 244,
-          "available": 238,
-          "booked": 0,
-          "otherUnavailable": 6,
-          "unavailable": 6,
-          "statusCounts": {
-            "D": 6,
-            "A": 238
-          },
-          "seatTypeCounts": {
-            "N": 228,
-            "H": 4,
-            "T": 12
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=2130"
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=4&showdate=2026-09-06&showtime=2030"
         }
       ]
     }
   },
   "totals": {
-    "sessionsQueried": 21,
-    "sessionsMeasured": 21,
+    "sessionsQueried": 18,
+    "sessionsMeasured": 18,
     "sessionsLastObserved": 0,
-    "capacity": 2916,
-    "available": 2876,
-    "booked": 8,
-    "otherUnavailable": 32,
-    "unavailable": 40
+    "capacity": 2032,
+    "available": 2012,
+    "booked": 12,
+    "otherUnavailable": 8,
+    "unavailable": 20
   }
 }

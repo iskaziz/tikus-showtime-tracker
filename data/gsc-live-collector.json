@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-06T01:55:10+08:00",
+  "observedAt": "2026-09-06T03:56:41+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-06",
@@ -300,20 +300,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "77766",
-          "time": "12:10",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "77767",
-          "time": "14:30",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "77768",
           "time": "16:50",
           "hall": "3",
@@ -321,17 +307,10 @@
           "hallFull": "0"
         },
         {
-          "sessionId": "77769",
-          "time": "19:10",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "77770",
-          "time": "21:30",
-          "hall": "3",
-          "hallId": "3",
+          "sessionId": "78033",
+          "time": "20:30",
+          "hall": "4",
+          "hallId": "4",
           "hallFull": "0"
         }
       ]
