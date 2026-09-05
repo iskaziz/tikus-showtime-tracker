@@ -1,48 +1,19 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-05T20:56:35+08:00",
+  "observedAt": "2026-09-05T23:47:58+08:00",
   "businessDate": "2026-09-05",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
     "tgv-tebrau": {
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
-      "sessions": [
-        {
-          "sessionId": "430611",
-          "time": "23:15",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-wangsa-walk": {
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
-      "sessions": [
-        {
-          "sessionId": "310977",
-          "time": "21:45",
-          "hall": "Cinema 4",
-          "seatstotal": 141,
-          "seatsused": 5,
-          "available": 136,
-          "occupancy": 3.55
-        },
-        {
-          "sessionId": "311212",
-          "time": "23:00",
-          "hall": "Cinema 5",
-          "seatstotal": 174,
-          "seatsused": 1,
-          "available": 173,
-          "occupancy": 0.57
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-gurney": {
@@ -64,17 +35,7 @@
     "tgv-bukit-tinggi": {
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
-      "sessions": [
-        {
-          "sessionId": "409448",
-          "time": "23:00",
-          "hall": "Cinema 2",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-1utama": {

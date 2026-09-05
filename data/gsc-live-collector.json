@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-05T20:55:52+08:00",
+  "observedAt": "2026-09-05T23:47:24+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-05",
@@ -55,64 +55,20 @@
       "sessions": []
     },
     "gsc-imago": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "531",
-      "officialName": "GSC IMAGO Shopping Mall",
-      "locationAttributes": {
-        "id": "531",
-        "name": "GSC IMAGO Shopping Mall",
-        "barcode_enabled": "0",
-        "address": "Lot No. 2-52, Second Floor, IMAGO Shopping Mall, KK Times Square Phase 2, Off Coastal Highway,  Kota Kinabalu\n,SBH,88100",
-        "region": "6",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/531(120x120).jpg",
-        "is_epayment": "0",
-        "epayment_name": "Kota Kinabalu - IMAGO Mall",
-        "sort": "53",
-        "info": ""
-      },
-      "epaymentName": "Kota Kinabalu - IMAGO Mall",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "77254",
-          "time": "21:30",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "531",
+      "aliases": [
+        "GSC IMAGO Shopping Mall"
+      ],
+      "sessions": []
     },
     "gsc-the-spring": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "552",
-      "officialName": "GSC The Spring (Kuching)",
-      "locationAttributes": {
-        "id": "552",
-        "name": "GSC The Spring (Kuching)",
-        "barcode_enabled": "0",
-        "address": "Lot 214, Second Floor, \nThe Spring Shopping Mall, \nPersiaran Spring, Kuching\n,SWK,93300",
-        "region": "6",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/552(120x120).jpg",
-        "is_epayment": "0",
-        "epayment_name": "Kuching - The Spring",
-        "sort": "55",
-        "info": ""
-      },
-      "epaymentName": "Kuching - The Spring",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "77751",
-          "time": "21:30",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "552",
+      "aliases": [
+        "GSC The Spring (Kuching)"
+      ],
+      "sessions": []
     }
   }
 }
