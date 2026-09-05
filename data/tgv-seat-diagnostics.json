@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-06T05:57:06+08:00",
+  "observedAt": "2026-09-06T07:35:53+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -131,20 +131,20 @@
       "sample": "{\"success\":true,\"error\":null,\"results\":{\"businessday\":\"2026-09-06\",\"movieid\":\"7b2216d1-27d8-479e-b420-8ab157847aa6\",\"experience\":null,\"experiencegroup\":\"\",\"locations\":[{\"state\":\"klangvalley\",\"cinemaids\":[{\"cinemaid\":\"BU0\",\"keyword\":\"1-utama\",\"name\":\"1 UTAMA\",\"parkinginfo\":null,\"mapurl\":null,\"address\":null},{\"cinemaid\":\"BBT\",\"keyword\":\"bukit-tinggi\",\"name\":\"BUKIT TINGGI\",\"parkinginfo\":null,\"mapurl\":null,\"address\":null},{\"cinemaid\":\"WWM\",\"keyword\":\"wangsa-walk\",\"name\":\"SUNWAY WANGSA MALL\",\"parkinginfo\":null,\"mapurl\":null,\"address\":null}]},{\"state\":\"johor\",\"cinemaids\":[{\"cinemaid\":\"TBR\",\"keyword\":\"tebrau-city\",\"name\":\"TEBRAU CITY\",\"parkinginfo\":null,\"mapurl\":null,\"address\":null}]},{\"state\":\"pinang\",\"cinemaids\":[{\"cinemaid\":\"GUR\",\"keyword\":\"gurney-paragon\",\"name\":\"GURNEY PARAGON\",\"parkinginfo\":null,\"mapurl\":null,\"address\":null}]}]}}"
     },
     {
-      "url": "https://api.tgv.com.my/api/promotions/v1/getmovieexcpromo",
-      "method": "POST",
-      "status": 200,
-      "contentType": "application/json; charset=utf-8",
-      "postData": "{\"cinemaid\":\"BU0\",\"movieid\":\"tikus-2026\",\"startrowindex\":0,\"maxrows\":100}",
-      "sample": "{\"success\":false,\"error\":{\"code\":\"movieexcpromoitems.notfound\",\"message\":\"Movie Exclusive Promo Item Not Found (cinemaid, movieid): BU0, tikus-2026\"}}"
-    },
-    {
       "url": "https://api.tgv.com.my/api/cinemas/v1/getcinemabyitemkey",
       "method": "POST",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemakey\":\"BU0\"}",
       "sample": "{\"success\":true,\"results\":{\"cinema\":{\"recid\":\"56dd6abc-2137-44f5-bf6f-2fd7e1ae8fd8\",\"itemkey\":\"BU0\",\"parentkey\":\"\",\"name\":\"1 UTAMA\",\"status\":1,\"lastupdateutc\":\"2026-06-16T03:43:00.460105Z\",\"pubdateutc\":\"2022-12-09T16:31:58.731957Z\",\"extdata\":{\"exp\":[\"imaxlaser\",\"indulge\",\"beanie\",\"junior-hotwheel\",\"deluxe\"],\"folderkey\":\"bu0\",\"cinema\":{\"id\":\"BU0\",\"meta\":{\"name\":\"TGV Cinemas 1 Utama | Latest Movie Showtimes and Tickets\",\"description\":\"Enjoy the only IMAX Laser in Petaling Jaya, plus Malaysia\u2019s first JUNIOR Hot Wheels kids cinema and INDULGE halls. Book your tickets now!\"},\"mapurl\":\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.168515219373!2d101.6156377!3d3.1494681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd81eb3a4d9eb904!2s1%20Utama%20Shopping%20Centre!5e0!3m2!1sen!2smy!4v1576741483669!5m2!1sen!2smy\",\"address\":\"Level 3, Old Wing, 1 Utama Shopping Centre, 1, Lebuh Bandar Utama, Bandar Utama, 47800 Petaling Jaya, Selangor, Malaysia\",\"keyword\":\"1-utama\",\"features\":[],\"latitude\":\"3.148316\",\"location\":\"klangvalley\",\"longitude\":\"101.616795\",\"telephone\":\"\",\"description\":\"Located in 1 Utama Shopping Centre, TGV Cinemas 1 Utama is a go-to movie destination for Petaling Jaya and Damansara. \\n\\nWith 11 halls and 1,556 seats, it brings together big-screen thrills and family-friendly fun, featuring the area\u2019s only IMAX Laser hall, premium INDULGE halls with lounge access, and comfortable Deluxe halls for every kind of movie outing. \\n\\nFamilies can also level up the fun at Malaysia\u2019s first JUNIOR Hot Wheels kids\u2019 cinema and explore the colourful City of Play, making every visit feel like an adventure beyond the screen. \\n\\nThe TGV 1 Utama halls include: \\n1x IMAX Hall, powered by IMAX Laser \\n2x Indulge Halls \\n1x Junior Hall \\n7x Deluxe Halls \",\"parkinginfo\":\"Level L3, Old Wing Zone\",\"openingHours\":[],\"addressRegion\":\"\",\"nearbycinemas\":[\"KP0\",\"JAY\",\"SW0\"],\"addressLocality\":\"\",\"addressPostcode\":\"\"}},\"assets\":[]}}}"
+    },
+    {
+      "url": "https://api.tgv.com.my/api/promotions/v1/getmovieexcpromo",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "postData": "{\"cinemaid\":\"BU0\",\"movieid\":\"tikus-2026\",\"startrowindex\":0,\"maxrows\":100}",
+      "sample": "{\"success\":false,\"error\":{\"code\":\"movieexcpromoitems.notfound\",\"message\":\"Movie Exclusive Promo Item Not Found (cinemaid, movieid): BU0, tikus-2026\"}}"
     },
     {
       "url": "https://api.tgv.com.my/api/boxoffice/v1/moviesession_get",
@@ -163,20 +163,20 @@
       "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BU0\",\"seatstatuslist\":[{\"sessionid\":\"324774\",\"seatstotal\":117,\"seatsused\":1,\"usedpercentage\":0}]}}"
     },
     {
-      "url": "https://api.tgv.com.my/api/promotions/v1/getmovieexcpromo",
-      "method": "POST",
-      "status": 200,
-      "contentType": "application/json; charset=utf-8",
-      "postData": "{\"cinemaid\":\"BBT\",\"movieid\":\"tikus-2026\",\"startrowindex\":0,\"maxrows\":100}",
-      "sample": "{\"success\":false,\"error\":{\"code\":\"movieexcpromoitems.notfound\",\"message\":\"Movie Exclusive Promo Item Not Found (cinemaid, movieid): BBT, tikus-2026\"}}"
-    },
-    {
       "url": "https://api.tgv.com.my/api/cinemas/v1/getcinemabyitemkey",
       "method": "POST",
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemakey\":\"BBT\"}",
       "sample": "{\"success\":true,\"results\":{\"cinema\":{\"recid\":\"6b442e0c-13c4-412c-a4d8-a4fb58ea2723\",\"itemkey\":\"BBT\",\"parentkey\":\"\",\"name\":\"BUKIT TINGGI\",\"status\":1,\"lastupdateutc\":\"2026-07-28T23:56:00.376464Z\",\"pubdateutc\":\"2022-12-09T16:31:58.623741Z\",\"extdata\":{\"exp\":[\"deluxe\"],\"folderkey\":\"bbt\",\"cinema\":{\"id\":\"BBT\",\"meta\":{\"name\":\"\",\"description\":\"\"},\"mapurl\":\"https://maps.google.com/maps?q=TGV%20Bukit%20Tinggi&t=&z=13&ie=UTF8&iwloc=&output=embed\",\"address\":\"Lot S32, 2nd Floor, AEON Bukit Tinggi Shopping Centre, 1, Persiaran Batu Nilam 1/KS6, Bandar Bukit Tinggi 2, 41200 Klang, Selangor, Malaysia\",\"keyword\":\"bukit-tinggi\",\"features\":[],\"latitude\":\"2.9922533\",\"location\":\"klangvalley\",\"longitude\":\"101.444845\",\"telephone\":\"\",\"description\":\"\",\"parkinginfo\":\"Zone E Brown & Yellow Pillars;   Number: B-E 24-27, B-D 17-23\",\"openingHours\":[],\"addressRegion\":\"\",\"nearbycinemas\":[],\"addressLocality\":\"\",\"addressPostcode\":\"\"}},\"assets\":[]}}}"
+    },
+    {
+      "url": "https://api.tgv.com.my/api/promotions/v1/getmovieexcpromo",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "postData": "{\"cinemaid\":\"BBT\",\"movieid\":\"tikus-2026\",\"startrowindex\":0,\"maxrows\":100}",
+      "sample": "{\"success\":false,\"error\":{\"code\":\"movieexcpromoitems.notfound\",\"message\":\"Movie Exclusive Promo Item Not Found (cinemaid, movieid): BBT, tikus-2026\"}}"
     },
     {
       "url": "https://api.tgv.com.my/api/boxoffice/v1/moviesession_get",
@@ -192,7 +192,7 @@
       "status": 200,
       "contentType": "application/json; charset=utf-8",
       "postData": "{\"cinemaid\":\"BBT\",\"sessionid\":[\"409460\",\"409468\"]}",
-      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409468\",\"seatstotal\":115,\"seatsused\":3,\"usedpercentage\":2},{\"sessionid\":\"409460\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0}]}}"
+      "sample": "{\"success\":true,\"error\":null,\"results\":{\"cinemaid\":\"BBT\",\"seatstatuslist\":[{\"sessionid\":\"409460\",\"seatstotal\":115,\"seatsused\":0,\"usedpercentage\":0},{\"sessionid\":\"409468\",\"seatstotal\":115,\"seatsused\":3,\"usedpercentage\":2}]}}"
     }
   ],
   "buyNow": {
@@ -391,10 +391,7 @@
     "2bbb1ebe-14a1-423b-b9e2-a734ce7b78c0",
     "e4de6842-06b1-4ab8-9c96-4aadf42a9f50",
     "e272889f-c14a-4752-9935-7a6c6a36e87f",
-    "ae81a069-8b4c-45cf-a905-ece0d116cd97",
-    "0c1b8e91-8c2f-460f-8f98-ba65ae4ec270",
-    "5e6adb79-c753-4e1a-8353-2647e5fd2ab3",
-    "8f3eab1e-d7e1-4697-b3bf-e8ea52b4faf4"
+    "ae81a069-8b4c-45cf-a905-ece0d116cd97"
   ],
   "cinemaClicks": [
     {
