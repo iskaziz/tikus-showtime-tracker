@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-05T08:59:54+08:00",
+  "observedAt": "2026-09-05T13:33:34+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-05",
@@ -26,20 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "924672",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "924673",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "924674",
           "time": "15:20",
@@ -85,20 +71,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "339969",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "339970",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "339971",
           "time": "15:20",
           "hall": "2",
@@ -143,20 +115,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213410",
-          "time": "10:40",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "213409",
-          "time": "13:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213408",
           "time": "15:20",
           "hall": "4",
@@ -173,13 +131,6 @@
         {
           "sessionId": "213406",
           "time": "20:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "213405",
-          "time": "22:20",
           "hall": "4",
           "hallId": "4",
           "hallFull": "0"
@@ -208,20 +159,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "406745",
-          "time": "10:40",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "406746",
-          "time": "13:00",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "406747",
           "time": "15:20",
           "hall": "7",
@@ -238,13 +175,6 @@
         {
           "sessionId": "406749",
           "time": "20:00",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "406750",
-          "time": "22:20",
           "hall": "7",
           "hallId": "7",
           "hallFull": "0"
@@ -272,20 +202,6 @@
       "epaymentName": "Johor Bahru - Paradigm Mall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "289384",
-          "time": "10:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "289385",
-          "time": "13:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "289386",
           "time": "15:20",
@@ -331,20 +247,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "79971",
-          "time": "10:40",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "79977",
-          "time": "13:00",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "79983",
           "time": "15:20",
           "hall": "HALL 4",
@@ -388,13 +290,6 @@
       "epaymentName": "Kota Kinabalu - IMAGO Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77246",
-          "time": "12:10",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77248",
           "time": "14:30",
@@ -446,13 +341,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77747",
-          "time": "12:10",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77748",
           "time": "14:30",

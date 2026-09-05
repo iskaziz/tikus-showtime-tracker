@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-05T09:00:48+08:00",
+  "observedAt": "2026-09-05T13:34:26+08:00",
   "businessDate": "2026-09-05",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,24 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430578",
-          "time": "11:30",
-          "hall": "Cinema 7",
-          "seatstotal": 111,
-          "seatsused": 0,
-          "available": 111,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "430589",
-          "time": "13:00",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430599",
           "time": "15:30",
@@ -40,9 +22,9 @@
           "time": "20:00",
           "hall": "Cinema 7",
           "seatstotal": 111,
-          "seatsused": 0,
-          "available": 111,
-          "occupancy": 0.0
+          "seatsused": 2,
+          "available": 109,
+          "occupancy": 1.8
         },
         {
           "sessionId": "430611",
@@ -60,15 +42,6 @@
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
-        {
-          "sessionId": "310948",
-          "time": "11:20",
-          "hall": "Cinema 5",
-          "seatstotal": 174,
-          "seatsused": 0,
-          "available": 174,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "310962",
           "time": "16:15",
@@ -92,9 +65,9 @@
           "time": "21:45",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 3,
-          "available": 138,
-          "occupancy": 2.13
+          "seatsused": 4,
+          "available": 137,
+          "occupancy": 2.84
         },
         {
           "sessionId": "311212",
@@ -112,15 +85,6 @@
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
       "sessions": [
-        {
-          "sessionId": "220042",
-          "time": "13:15",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "220065",
           "time": "15:45",
@@ -164,15 +128,6 @@
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
       "sessions": [
-        {
-          "sessionId": "409414",
-          "time": "11:45",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 1,
-          "available": 114,
-          "occupancy": 0.87
-        },
         {
           "sessionId": "409422",
           "time": "14:10",
