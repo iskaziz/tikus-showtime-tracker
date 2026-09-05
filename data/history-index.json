@@ -69,6 +69,13 @@
       "booked": 37,
       "capacity": 5587,
       "file": "history/2026-09-05/20260905T172429+0800.json"
+    },
+    {
+      "datasetDate": "2026-09-05",
+      "observedAt": "2026-09-05T20:56:43+08:00",
+      "booked": 29,
+      "capacity": 4383,
+      "file": "history/2026-09-05/20260905T205643+0800.json"
     }
   ]
 }

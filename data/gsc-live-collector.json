@@ -1,231 +1,58 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-05T17:23:29+08:00",
+  "observedAt": "2026-09-05T20:55:52+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-05",
   "cinemas": {
     "gsc-midvalley": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "210",
-      "officialName": "GSC Mid Valley",
-      "locationAttributes": {
-        "id": "210",
-        "name": "GSC Mid Valley",
-        "barcode_enabled": "0",
-        "address": "Lot T-001, 3rd Floor, \nMid Valley Megamall Mid Valley City,\nLingkaran Syed Putra, ,KUL,59200",
-        "region": "2",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/210(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Kuala Lumpur - Mid Valley Megamall",
-        "sort": "5",
-        "info": ""
-      },
-      "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "924675",
-          "time": "17:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "924676",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "210",
+      "aliases": [
+        "GSC Mid Valley",
+        "GSC Mid Valley Megamall"
+      ],
+      "sessions": []
     },
     "gsc-ioi-city-mall": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "257",
-      "officialName": "GSC IOI City Mall (West) (Putrajaya)",
-      "locationAttributes": {
-        "id": "257",
-        "name": "GSC IOI City Mall (West) (Putrajaya)",
-        "barcode_enabled": "1",
-        "address": "Lot No. AT5, \nIOI City Mall,\nLebuh IRC, IOI Resort City, \n,PJY,62502",
-        "region": "2",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/257(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Putrajaya - IOI City Mall (West)",
-        "sort": "24",
-        "info": ""
-      },
-      "epaymentName": "Putrajaya - IOI City Mall (West)",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "339972",
-          "time": "17:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "339973",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "257",
+      "aliases": [
+        "GSC IOI City Mall (West) (Putrajaya)"
+      ],
+      "sessions": []
     },
     "gsc-aman-central": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "133",
-      "officialName": "GSC Aman Central",
-      "locationAttributes": {
-        "id": "133",
-        "name": "GSC Aman Central",
-        "barcode_enabled": "1",
-        "address": "Lot 4-22,  Aman Central\nNo 1,  Lebuhraya Darulaman\nAlor Setar,  Kedah Darul Aman,KDH,05100",
-        "region": "3",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/133(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Alor Setar - Aman Central",
-        "sort": "31",
-        "info": ""
-      },
-      "epaymentName": "Alor Setar - Aman Central",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "213407",
-          "time": "17:40",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "213406",
-          "time": "20:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "133",
+      "aliases": [
+        "GSC Aman Central"
+      ],
+      "sessions": []
     },
     "gsc-dataran-pahlawan": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "331",
-      "officialName": "GSC Dataran Pahlawan",
-      "locationAttributes": {
-        "id": "331",
-        "name": "GSC Dataran Pahlawan",
-        "barcode_enabled": "1",
-        "address": "Lot F5-01, Dataran Pahlawan Melaka Megamall\nJalan Merdeka,\nBandar Hilir,MLK,75000",
-        "region": "4",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/331(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Melaka - Dataran Pahlawan",
-        "sort": "37",
-        "info": ""
-      },
-      "epaymentName": "Melaka - Dataran Pahlawan",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "406748",
-          "time": "17:40",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "406749",
-          "time": "20:00",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "331",
+      "aliases": [
+        "GSC Dataran Pahlawan"
+      ],
+      "sessions": []
     },
     "gsc-paradigm-jb": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "355",
-      "officialName": "GSC Paradigm Mall (Johor Bahru)",
-      "locationAttributes": {
-        "id": "355",
-        "name": "GSC Paradigm Mall (Johor Bahru)",
-        "barcode_enabled": "1",
-        "address": "7F-01 & 7F-02, Paradigma Kompleks,\nJalan Mewah Ria 2,\nTaman Bukit Mewah,\nJohor Bahru,JHR,81200",
-        "region": "4",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/355(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Johor Bahru - Paradigm Mall",
-        "sort": "40",
-        "info": ""
-      },
-      "epaymentName": "Johor Bahru - Paradigm Mall",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "289387",
-          "time": "17:40",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "289388",
-          "time": "20:00",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "355",
+      "aliases": [
+        "GSC Paradigm Mall (Johor Bahru)"
+      ],
+      "sessions": []
     },
     "gsc-kuantan-city-mall": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "431",
-      "officialName": "GSC Kuantan City Mall",
-      "locationAttributes": {
-        "id": "431",
-        "name": "GSC Kuantan City Mall",
-        "barcode_enabled": "0",
-        "address": "L4-AT-01, Level 4, Kuantan City Mall,  Jalan Putra Square 6/1, Putra Square , Kuantan\n,PHG,25300",
-        "region": "5",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/431(120x120).jpg",
-        "is_epayment": "0",
-        "epayment_name": "Kuantan - Kuantan City Mall",
-        "sort": "49",
-        "info": ""
-      },
-      "epaymentName": "Kuantan - Kuantan City Mall",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "79989",
-          "time": "17:40",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
-        {
-          "sessionId": "79995",
-          "time": "20:00",
-          "hall": "HALL 4",
-          "hallId": "4",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "431",
+      "aliases": [
+        "GSC Kuantan City Mall"
+      ],
+      "sessions": []
     },
     "gsc-imago": {
       "status": "ok",
@@ -248,13 +75,6 @@
       "epaymentName": "Kota Kinabalu - IMAGO Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77252",
-          "time": "19:10",
-          "hall": "1",
-          "hallId": "1",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77254",
           "time": "21:30",
@@ -285,13 +105,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77750",
-          "time": "19:10",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77751",
           "time": "21:30",
