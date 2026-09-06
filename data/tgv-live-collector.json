@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-06T19:14:43+08:00",
+  "observedAt": "2026-09-06T22:13:55+08:00",
   "businessDate": "2026-09-06",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -23,17 +23,7 @@
     "tgv-wangsa-walk": {
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
-      "sessions": [
-        {
-          "sessionId": "311017",
-          "time": "21:45",
-          "hall": "Cinema 4",
-          "seatstotal": 141,
-          "seatsused": 1,
-          "available": 140,
-          "occupancy": 0.71
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-gurney": {
