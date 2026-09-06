@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-06T14:19:22+08:00",
+  "observedAt": "2026-09-06T19:14:43+08:00",
   "businessDate": "2026-09-06",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -25,24 +25,6 @@
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
         {
-          "sessionId": "311002",
-          "time": "16:15",
-          "hall": "Cinema 4",
-          "seatstotal": 141,
-          "seatsused": 7,
-          "available": 134,
-          "occupancy": 4.96
-        },
-        {
-          "sessionId": "311006",
-          "time": "18:15",
-          "hall": "Cinema 5",
-          "seatstotal": 174,
-          "seatsused": 2,
-          "available": 172,
-          "occupancy": 1.15
-        },
-        {
           "sessionId": "311017",
           "time": "21:45",
           "hall": "Cinema 4",
@@ -57,17 +39,7 @@
     "tgv-gurney": {
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
-      "sessions": [
-        {
-          "sessionId": "220184",
-          "time": "18:40",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-bukit-tinggi": {
@@ -79,17 +51,7 @@
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [
-        {
-          "sessionId": "324774",
-          "time": "15:00",
-          "hall": "Cinema 1",
-          "seatstotal": 117,
-          "seatsused": 1,
-          "available": 116,
-          "occupancy": 0.85
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     }
   },

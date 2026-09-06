@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-06T14:18:39+08:00",
+  "observedAt": "2026-09-06T19:14:05+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-06",
@@ -26,13 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "924682",
-          "time": "15:20",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "925177",
           "time": "21:20",
@@ -63,13 +56,6 @@
       "epaymentName": "Putrajaya - IOI City Mall (West)",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "340463",
-          "time": "14:45",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
         {
           "sessionId": "340497",
           "time": "19:20",
@@ -137,13 +123,6 @@
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "407061",
-          "time": "15:35",
-          "hall": "9",
-          "hallId": "9",
-          "hallFull": "0"
-        },
         {
           "sessionId": "407063",
           "time": "21:00",
@@ -264,13 +243,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77768",
-          "time": "16:50",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        },
         {
           "sessionId": "78033",
           "time": "20:30",

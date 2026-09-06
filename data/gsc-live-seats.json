@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-06T14:18:40+08:00",
+  "observedAt": "2026-09-06T19:14:05+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -83,38 +83,6 @@
       "officialLocationId": "210",
       "sessions": [
         {
-          "sessionId": "924682",
-          "time": "15:20",
-          "hall": "2",
-          "locationId": "210",
-          "hallId": "2",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "2",
-          "seatNodes": 164,
-          "capacity": 164,
-          "available": 159,
-          "booked": 5,
-          "otherUnavailable": 0,
-          "unavailable": 5,
-          "statusCounts": {
-            "A": 159,
-            "B": 5
-          },
-          "seatTypeCounts": {
-            "N": 154,
-            "H": 2,
-            "T": 6,
-            "W": 2
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=210&hallid=2&showdate=2026-09-06&showtime=1520"
-        },
-        {
           "sessionId": "925177",
           "time": "21:20",
           "hall": "14",
@@ -150,35 +118,6 @@
       "name": "GSC Dataran Pahlawan",
       "officialLocationId": "331",
       "sessions": [
-        {
-          "sessionId": "407061",
-          "time": "15:35",
-          "hall": "9",
-          "locationId": "331",
-          "hallId": "9",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "9",
-          "seatNodes": 99,
-          "capacity": 99,
-          "available": 99,
-          "booked": 0,
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "statusCounts": {
-            "A": 99
-          },
-          "seatTypeCounts": {
-            "N": 97,
-            "H": 2
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=331&hallid=9&showdate=2026-09-06&showtime=1535"
-        },
         {
           "sessionId": "407063",
           "time": "21:00",
@@ -252,36 +191,6 @@
       "officialLocationId": "257",
       "sessions": [
         {
-          "sessionId": "340463",
-          "time": "14:45",
-          "hall": "7",
-          "locationId": "257",
-          "hallId": "7",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "7",
-          "seatNodes": 89,
-          "capacity": 89,
-          "available": 89,
-          "booked": 0,
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "statusCounts": {
-            "A": 89
-          },
-          "seatTypeCounts": {
-            "N": 85,
-            "H": 2,
-            "W": 2
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=257&hallid=7&showdate=2026-09-06&showtime=1445"
-        },
-        {
           "sessionId": "340497",
           "time": "19:20",
           "hall": "7",
@@ -292,13 +201,13 @@
           "hallNo": "7",
           "seatNodes": 89,
           "capacity": 89,
-          "available": 88,
-          "booked": 1,
+          "available": 85,
+          "booked": 4,
           "otherUnavailable": 0,
-          "unavailable": 1,
+          "unavailable": 4,
           "statusCounts": {
-            "A": 88,
-            "B": 1
+            "A": 85,
+            "B": 4
           },
           "seatTypeCounts": {
             "N": 85,
@@ -359,12 +268,13 @@
           "hallNo": "3",
           "seatNodes": 102,
           "capacity": 102,
-          "available": 102,
-          "booked": 0,
+          "available": 100,
+          "booked": 2,
           "otherUnavailable": 0,
-          "unavailable": 0,
+          "unavailable": 2,
           "statusCounts": {
-            "A": 102
+            "A": 100,
+            "B": 2
           },
           "seatTypeCounts": {
             "N": 90,
@@ -384,38 +294,6 @@
       "name": "GSC The Spring, Kuching",
       "officialLocationId": "552",
       "sessions": [
-        {
-          "sessionId": "77768",
-          "time": "16:50",
-          "hall": "3",
-          "locationId": "552",
-          "hallId": "3",
-          "showDate": "2026-09-06",
-          "status": "ok",
-          "hallNo": "3",
-          "seatNodes": 244,
-          "capacity": 244,
-          "available": 236,
-          "booked": 2,
-          "otherUnavailable": 6,
-          "unavailable": 8,
-          "statusCounts": {
-            "D": 6,
-            "A": 236,
-            "B": 2
-          },
-          "seatTypeCounts": {
-            "N": 228,
-            "H": 4,
-            "T": 12
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=552&hallid=3&showdate=2026-09-06&showtime=1650"
-        },
         {
           "sessionId": "78033",
           "time": "20:30",
@@ -449,13 +327,13 @@
     }
   },
   "totals": {
-    "sessionsQueried": 13,
-    "sessionsMeasured": 13,
+    "sessionsQueried": 9,
+    "sessionsMeasured": 9,
     "sessionsLastObserved": 0,
-    "capacity": 1425,
-    "available": 1408,
-    "booked": 11,
-    "otherUnavailable": 6,
-    "unavailable": 17
+    "capacity": 829,
+    "available": 820,
+    "booked": 9,
+    "otherUnavailable": 0,
+    "unavailable": 9
   }
 }
