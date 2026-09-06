@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-06T09:21:55+08:00",
+  "observedAt": "2026-09-06T14:19:22+08:00",
   "businessDate": "2026-09-06",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430535",
-          "time": "13:00",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 1,
-          "available": 75,
-          "occupancy": 1.32
-        },
         {
           "sessionId": "430542",
           "time": "23:15",
@@ -38,9 +29,9 @@
           "time": "16:15",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 5,
-          "available": 136,
-          "occupancy": 3.55
+          "seatsused": 7,
+          "available": 134,
+          "occupancy": 4.96
         },
         {
           "sessionId": "311006",
@@ -68,15 +59,6 @@
       "officialName": "GURNEY PARAGON",
       "sessions": [
         {
-          "sessionId": "220172",
-          "time": "13:15",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 1,
-          "available": 91,
-          "occupancy": 1.09
-        },
-        {
           "sessionId": "220184",
           "time": "18:40",
           "hall": "Cinema 5",
@@ -91,26 +73,7 @@
     "tgv-bukit-tinggi": {
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
-      "sessions": [
-        {
-          "sessionId": "409460",
-          "time": "11:45",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "409468",
-          "time": "14:10",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 3,
-          "available": 112,
-          "occupancy": 2.61
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-1utama": {
