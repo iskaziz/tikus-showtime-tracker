@@ -1,6 +1,6 @@
 {
   "collectorVersion": "11.1",
-  "observedAt": "2026-09-07T06:58:49+08:00",
+  "observedAt": "2026-09-07T08:49:10+08:00",
   "policy": "read-only official GSC discovery; no booking creation",
   "publicMoviePage": {
     "status": "ok",
