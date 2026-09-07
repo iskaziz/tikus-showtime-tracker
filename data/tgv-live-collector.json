@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-07T08:50:06+08:00",
+  "observedAt": "2026-09-07T13:42:28+08:00",
   "businessDate": "2026-09-07",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -122,9 +122,9 @@
           "time": "17:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 0,
-          "available": 117,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 116,
+          "occupancy": 0.85
         }
       ],
       "status": "ok"
