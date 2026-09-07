@@ -1,9 +1,9 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-07T18:45:16+08:00",
+  "observedAt": "2026-09-08T00:06:56+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
-  "businessDate": "2026-09-07",
+  "businessDate": "2026-09-08",
   "cinemas": {
     "gsc-midvalley": {
       "status": "ok",
@@ -27,7 +27,14 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "925192",
+          "sessionId": "924437",
+          "time": "17:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "925196",
           "time": "20:45",
           "hall": "14",
           "hallId": "14",
@@ -57,10 +64,17 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "340491",
-          "time": "20:00",
-          "hall": "6",
-          "hallId": "6",
+          "sessionId": "340482",
+          "time": "15:05",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "340485",
+          "time": "21:50",
+          "hall": "7",
+          "hallId": "7",
           "hallFull": "0"
         }
       ]
@@ -87,7 +101,14 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213754",
+          "sessionId": "213764",
+          "time": "15:15",
+          "hall": "7",
+          "hallId": "7",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "213767",
           "time": "22:25",
           "hall": "7",
           "hallId": "7",
@@ -117,7 +138,14 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "407065",
+          "sessionId": "407068",
+          "time": "15:35",
+          "hall": "9",
+          "hallId": "9",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "407070",
           "time": "21:00",
           "hall": "9",
           "hallId": "9",
@@ -147,7 +175,14 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "289975",
+          "sessionId": "289978",
+          "time": "10:45",
+          "hall": "13",
+          "hallId": "13",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "289977",
           "time": "21:20",
           "hall": "10",
           "hallId": "10",
@@ -177,7 +212,14 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "80314",
+          "sessionId": "80315",
+          "time": "16:05",
+          "hall": "HALL 5",
+          "hallId": "5",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "80317",
           "time": "20:40",
           "hall": "HALL 5",
           "hallId": "5",
@@ -207,7 +249,14 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "77505",
+          "sessionId": "77502",
+          "time": "10:40",
+          "hall": "2",
+          "hallId": "2",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "77503",
           "time": "22:15",
           "hall": "3",
           "hallId": "3",
@@ -237,7 +286,14 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "78038",
+          "sessionId": "78040",
+          "time": "15:40",
+          "hall": "4",
+          "hallId": "4",
+          "hallFull": "0"
+        },
+        {
+          "sessionId": "78042",
           "time": "20:15",
           "hall": "4",
           "hallId": "4",

@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
-  "date": "2026-09-07",
-  "updatedAt": "2026-09-07T18:45:47+08:00",
+  "date": "2026-09-08",
+  "updatedAt": "2026-09-08T00:07:44+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -11,7 +11,39 @@
       "state": "Johor",
       "sessions": [
         {
-          "id": "gsc-paradigm-jb-289975",
+          "id": "gsc-paradigm-jb-289978",
+          "time": "10:45",
+          "hall": "13",
+          "capacity": 83,
+          "booked": 0,
+          "available": 83,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "289978",
+          "officialLocationId": "355",
+          "hallId": "13",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 83
+          },
+          "seatTypeCounts": {
+            "N": 79,
+            "H": 2,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-paradigm-jb-289977",
           "time": "21:20",
           "hall": "10",
           "capacity": 95,
@@ -21,12 +53,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "289975",
+          "sessionId": "289977",
           "officialLocationId": "355",
           "hallId": "10",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -40,7 +72,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -55,8 +87,8 @@
       "state": "Kedah",
       "sessions": [
         {
-          "id": "gsc-aman-central-213754",
-          "time": "22:25",
+          "id": "gsc-aman-central-213764",
+          "time": "15:15",
           "hall": "7",
           "capacity": 89,
           "booked": 0,
@@ -65,12 +97,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "213754",
+          "sessionId": "213764",
           "officialLocationId": "133",
           "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -84,7 +116,39 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-aman-central-213767",
+          "time": "22:25",
+          "hall": "7",
+          "capacity": 89,
+          "booked": 0,
+          "available": 89,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "213767",
+          "officialLocationId": "133",
+          "hallId": "7",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 89
+          },
+          "seatTypeCounts": {
+            "N": 85,
+            "H": 2,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -99,36 +163,70 @@
       "state": "Kuala Lumpur",
       "sessions": [
         {
-          "id": "gsc-midvalley-925192",
-          "time": "20:45",
-          "hall": "14",
-          "capacity": 74,
+          "id": "gsc-midvalley-924437",
+          "time": "17:40",
+          "hall": "2",
+          "capacity": 164,
           "booked": 1,
-          "available": 73,
-          "occupancy": 0.013513513513513514,
+          "available": 163,
+          "occupancy": 0.006097560975609756,
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "925192",
+          "sessionId": "924437",
+          "officialLocationId": "210",
+          "hallId": "2",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 1,
+          "unavailableRate": 0.006097560975609756,
+          "rawUnavailable": 1,
+          "statusCounts": {
+            "A": 163,
+            "B": 1
+          },
+          "seatTypeCounts": {
+            "N": 154,
+            "H": 2,
+            "T": 6,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-midvalley-925196",
+          "time": "20:45",
+          "hall": "14",
+          "capacity": 74,
+          "booked": 2,
+          "available": 72,
+          "occupancy": 0.02702702702702703,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "925196",
           "officialLocationId": "210",
           "hallId": "14",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
-          "unavailable": 1,
-          "unavailableRate": 0.013513513513513514,
-          "rawUnavailable": 1,
+          "unavailable": 2,
+          "unavailableRate": 0.02702702702702703,
+          "rawUnavailable": 2,
           "statusCounts": {
-            "A": 73,
-            "B": 1
+            "A": 72,
+            "B": 2
           },
           "seatTypeCounts": {
             "N": 72,
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -143,8 +241,8 @@
       "state": "Melaka",
       "sessions": [
         {
-          "id": "gsc-dataran-pahlawan-407065",
-          "time": "21:00",
+          "id": "gsc-dataran-pahlawan-407068",
+          "time": "15:35",
           "hall": "9",
           "capacity": 99,
           "booked": 0,
@@ -153,12 +251,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "407065",
+          "sessionId": "407068",
           "officialLocationId": "331",
           "hallId": "9",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -171,7 +269,38 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-dataran-pahlawan-407070",
+          "time": "21:00",
+          "hall": "9",
+          "capacity": 99,
+          "booked": 0,
+          "available": 99,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "407070",
+          "officialLocationId": "331",
+          "hallId": "9",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 99
+          },
+          "seatTypeCounts": {
+            "N": 97,
+            "H": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -186,8 +315,8 @@
       "state": "Pahang",
       "sessions": [
         {
-          "id": "gsc-kuantan-city-mall-80314",
-          "time": "20:40",
+          "id": "gsc-kuantan-city-mall-80315",
+          "time": "16:05",
           "hall": "HALL 5",
           "capacity": 123,
           "booked": 0,
@@ -196,12 +325,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "80314",
+          "sessionId": "80315",
           "officialLocationId": "431",
           "hallId": "5",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -216,7 +345,40 @@
             "W": 1
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-kuantan-city-mall-80317",
+          "time": "20:40",
+          "hall": "HALL 5",
+          "capacity": 123,
+          "booked": 0,
+          "available": 123,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "80317",
+          "officialLocationId": "431",
+          "hallId": "5",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 123
+          },
+          "seatTypeCounts": {
+            "N": 110,
+            "H": 2,
+            "T": 10,
+            "W": 1
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -231,64 +393,28 @@
       "state": "Putrajaya",
       "sessions": [
         {
-          "id": "gsc-ioi-city-mall-340539",
-          "time": "15:35",
-          "hall": "13",
-          "capacity": 134,
-          "booked": 1,
-          "available": 133,
-          "occupancy": 0.007462686567164179,
-          "sourceStatus": "gsc-last-observed",
-          "seatStatus": "last-observed",
-          "bookingUrl": null,
-          "sessionId": "340539",
-          "officialLocationId": "257",
-          "hallId": "13",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-07T13:41:41+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 1,
-          "unavailableRate": 0.007462686567164179,
-          "rawUnavailable": 1,
-          "statusCounts": {
-            "A": 133,
-            "B": 1
-          },
-          "seatTypeCounts": {
-            "N": 130,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00",
-          "isExpired": true,
-          "lastObservedAt": "2026-09-07T13:41:42+08:00"
-        },
-        {
-          "id": "gsc-ioi-city-mall-340491",
-          "time": "20:00",
-          "hall": "6",
+          "id": "gsc-ioi-city-mall-340482",
+          "time": "15:05",
+          "hall": "7",
           "capacity": 89,
-          "booked": 2,
-          "available": 87,
-          "occupancy": 0.02247191011235955,
+          "booked": 0,
+          "available": 89,
+          "occupancy": 0.0,
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "340491",
+          "sessionId": "340482",
           "officialLocationId": "257",
-          "hallId": "6",
+          "hallId": "7",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
-          "unavailable": 2,
-          "unavailableRate": 0.02247191011235955,
-          "rawUnavailable": 2,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
           "statusCounts": {
-            "A": 87,
-            "B": 2
+            "A": 89
           },
           "seatTypeCounts": {
             "N": 85,
@@ -296,7 +422,39 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-ioi-city-mall-340485",
+          "time": "21:50",
+          "hall": "7",
+          "capacity": 89,
+          "booked": 0,
+          "available": 89,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "340485",
+          "officialLocationId": "257",
+          "hallId": "7",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 89
+          },
+          "seatTypeCounts": {
+            "N": 85,
+            "H": 2,
+            "W": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -311,7 +469,39 @@
       "state": "Sabah",
       "sessions": [
         {
-          "id": "gsc-imago-77505",
+          "id": "gsc-imago-77502",
+          "time": "10:40",
+          "hall": "2",
+          "capacity": 108,
+          "booked": 0,
+          "available": 108,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "77502",
+          "officialLocationId": "531",
+          "hallId": "2",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 108
+          },
+          "seatTypeCounts": {
+            "N": 96,
+            "H": 2,
+            "T": 10
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-imago-77503",
           "time": "22:15",
           "hall": "3",
           "capacity": 102,
@@ -321,12 +511,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "77505",
+          "sessionId": "77503",
           "officialLocationId": "531",
           "hallId": "3",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -340,7 +530,7 @@
             "T": 10
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -355,8 +545,8 @@
       "state": "Sarawak",
       "sessions": [
         {
-          "id": "gsc-the-spring-78038",
-          "time": "20:15",
+          "id": "gsc-the-spring-78040",
+          "time": "15:40",
           "hall": "4",
           "capacity": 92,
           "booked": 0,
@@ -365,12 +555,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "78038",
+          "sessionId": "78040",
           "officialLocationId": "552",
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-07T18:45:16+08:00",
+          "observedAt": "2026-09-08T00:06:56+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -383,7 +573,38 @@
             "H": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-07T18:45:16+08:00"
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
+        },
+        {
+          "id": "gsc-the-spring-78042",
+          "time": "20:15",
+          "hall": "4",
+          "capacity": 92,
+          "booked": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "sourceStatus": "gsc-official-api",
+          "seatStatus": "gsc-public-seat-status",
+          "bookingUrl": null,
+          "sessionId": "78042",
+          "officialLocationId": "552",
+          "hallId": "4",
+          "hallFull": "0",
+          "type": "2D",
+          "observedAt": "2026-09-08T00:06:56+08:00",
+          "otherUnavailable": 0,
+          "unavailable": 0,
+          "unavailableRate": 0.0,
+          "rawUnavailable": 0,
+          "statusCounts": {
+            "A": 92
+          },
+          "seatTypeCounts": {
+            "T": 90,
+            "H": 2
+          },
+          "countSemantics": "gsc-A-available-B-booked-other-separate",
+          "seatObservedAt": "2026-09-08T00:06:56+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -396,7 +617,46 @@
       "chain": "TGV",
       "name": "TGV Tebrau City",
       "state": "Johor",
-      "sessions": [],
+      "sessions": [
+        {
+          "id": "tgv-tebrau-430728",
+          "time": "13:00",
+          "hall": "Junior",
+          "capacity": 76,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 76,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430728",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|DUO",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-tebrau-430737",
+          "time": "15:30",
+          "hall": "Junior",
+          "capacity": 76,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 76,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "430737",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|DUO",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        }
+      ],
       "sourceStatus": "tgv-official-api",
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/tgv-tebrau-city.html",
       "officialCinemaId": "TBR",
@@ -409,8 +669,27 @@
       "state": "Kuala Lumpur",
       "sessions": [
         {
-          "id": "tgv-wangsa-walk-311257",
-          "time": "21:15",
+          "id": "tgv-wangsa-walk-311146",
+          "time": "14:20",
+          "hall": "Cinema 4",
+          "capacity": 141,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 141,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "311146",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-wangsa-walk-311141",
+          "time": "18:15",
           "hall": "Cinema 5",
           "capacity": 174,
           "booked": 0,
@@ -421,11 +700,11 @@
           "sourceStatus": "tgv-official-api",
           "seatStatus": "tgv-official-seatstatus",
           "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
-          "sessionId": "311257",
+          "sessionId": "311141",
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "TWIN|SINGLE",
-          "observedAt": "2026-09-07T18:45:47+08:00"
+          "observedAt": "2026-09-08T00:07:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -438,7 +717,46 @@
       "chain": "TGV",
       "name": "TGV Gurney",
       "state": "Pulau Pinang",
-      "sessions": [],
+      "sessions": [
+        {
+          "id": "tgv-gurney-220306",
+          "time": "15:15",
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220306",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-gurney-220315",
+          "time": "17:45",
+          "hall": "Cinema 5",
+          "capacity": 92,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 92,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "220315",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        }
+      ],
       "sourceStatus": "tgv-official-api",
       "sourceUrl": "https://xinemas.com/cinema/in-penang/tgv-gurney-paragon.html",
       "officialCinemaId": "GUR",
@@ -451,7 +769,64 @@
       "state": "Selangor",
       "sessions": [
         {
-          "id": "tgv-bukit-tinggi-409557",
+          "id": "tgv-bukit-tinggi-409582",
+          "time": "14:05",
+          "hall": "Cinema 3",
+          "capacity": 115,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 115,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409582",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-bukit-tinggi-409590",
+          "time": "16:30",
+          "hall": "Cinema 3",
+          "capacity": 115,
+          "booked": 0,
+          "rawSeatsUsed": 0,
+          "available": 115,
+          "occupancy": 0.0,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409590",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-bukit-tinggi-409596",
+          "time": "18:35",
+          "hall": "Cinema 2",
+          "capacity": 115,
+          "booked": 6,
+          "rawSeatsUsed": 6,
+          "available": 109,
+          "occupancy": 5.22,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "409596",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "SINGLE|TWIN",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        },
+        {
+          "id": "tgv-bukit-tinggi-409604",
           "time": "21:20",
           "hall": "Cinema 3",
           "capacity": 115,
@@ -463,11 +838,11 @@
           "sourceStatus": "tgv-official-api",
           "seatStatus": "tgv-official-seatstatus",
           "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
-          "sessionId": "409557",
+          "sessionId": "409604",
           "scheduledFilmId": "HO00025533",
           "experience": "deluxe",
           "seatTypes": "SINGLE|TWIN",
-          "observedAt": "2026-09-07T18:45:47+08:00"
+          "observedAt": "2026-09-08T00:07:44+08:00"
         }
       ],
       "sourceStatus": "tgv-official-api",
@@ -480,7 +855,27 @@
       "chain": "TGV",
       "name": "TGV 1Utama",
       "state": "Selangor",
-      "sessions": [],
+      "sessions": [
+        {
+          "id": "tgv-1utama-324924",
+          "time": "17:00",
+          "hall": "Cinema 1",
+          "capacity": 117,
+          "booked": 1,
+          "rawSeatsUsed": 1,
+          "available": 116,
+          "occupancy": 0.85,
+          "countSemantics": "tgv-seatsused",
+          "sourceStatus": "tgv-official-api",
+          "seatStatus": "tgv-official-seatstatus",
+          "bookingUrl": "https://www.tgv.com.my/movies/details/tikus-2026",
+          "sessionId": "324924",
+          "scheduledFilmId": "HO00025533",
+          "experience": "deluxe",
+          "seatTypes": "TWIN|SINGLE",
+          "observedAt": "2026-09-08T00:07:44+08:00"
+        }
+      ],
       "sourceStatus": "tgv-official-api",
       "sourceUrl": "https://www.tgv.com.my/cinemas/1-utama",
       "officialCinemaId": "BU0",
@@ -515,22 +910,22 @@
     }
   ],
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
-  "totalShowsVerified": 11,
+  "totalShowsVerified": 27,
   "rollover": {
-    "fromDate": "2026-09-06",
-    "toDate": "2026-09-07",
-    "rolledAt": "2026-09-07T01:04:48+08:00"
+    "fromDate": "2026-09-07",
+    "toDate": "2026-09-08",
+    "rolledAt": "2026-09-08T00:05:53+08:00"
   },
   "gscSeatCoverage": {
-    "sessionsMeasured": 9,
+    "sessionsMeasured": 16,
     "sessionsLastObserved": 0,
-    "sessionsQueried": 9,
-    "capacity": 897,
-    "available": 893,
-    "booked": 4,
+    "sessionsQueried": 16,
+    "capacity": 1610,
+    "available": 1607,
+    "booked": 3,
     "otherUnavailable": 0,
-    "unavailable": 4,
+    "unavailable": 3,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-07T18:45:16+08:00"
+    "observedAt": "2026-09-08T00:06:56+08:00"
   }
 }
