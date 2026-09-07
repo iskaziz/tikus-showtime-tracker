@@ -1,38 +1,19 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-07T13:42:28+08:00",
+  "observedAt": "2026-09-07T18:45:47+08:00",
   "businessDate": "2026-09-07",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
     "tgv-tebrau": {
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
-      "sessions": [
-        {
-          "sessionId": "430695",
-          "time": "15:30",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-wangsa-walk": {
       "cinemaid": "WWM",
       "officialName": "SUNWAY WANGSA MALL",
       "sessions": [
-        {
-          "sessionId": "311125",
-          "time": "14:20",
-          "hall": "Cinema 4",
-          "seatstotal": 141,
-          "seatsused": 3,
-          "available": 138,
-          "occupancy": 2.13
-        },
         {
           "sessionId": "311257",
           "time": "21:15",
@@ -48,59 +29,13 @@
     "tgv-gurney": {
       "cinemaid": "GUR",
       "officialName": "GURNEY PARAGON",
-      "sessions": [
-        {
-          "sessionId": "220272",
-          "time": "14:00",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "220283",
-          "time": "16:30",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     },
     "tgv-bukit-tinggi": {
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
       "sessions": [
-        {
-          "sessionId": "409568",
-          "time": "14:05",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "409545",
-          "time": "16:30",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        },
-        {
-          "sessionId": "409562",
-          "time": "18:35",
-          "hall": "Cinema 2",
-          "seatstotal": 115,
-          "seatsused": 2,
-          "available": 113,
-          "occupancy": 1.74
-        },
         {
           "sessionId": "409557",
           "time": "21:20",
@@ -116,17 +51,7 @@
     "tgv-1utama": {
       "cinemaid": "BU0",
       "officialName": "1 UTAMA",
-      "sessions": [
-        {
-          "sessionId": "324822",
-          "time": "17:00",
-          "hall": "Cinema 1",
-          "seatstotal": 117,
-          "seatsused": 1,
-          "available": 116,
-          "occupancy": 0.85
-        }
-      ],
+      "sessions": [],
       "status": "ok"
     }
   },

@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-07T13:41:41+08:00",
+  "observedAt": "2026-09-07T18:45:16+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-07",
@@ -26,13 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "925191",
-          "time": "13:50",
-          "hall": "14",
-          "hallId": "14",
-          "hallFull": "0"
-        },
         {
           "sessionId": "925192",
           "time": "20:45",
@@ -64,13 +57,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "340539",
-          "time": "15:35",
-          "hall": "13",
-          "hallId": "13",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "340491",
           "time": "20:00",
           "hall": "6",
@@ -101,13 +87,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213753",
-          "time": "15:15",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213754",
           "time": "22:25",
           "hall": "7",
@@ -137,13 +116,6 @@
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "407064",
-          "time": "15:35",
-          "hall": "9",
-          "hallId": "9",
-          "hallFull": "0"
-        },
         {
           "sessionId": "407065",
           "time": "21:00",
@@ -205,13 +177,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "80312",
-          "time": "16:05",
-          "hall": "HALL 5",
-          "hallId": "5",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "80314",
           "time": "20:40",
           "hall": "HALL 5",
@@ -271,13 +236,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "78037",
-          "time": "15:40",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
         {
           "sessionId": "78038",
           "time": "20:15",
