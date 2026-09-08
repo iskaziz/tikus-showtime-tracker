@@ -1,9 +1,9 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-08T22:11:48+08:00",
+  "observedAt": "2026-09-09T01:56:02+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
-  "businessDate": "2026-09-08",
+  "businessDate": "2026-09-09",
   "cinemas": {
     "gsc-midvalley": {
       "status": "not-listed-by-official-api",
@@ -23,34 +23,12 @@
       "sessions": []
     },
     "gsc-aman-central": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "133",
-      "officialName": "GSC Aman Central",
-      "locationAttributes": {
-        "id": "133",
-        "name": "GSC Aman Central",
-        "barcode_enabled": "1",
-        "address": "Lot 4-22,  Aman Central\nNo 1,  Lebuhraya Darulaman\nAlor Setar,  Kedah Darul Aman,KDH,05100",
-        "region": "3",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/133(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Alor Setar - Aman Central",
-        "sort": "31",
-        "info": ""
-      },
-      "epaymentName": "Alor Setar - Aman Central",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "213767",
-          "time": "22:25",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "133",
+      "aliases": [
+        "GSC Aman Central"
+      ],
+      "sessions": []
     },
     "gsc-dataran-pahlawan": {
       "status": "not-listed-by-official-api",
@@ -77,34 +55,12 @@
       "sessions": []
     },
     "gsc-imago": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "531",
-      "officialName": "GSC IMAGO Shopping Mall",
-      "locationAttributes": {
-        "id": "531",
-        "name": "GSC IMAGO Shopping Mall",
-        "barcode_enabled": "0",
-        "address": "Lot No. 2-52, Second Floor, IMAGO Shopping Mall, KK Times Square Phase 2, Off Coastal Highway,  Kota Kinabalu\n,SBH,88100",
-        "region": "6",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/531(120x120).jpg",
-        "is_epayment": "0",
-        "epayment_name": "Kota Kinabalu - IMAGO Mall",
-        "sort": "53",
-        "info": ""
-      },
-      "epaymentName": "Kota Kinabalu - IMAGO Mall",
-      "isEpayment": "0",
-      "sessions": [
-        {
-          "sessionId": "77503",
-          "time": "22:15",
-          "hall": "3",
-          "hallId": "3",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "531",
+      "aliases": [
+        "GSC IMAGO Shopping Mall"
+      ],
+      "sessions": []
     },
     "gsc-the-spring": {
       "status": "not-listed-by-official-api",
