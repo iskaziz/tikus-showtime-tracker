@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-08T08:41:51+08:00",
+  "observedAt": "2026-09-08T13:17:15+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -8,36 +8,6 @@
       "name": "GSC Paradigm JB",
       "officialLocationId": "355",
       "sessions": [
-        {
-          "sessionId": "289978",
-          "time": "10:45",
-          "hall": "13",
-          "locationId": "355",
-          "hallId": "13",
-          "showDate": "2026-09-08",
-          "status": "ok",
-          "hallNo": "13",
-          "seatNodes": 83,
-          "capacity": 83,
-          "available": 83,
-          "booked": 0,
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "statusCounts": {
-            "A": 83
-          },
-          "seatTypeCounts": {
-            "N": 79,
-            "H": 2,
-            "W": 2
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=355&hallid=13&showdate=2026-09-08&showtime=1045"
-        },
         {
           "sessionId": "289977",
           "time": "21:20",
@@ -407,36 +377,6 @@
       "officialLocationId": "531",
       "sessions": [
         {
-          "sessionId": "77502",
-          "time": "10:40",
-          "hall": "2",
-          "locationId": "531",
-          "hallId": "2",
-          "showDate": "2026-09-08",
-          "status": "ok",
-          "hallNo": "2",
-          "seatNodes": 108,
-          "capacity": 108,
-          "available": 108,
-          "booked": 0,
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "statusCounts": {
-            "A": 108
-          },
-          "seatTypeCounts": {
-            "N": 96,
-            "H": 2,
-            "T": 10
-          },
-          "maximumSelectableSeats": 12,
-          "rawHallBooked": 0,
-          "rawHallBlocked": 0,
-          "houseSeatsReleased": "0",
-          "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=531&hallid=2&showdate=2026-09-08&showtime=1040"
-        },
-        {
           "sessionId": "77503",
           "time": "22:15",
           "hall": "3",
@@ -534,11 +474,11 @@
     }
   },
   "totals": {
-    "sessionsQueried": 16,
-    "sessionsMeasured": 16,
+    "sessionsQueried": 14,
+    "sessionsMeasured": 14,
     "sessionsLastObserved": 0,
-    "capacity": 1610,
-    "available": 1607,
+    "capacity": 1419,
+    "available": 1416,
     "booked": 3,
     "otherUnavailable": 0,
     "unavailable": 3
