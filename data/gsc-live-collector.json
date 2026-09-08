@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-08T13:17:15+08:00",
+  "observedAt": "2026-09-08T17:57:11+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-08",
@@ -64,13 +64,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "340482",
-          "time": "15:05",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "340485",
           "time": "21:50",
           "hall": "7",
@@ -101,13 +94,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "213764",
-          "time": "15:15",
-          "hall": "7",
-          "hallId": "7",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "213767",
           "time": "22:25",
           "hall": "7",
@@ -137,13 +123,6 @@
       "epaymentName": "Melaka - Dataran Pahlawan",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "407068",
-          "time": "15:35",
-          "hall": "9",
-          "hallId": "9",
-          "hallFull": "0"
-        },
         {
           "sessionId": "407070",
           "time": "21:00",
@@ -205,13 +184,6 @@
       "isEpayment": "0",
       "sessions": [
         {
-          "sessionId": "80315",
-          "time": "16:05",
-          "hall": "HALL 5",
-          "hallId": "5",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "80317",
           "time": "20:40",
           "hall": "HALL 5",
@@ -271,13 +243,6 @@
       "epaymentName": "Kuching - The Spring",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "78040",
-          "time": "15:40",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        },
         {
           "sessionId": "78042",
           "time": "20:15",
