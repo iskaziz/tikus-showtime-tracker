@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-09T09:12:00+08:00",
+  "observedAt": "2026-09-09T14:00:27+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-09",
@@ -26,13 +26,6 @@
       "epaymentName": "Kuala Lumpur - Mid Valley Megamall",
       "isEpayment": "1",
       "sessions": [
-        {
-          "sessionId": "925198",
-          "time": "13:50",
-          "hall": "14",
-          "hallId": "14",
-          "hallFull": "0"
-        },
         {
           "sessionId": "925199",
           "time": "20:45",
@@ -175,13 +168,6 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "289979",
-          "time": "10:45",
-          "hall": "13",
-          "hallId": "13",
-          "hallFull": "0"
-        },
-        {
           "sessionId": "289980",
           "time": "21:20",
           "hall": "10",
@@ -248,13 +234,6 @@
       "epaymentName": "Kota Kinabalu - IMAGO Mall",
       "isEpayment": "0",
       "sessions": [
-        {
-          "sessionId": "77665",
-          "time": "10:30",
-          "hall": "2",
-          "hallId": "2",
-          "hallFull": "0"
-        },
         {
           "sessionId": "77501",
           "time": "22:15",

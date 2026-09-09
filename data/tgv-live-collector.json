@@ -1,6 +1,6 @@
 {
   "collectorVersion": "8.0",
-  "observedAt": "2026-09-09T09:12:48+08:00",
+  "observedAt": "2026-09-09T14:01:11+08:00",
   "businessDate": "2026-09-09",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
   "tracked": {
@@ -8,15 +8,6 @@
       "cinemaid": "TBR",
       "officialName": "TEBRAU CITY",
       "sessions": [
-        {
-          "sessionId": "430769",
-          "time": "13:00",
-          "hall": "Junior",
-          "seatstotal": 76,
-          "seatsused": 0,
-          "available": 76,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "430779",
           "time": "15:30",
@@ -38,9 +29,9 @@
           "time": "14:20",
           "hall": "Cinema 4",
           "seatstotal": 141,
-          "seatsused": 3,
-          "available": 138,
-          "occupancy": 2.13
+          "seatsused": 7,
+          "available": 134,
+          "occupancy": 4.96
         },
         {
           "sessionId": "311170",
@@ -59,15 +50,6 @@
       "officialName": "GURNEY PARAGON",
       "sessions": [
         {
-          "sessionId": "220197",
-          "time": "13:15",
-          "hall": "Cinema 5",
-          "seatstotal": 92,
-          "seatsused": 0,
-          "available": 92,
-          "occupancy": 0.0
-        },
-        {
           "sessionId": "220207",
           "time": "15:45",
           "hall": "Cinema 5",
@@ -83,15 +65,6 @@
       "cinemaid": "BBT",
       "officialName": "BUKIT TINGGI",
       "sessions": [
-        {
-          "sessionId": "409615",
-          "time": "11:45",
-          "hall": "Cinema 3",
-          "seatstotal": 115,
-          "seatsused": 0,
-          "available": 115,
-          "occupancy": 0.0
-        },
         {
           "sessionId": "409623",
           "time": "14:10",
@@ -113,9 +86,9 @@
           "time": "15:00",
           "hall": "Cinema 1",
           "seatstotal": 117,
-          "seatsused": 0,
-          "available": 117,
-          "occupancy": 0.0
+          "seatsused": 1,
+          "available": 116,
+          "occupancy": 0.85
         }
       ],
       "status": "ok"
