@@ -1,0 +1,112 @@
+{
+  "datasetDate": "2026-09-09",
+  "observedAt": "2026-09-09T19:13:21+08:00",
+  "sessions": [
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "chain": "GSC",
+      "time": "21:20",
+      "booked": 1,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 94,
+      "capacity": 95,
+      "occupancy": 0.010526315789473684,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-aman-central",
+      "cinema": "GSC Aman Central",
+      "chain": "GSC",
+      "time": "22:25",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 89,
+      "capacity": 89,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-midvalley",
+      "cinema": "GSC Midvalley Megamall",
+      "chain": "GSC",
+      "time": "20:45",
+      "booked": 5,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 69,
+      "capacity": 74,
+      "occupancy": 0.06756756756756757,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-dataran-pahlawan",
+      "cinema": "GSC Dataran Pahlawan",
+      "chain": "GSC",
+      "time": "21:00",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 99,
+      "capacity": 99,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-kuantan-city-mall",
+      "cinema": "GSC Kuantan City Mall",
+      "chain": "GSC",
+      "time": "20:40",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 123,
+      "capacity": 123,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "chain": "GSC",
+      "time": "21:50",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 89,
+      "capacity": 89,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-imago",
+      "cinema": "GSC Imago Shopping Mall",
+      "chain": "GSC",
+      "time": "22:15",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 102,
+      "capacity": 102,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-the-spring",
+      "cinema": "GSC The Spring, Kuching",
+      "chain": "GSC",
+      "time": "20:15",
+      "booked": 2,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 90,
+      "capacity": 92,
+      "occupancy": 0.021739130434782608,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    }
+  ],
+  "booked": 8,
+  "capacity": 763
+}
