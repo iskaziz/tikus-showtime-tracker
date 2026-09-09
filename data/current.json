@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-09",
-  "updatedAt": "2026-09-09T19:13:15+08:00",
+  "updatedAt": "2026-09-09T23:08:56+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -11,40 +11,19 @@
       "state": "Johor",
       "sessions": [
         {
-          "id": "gsc-paradigm-jb-289980",
+          "id": "gsc-paradigm-jb-2120",
           "time": "21:20",
           "hall": "10",
           "capacity": 95,
           "booked": 1,
           "available": 94,
           "occupancy": 0.010526315789473684,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "289980",
-          "officialLocationId": "355",
-          "hallId": "10",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 1,
-          "unavailableRate": 0.010526315789473684,
-          "rawUnavailable": 1,
-          "statusCounts": {
-            "A": 94,
-            "B": 1
-          },
-          "seatTypeCounts": {
-            "N": 91,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/gsc-paradigm-mall-johor.html",
       "officialLocationId": "355",
       "officialCinemaName": "GSC Paradigm Mall (Johor Bahru)"
@@ -56,39 +35,31 @@
       "state": "Kedah",
       "sessions": [
         {
-          "id": "gsc-aman-central-213775",
+          "id": "gsc-aman-central-1515",
+          "time": "15:15",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-aman-central-2225",
           "time": "22:25",
           "hall": "7",
           "capacity": 89,
           "booked": 0,
           "available": 89,
           "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "213775",
-          "officialLocationId": "133",
-          "hallId": "7",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 89
-          },
-          "seatTypeCounts": {
-            "N": 85,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-alor-setar/gsc-aman-central-alor-setar.html",
       "officialLocationId": "133",
       "officialCinemaName": "GSC Aman Central"
@@ -100,39 +71,19 @@
       "state": "Kuala Lumpur",
       "sessions": [
         {
-          "id": "gsc-midvalley-925199",
+          "id": "gsc-midvalley-2045",
           "time": "20:45",
           "hall": "14",
           "capacity": 74,
           "booked": 5,
           "available": 69,
           "occupancy": 0.06756756756756757,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "925199",
-          "officialLocationId": "210",
-          "hallId": "14",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 5,
-          "unavailableRate": 0.06756756756756757,
-          "rawUnavailable": 5,
-          "statusCounts": {
-            "A": 69,
-            "B": 5
-          },
-          "seatTypeCounts": {
-            "N": 72,
-            "H": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-kuala-lumpur/gsc-mid-valley-megamall-kuala-lumpur.html",
       "officialLocationId": "210",
       "officialCinemaName": "GSC Mid Valley"
@@ -144,38 +95,31 @@
       "state": "Melaka",
       "sessions": [
         {
-          "id": "gsc-dataran-pahlawan-407075",
+          "id": "gsc-dataran-pahlawan-1535",
+          "time": "15:35",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-dataran-pahlawan-2100",
           "time": "21:00",
           "hall": "9",
           "capacity": 99,
           "booked": 0,
           "available": 99,
           "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "407075",
-          "officialLocationId": "331",
-          "hallId": "9",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 99
-          },
-          "seatTypeCounts": {
-            "N": 97,
-            "H": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-melaka/gsc-dataran-pahlawan-melaka.html",
       "officialLocationId": "331",
       "officialCinemaName": "GSC Dataran Pahlawan"
@@ -187,40 +131,31 @@
       "state": "Pahang",
       "sessions": [
         {
-          "id": "gsc-kuantan-city-mall-80318",
+          "id": "gsc-kuantan-city-mall-1605",
+          "time": "16:05",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-kuantan-city-mall-2040",
           "time": "20:40",
           "hall": "HALL 5",
           "capacity": 123,
           "booked": 0,
           "available": 123,
           "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "80318",
-          "officialLocationId": "431",
-          "hallId": "5",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 123
-          },
-          "seatTypeCounts": {
-            "N": 110,
-            "H": 2,
-            "T": 10,
-            "W": 1
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-kuantan/gsc-kuantan-city-mall.html",
       "officialLocationId": "431",
       "officialCinemaName": "GSC Kuantan City Mall"
@@ -232,39 +167,31 @@
       "state": "Putrajaya",
       "sessions": [
         {
-          "id": "gsc-ioi-city-mall-340493",
+          "id": "gsc-ioi-city-mall-1505",
+          "time": "15:05",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-ioi-city-mall-2150",
           "time": "21:50",
           "hall": "7",
           "capacity": 89,
           "booked": 0,
           "available": 89,
           "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "340493",
-          "officialLocationId": "257",
-          "hallId": "7",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 89
-          },
-          "seatTypeCounts": {
-            "N": 85,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-putrajaya/gsc-ioi-city-mall-kuala-lumpur.html",
       "officialLocationId": "257",
       "officialCinemaName": "GSC IOI City Mall (West) (Putrajaya)"
@@ -276,39 +203,19 @@
       "state": "Sabah",
       "sessions": [
         {
-          "id": "gsc-imago-77501",
+          "id": "gsc-imago-2215",
           "time": "22:15",
           "hall": "3",
           "capacity": 102,
           "booked": 0,
           "available": 102,
           "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "77501",
-          "officialLocationId": "531",
-          "hallId": "3",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 102
-          },
-          "seatTypeCounts": {
-            "N": 90,
-            "H": 2,
-            "T": 10
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-kota-kinabalu/gsc-imago-mall.html",
       "officialLocationId": "531",
       "officialCinemaName": "GSC IMAGO Shopping Mall"
@@ -320,39 +227,31 @@
       "state": "Sarawak",
       "sessions": [
         {
-          "id": "gsc-the-spring-78044",
+          "id": "gsc-the-spring-1540",
+          "time": "15:40",
+          "hall": "\u2014",
+          "capacity": null,
+          "booked": null,
+          "available": null,
+          "occupancy": null,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
+        },
+        {
+          "id": "gsc-the-spring-2015",
           "time": "20:15",
           "hall": "4",
           "capacity": 92,
           "booked": 2,
           "available": 90,
           "occupancy": 0.021739130434782608,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "78044",
-          "officialLocationId": "552",
-          "hallId": "4",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-09T19:12:42+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 2,
-          "unavailableRate": 0.021739130434782608,
-          "rawUnavailable": 2,
-          "statusCounts": {
-            "A": 90,
-            "B": 2
-          },
-          "seatTypeCounts": {
-            "T": 90,
-            "H": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-09T19:12:42+08:00"
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-kuching/gsc-the-spring-shopping-mall.html",
       "officialLocationId": "552",
       "officialCinemaName": "GSC The Spring (Kuching)"
@@ -441,22 +340,22 @@
     }
   ],
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
-  "totalShowsVerified": 8,
+  "totalShowsVerified": 13,
   "rollover": {
     "fromDate": "2026-09-08",
     "toDate": "2026-09-09",
     "rolledAt": "2026-09-09T01:55:05+08:00"
   },
   "gscSeatCoverage": {
-    "sessionsMeasured": 8,
+    "sessionsMeasured": 0,
     "sessionsLastObserved": 0,
-    "sessionsQueried": 8,
-    "capacity": 763,
-    "available": 755,
-    "booked": 8,
+    "sessionsQueried": 0,
+    "capacity": 0,
+    "available": 0,
+    "booked": 0,
     "otherUnavailable": 0,
-    "unavailable": 8,
+    "unavailable": 0,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-09T19:12:42+08:00"
+    "observedAt": "2026-09-09T23:08:28+08:00"
   }
 }
