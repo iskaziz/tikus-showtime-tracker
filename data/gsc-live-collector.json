@@ -1,6 +1,6 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-10T19:40:08+08:00",
+  "observedAt": "2026-09-10T23:10:59+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
   "businessDate": "2026-09-10",
@@ -15,34 +15,12 @@
       "sessions": []
     },
     "gsc-ioi-city-mall": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "257",
-      "officialName": "GSC IOI City Mall (West) (Putrajaya)",
-      "locationAttributes": {
-        "id": "257",
-        "name": "GSC IOI City Mall (West) (Putrajaya)",
-        "barcode_enabled": "1",
-        "address": "Lot No. AT5, \nIOI City Mall,\nLebuh IRC, IOI Resort City, \n,PJY,62502",
-        "region": "2",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/257(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Putrajaya - IOI City Mall (West)",
-        "sort": "24",
-        "info": ""
-      },
-      "epaymentName": "Putrajaya - IOI City Mall (West)",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "340565",
-          "time": "20:00",
-          "hall": "6",
-          "hallId": "6",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "257",
+      "aliases": [
+        "GSC IOI City Mall (West) (Putrajaya)"
+      ],
+      "sessions": []
     },
     "gsc-aman-central": {
       "status": "not-listed-by-official-api",
@@ -61,34 +39,12 @@
       "sessions": []
     },
     "gsc-paradigm-jb": {
-      "status": "ok",
-      "matchMethod": "location-id",
-      "officialLocationId": "355",
-      "officialName": "GSC Paradigm Mall (Johor Bahru)",
-      "locationAttributes": {
-        "id": "355",
-        "name": "GSC Paradigm Mall (Johor Bahru)",
-        "barcode_enabled": "1",
-        "address": "7F-01 & 7F-02, Paradigma Kompleks,\nJalan Mewah Ria 2,\nTaman Bukit Mewah,\nJohor Bahru,JHR,81200",
-        "region": "4",
-        "hallgroup": "",
-        "thumb": "https://poster.gsc.com.my/cinema/355(120x120).jpg",
-        "is_epayment": "1",
-        "epayment_name": "Johor Bahru - Paradigm Mall",
-        "sort": "40",
-        "info": ""
-      },
-      "epaymentName": "Johor Bahru - Paradigm Mall",
-      "isEpayment": "1",
-      "sessions": [
-        {
-          "sessionId": "290148",
-          "time": "20:00",
-          "hall": "4",
-          "hallId": "4",
-          "hallFull": "0"
-        }
-      ]
+      "status": "not-listed-by-official-api",
+      "expectedLocationId": "355",
+      "aliases": [
+        "GSC Paradigm Mall (Johor Bahru)"
+      ],
+      "sessions": []
     },
     "gsc-kuantan-city-mall": {
       "status": "not-listed-by-official-api",
