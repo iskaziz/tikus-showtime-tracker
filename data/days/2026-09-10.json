@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
-  "date": "2026-09-11",
-  "updatedAt": "2026-09-11T02:28:45+08:00",
+  "date": "2026-09-10",
+  "updatedAt": "2026-09-10T23:11:26+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -11,39 +11,19 @@
       "state": "Johor",
       "sessions": [
         {
-          "id": "gsc-paradigm-jb-290084",
+          "id": "gsc-paradigm-jb-2000",
           "time": "20:00",
           "hall": "4",
           "capacity": 77,
-          "booked": 0,
-          "available": 77,
-          "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "290084",
-          "officialLocationId": "355",
-          "hallId": "4",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-11T02:28:17+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 77
-          },
-          "seatTypeCounts": {
-            "N": 73,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-11T02:28:18+08:00"
+          "booked": 1,
+          "available": 76,
+          "occupancy": 0.012987012987012988,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-johor-bahru/gsc-paradigm-mall-johor.html",
       "officialLocationId": "355",
       "officialCinemaName": "GSC Paradigm Mall (Johor Bahru)"
@@ -95,39 +75,19 @@
       "state": "Putrajaya",
       "sessions": [
         {
-          "id": "gsc-ioi-city-mall-340671",
+          "id": "gsc-ioi-city-mall-2000",
           "time": "20:00",
           "hall": "6",
           "capacity": 89,
-          "booked": 0,
-          "available": 89,
-          "occupancy": 0.0,
-          "sourceStatus": "gsc-official-api",
-          "seatStatus": "gsc-public-seat-status",
-          "bookingUrl": null,
-          "sessionId": "340671",
-          "officialLocationId": "257",
-          "hallId": "6",
-          "hallFull": "0",
-          "type": "2D",
-          "observedAt": "2026-09-11T02:28:17+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
-          "statusCounts": {
-            "A": 89
-          },
-          "seatTypeCounts": {
-            "N": 85,
-            "H": 2,
-            "W": 2
-          },
-          "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-11T02:28:18+08:00"
+          "booked": 1,
+          "available": 88,
+          "occupancy": 0.011235955056179775,
+          "sourceStatus": "fallback-showtime-only",
+          "seatStatus": "official-gsc-showtime-not-listed",
+          "bookingUrl": null
         }
       ],
-      "sourceStatus": "gsc-official-api",
+      "sourceStatus": "fallback-showtimes-official-gsc-not-listed",
       "sourceUrl": "https://xinemas.com/cinema/in-putrajaya/gsc-ioi-city-mall-kuala-lumpur.html",
       "officialLocationId": "257",
       "officialCinemaName": "GSC IOI City Mall (West) (Putrajaya)"
@@ -238,20 +198,22 @@
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
   "totalShowsVerified": 2,
   "rollover": {
-    "fromDate": "2026-09-10",
-    "toDate": "2026-09-11",
-    "rolledAt": "2026-09-11T02:27:13+08:00"
+    "fromDate": "2026-09-09",
+    "toDate": "2026-09-10",
+    "rolledAt": "2026-09-10T02:36:00+08:00"
   },
   "gscSeatCoverage": {
-    "sessionsMeasured": 2,
+    "sessionsMeasured": 0,
     "sessionsLastObserved": 0,
-    "sessionsQueried": 2,
-    "capacity": 166,
-    "available": 166,
+    "sessionsQueried": 0,
+    "capacity": 0,
+    "available": 0,
     "booked": 0,
     "otherUnavailable": 0,
     "unavailable": 0,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-11T02:28:18+08:00"
-  }
+    "observedAt": "2026-09-10T23:11:00+08:00"
+  },
+  "archiveStatus": "automatic-rollover",
+  "archivedAt": "2026-09-11T02:27:13+08:00"
 }
