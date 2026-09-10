@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-10T14:21:40+08:00",
+  "observedAt": "2026-09-10T19:40:14+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -180,7 +180,11 @@
   "pageTitleAfter": "TGV",
   "urlAfter": "https://www.tgv.com.my/not-found",
   "bodyAfterBuySample": "All States/Areas\n\nSet your location\nGet the best offers and content in your area!\nMovies\nCinemas\nFood & Drinks\nEvents & Fun\nEvents\nStories\nPromotions\nMore\nAbout MovieClub\nExperiences\nBook a Hall with Us\nNews\nSupport\nAbout Us\nSign in\nOops, page not found\nPlease try again later.\n\nBack to Home\n\nMovies\nFood & Drinks\nExperiences\nCinemas\nEvents\nStories\nPromotions\nAbout MovieClub\nAbout Us\nNews\nSupport\nContact us\nConnect with us\nDownload TGV app\nTerms & Conditions\n Copyright Notice\n Privacy Policy\n Disclaimer\n Whistleblowing Policy\n ABC Policy\nCopyright Reserved \u00a9 2026 TGV Cinemas Sdn. Bhd. All Rights Reserved.\nUnlock your rewards\nby completing your\nprofile now\nNotifications\n0\nMARK ALL AS READ",
-  "sourceUUIDs": [],
+  "sourceUUIDs": [
+    "b4368166-cacf-4fb9-a061-c9a67a93fef5",
+    "3f806546-9d62-4d9d-9657-09019d1f18c0",
+    "7fcb3f84-86a9-4b57-bab0-ab338fb8fd50"
+  ],
   "cinemaClicks": [],
   "bodyFinalSample": "All States/Areas\n\nSet your location\nGet the best offers and content in your area!\nMovies\nCinemas\nFood & Drinks\nEvents & Fun\nEvents\nStories\nPromotions\nMore\nAbout MovieClub\nExperiences\nBook a Hall with Us\nNews\nSupport\nAbout Us\nSign in\nOops, page not found\nPlease try again later.\n\nBack to Home\n\nMovies\nFood & Drinks\nExperiences\nCinemas\nEvents\nStories\nPromotions\nAbout MovieClub\nAbout Us\nNews\nSupport\nContact us\nConnect with us\nDownload TGV app\nTerms & Conditions\n Copyright Notice\n Privacy Policy\n Disclaimer\n Whistleblowing Policy\n ABC Policy\nCopyright Reserved \u00a9 2026 TGV Cinemas Sdn. Bhd. All Rights Reserved.\nUnlock your rewards\nby completing your\nprofile now\nNotifications\n0\nMARK ALL AS READ"
 }
