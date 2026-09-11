@@ -1,0 +1,34 @@
+{
+  "datasetDate": "2026-09-11",
+  "observedAt": "2026-09-11T09:06:22+08:00",
+  "sessions": [
+    {
+      "cinemaId": "gsc-paradigm-jb",
+      "cinema": "GSC Paradigm JB",
+      "chain": "GSC",
+      "time": "20:00",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 77,
+      "capacity": 77,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    },
+    {
+      "cinemaId": "gsc-ioi-city-mall",
+      "cinema": "GSC IOI City Mall",
+      "chain": "GSC",
+      "time": "20:00",
+      "booked": 0,
+      "rawSeatsUsed": null,
+      "otherUnavailable": 0,
+      "available": 89,
+      "capacity": 89,
+      "occupancy": 0.0,
+      "countSemantics": "gsc-A-available-B-booked-other-separate"
+    }
+  ],
+  "booked": 0,
+  "capacity": 166
+}
