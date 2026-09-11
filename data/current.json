@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-11",
-  "updatedAt": "2026-09-11T13:59:55+08:00",
+  "updatedAt": "2026-09-11T19:02:24+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -16,7 +16,7 @@
           "hall": "4",
           "capacity": 77,
           "booked": 0,
-          "available": 77,
+          "available": 75,
           "occupancy": 0.0,
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
@@ -26,13 +26,14 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-11T13:59:23+08:00",
-          "otherUnavailable": 0,
-          "unavailable": 0,
-          "unavailableRate": 0.0,
-          "rawUnavailable": 0,
+          "observedAt": "2026-09-11T19:01:57+08:00",
+          "otherUnavailable": 2,
+          "unavailable": 2,
+          "unavailableRate": 0.025974025974025976,
+          "rawUnavailable": 2,
           "statusCounts": {
-            "A": 77
+            "A": 75,
+            "T": 2
           },
           "seatTypeCounts": {
             "N": 73,
@@ -40,7 +41,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-11T13:59:23+08:00"
+          "seatObservedAt": "2026-09-11T19:01:57+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -110,7 +111,7 @@
           "hallId": "6",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-11T13:59:23+08:00",
+          "observedAt": "2026-09-11T19:01:57+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -124,7 +125,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-11T13:59:23+08:00"
+          "seatObservedAt": "2026-09-11T19:01:57+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -247,11 +248,11 @@
     "sessionsLastObserved": 0,
     "sessionsQueried": 2,
     "capacity": 166,
-    "available": 166,
+    "available": 164,
     "booked": 0,
-    "otherUnavailable": 0,
-    "unavailable": 0,
+    "otherUnavailable": 2,
+    "unavailable": 2,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-11T13:59:23+08:00"
+    "observedAt": "2026-09-11T19:01:57+08:00"
   }
 }
