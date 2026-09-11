@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-12T05:19:49+08:00",
+  "observedAt": "2026-09-12T07:28:20+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -181,9 +181,9 @@
   "urlAfter": "https://www.tgv.com.my/not-found",
   "bodyAfterBuySample": "All States/Areas\n\nSet your location\nGet the best offers and content in your area!\nMovies\nCinemas\nFood & Drinks\nEvents & Fun\nEvents\nStories\nPromotions\nMore\nAbout MovieClub\nExperiences\nBook a Hall with Us\nNews\nSupport\nAbout Us\nSign in\nOops, page not found\nPlease try again later.\n\nBack to Home\n\nMovies\nFood & Drinks\nExperiences\nCinemas\nEvents\nStories\nPromotions\nAbout MovieClub\nAbout Us\nNews\nSupport\nContact us\nConnect with us\nDownload TGV app\nTerms & Conditions\n Copyright Notice\n Privacy Policy\n Disclaimer\n Whistleblowing Policy\n ABC Policy\nCopyright Reserved \u00a9 2026 TGV Cinemas Sdn. Bhd. All Rights Reserved.\nUnlock your rewards\nby completing your\nprofile now\nNotifications\n0\nMARK ALL AS READ",
   "sourceUUIDs": [
-    "f80935d5-5c13-43ba-81e6-00c878b1be10",
-    "e82b2b5c-1338-4222-b94e-f8df1cd1758f",
-    "648c9e3b-8908-4486-bfe9-7c1fc4f44b35"
+    "f3ad1e92-e982-44a9-97ef-a70bbadb9d04",
+    "b805c87b-db81-4306-837a-589b814959d1",
+    "ac399590-2382-4069-83b5-1c7969add94d"
   ],
   "cinemaClicks": [],
   "bodyFinalSample": "All States/Areas\n\nSet your location\nGet the best offers and content in your area!\nMovies\nCinemas\nFood & Drinks\nEvents & Fun\nEvents\nStories\nPromotions\nMore\nAbout MovieClub\nExperiences\nBook a Hall with Us\nNews\nSupport\nAbout Us\nSign in\nOops, page not found\nPlease try again later.\n\nBack to Home\n\nMovies\nFood & Drinks\nExperiences\nCinemas\nEvents\nStories\nPromotions\nAbout MovieClub\nAbout Us\nNews\nSupport\nContact us\nConnect with us\nDownload TGV app\nTerms & Conditions\n Copyright Notice\n Privacy Policy\n Disclaimer\n Whistleblowing Policy\n ABC Policy\nCopyright Reserved \u00a9 2026 TGV Cinemas Sdn. Bhd. All Rights Reserved.\nUnlock your rewards\nby completing your\nprofile now\nNotifications\n0\nMARK ALL AS READ"
