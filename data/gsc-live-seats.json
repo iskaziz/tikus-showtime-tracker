@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-12T09:24:49+08:00",
+  "observedAt": "2026-09-12T14:10:43+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -19,13 +19,13 @@
           "hallNo": "4",
           "seatNodes": 77,
           "capacity": 77,
-          "available": 75,
-          "booked": 2,
+          "available": 73,
+          "booked": 4,
           "otherUnavailable": 0,
-          "unavailable": 2,
+          "unavailable": 4,
           "statusCounts": {
-            "A": 75,
-            "B": 2
+            "A": 73,
+            "B": 4
           },
           "seatTypeCounts": {
             "N": 73,
@@ -114,9 +114,9 @@
     "sessionsMeasured": 2,
     "sessionsLastObserved": 0,
     "capacity": 166,
-    "available": 162,
-    "booked": 4,
+    "available": 160,
+    "booked": 6,
     "otherUnavailable": 0,
-    "unavailable": 4
+    "unavailable": 6
   }
 }
