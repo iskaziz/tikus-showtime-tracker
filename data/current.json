@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-09-13",
-  "updatedAt": "2026-09-13T07:05:02+08:00",
+  "updatedAt": "2026-09-13T09:01:09+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -26,7 +26,7 @@
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-13T07:04:35+08:00",
+          "observedAt": "2026-09-13T09:00:36+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -40,7 +40,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-13T07:04:35+08:00"
+          "seatObservedAt": "2026-09-13T09:00:37+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -110,7 +110,7 @@
           "hallId": "6",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-13T07:04:35+08:00",
+          "observedAt": "2026-09-13T09:00:36+08:00",
           "otherUnavailable": 0,
           "unavailable": 2,
           "unavailableRate": 0.02247191011235955,
@@ -125,7 +125,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-13T07:04:35+08:00"
+          "seatObservedAt": "2026-09-13T09:00:37+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -253,6 +253,6 @@
     "otherUnavailable": 0,
     "unavailable": 2,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-13T07:04:35+08:00"
+    "observedAt": "2026-09-13T09:00:37+08:00"
   }
 }
