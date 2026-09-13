@@ -638,6 +638,15 @@
       "qualifiedMentions24h": null,
       "publicEngagement24h": null,
       "file": "audience-history/2026-09-14/20260914T015520+0800.json"
+    },
+    {
+      "observedAt": "2026-09-14T04:20:17+08:00",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "qualifiedMentions24h": null,
+      "publicEngagement24h": null,
+      "file": "audience-history/2026-09-14/20260914T042017+0800.json"
     }
   ]
 }
