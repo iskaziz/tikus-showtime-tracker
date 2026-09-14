@@ -1,6 +1,6 @@
 {
   "collectorVersion": "17.0",
-  "observedAt": "2026-09-14T18:53:08+08:00",
+  "observedAt": "2026-09-15T00:46:59+08:00",
   "policy": "official public GSC seat-status XML; read-only; no transaction, seat selection, lock or payment",
   "countSemantics": "capacity = returned seat nodes; available = status A; booked = status B; otherUnavailable = all non-A/non-B states",
   "cinemas": {
@@ -9,12 +9,12 @@
       "officialLocationId": "355",
       "sessions": [
         {
-          "sessionId": "290170",
+          "sessionId": "290201",
           "time": "20:00",
           "hall": "4",
           "locationId": "355",
           "hallId": "4",
-          "showDate": "2026-09-14",
+          "showDate": "2026-09-15",
           "status": "ok",
           "hallNo": "4",
           "seatNodes": 77,
@@ -36,7 +36,7 @@
           "rawHallBlocked": 0,
           "houseSeatsReleased": "0",
           "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=355&hallid=4&showdate=2026-09-14&showtime=2000"
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=355&hallid=4&showdate=2026-09-15&showtime=2000"
         }
       ]
     },
@@ -65,12 +65,12 @@
       "officialLocationId": "257",
       "sessions": [
         {
-          "sessionId": "340580",
+          "sessionId": "340611",
           "time": "20:00",
           "hall": "6",
           "locationId": "257",
           "hallId": "6",
-          "showDate": "2026-09-14",
+          "showDate": "2026-09-15",
           "status": "ok",
           "hallNo": "6",
           "seatNodes": 89,
@@ -92,7 +92,7 @@
           "rawHallBlocked": 0,
           "houseSeatsReleased": "0",
           "reservedReleased": "N",
-          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=257&hallid=6&showdate=2026-09-14&showtime=2000"
+          "endpoint": "https://epaymentapi.gsc.com.my/showtimews/service.asmx/getHallSeatStatus?locationid=257&hallid=6&showdate=2026-09-15&showtime=2000"
         }
       ]
     },

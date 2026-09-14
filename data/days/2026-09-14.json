@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
-  "date": "2026-09-15",
-  "updatedAt": "2026-09-15T00:47:25+08:00",
+  "date": "2026-09-14",
+  "updatedAt": "2026-09-14T18:53:36+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -11,7 +11,7 @@
       "state": "Johor",
       "sessions": [
         {
-          "id": "gsc-paradigm-jb-290201",
+          "id": "gsc-paradigm-jb-290170",
           "time": "20:00",
           "hall": "4",
           "capacity": 77,
@@ -21,12 +21,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "290201",
+          "sessionId": "290170",
           "officialLocationId": "355",
           "hallId": "4",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-15T00:46:58+08:00",
+          "observedAt": "2026-09-14T18:53:08+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -40,7 +40,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-15T00:46:59+08:00"
+          "seatObservedAt": "2026-09-14T18:53:08+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -95,7 +95,7 @@
       "state": "Putrajaya",
       "sessions": [
         {
-          "id": "gsc-ioi-city-mall-340611",
+          "id": "gsc-ioi-city-mall-340580",
           "time": "20:00",
           "hall": "6",
           "capacity": 89,
@@ -105,12 +105,12 @@
           "sourceStatus": "gsc-official-api",
           "seatStatus": "gsc-public-seat-status",
           "bookingUrl": null,
-          "sessionId": "340611",
+          "sessionId": "340580",
           "officialLocationId": "257",
           "hallId": "6",
           "hallFull": "0",
           "type": "2D",
-          "observedAt": "2026-09-15T00:46:58+08:00",
+          "observedAt": "2026-09-14T18:53:08+08:00",
           "otherUnavailable": 0,
           "unavailable": 0,
           "unavailableRate": 0.0,
@@ -124,7 +124,7 @@
             "W": 2
           },
           "countSemantics": "gsc-A-available-B-booked-other-separate",
-          "seatObservedAt": "2026-09-15T00:46:59+08:00"
+          "seatObservedAt": "2026-09-14T18:53:08+08:00"
         }
       ],
       "sourceStatus": "gsc-official-api",
@@ -238,9 +238,9 @@
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
   "totalShowsVerified": 2,
   "rollover": {
-    "fromDate": "2026-09-14",
-    "toDate": "2026-09-15",
-    "rolledAt": "2026-09-15T00:46:00+08:00"
+    "fromDate": "2026-09-13",
+    "toDate": "2026-09-14",
+    "rolledAt": "2026-09-14T01:55:20+08:00"
   },
   "gscSeatCoverage": {
     "sessionsMeasured": 2,
@@ -252,6 +252,8 @@
     "otherUnavailable": 0,
     "unavailable": 0,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-09-15T00:46:59+08:00"
-  }
+    "observedAt": "2026-09-14T18:53:08+08:00"
+  },
+  "archiveStatus": "automatic-rollover",
+  "archivedAt": "2026-09-15T00:46:00+08:00"
 }

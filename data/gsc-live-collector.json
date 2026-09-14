@@ -1,9 +1,9 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-14T18:53:08+08:00",
+  "observedAt": "2026-09-15T00:46:58+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
-  "businessDate": "2026-09-14",
+  "businessDate": "2026-09-15",
   "cinemas": {
     "gsc-midvalley": {
       "status": "not-listed-by-official-api",
@@ -36,7 +36,7 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "340580",
+          "sessionId": "340611",
           "time": "20:00",
           "hall": "6",
           "hallId": "6",
@@ -82,7 +82,7 @@
       "isEpayment": "1",
       "sessions": [
         {
-          "sessionId": "290170",
+          "sessionId": "290201",
           "time": "20:00",
           "hall": "4",
           "hallId": "4",
