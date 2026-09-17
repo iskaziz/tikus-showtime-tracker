@@ -1,9 +1,9 @@
 {
   "collectorVersion": "19.5",
-  "observedAt": "2026-09-17T23:13:40+08:00",
+  "observedAt": "2026-09-18T03:04:27+08:00",
   "parentId": "6363",
   "childCode": "1000005309",
-  "businessDate": "2026-09-17",
+  "businessDate": "2026-09-18",
   "cinemas": {
     "gsc-midvalley": {
       "status": "not-listed-by-official-api",
