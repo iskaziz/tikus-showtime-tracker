@@ -158,8 +158,14 @@
     },
     {
       "date": "2026-09-29",
-      "file": "current.json",
+      "file": "days/2026-09-29.json",
       "label": "2026-09-29",
+      "status": "archived"
+    },
+    {
+      "date": "2026-09-30",
+      "file": "current.json",
+      "label": "2026-09-30",
       "status": "current"
     }
   ]
