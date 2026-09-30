@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-09-30T15:29:20+08:00",
+  "observedAt": "2026-09-30T22:10:00+08:00",
   "policy": "read-only pre-seat-selection inspection",
   "moviePage": "https://www.gsc.com.my/movie/tikus/",
   "showtimePage": "https://epaymentwebapp.gsc.com.my/showtime-by-movies",
@@ -39,12 +39,12 @@
   },
   "networkCandidates": [
     {
-      "url": "https://epaymentwebapp.gsc.com.my/src_app_layouts_auth-layout_auth-layout_module_ts.95eb3dfb9bf6865e.js",
+      "url": "https://epaymentwebapp.gsc.com.my/src_app_layouts_auth-layout_auth-layout_module_ts.ea51e82d9216fbeb.js",
       "status": 200,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
-      "url": "https://epaymentwebapp.gsc.com.my/src_app_layouts_content-layout_content-layout_module_ts.8ebfe64bd4205829.js",
+      "url": "https://epaymentwebapp.gsc.com.my/src_app_layouts_content-layout_content-layout_module_ts.172febaed570f960.js",
       "status": 200,
       "contentType": "text/javascript; charset=utf-8"
     }
