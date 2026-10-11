@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-10-11T15:50:16+08:00",
+  "observedAt": "2026-10-11T22:37:56+08:00",
   "policy": "read-only pre-seat-selection inspection",
   "moviePage": "https://www.gsc.com.my/movie/tikus/",
   "showtimePage": "https://epaymentwebapp.gsc.com.my/showtime-by-movies",
@@ -38,11 +38,6 @@
     }
   },
   "networkCandidates": [
-    {
-      "url": "https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=255&t=2&li=gpt_m202610080101&jk=1308073884104557&bg=!VFelVzXNAAbHcf5V53E7AEcBe5WfOGsqT7LOjhrwJDcjF-6WAIEqgNMTVOPCzOeMsv92yV5tJeWwAhTcV3PWmmzFS745kTdNSSw3UFhYl1Y8dSNpm3xqkgIAAABSUgAAAARoAQd-ADWuv1Ms7kLR36_mXrOK50B8MjzMTiwhu94oLnDXU-uW-_YzpS_xjrZTLDvPDdhIc0Wu5IPVNwoARWd2ud6a8tZecznADFr9-idT6yijnjUcf9gwiBl4e6roRZn3UFUExynRDTj2iwGf3HrpcfsQkX-LNd4GIbhSgdL4GRxUWZkCleGqyxPdb1ZtKU3Dn5zldzh-_Uq7cX8icuxncJsDlY2YQJwfbtNWkVEuik0RaQHLxB0kmLNawAHBqn8hgRrD_JTaS0jC_k3IvI-u10Z7h92g7M9QnSGkCHS7EMg0f8cXj7T0el--SVp_e2wxFwryMoNGPhV6JnGK15wEZeIQIubti3pCaBVLJtImWZqEpuEZ3W2qTBr7lzUSopU7sl9BpiHTHqbaHF9g_-45JXcM4fuyyeJ-agsm5dV18IhRNCH6bjHYbYBKTiE0pOt7Fg9c4wqxYcQSkQ2mMFKi3NHn9yASQxNSv7YU6uQc6B8X5ngYSdk5d4H0GgFmxJsXwdVRhAlLwBGJ7Z-NzbpBDPQk_rbyaVWOu3Fpe8g1mc8iYopxjviAaNW2US3fzOkpebLup1QhW4fqC5gR06Zd2CjofgUXJdI6blwlhUaMyvqebor1wPRzWhjK8yS2Rx_DODUgE_TU4iuhfQ0rVtIMsbXofFaruSExugD60IXOdEddTrWFJ--haE3nWQ8pnV5DFzqKjsFAj2GWnpk7K1Ftqr6kmjZPQcohUNajnstwZFOzXK-TxobSOc2l2Vd6kkqmIGSJQj6fnEGumN-YWHCsrItkbZuBU7G5ylmp9awNFge8tztPbZgtL8rTLTCpRvhuAu-kGk_CTqkUgLxUlZwrUEMMNWTZZonG7n-c-M4QRSCoKlVXc2HFJW_DGkRhPg46pNzSeW0Ja5Q6dUORNuDWLfc0C1fdOgv8y2NetBbiqRIh6QEbYRCBrFUBjnh9_8GyLkqKlTkjB1sJ2BvoCGvzDl6K1hG_gas92m5q-Tn6yabRQdOru0o5SWnupFCUkYeZF7nZ9vMqs6Mpn5hkzt-LgNRzzrOVC4Qxg64",
-      "status": 204,
-      "contentType": "image/"
-    },
     {
       "url": "https://epaymentwebapp.gsc.com.my/src_app_layouts_auth-layout_auth-layout_module_ts.ea51e82d9216fbeb.js",
       "status": 200,
