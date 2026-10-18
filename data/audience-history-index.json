@@ -2348,6 +2348,15 @@
       "qualifiedMentions24h": null,
       "publicEngagement24h": null,
       "file": "audience-history/2026-10-18/20261018T123124+0800.json"
+    },
+    {
+      "observedAt": "2026-10-18T17:05:40+08:00",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "qualifiedMentions24h": null,
+      "publicEngagement24h": null,
+      "file": "audience-history/2026-10-18/20261018T170540+0800.json"
     }
   ]
 }
