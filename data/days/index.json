@@ -272,8 +272,14 @@
     },
     {
       "date": "2026-10-18",
-      "file": "current.json",
+      "file": "days/2026-10-18.json",
       "label": "2026-10-18",
+      "status": "archived"
+    },
+    {
+      "date": "2026-10-19",
+      "file": "current.json",
+      "label": "2026-10-19",
       "status": "current"
     }
   ]
