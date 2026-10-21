@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
-  "date": "2026-10-21",
-  "updatedAt": "2026-10-21T22:21:46+08:00",
+  "date": "2026-10-22",
+  "updatedAt": "2026-10-22T02:49:46+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -170,9 +170,9 @@
   "showtimeCoverage": "16 confirmed tracker locations: 8 GSC, 5 TGV, 2 Paragon, 1 Mega Cineplex.",
   "totalShowsVerified": 0,
   "rollover": {
-    "fromDate": "2026-10-20",
-    "toDate": "2026-10-21",
-    "rolledAt": "2026-10-21T01:53:55+08:00"
+    "fromDate": "2026-10-21",
+    "toDate": "2026-10-22",
+    "rolledAt": "2026-10-22T02:48:27+08:00"
   },
   "gscSeatCoverage": {
     "sessionsMeasured": 0,
@@ -184,6 +184,6 @@
     "otherUnavailable": 0,
     "unavailable": 0,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-10-21T22:21:18+08:00"
+    "observedAt": "2026-10-22T02:49:21+08:00"
   }
 }
