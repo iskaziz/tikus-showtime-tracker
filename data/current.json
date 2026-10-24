@@ -1,7 +1,7 @@
 {
   "movie": "TIKUS!",
   "date": "2026-10-24",
-  "updatedAt": "2026-10-24T13:53:13+08:00",
+  "updatedAt": "2026-10-24T18:18:07+08:00",
   "seatDataMode": "tgv-live-official-api-plus-other-sources",
   "cinemas": [
     {
@@ -184,6 +184,6 @@
     "otherUnavailable": 0,
     "unavailable": 0,
     "countSemantics": "gsc-A-available-B-booked-other-separate",
-    "observedAt": "2026-10-24T13:52:48+08:00"
+    "observedAt": "2026-10-24T18:17:45+08:00"
   }
 }
