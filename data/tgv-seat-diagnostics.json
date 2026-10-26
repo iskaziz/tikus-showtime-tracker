@@ -1,5 +1,5 @@
 {
-  "observedAt": "2026-10-26T06:27:25+08:00",
+  "observedAt": "2026-10-26T08:33:29+08:00",
   "policy": "read-only booking discovery; no seat selection",
   "moviePage": "https://www.tgv.com.my/movie/tikus-2026",
   "movieId": "7b2216d1-27d8-479e-b420-8ab157847aa6",
@@ -18,6 +18,13 @@
     }
   },
   "apiTraffic": [
+    {
+      "url": "https://api.tgv.com.my/api/navmenu/v1/GetNavMenuTree",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "postData": "{\"itemkeys\":[\"header-primary\",\"footer-primary\",\"footer-secondary\"]}"
+    },
     {
       "url": "https://api.tgv.com.my/api/settings/v1/getsettings",
       "method": "GET",
