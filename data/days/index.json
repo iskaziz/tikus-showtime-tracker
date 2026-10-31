@@ -350,8 +350,14 @@
     },
     {
       "date": "2026-10-31",
-      "file": "current.json",
+      "file": "days/2026-10-31.json",
       "label": "2026-10-31",
+      "status": "archived"
+    },
+    {
+      "date": "2026-11-01",
+      "file": "current.json",
+      "label": "2026-11-01",
       "status": "current"
     }
   ]
