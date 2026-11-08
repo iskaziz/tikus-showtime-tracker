@@ -398,8 +398,14 @@
     },
     {
       "date": "2026-11-08",
-      "file": "current.json",
+      "file": "days/2026-11-08.json",
       "label": "2026-11-08",
+      "status": "archived"
+    },
+    {
+      "date": "2026-11-09",
+      "file": "current.json",
+      "label": "2026-11-09",
       "status": "current"
     }
   ]
