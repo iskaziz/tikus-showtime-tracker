@@ -1,11 +1,11 @@
 {
   "collectorVersion": "12.0",
-  "observedAt": "2026-11-10T03:48:25+08:00",
+  "observedAt": "2026-11-10T10:32:59+08:00",
   "policy": "static JS inspection only; no candidate booking/seat endpoint invoked",
   "scriptUrls": [
     "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
     "https://epaymentwebapp.gsc.com.my/assets/external/bridge.js",
-    "https://epaymentwebapp.gsc.com.my/runtime.79a935371feeddfe.js",
+    "https://epaymentwebapp.gsc.com.my/runtime.0e12b465093cf2b9.js",
     "https://epaymentwebapp.gsc.com.my/polyfills.ba7166d7dadf6547.js",
     "https://epaymentwebapp.gsc.com.my/vendor.a16c75cdd7e1e793.js",
     "https://epaymentwebapp.gsc.com.my/main.4e91078f96f52028.js"
