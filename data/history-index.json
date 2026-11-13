@@ -2694,6 +2694,13 @@
       "booked": null,
       "capacity": null,
       "file": "history/2026-11-13/20261113T104813+0800.json"
+    },
+    {
+      "datasetDate": "2026-11-13",
+      "observedAt": "2026-11-13T18:32:20+08:00",
+      "booked": null,
+      "capacity": null,
+      "file": "history/2026-11-13/20261113T183220+0800.json"
     }
   ]
 }
